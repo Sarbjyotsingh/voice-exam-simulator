@@ -15,4 +15,4 @@ COPY ./app /app/app
 EXPOSE 80
 
 # Run Uvicorn server optimized for Fargate LoadBalancer
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--proxy-headers"]
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80", "--proxy-headers"]
