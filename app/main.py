@@ -1,7 +1,20 @@
+import logging
 from fastapi import FastAPI, WebSocket
 from app.websocket import websocket_endpoint
 
+# Configure Logging
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
+    handlers=[logging.StreamHandler()]
+)
+logger = logging.getLogger("app.main")
+
 app = FastAPI(title="telc German Exam Simulator API")
+
+@app.on_event("startup")
+async def startup_event():
+    logger.info("API Started - Glass Pipe Architecture active")
 
 @app.get("/health")
 async def health_check():
