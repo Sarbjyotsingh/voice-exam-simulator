@@ -1,72 +1,53 @@
-# AI Exam Simulator Backend
+# AI Exam Simulator Backend (Go)
 
-This is the FastAPI backend for the telc German Exam Simulator. It uses a "Glass Pipe" architecture to provide real-time STT (Groq), LLM (Groq), and TTS (ElevenLabs) via WebSockets.
-
-## 🚀 Deployment Guide (AWS ECS Express Mode)
-
-Use these settings when deploying via the AWS ECS "Express Mode" wizard.
-
-### 1. Networking & Port
-
-- **Container Port**: `80`
-- **Health Check Path**: `/health`
-
-### 2. Environment Variables
-
-Add these in the **Environment Variables** section:
-
-- `GROQ_API_KEY`: Your Groq API Key.
-- `ELEVENLABS_API_KEY`: Your ElevenLabs API Key.
-- `S3_BUCKET_NAME`: `telc-exam-simulator-sessions` (For archival).
-- `AWS_REGION`: `eu-central-1`
-
-### 3. Command
-
-- uvicorn,app.main:app,--host,0.0.0.0,--port,80,--proxy-headers
-
-### 4. IAM Roles
-
-- **Task Execution Role**: `ecsTaskExecutionRole`
-- **Task Role**: Ensure this role has `AmazonS3FullAccess` or a custom policy allowing `s3:PutObject` to your bucket.
-
-### 5. Compute Resources
-
-- **CPU**: `.5 vCPU` (512 units)
-- **Memory**: `1 GB`
-
-### 6. Summary Table
-
-| Field            | Value                        |
-| :--------------- | :--------------------------- |
-| **Port**         | `80`                         |
-| **Health Check** | `/health`                    |
-| **Auto Scaling** | Min: 1, Max: 3               |
-| **Protocol**     | `wss://` (Secure WebSockets) |
-
----
+This is the Go backend for the telc German Exam Simulator. It uses a "Glass Pipe" architecture to provide real-time STT (Groq), LLM (Groq), and TTS (ElevenLabs) via WebSockets.
 
 ## 🛠️ Local Development
 
-1.  **Activate Venv**:
+1.  **Configure environment**:
     ```bash
-    source venv/bin/activate
+    cp .env.example .env
+    # Edit .env with your API keys
     ```
 2.  **Run Locally**:
     ```bash
-    uvicorn app.main:app --reload --port 8000
+    ./run.sh
     ```
-3.  **Test AWS Endpoint**:
-    ```bash
-    python scratch/test_aws_ws.py
-    ```
+    This script will automatically fall back to running via Docker if you don't have Go installed locally.
 
-## 📦 Pushing Updates
+## 🚀 Deployment (Lightsail VPS)
 
-To build and push a new version to ECR, run:
+This project is optimized to run on a 1 vCPU / 1GB AWS Lightsail instance (Amazon Linux 2023).
 
+### 1. Prerequisites
+
+1. Create a Lightsail instance.
+2. Attach a static IP to the instance.
+3. Open ports **80** and **443** in the IPv4 Firewall (do not open 8080).
+4. Point your domain to the static IP.
+5. Get your SSH key (e.g. `LightsailDefaultKey-eu-central-1.pem`).
+6. Put your `.env` file containing all the production secrets in this directory.
+
+### 2. Setup (One-time)
+
+Run the script to generate `deploy.env`:
 ```bash
-sh deploy.sh
+./deploy.sh
+```
+Fill out `deploy.env` with your VPS IP, user (`ec2-user`), SSH key path, and domain.
+
+Then run the one-time setup (installs Docker, Caddy, 1GB Swap):
+```bash
+./deploy.sh setup
 ```
 
-> [!TIP]
-> After pushing a new image, you may need to go to the ECS Console and click **"Deploy new revision"** to force the service to pull the latest `:latest` image.
+### 3. Deploy
+
+To build the image and ship it to the VPS:
+```bash
+./deploy.sh
+```
+
+### Useful commands
+- `./deploy.sh logs`: Tail the container logs.
+- `./deploy.sh rollback`: Revert to the previously deployed image.

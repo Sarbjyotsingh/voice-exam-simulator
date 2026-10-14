@@ -1,0 +1,10 @@
+.git
+venv
+.venv
+.env
+.env.*
+app/
+scratch/
+__pycache__
+*.pyc
+*.pyo

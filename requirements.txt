@@ -1,9 +1,0 @@
-fastapi
-uvicorn[standard]
-groq
-httpx
-boto3
-pydantic
-pydantic-settings
-python-multipart
-websockets

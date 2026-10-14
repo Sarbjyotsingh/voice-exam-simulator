@@ -21,6 +21,15 @@ wheels/
 .installed.cfg
 *.egg
 
+# Go
+bin/
+server
+ai_exam_simulator
+.docker_env
+
+# Deployment
+deploy.env
+
 # Virtual Environment
 venv/
 .venv/

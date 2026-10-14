@@ -1,41 +1,39 @@
 #!/bin/bash
+set -e
 
-# Configuration
 PORT=${PORT:-8000}
 HOST=${HOST:-127.0.0.1}
 
-# Exit on any error
-set -e
-
 echo "🚀 Starting local development server..."
 
-# 1. Check if Python is available
-if ! command -v python3 &> /dev/null; then
-    echo "❌ Python 3 is not installed. Please install Python 3.11 or later."
-    exit 1
+if [ -f .env ]; then
+    set -a
+    source .env
+    set +a
 fi
 
-# 2. Create virtual environment if it doesn't exist
-if [ ! -d "venv" ]; then
-    echo "📦 Creating virtual environment..."
-    python3 -m venv venv
-fi
+export PORT=$PORT
 
-# 3. Activate virtual environment
-echo "✨ Activating virtual environment..."
-source venv/bin/activate
-
-# 4. Install/upgrade dependencies
-echo "📥 Installing dependencies..."
-pip install -q --upgrade pip
-pip install -q -r requirements.txt
-
-# 5. Run the app
-echo "🎯 Starting Uvicorn server on http://${HOST}:${PORT}"
-echo "📝 API Docs available at http://${HOST}:${PORT}/docs"
+echo "🎯 Starting server on http://${HOST}:${PORT}"
+echo "📝 API Docs: not generated automatically in Go, see code"
 echo "💬 WebSocket endpoint: ws://${HOST}:${PORT}/exam"
 echo ""
-echo "Press Ctrl+C to stop the server"
-echo ""
 
-uvicorn app.main:app --host ${HOST} --port ${PORT} --reload
+if command -v go &> /dev/null; then
+    echo "✨ Using local Go installation..."
+    go run .
+else
+    echo "🐳 Go not found locally. Falling back to Docker..."
+    ENV_ARG=""
+    if [ -f .env ]; then
+        ENV_ARG="--env-file .env"
+    fi
+    docker run --rm -it \
+        -v "$PWD":/src \
+        -w /src \
+        -p ${PORT}:${PORT} \
+        $ENV_ARG \
+        -e PORT=${PORT} \
+        golang:1.24-alpine \
+        go run .
+fi
