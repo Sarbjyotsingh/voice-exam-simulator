@@ -31,7 +31,7 @@ else
     docker run --rm -it \
         -v "$PWD":/src \
         -w /src \
-        -p ${PORT}:${PORT} \
+        -p 0.0.0.0:${PORT}:${PORT} \
         $ENV_ARG \
         -e PORT=${PORT} \
         golang:1.24-alpine \

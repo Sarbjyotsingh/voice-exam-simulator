@@ -34,7 +34,7 @@ func MustLoad() Config {
 		ElevenLabsVoiceID:      getEnv("ELEVENLABS_VOICE_ID", "Jvf6TAXwMUVTSR20U0f9"),
 		AWSRegion:              getEnv("AWS_REGION", "eu-central-1"),
 		S3BucketName:           os.Getenv("S3_BUCKET_NAME"),
-		Port:                   getEnv("PORT", "8080"),
+		Port:                   getEnv("PORT", "8000"),
 		MaxConnections:         int32(getEnvInt("MAX_CONNECTIONS", 200)),
 		MaxAudioBytes:          int64(getEnvInt("MAX_AUDIO_BYTES", 10485760)),
 		MaxHistoryMessages:     getEnvInt("MAX_HISTORY_MESSAGES", 100),
