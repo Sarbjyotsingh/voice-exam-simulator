@@ -25,7 +25,7 @@ const (
 	PongWait   = 90 * time.Second
 
 	// Default System Prompts
-	DefaultSystemPrompt = "You are a helpful German examiner."
+	DefaultSystemPrompt = "You are a helpful German language speaking partner."
 
 	// LLM JSON Instruction
 	JSONInstruction = "\n\nYou MUST return your response as a valid JSON object containing an array called 'parts' and an optional boolean key 'exam_ended'. Each item in the array must be an object with optional keys: 'text', 'audio_id', 'speaker', and 'role'. Do not include any other markdown formatting."

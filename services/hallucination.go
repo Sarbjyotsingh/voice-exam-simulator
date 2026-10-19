@@ -20,6 +20,15 @@ var (
 		"Veilen danke",
 		"Vielen Dank!",
 		"Danke!",
+		"Tschüss.",
+		"Tschüss!",
+		"Auf Wiedersehen.",
+		"Auf Wiedersehen!",
+		"Vielen Dank für Ihre Aufmerksamkeit.",
+		"Vielen Dank fürs Zuschauen.",
+		"Bis zum nächsten Mal.",
+		"Bis bald.",
+		"Schönen Tag noch.",
 	}
 
 	hallucinationsSet = make(map[string]struct{})
