@@ -67,6 +67,8 @@ func (g *Groq) Transcribe(ctx context.Context, wav []byte) (string, error) {
 	_ = writer.WriteField("model", config.GroqWhisperModel)
 	_ = writer.WriteField("response_format", "verbose_json")
 	_ = writer.WriteField("language", config.GroqSTTLanguage)
+	_ = writer.WriteField("prompt", config.GroqWhisperPrompt)
+	_ = writer.WriteField("temperature", "0")
 
 	if err := writer.Close(); err != nil {
 		return "", err
@@ -160,7 +162,7 @@ func (g *Groq) Chat(ctx context.Context, msgs []Message) (string, error) {
 }
 
 func (g *Groq) Evaluate(ctx context.Context, prompt, transcript string) (string, error) {
-	fullPrompt := prompt + config.EvaluationJSONInstruction
+	fullPrompt := prompt + config.EvaluationGuardrails + config.EvaluationJSONInstruction
 	msgs := []Message{
 		{Role: "system", Content: fullPrompt},
 		{Role: "user", Content: transcript},
