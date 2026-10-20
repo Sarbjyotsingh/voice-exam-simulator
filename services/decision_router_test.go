@@ -7,7 +7,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"ai_exam_simulator/config"
+	"voice-exam-simulator/config"
 )
 
 func TestParseScriptCatalogueAll5Samples(t *testing.T) {

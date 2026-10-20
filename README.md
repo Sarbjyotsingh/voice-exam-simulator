@@ -1,4 +1,4 @@
-# AI Exam Simulator Backend (Go)
+# Voice Exam Simulator Backend (Go)
 
 This is the Go backend for the telc German Exam Simulator. It uses a "Glass Pipe" architecture to provide real-time STT (Groq), LLM (Groq), and TTS (ElevenLabs) via WebSockets.
 

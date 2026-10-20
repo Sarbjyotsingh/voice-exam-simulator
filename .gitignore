@@ -24,7 +24,7 @@ wheels/
 # Go
 bin/
 server
-ai_exam_simulator
+voice-exam-simulator
 .docker_env
 
 # Deployment

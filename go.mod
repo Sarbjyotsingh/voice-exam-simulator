@@ -1,4 +1,4 @@
-module ai_exam_simulator
+module voice-exam-simulator
 
 go 1.24.0
 

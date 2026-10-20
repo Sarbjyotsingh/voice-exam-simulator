@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"ai_exam_simulator/config"
+	"voice-exam-simulator/config"
 )
 
 func testCfg(dir string) config.Config {

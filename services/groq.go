@@ -9,7 +9,7 @@ import (
 	"mime/multipart"
 	"net/http"
 
-	"ai_exam_simulator/config"
+	"voice-exam-simulator/config"
 )
 
 type Message struct {

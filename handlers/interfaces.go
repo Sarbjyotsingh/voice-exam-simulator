@@ -3,7 +3,7 @@ package handlers
 import (
 	"context"
 
-	"ai_exam_simulator/services"
+	"voice-exam-simulator/services"
 )
 
 type Transcriber interface {

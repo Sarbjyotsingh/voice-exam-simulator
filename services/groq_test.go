@@ -5,7 +5,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"ai_exam_simulator/config"
+	"voice-exam-simulator/config"
 )
 
 func TestGroqEvaluate(t *testing.T) {

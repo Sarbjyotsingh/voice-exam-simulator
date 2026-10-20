@@ -4,7 +4,7 @@ import (
 	"context"
 	"net/http"
 
-	"ai_exam_simulator/config"
+	"voice-exam-simulator/config"
 )
 
 type ElevenLabs struct {

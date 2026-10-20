@@ -12,8 +12,8 @@ import (
 	"github.com/google/uuid"
 	"github.com/gorilla/websocket"
 
-	"ai_exam_simulator/config"
-	"ai_exam_simulator/services"
+	"voice-exam-simulator/config"
+	"voice-exam-simulator/services"
 )
 
 var upgrader = websocket.Upgrader{

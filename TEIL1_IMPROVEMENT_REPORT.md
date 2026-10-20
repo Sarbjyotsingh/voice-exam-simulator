@@ -327,7 +327,7 @@ Below is the complete, drop-in replacement draft for `/Users/sarbjyot/StudioProj
 
 While no application code has been modified in this task, the audit surfaced three small, high-impact code adjustments that will unlock the full power of this blueprint when you are ready to implement:
 
-1. **Fix Redundant TTS Synthesis in `ai_exam_simulator/handlers/exam.go` (Lines 187–196):**
+1. **Fix Redundant TTS Synthesis in `voice-exam-simulator/handlers/exam.go` (Lines 187–196):**
    - Currently, `handlers/exam.go` spawns a goroutine calling `tts.Synthesize(ctx, t, vID)` for **every** part in `responseData.Parts` where `p["text"] != ""`, even when `p["audio_id"]` is a valid pre-recorded clip ID!
    - **Recommended 2-line fix in next phase:** Check `audioID` before spawning the TTS goroutine so pre-recorded modular parts (`EXP` + `A` + `Q`) have **0ms TTS latency** and **zero ElevenLabs cost**:
      ```go

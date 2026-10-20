@@ -5,7 +5,7 @@ import (
 	"log/slog"
 	"net/http"
 
-	"ai_exam_simulator/services"
+	"voice-exam-simulator/services"
 )
 
 type EvaluateRequest struct {

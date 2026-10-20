@@ -5,8 +5,8 @@ import (
 	"sort"
 	"strings"
 
-	"ai_exam_simulator/config"
-	"ai_exam_simulator/services"
+	"voice-exam-simulator/config"
+	"voice-exam-simulator/services"
 )
 
 type InitData struct {
