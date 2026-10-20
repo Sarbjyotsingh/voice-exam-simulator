@@ -49,3 +49,10 @@ ENV/
 .DS_Store
 Thumbs.db
 
+# Audio Generator Output & Cache (Assets are hosted on S3)
+exam_generator/audio_cache_teil1/
+exam_generator/output_s3/
+exam_generator/upload_package/
+*.mp3
+
+

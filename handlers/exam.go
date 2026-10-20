@@ -185,6 +185,13 @@ func NewExam(
 			var wg sync.WaitGroup
 
 			for i, p := range responseData.Parts {
+				audioID, _ := p["audio_id"].(string)
+				if audioID == "" {
+					audioID, _ = p["audioId"].(string)
+				}
+				if audioID != "" {
+					continue // Pre-recorded audio_id exists; skip ElevenLabs TTS synthesis
+				}
 				if text, ok := p["text"].(string); ok && text != "" {
 					wg.Add(1)
 					go func(idx int, t string, vID string) {
