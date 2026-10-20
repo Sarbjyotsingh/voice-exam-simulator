@@ -77,6 +77,7 @@ if [ "$1" == "rollback" ]; then
     docker run -d --name ${APP_NAME} \
         --restart unless-stopped \
         --memory=640m \
+        -v exam_ledger:/data \
         -p 127.0.0.1:8080:8080 \
         --env-file .env \
         ${PREV_IMAGE_NAME}
@@ -105,6 +106,7 @@ $SSH_CMD << EOF
     docker run -d --name ${APP_NAME} \
         --restart unless-stopped \
         --memory=640m \
+        -v exam_ledger:/data \
         -p 127.0.0.1:8080:8080 \
         --env-file .env \
         ${IMAGE_NAME}

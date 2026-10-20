@@ -56,3 +56,6 @@ exam_generator/upload_package/
 *.mp3
 
 
+
+# Local cost ledger
+data/

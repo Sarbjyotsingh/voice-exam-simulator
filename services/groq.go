@@ -65,7 +65,7 @@ func (g *Groq) Transcribe(ctx context.Context, wav []byte) (string, error) {
 	}
 
 	_ = writer.WriteField("model", config.GroqWhisperModel)
-	_ = writer.WriteField("response_format", "text")
+	_ = writer.WriteField("response_format", "verbose_json")
 	_ = writer.WriteField("language", config.GroqSTTLanguage)
 
 	if err := writer.Close(); err != nil {
@@ -90,12 +90,22 @@ func (g *Groq) Transcribe(ctx context.Context, wav []byte) (string, error) {
 		return "", fmt.Errorf("transcription error %d: %s", resp.StatusCode, string(b))
 	}
 
-	textBytes, err := io.ReadAll(resp.Body)
+	body, err := io.ReadAll(resp.Body)
 	if err != nil {
 		return "", err
 	}
 
-	text := string(textBytes)
+	// verbose_json carries the audio duration, which is what Groq bills STT on.
+	var parsed struct {
+		Text     string  `json:"text"`
+		Duration float64 `json:"duration"`
+	}
+	if err := json.Unmarshal(body, &parsed); err != nil {
+		return "", fmt.Errorf("failed to decode transcription response: %w", err)
+	}
+	UsageFrom(ctx).AddSTT(parsed.Duration)
+
+	text := parsed.Text
 	if IsHallucination(text) {
 		return "", nil
 	}
@@ -130,11 +140,17 @@ func (g *Groq) Chat(ctx context.Context, msgs []Message) (string, error) {
 				Content string `json:"content"`
 			} `json:"message"`
 		} `json:"choices"`
+		Usage struct {
+			PromptTokens     int `json:"prompt_tokens"`
+			CompletionTokens int `json:"completion_tokens"`
+		} `json:"usage"`
 	}
 
 	if err := json.Unmarshal(respBytes, &result); err != nil {
 		return "", fmt.Errorf("failed to decode chat response: %w", err)
 	}
+
+	UsageFrom(ctx).AddLLM(result.Usage.PromptTokens, result.Usage.CompletionTokens)
 
 	if len(result.Choices) > 0 && result.Choices[0].Message.Content != "" {
 		return result.Choices[0].Message.Content, nil

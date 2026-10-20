@@ -9,10 +9,12 @@ RUN CGO_ENABLED=0 GOOS=linux GOARCH=${TARGETARCH:-amd64} \
 
 # ---- runtime ----
 FROM alpine:3.20
-RUN apk add --no-cache ca-certificates && adduser -D -u 10001 app
+RUN apk add --no-cache ca-certificates && adduser -D -u 10001 app \
+    && mkdir -p /data/ledger && chown -R app /data
 COPY --from=build /out/server /usr/local/bin/server
 USER app
-ENV PORT=8080 GOMEMLIMIT=480MiB GOGC=100
+ENV LEDGER_DIR=/data/ledger PORT=8080 GOMEMLIMIT=480MiB GOGC=100
+VOLUME /data
 EXPOSE 8080
 HEALTHCHECK --interval=30s --timeout=3s CMD ["server","-healthcheck"]
 ENTRYPOINT ["server"]

@@ -3,8 +3,8 @@ package services
 import (
 	"bytes"
 	"context"
-	"encoding/json"
 	"fmt"
+	"hash/fnv"
 	"log/slog"
 	"sync"
 	"time"
@@ -12,41 +12,41 @@ import (
 	"github.com/aws/aws-sdk-go-v2/aws"
 	awsconfig "github.com/aws/aws-sdk-go-v2/config"
 	"github.com/aws/aws-sdk-go-v2/service/s3"
-	"github.com/google/uuid"
 
 	"ai_exam_simulator/config"
 )
 
-type SessionMetadata struct {
-	Transcription string `json:"transcription"`
-	LLMResponse   string `json:"llm_response"`
-	AudioS3Key    string `json:"audio_s3_key,omitempty"`
+// File is one object to write to the (write-only) log bucket.
+type File struct {
+	Key         string
+	Body        []byte
+	ContentType string
 }
 
-type ArchiveJob struct {
-	SessionID  string
-	Metadata   SessionMetadata
-	AudioOut   []byte // examiner TTS MP3
-	AudioIn    []byte // learner STT WAV
+// Batch is an ordered set of files belonging to one user. Batches for the same user are
+// always uploaded in the order they were enqueued (summaries are cumulative, so a stale
+// summary must never overwrite a newer one).
+type Batch struct {
+	UserID string
+	Files  []File
 }
 
 type Archiver interface {
-	Enqueue(job ArchiveJob)
+	Enqueue(b Batch)
 	Close()
 }
 
 type noopArchiver struct{}
 
-func (noopArchiver) Enqueue(ArchiveJob) {}
-func (noopArchiver) Close()             {}
+func (noopArchiver) Enqueue(Batch) {}
+func (noopArchiver) Close()        {}
 
 type s3Archiver struct {
-	client     *s3.Client
-	bucket     string
-	queue      chan ArchiveJob
-	wg         sync.WaitGroup
-	log        *slog.Logger
-	saveInput  bool
+	client *s3.Client
+	bucket string
+	queues []chan Batch
+	wg     sync.WaitGroup
+	log    *slog.Logger
 }
 
 func NewArchiver(ctx context.Context, cfg config.Config, logger *slog.Logger) Archiver {
@@ -60,80 +60,83 @@ func NewArchiver(ctx context.Context, cfg config.Config, logger *slog.Logger) Ar
 		return noopArchiver{}
 	}
 
+	workers := cfg.ArchiveWorkers
+	if workers < 1 {
+		workers = 1
+	}
 	a := &s3Archiver{
-		client:    s3.NewFromConfig(awsCfg),
-		bucket:    cfg.S3BucketName,
-		queue:     make(chan ArchiveJob, cfg.ArchiveQueueSize),
-		log:       logger.With("component", "archiver"),
-		saveInput: cfg.ArchiveInputAudio,
+		client: s3.NewFromConfig(awsCfg),
+		bucket: cfg.S3BucketName,
+		log:    logger.With("component", "archiver"),
 	}
-
-	for i := 0; i < cfg.ArchiveWorkers; i++ {
+	// One queue per worker; users are sharded onto a queue by hash so per-user ordering holds.
+	for i := 0; i < workers; i++ {
+		q := make(chan Batch, cfg.ArchiveQueueSize)
+		a.queues = append(a.queues, q)
 		a.wg.Add(1)
-		go a.worker()
+		go a.worker(q)
 	}
-
 	return a
 }
 
-func (a *s3Archiver) Enqueue(job ArchiveJob) {
+func (a *s3Archiver) Enqueue(b Batch) {
+	h := fnv.New32a()
+	_, _ = h.Write([]byte(b.UserID))
+	q := a.queues[int(h.Sum32())%len(a.queues)]
 	select {
-	case a.queue <- job:
+	case q <- b:
 	default:
-		a.log.Warn("archive queue full, dropping job", "session_id", job.SessionID)
+		// The ledger on disk already holds the authoritative totals and the next batch carries
+		// fresh cumulative summaries, so a dropped batch only loses that turn's raw files.
+		a.log.Warn("archive queue full, dropping batch", "user_id", b.UserID, "files", len(b.Files))
 	}
 }
 
 func (a *s3Archiver) Close() {
-	close(a.queue)
+	for _, q := range a.queues {
+		close(q)
+	}
 	a.wg.Wait()
 }
 
-func (a *s3Archiver) worker() {
+func (a *s3Archiver) worker(q chan Batch) {
 	defer a.wg.Done()
-	for job := range a.queue {
-		a.process(job)
+	for b := range q {
+		a.process(b)
 	}
 }
 
-func (a *s3Archiver) process(job ArchiveJob) {
-	ctx, cancel := context.WithTimeout(context.Background(), 30*time.Second)
+func (a *s3Archiver) process(b Batch) {
+	ctx, cancel := context.WithTimeout(context.Background(), 60*time.Second)
 	defer cancel()
 
-	now := time.Now().UTC().Format("20060102_150405")
-	shortUUID := uuid.New().String()[:8]
-	baseKey := fmt.Sprintf("sessions/%s/%s_%s", job.SessionID, now, shortUUID)
-
-	if len(job.AudioOut) > 0 {
-		outKey := baseKey + ".mp3"
-		if err := a.upload(ctx, outKey, job.AudioOut, "audio/mpeg"); err == nil {
-			job.Metadata.AudioS3Key = outKey
+	failed := 0
+	for _, f := range b.Files {
+		if err := a.upload(ctx, f); err != nil {
+			failed++
 		}
 	}
-
-	if a.saveInput && len(job.AudioIn) > 0 {
-		inKey := baseKey + ".input.wav"
-		_ = a.upload(ctx, inKey, job.AudioIn, "audio/wav")
+	if failed > 0 {
+		a.log.Warn("batch partially uploaded", "user_id", b.UserID, "failed", failed, "total", len(b.Files))
+		return
 	}
-
-	metaBytes, err := json.Marshal(job.Metadata)
-	if err == nil {
-		metaKey := baseKey + ".json"
-		_ = a.upload(ctx, metaKey, metaBytes, "application/json")
-	}
-
-	a.log.Info("session archived", "base_key", baseKey)
+	a.log.Info("batch archived", "user_id", b.UserID, "files", len(b.Files))
 }
 
-func (a *s3Archiver) upload(ctx context.Context, key string, data []byte, contentType string) error {
-	_, err := a.client.PutObject(ctx, &s3.PutObjectInput{
-		Bucket:      aws.String(a.bucket),
-		Key:         aws.String(key),
-		Body:        bytes.NewReader(data),
-		ContentType: aws.String(contentType),
-	})
-	if err != nil {
-		a.log.Error("s3 upload failed", "key", key, "error", err)
+func (a *s3Archiver) upload(ctx context.Context, f File) error {
+	var lastErr error
+	for attempt := 1; attempt <= 3; attempt++ {
+		_, lastErr = a.client.PutObject(ctx, &s3.PutObjectInput{
+			Bucket:      aws.String(a.bucket),
+			Key:         aws.String(f.Key),
+			Body:        bytes.NewReader(f.Body),
+			ContentType: aws.String(f.ContentType),
+		})
+		if lastErr == nil {
+			return nil
+		}
+		time.Sleep(time.Duration(attempt) * 300 * time.Millisecond)
 	}
-	return err
+	a.log.Error("s3 upload failed", "key", f.Key, "error", fmt.Sprint(lastErr))
+	return lastErr
 }

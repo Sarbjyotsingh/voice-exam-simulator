@@ -56,5 +56,10 @@ func (e *ElevenLabs) Synthesize(ctx context.Context, text, voiceID string) ([]by
 		"xi-api-key":   e.apiKey,
 	}
 
-	return postJSON(ctx, e.client, url, headers, payload)
+	audio, err := postJSON(ctx, e.client, url, headers, payload)
+	if err != nil {
+		return nil, err
+	}
+	UsageFrom(ctx).AddTTS(voiceID, text)
+	return audio, nil
 }

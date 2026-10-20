@@ -17,6 +17,14 @@ type InitData struct {
 	VoiceID          string            `json:"voice_id"`
 	PrimarySpeaker   string            `json:"primary_speaker"`
 	SecondarySpeaker string            `json:"secondary_speaker"`
+
+	// Attempt identity (optional; legacy clients omit these). The client generates AttemptID
+	// once per exam run and sends the same value on every turn and on /evaluate.
+	UserID     string `json:"user_id"`
+	ExamID     string `json:"exam_id"`
+	ExamLevel  string `json:"exam_level"`
+	TeilNumber int    `json:"teil_number"`
+	AttemptID  string `json:"attempt_id"`
 }
 
 type Session struct {
@@ -26,6 +34,7 @@ type Session struct {
 	PrimarySpeaker   string
 	SecondarySpeaker string
 	Messages         []services.Message
+	Attempt          services.AttemptKey
 }
 
 func parseInit(raw []byte, id string, maxHistory int) (*Session, error) {
@@ -108,6 +117,14 @@ func parseInit(raw []byte, id string, maxHistory int) (*Session, error) {
 		PrimarySpeaker:   primary,
 		SecondarySpeaker: secondary,
 		Messages:         msgs,
+		Attempt: services.AttemptKey{
+			UserID:     data.UserID,
+			ExamID:     data.ExamID,
+			ExamLevel:  data.ExamLevel,
+			TeilNumber: data.TeilNumber,
+			// Legacy clients send no attempt_id: fall back to the socket id so costs still land somewhere.
+			AttemptID: firstNonEmpty(data.AttemptID, "legacy_"+id),
+		},
 	}, nil
 }
 
@@ -148,3 +165,12 @@ func (s *Session) voiceFor(part map[string]interface{}) string {
 	return s.DefaultVoiceID
 }
 
+
+func firstNonEmpty(vals ...string) string {
+	for _, v := range vals {
+		if strings.TrimSpace(v) != "" {
+			return v
+		}
+	}
+	return ""
+}

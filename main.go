@@ -38,11 +38,12 @@ func main() {
 	groq := services.NewGroq(cfg, httpClient)
 	tts := services.NewElevenLabs(cfg, httpClient)
 	arch := services.NewArchiver(ctx, cfg, log)
+	ledger := services.NewLedger(cfg, log)
 
 	mux := http.NewServeMux()
 	mux.HandleFunc("GET /health", handlers.Health)
-	mux.Handle("POST /evaluate", handlers.NewEvaluate(groq, log))
-	mux.Handle("GET /exam", handlers.NewExam(cfg, groq, groq, tts, arch, log))
+	mux.Handle("POST /evaluate", handlers.NewEvaluate(groq, ledger, arch, log))
+	mux.Handle("GET /exam", handlers.NewExam(cfg, groq, groq, tts, arch, ledger, log))
 
 	srv := &http.Server{
 		Addr:              cfg.Addr(),

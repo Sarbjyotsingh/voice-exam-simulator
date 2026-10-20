@@ -47,6 +47,7 @@ func NewExam(
 	chat Chatter,
 	tts Synthesizer,
 	arch services.Archiver,
+	ledger *services.Ledger,
 	log *slog.Logger,
 ) http.HandlerFunc {
 	var activeConns int32
@@ -113,7 +114,7 @@ func NewExam(
 			return
 		}
 
-		sLog.Info("Session initialized", "default_voice", session.DefaultVoiceID)
+		sLog.Info("Session initialized", "default_voice", session.DefaultVoiceID, "attempt_id", session.Attempt.AttemptID, "exam_id", session.Attempt.ExamID)
 		_ = conn.sendJSON(map[string]string{
 			"status":     config.StatusInitialized,
 			"session_id": session.ID,
@@ -134,7 +135,10 @@ func NewExam(
 
 			sLog.Info("Received audio", "bytes", len(audioBytes))
 
-			transcribedText, err := stt.Transcribe(ctx, audioBytes)
+			// Per-turn usage collector: STT seconds, chat tokens and dynamic TTS characters.
+			turnCtx, usage := services.WithUsage(ctx)
+
+			transcribedText, err := stt.Transcribe(turnCtx, audioBytes)
 			if err != nil {
 				sLog.Error("transcription failed", "error", err)
 				_ = conn.sendJSON(map[string]string{"status": config.StatusError, "error": "transcription failed"})
@@ -142,6 +146,12 @@ func NewExam(
 			}
 
 			if transcribedText == "" {
+				// The STT call was still billed, so the turn is recorded.
+				res := ledger.RecordTurn(services.TurnInput{
+					Key: session.Attempt, Status: services.TurnEmptyTranscript,
+					Usage: usage.Snapshot(), AudioIn: audioBytes,
+				})
+				arch.Enqueue(res.Batch)
 				_ = conn.sendJSON(map[string]string{
 					"status":  config.StatusEmptyTranscription,
 					"message": "I didn't hear anything clearly. Could you please repeat that?",
@@ -159,9 +169,14 @@ func NewExam(
 				"transcribed": transcribedText,
 			})
 
-			llmResp, err := chat.Chat(ctx, session.Messages)
+			llmResp, err := chat.Chat(turnCtx, session.Messages)
 			if err != nil {
 				sLog.Error("chat failed", "error", err)
+				res := ledger.RecordTurn(services.TurnInput{
+					Key: session.Attempt, Status: services.TurnChatFailed, UserText: transcribedText,
+					Usage: usage.Snapshot(), AudioIn: audioBytes,
+				})
+				arch.Enqueue(res.Batch)
 				_ = conn.sendJSON(map[string]string{"status": config.StatusError, "error": "chat failed"})
 				continue
 			}
@@ -196,7 +211,7 @@ func NewExam(
 					wg.Add(1)
 					go func(idx int, t string, vID string) {
 						defer wg.Done()
-						b, e := tts.Synthesize(ctx, t, vID)
+						b, e := tts.Synthesize(turnCtx, t, vID)
 						results <- TTSResult{Index: idx, Bytes: b, Err: e}
 					}(i, text, session.voiceFor(p))
 				}
@@ -241,21 +256,29 @@ func NewExam(
 				session.Messages = append(session.Messages[:1], session.Messages[2:]...) // Keep sys prompt
 			}
 
-			_ = conn.sendJSON(map[string]interface{}{
-				"status":     config.StatusResponseComplete,
-				"ai_text":    llmResp,
-				"parts":      responseData.Parts,
-				"exam_ended": responseData.ExamEnded,
+			// Record cost + archive BEFORE telling the client the turn is done, so even if the
+			// app is killed right after this turn nothing is missing from the ledger.
+			res := ledger.RecordTurn(services.TurnInput{
+				Key:       session.Attempt,
+				Status:    services.TurnOK,
+				UserText:  transcribedText,
+				LLMRaw:    llmResp,
+				AIParts:   responseData.Parts,
+				ExamEnded: responseData.ExamEnded,
+				Usage:     usage.Snapshot(),
+				AudioIn:   audioBytes,
+				AudioOut:  allGeneratedAudio,
 			})
+			arch.Enqueue(res.Batch)
 
-			arch.Enqueue(services.ArchiveJob{
-				SessionID: session.ID,
-				Metadata: services.SessionMetadata{
-					Transcription: transcribedText,
-					LLMResponse:   llmResp,
-				},
-				AudioOut: allGeneratedAudio,
-				AudioIn:  audioBytes,
+			_ = conn.sendJSON(map[string]interface{}{
+				"status":           config.StatusResponseComplete,
+				"ai_text":          llmResp,
+				"parts":            responseData.Parts,
+				"exam_ended":       responseData.ExamEnded,
+				"attempt_id":       session.Attempt.AttemptID,
+				"turn_cost_usd":    res.TurnCostUSD,
+				"attempt_cost_usd": res.AttemptCostUSD,
 			})
 		}
 	}

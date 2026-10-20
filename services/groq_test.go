@@ -1,11 +1,9 @@
 package services
 
 import (
-	"context"
 	"net/http"
 	"net/http/httptest"
 	"testing"
-	"time"
 
 	"ai_exam_simulator/config"
 )
