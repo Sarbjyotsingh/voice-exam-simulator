@@ -17,6 +17,13 @@ EOF
     exit 1
 fi
 source deploy.env
+SSH_KEY="${SSH_KEY/#\~/$HOME}"
+chmod 600 "${SSH_KEY}" 2>/dev/null || true
+
+if [ ! -f ".env" ]; then
+    echo "❌ Error: .env file not found in current directory. Please create .env with your production secrets."
+    exit 1
+fi
 
 SSH_CMD="ssh -i ${SSH_KEY} -o StrictHostKeyChecking=accept-new ${VPS_USER}@${VPS_HOST}"
 
@@ -42,7 +49,7 @@ if [ "$1" == "setup" ]; then
     fi
 
     # Ensure network
-    docker network create web || true
+    sudo docker network create web || true
 
     # Start Caddy
     cat > Caddyfile << 'CADDYEOF'
@@ -51,9 +58,9 @@ ${DOMAIN} {
 }
 CADDYEOF
     
-    docker stop caddy || true
-    docker rm caddy || true
-    docker run -d --name caddy \
+    sudo docker stop caddy || true
+    sudo docker rm caddy || true
+    sudo docker run -d --name caddy \
         --restart unless-stopped \
         --network host \
         -v \$PWD/Caddyfile:/etc/caddy/Caddyfile \
@@ -61,6 +68,12 @@ CADDYEOF
         caddy:alpine
 EOF
     echo "✅ Setup complete. Caddy is running."
+    exit 0
+fi
+
+if [ "$1" == "status" ]; then
+    echo "📊 Service Status:"
+    $SSH_CMD "docker ps --format 'table {{.Names}}\t{{.Status}}\t{{.Ports}}'"
     exit 0
 fi
 
@@ -99,7 +112,8 @@ $SSH_CMD "docker tag ${IMAGE_NAME} ${PREV_IMAGE_NAME} 2>/dev/null || true"
 # Export, compress, pipe over SSH, and load
 docker save ${IMAGE_NAME} | gzip | $SSH_CMD "gunzip | docker load"
 
-echo "🔄 Restarting container..."
+echo "🔄 Syncing .env and restarting container..."
+scp -i "${SSH_KEY}" .env "${VPS_USER}@${VPS_HOST}:/home/${VPS_USER}/.env"
 $SSH_CMD << EOF
     docker stop ${APP_NAME} || true
     docker rm ${APP_NAME} || true

@@ -49,5 +49,7 @@ To build the image and ship it to the VPS:
 ```
 
 ### Useful commands
-- `./deploy.sh logs`: Tail the container logs.
-- `./deploy.sh rollback`: Revert to the previously deployed image.
+- `./deploy.sh`: Deploy latest code and sync `.env`.
+- `./deploy.sh status`: Check container and Caddy status.
+- `./deploy.sh logs`: Tail real-time server logs.
+- `./deploy.sh rollback`: Revert instantly to previous deployed image.
