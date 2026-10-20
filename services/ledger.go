@@ -99,6 +99,7 @@ type AttemptUsage struct {
 	STTSeconds           float64 `json:"stt_audio_seconds"`
 	ChatPromptTokens     int     `json:"chat_prompt_tokens"`
 	ChatCompletionTokens int     `json:"chat_completion_tokens"`
+	DecisionTokens       int     `json:"decision_tokens,omitempty"`
 	EvalPromptTokens     int     `json:"eval_prompt_tokens"`
 	EvalCompletionTokens int     `json:"eval_completion_tokens"`
 	TTSCharacters        int     `json:"tts_characters"`
@@ -289,6 +290,7 @@ func (a *AttemptSummary) recalc(p Pricing) {
 		u.STTSeconds += t.Usage.STTSeconds
 		u.ChatPromptTokens += t.Usage.PromptTokens
 		u.ChatCompletionTokens += t.Usage.CompletionTokens
+		u.DecisionTokens += t.Usage.DecisionTokens
 		u.TTSCharacters += t.Usage.TTSCharacters
 		for _, part := range t.AIParts {
 			if id, _ := part["audio_id"].(string); id != "" {
@@ -299,13 +301,14 @@ func (a *AttemptSummary) recalc(p Pricing) {
 		}
 		c.STT += t.Cost.STT
 		c.ChatLLM += t.Cost.ChatLLM
+		c.Decisions += t.Cost.Decisions
 		c.TTS += t.Cost.TTS
 	}
 	u.EvalPromptTokens = a.EvalUsage.PromptTokens
 	u.EvalCompletionTokens = a.EvalUsage.CompletionTokens
 	c.EvalLLM = p.LLM(a.EvalUsage.PromptTokens, a.EvalUsage.CompletionTokens)
-	c.STT, c.ChatLLM, c.TTS, c.EvalLLM = round8(c.STT), round8(c.ChatLLM), round8(c.TTS), round8(c.EvalLLM)
-	c.Total = round8(c.STT + c.ChatLLM + c.TTS + c.EvalLLM)
+	c.STT, c.ChatLLM, c.Decisions, c.TTS, c.EvalLLM = round8(c.STT), round8(c.ChatLLM), round8(c.Decisions), round8(c.TTS), round8(c.EvalLLM)
+	c.Total = round8(c.STT + c.ChatLLM + c.Decisions + c.TTS + c.EvalLLM)
 	a.Usage, a.Cost, a.TurnsCount = u, c, len(a.Turns)
 }
 
@@ -362,8 +365,8 @@ func (l *Ledger) RecordTurn(in TurnInput) LedgerResult {
 		UserText: in.UserText, AIParts: in.AIParts, ExamEnded: in.ExamEnded,
 		Usage: in.Usage, Cost: l.pricing.TurnCost(in.Usage),
 	}
-	entry.Cost.STT, entry.Cost.ChatLLM, entry.Cost.TTS = round8(entry.Cost.STT), round8(entry.Cost.ChatLLM), round8(entry.Cost.TTS)
-	entry.Cost.Total = round8(entry.Cost.STT + entry.Cost.ChatLLM + entry.Cost.TTS)
+	entry.Cost.STT, entry.Cost.ChatLLM, entry.Cost.Decisions, entry.Cost.TTS = round8(entry.Cost.STT), round8(entry.Cost.ChatLLM), round8(entry.Cost.Decisions), round8(entry.Cost.TTS)
+	entry.Cost.Total = round8(entry.Cost.STT + entry.Cost.ChatLLM + entry.Cost.Decisions + entry.Cost.TTS)
 
 	if l.saveInput && len(in.AudioIn) > 0 {
 		ext, ct := sniffAudio(in.AudioIn)
@@ -533,6 +536,7 @@ func buildUserSummary(userID string, st *userState) UserSummary {
 		us.TotalTurnsSpoken += a.TurnsCount
 		us.CostBreakdownUSD.STT += a.Cost.STT
 		us.CostBreakdownUSD.ChatLLM += a.Cost.ChatLLM
+		us.CostBreakdownUSD.Decisions += a.Cost.Decisions
 		us.CostBreakdownUSD.EvalLLM += a.Cost.EvalLLM
 		us.CostBreakdownUSD.TTS += a.Cost.TTS
 		us.LifetimeCostUSD += a.Cost.Total
@@ -555,8 +559,8 @@ func buildUserSummary(userID string, st *userState) UserSummary {
 		us.Exams[ek] = ref
 	}
 	c := &us.CostBreakdownUSD
-	c.STT, c.ChatLLM, c.EvalLLM, c.TTS = round8(c.STT), round8(c.ChatLLM), round8(c.EvalLLM), round8(c.TTS)
-	c.Total = round8(c.STT + c.ChatLLM + c.EvalLLM + c.TTS)
+	c.STT, c.ChatLLM, c.Decisions, c.EvalLLM, c.TTS = round8(c.STT), round8(c.ChatLLM), round8(c.Decisions), round8(c.EvalLLM), round8(c.TTS)
+	c.Total = round8(c.STT + c.ChatLLM + c.Decisions + c.EvalLLM + c.TTS)
 	us.LifetimeCostUSD = round8(us.LifetimeCostUSD)
 	return us
 }

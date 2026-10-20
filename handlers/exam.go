@@ -46,6 +46,7 @@ func NewExam(
 	stt Transcriber,
 	chat Chatter,
 	tts Synthesizer,
+	router TurnRouter,
 	arch services.Archiver,
 	ledger *services.Ledger,
 	log *slog.Logger,
@@ -169,25 +170,65 @@ func NewExam(
 				"transcribed": transcribedText,
 			})
 
-			llmResp, err := chat.Chat(turnCtx, session.Messages)
-			if err != nil {
-				sLog.Error("chat failed", "error", err)
-				res := ledger.RecordTurn(services.TurnInput{
-					Key: session.Attempt, Status: services.TurnChatFailed, UserText: transcribedText,
-					Usage: usage.Snapshot(), AudioIn: audioBytes,
-				})
-				arch.Enqueue(res.Batch)
-				_ = conn.sendJSON(map[string]string{"status": config.StatusError, "error": "chat failed"})
-				continue
+			var (
+				llmResp      string
+				responseData struct {
+					Parts     []map[string]interface{} `json:"parts"`
+					ExamEnded bool                     `json:"exam_ended"`
+				}
+			)
+
+			// Try Decisions turn router if enabled for this Teil
+			routed := false
+			sLog.Info("Checking Decisions turn router",
+				"use_decisions", cfg.UseDecisionsAPI,
+				"enabled_teils", cfg.DecisionsEnabledTeils,
+				"teil_number", session.Attempt.TeilNumber,
+				"exam_level", session.Attempt.ExamLevel,
+				"has_router", router != nil,
+				"has_catalogue", session.Catalogue != nil,
+			)
+			if cfg.UseDecisionsAPI && cfg.DecisionsEnabledTeils[session.Attempt.TeilNumber] &&
+				router != nil && session.Catalogue != nil {
+				res, rErr := router.RouteTurn(
+					turnCtx,
+					session.Attempt.ExamLevel,
+					session.Attempt.TeilNumber,
+					session.Catalogue,
+					session.Messages,
+					transcribedText,
+				)
+				if rErr == nil && !res.Fallback && len(res.Parts) > 0 {
+					llmResp = res.Response
+					responseData.Parts = res.Parts
+					responseData.ExamEnded = res.ExamEnded
+					routed = true
+					sLog.Info("Decisions router succeeded", "parts_count", len(res.Parts), "exam_ended", res.ExamEnded)
+				} else if rErr != nil {
+					sLog.Warn("turn router error, falling back to groq chat", "error", rErr)
+				} else if res.Fallback {
+					sLog.Info("turn router requested fallback to groq chat")
+				}
 			}
 
-			var responseData struct {
-				Parts     []map[string]interface{} `json:"parts"`
-				ExamEnded bool                     `json:"exam_ended"`
-			}
-			if err := json.Unmarshal([]byte(llmResp), &responseData); err != nil {
-				sLog.Error("failed to parse LLM JSON", "error", err)
-				responseData.Parts = []map[string]interface{}{}
+			// Fallback path: Groq Chat
+			if !routed {
+				chatResp, err := chat.Chat(turnCtx, session.Messages)
+				if err != nil {
+					sLog.Error("chat failed", "error", err)
+					res := ledger.RecordTurn(services.TurnInput{
+						Key: session.Attempt, Status: services.TurnChatFailed, UserText: transcribedText,
+						Usage: usage.Snapshot(), AudioIn: audioBytes,
+					})
+					arch.Enqueue(res.Batch)
+					_ = conn.sendJSON(map[string]string{"status": config.StatusError, "error": "chat failed"})
+					continue
+				}
+				llmResp = chatResp
+				if err := json.Unmarshal([]byte(llmResp), &responseData); err != nil {
+					sLog.Error("failed to parse LLM JSON", "error", err)
+					responseData.Parts = []map[string]interface{}{}
+				}
 			}
 
 			// Generate audio for all parts concurrently

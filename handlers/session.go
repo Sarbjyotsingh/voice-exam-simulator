@@ -35,6 +35,7 @@ type Session struct {
 	SecondarySpeaker string
 	Messages         []services.Message
 	Attempt          services.AttemptKey
+	Catalogue        *services.ScriptCatalogue
 }
 
 func parseInit(raw []byte, id string, maxHistory int) (*Session, error) {
@@ -48,11 +49,23 @@ func parseInit(raw []byte, id string, maxHistory int) (*Session, error) {
 		sysPrompt = config.DefaultSystemPrompt
 	}
 
-	fullSystemPrompt := sysPrompt + "\nConstraints: " + data.UserInstructions + config.JSONInstruction
+	// Avoid duplicating user_instructions if already contained in sysPrompt
+	fullSystemPrompt := sysPrompt
+	if data.UserInstructions != "" && !strings.Contains(sysPrompt, data.UserInstructions) {
+		fullSystemPrompt += "\nConstraints: " + data.UserInstructions
+	}
+	if !strings.Contains(fullSystemPrompt, "parts") {
+		fullSystemPrompt += config.JSONInstruction
+	}
 
 	msgs := []services.Message{
 		{Role: "system", Content: fullSystemPrompt},
 	}
+
+	// Parse pre-recorded script catalogue if available
+	primaryName := data.PrimarySpeaker
+	secondaryName := data.SecondarySpeaker
+	catalogue, _ := services.ParseScriptCatalogue(sysPrompt, primaryName, secondaryName)
 
 	var hist []services.Message
 	for _, rawMsg := range data.History {
@@ -117,6 +130,7 @@ func parseInit(raw []byte, id string, maxHistory int) (*Session, error) {
 		PrimarySpeaker:   primary,
 		SecondarySpeaker: secondary,
 		Messages:         msgs,
+		Catalogue:        catalogue,
 		Attempt: services.AttemptKey{
 			UserID:     data.UserID,
 			ExamID:     data.ExamID,

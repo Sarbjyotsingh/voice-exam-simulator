@@ -17,6 +17,11 @@ const (
 	DefaultGroqInputPer1MUSD            = 0.15  // Groq chat model input, per 1M tokens
 	DefaultGroqOutputPer1MUSD           = 0.60  // Groq chat model output, per 1M tokens
 	DefaultElevenLabsFlashPer1KCharsUSD = 0.05  // eleven_flash_v2_5 = 0.5 credit/char
+	DefaultDecisionsInputPer1MUSD       = 0.10  // OpenAI Decisions API (gpt-6-luna), per 1M input tokens
+
+	// OpenAI endpoints and model parameters
+	OpenAIBaseURL        = "https://api.openai.com/v1"
+	OpenAIDecisionsModel = "gpt-6-luna"
 
 	// WebSocket Status Codes
 	StatusInitialized        = "initialized"

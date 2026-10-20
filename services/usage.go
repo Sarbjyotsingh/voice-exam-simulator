@@ -14,14 +14,15 @@ type TTSCall struct {
 	Characters int    `json:"characters"`
 }
 
-// Usage collects raw upstream usage (STT seconds, LLM tokens, TTS characters) for one unit
-// of work (a single turn or a single evaluation). It is safe for concurrent use and all
+// Usage collects raw upstream usage (STT seconds, LLM tokens, TTS characters, Decisions tokens)
+// for one unit of work (a single turn or a single evaluation). It is safe for concurrent use and all
 // methods are nil-safe so services work unchanged when no collector is attached.
 type Usage struct {
 	mu               sync.Mutex
 	STTSeconds       float64
 	PromptTokens     int
 	CompletionTokens int
+	DecisionTokens   int
 	TTS              []TTSCall
 }
 
@@ -58,6 +59,15 @@ func (u *Usage) AddLLM(prompt, completion int) {
 	u.mu.Unlock()
 }
 
+func (u *Usage) AddDecisions(tokens int) {
+	if u == nil {
+		return
+	}
+	u.mu.Lock()
+	u.DecisionTokens += tokens
+	u.mu.Unlock()
+}
+
 func (u *Usage) AddTTS(voiceID, text string) {
 	if u == nil {
 		return
@@ -72,6 +82,7 @@ type UsageSnapshot struct {
 	STTSeconds       float64   `json:"stt_audio_seconds"`
 	PromptTokens     int       `json:"prompt_tokens"`
 	CompletionTokens int       `json:"completion_tokens"`
+	DecisionTokens   int       `json:"decision_tokens"`
 	TTSCharacters    int       `json:"tts_characters"`
 	TTSCalls         []TTSCall `json:"tts_calls,omitempty"`
 }
@@ -86,6 +97,7 @@ func (u *Usage) Snapshot() UsageSnapshot {
 		STTSeconds:       u.STTSeconds,
 		PromptTokens:     u.PromptTokens,
 		CompletionTokens: u.CompletionTokens,
+		DecisionTokens:   u.DecisionTokens,
 		TTSCalls:         append([]TTSCall(nil), u.TTS...),
 	}
 	for _, c := range u.TTS {
@@ -99,6 +111,7 @@ type Pricing struct {
 	WhisperPerHour   float64
 	LLMInputPer1M    float64
 	LLMOutputPer1M   float64
+	DecisionsPer1M   float64
 	TTSPer1KChars    float64
 	VoiceMultipliers map[string]float64
 }
@@ -108,6 +121,7 @@ func NewPricing(cfg config.Config) Pricing {
 		WhisperPerHour:   cfg.WhisperPricePerHourUSD,
 		LLMInputPer1M:    cfg.GroqInputPer1MUSD,
 		LLMOutputPer1M:   cfg.GroqOutputPer1MUSD,
+		DecisionsPer1M:   cfg.DecisionsInputPer1MUSD,
 		TTSPer1KChars:    cfg.ElevenLabsPer1KCharsUSD,
 		VoiceMultipliers: cfg.VoiceCostMultipliers,
 	}
@@ -136,6 +150,13 @@ func (p Pricing) LLM(prompt, completion int) float64 {
 	return float64(prompt)/1e6*p.LLMInputPer1M + float64(completion)/1e6*p.LLMOutputPer1M
 }
 
+func (p Pricing) Decisions(tokens int) float64 {
+	if tokens <= 0 {
+		return 0
+	}
+	return float64(tokens) / 1e6 * p.DecisionsPer1M
+}
+
 func (p Pricing) TTS(calls []TTSCall) float64 {
 	var total float64
 	for _, c := range calls {
@@ -150,21 +171,23 @@ func (p Pricing) TTS(calls []TTSCall) float64 {
 
 // Cost is a USD breakdown. Only the components relevant to a unit of work are non-zero.
 type Cost struct {
-	STT     float64 `json:"stt_cost"`
-	ChatLLM float64 `json:"chat_llm_cost"`
-	EvalLLM float64 `json:"eval_llm_cost"`
-	TTS     float64 `json:"tts_cost"`
-	Total   float64 `json:"total_cost"`
+	STT       float64 `json:"stt_cost"`
+	ChatLLM   float64 `json:"chat_llm_cost"`
+	Decisions float64 `json:"decisions_cost,omitempty"`
+	EvalLLM   float64 `json:"eval_llm_cost"`
+	TTS       float64 `json:"tts_cost"`
+	Total     float64 `json:"total_cost"`
 }
 
-// TurnCost prices a conversational turn (STT + chat LLM + dynamic TTS).
+// TurnCost prices a conversational turn (STT + chat LLM + Decisions + dynamic TTS).
 func (p Pricing) TurnCost(s UsageSnapshot) Cost {
 	c := Cost{
-		STT:     p.STT(sttBilledSeconds(s.STTSeconds)),
-		ChatLLM: p.LLM(s.PromptTokens, s.CompletionTokens),
-		TTS:     p.TTS(s.TTSCalls),
+		STT:       p.STT(sttBilledSeconds(s.STTSeconds)),
+		ChatLLM:   p.LLM(s.PromptTokens, s.CompletionTokens),
+		Decisions: p.Decisions(s.DecisionTokens),
+		TTS:       p.TTS(s.TTSCalls),
 	}
-	c.Total = c.STT + c.ChatLLM + c.TTS
+	c.Total = c.STT + c.ChatLLM + c.Decisions + c.TTS
 	return c
 }
 

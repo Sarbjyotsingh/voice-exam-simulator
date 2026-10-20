@@ -21,3 +21,14 @@ type Evaluator interface {
 type Synthesizer interface {
 	Synthesize(ctx context.Context, text, voiceID string) ([]byte, error)
 }
+
+type TurnRouter interface {
+	RouteTurn(
+		ctx context.Context,
+		level string,
+		teilNumber int,
+		cat *services.ScriptCatalogue,
+		history []services.Message,
+		userUtterance string,
+	) (services.RouteResult, error)
+}

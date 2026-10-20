@@ -40,10 +40,18 @@ func main() {
 	arch := services.NewArchiver(ctx, cfg, log)
 	ledger := services.NewLedger(cfg, log)
 
+	var router handlers.TurnRouter
+	if cfg.OpenAIAPIKey != "" {
+		decisionsClient := services.NewOpenAIDecisions(cfg, httpClient)
+		specs := services.NewSpecRegistry()
+		router = services.NewDecisionRouter(decisionsClient, specs, log)
+		log.Info("OpenAI Decisions router initialized", "model", config.OpenAIDecisionsModel, "enabled_teils", cfg.DecisionsEnabledTeils)
+	}
+
 	mux := http.NewServeMux()
 	mux.HandleFunc("GET /health", handlers.Health)
 	mux.Handle("POST /evaluate", handlers.NewEvaluate(groq, ledger, arch, log))
-	mux.Handle("GET /exam", handlers.NewExam(cfg, groq, groq, tts, arch, ledger, log))
+	mux.Handle("GET /exam", handlers.NewExam(cfg, groq, groq, tts, router, arch, ledger, log))
 
 	srv := &http.Server{
 		Addr:              cfg.Addr(),

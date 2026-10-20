@@ -31,8 +31,15 @@ type Config struct {
 	GroqInputPer1MUSD       float64
 	GroqOutputPer1MUSD      float64
 	ElevenLabsPer1KCharsUSD float64
+	DecisionsInputPer1MUSD  float64
 	VoiceCostMultipliers    map[string]float64
 	LedgerDir               string // on-disk per-user cost ledger (mount a volume in production)
+
+	// OpenAI Decisions API (fast non-autoregressive turn router)
+	OpenAIAPIKey          string
+	UseDecisionsAPI       bool
+	DecisionsMaxConcurrency int
+	DecisionsEnabledTeils map[int]bool
 }
 
 func MustLoad() Config {
@@ -58,8 +65,14 @@ func MustLoad() Config {
 		GroqInputPer1MUSD:       getEnvFloat("COST_GROQ_INPUT_PER_1M_USD", DefaultGroqInputPer1MUSD),
 		GroqOutputPer1MUSD:      getEnvFloat("COST_GROQ_OUTPUT_PER_1M_USD", DefaultGroqOutputPer1MUSD),
 		ElevenLabsPer1KCharsUSD: getEnvFloat("COST_ELEVENLABS_PER_1K_CHARS_USD", DefaultElevenLabsFlashPer1KCharsUSD),
+		DecisionsInputPer1MUSD:  getEnvFloat("COST_DECISIONS_INPUT_PER_1M_USD", DefaultDecisionsInputPer1MUSD),
 		VoiceCostMultipliers:    loadVoiceMultipliers(os.Getenv("ELEVENLABS_VOICE_MULTIPLIERS")),
 		LedgerDir:               getEnv("LEDGER_DIR", "./data/ledger"),
+
+		OpenAIAPIKey:            os.Getenv("OPENAI_API_KEY"),
+		UseDecisionsAPI:         getEnvBool("USE_DECISIONS_API", os.Getenv("OPENAI_API_KEY") != ""),
+		DecisionsMaxConcurrency: getEnvInt("DECISIONS_MAX_CONCURRENCY", 8),
+		DecisionsEnabledTeils:   loadEnabledTeils(getEnv("DECISIONS_ENABLED_TEILS", "1")),
 	}
 
 	if c.GroqAPIKey == "" {
@@ -125,6 +138,20 @@ func loadVoiceMultipliers(override string) map[string]float64 {
 		if f, err := strconv.ParseFloat(strings.TrimSpace(kv[1]), 64); err == nil && f > 0 {
 			m[strings.TrimSpace(kv[0])] = f
 		}
+	}
+	return m
+}
+
+func loadEnabledTeils(s string) map[int]bool {
+	m := make(map[int]bool)
+	for _, part := range strings.Split(s, ",") {
+		part = strings.TrimSpace(part)
+		if n, err := strconv.Atoi(part); err == nil && n > 0 {
+			m[n] = true
+		}
+	}
+	if len(m) == 0 {
+		m[1] = true
 	}
 	return m
 }
