@@ -71,8 +71,9 @@ func NewSpecRegistry() *SpecRegistry {
 	r := &SpecRegistry{
 		specs: make(map[string]*TeilDecisionSpec),
 	}
-	// Register built-in B1 Teil 1 spec
+	// Register built-in B1 Teil 1 & Teil 2 specs
 	r.Register(DefaultB1Teil1Spec())
+	r.Register(DefaultB1Teil2Spec())
 	return r
 }
 
@@ -158,6 +159,69 @@ func DefaultB1Teil1Spec() *TeilDecisionSpec {
 			ClarifyQuestion: "CLAR_Q1",
 			SilenceQuestion: "SIL_Q1",
 			ThanksExpSlot:   "EXP_15",
+		},
+	}
+}
+
+// DefaultB1Teil2Spec returns the official Telc B1 Teil 2 (Gespräch über ein Thema) specification.
+func DefaultB1Teil2Spec() *TeilDecisionSpec {
+	return &TeilDecisionSpec{
+		Level:          "B1",
+		TeilNumber:     2,
+		TeilName:       "Teil 2: Gespräch über ein Thema",
+		ContextSummary: "Telc B1 German speaking exam, Teil 2 (presenting a stimulus text opinion and discussing the topic with a partner).",
+		FallbackInstruction: "Did the learner ask a specific, unusual question to the partner that CANNOT be answered by the partner's standard topic clips (stimulus text presentation, personal opinion on the topic, daily habits/experiences in Germany, comparison with home country, or pros/cons/compromises)? Answer true ONLY if pre-recorded topic clips cannot reasonably answer what the learner asked.",
+		FallbackThreshold:   0.70,
+
+		Topics: []TopicSpec{
+			{Key: "presentation", SlotCode: "PRES", Description: "summarizing the stimulus text / person's quote (name, age, profession, opinion, reason)", Required: true},
+			{Key: "opinion", SlotCode: "OPIN", Description: "personal opinion and stance on the topic", Required: true},
+			{Key: "habits_germany", SlotCode: "HAB", Description: "personal habits and everyday experiences here in Germany", Required: true},
+			{Key: "home_country", SlotCode: "HOME", Description: "comparison with how the topic is in their home country (Heimatland)", Required: true},
+			{Key: "pros_cons", SlotCode: "PRO", Description: "advantages, disadvantages, prices, environment, or practical solutions/compromises", Required: true},
+		},
+
+		InitialCoveredTopics: []string{"presentation"},
+		NoSelfAnswerOnTurn1:  []string{"PRES", "T2OPEN"},
+
+		Reactions: []ReactionSpec{
+			{Code: "EXP_21", Description: "strong agreement: clear argument or sensible opinion (Da hast du absolut recht.)"},
+			{Code: "EXP_22", Description: "enthusiastic agreement: shared viewpoint (Ganz genau, das sehe ich genauso.)"},
+			{Code: "EXP_23", Description: "polite formal agreement with opinion (Ich stimme dir vollkommen zu.)"},
+			{Code: "EXP_24", Description: "natural agreement with everyday fact (Ja, das stimmt auf jeden Fall.)"},
+			{Code: "EXP_25", Description: "validating an important argument like health/money/time/children (Das ist ein sehr wichtiges Argument.)"},
+			{Code: "EXP_26", Description: "shared habit or similar experience in Germany/home country (Ja, das ist bei mir ganz ähnlich.)"},
+			{Code: "EXP_27", Description: "polite disagreement: opposite preference (Da bin ich etwas anderer Meinung.)"},
+			{Code: "EXP_28", Description: "gentle disagreement or nuance (Das sehe ich nicht ganz so.)"},
+			{Code: "EXP_29", Description: "personal contrast in habits (Ehrlich gesagt ist das bei mir ein bisschen anders.)"},
+			{Code: "EXP_30", Description: "balanced counter-perspective (Das stimmt zwar, aber es gibt auch eine andere Seite.)"},
+			{Code: "EXP_31", Description: "weighing pros and cons (Einerseits hast du recht, aber andererseits kommt es auf die Situation an.)"},
+			{Code: "EXP_32", Description: "curious engagement: home country comparison or interesting anecdote (Ach wirklich? Das ist ja interessant!)"},
+			{Code: "EXP_33", Description: "appreciative engagement: good point raised (Guter Punkt! Darüber habe ich auch schon nachgedacht.)"},
+			{Code: "EXP_34", Description: "empathetic validation: stressful/expensive/convenient experience (Das kann ich mir sehr gut vorstellen.)"},
+			{Code: "EXP_35", Description: "understanding why someone prefers an option (Ja, das kann ich gut nachvollziehen.)"},
+			{Code: "EXP_36", Description: "acknowledging stimulus text summary on Turn 1 (Danke für die Zusammenfassung! Das ist eine interessante Meinung.)"},
+			{Code: "EXP_37", Description: "neutral clarification acknowledgment (Ach so, alles klar, ich verstehe.)"},
+			{Code: "EXP_38", Description: "warm response to 'Danke' mid-discussion (Gerne! Das macht wirklich Spaß, mit dir darüber zu diskutieren.)"},
+		},
+		NoRepeatReactions: true,
+
+		MinTopicsForWrapUp:  5,
+		HasExaminerFollowUp: true,
+		FollowUpSlots: []FollowUpRule{
+			{SlotCode: "T2_FOLLOW_01", RequiredTopicCheck: ""}, // Default Teil 2 examiner follow-up question
+		},
+		PartnerCloseSlot:  "T2CLOSE_01",
+		ExaminerOutroSlot: "T2_OUTRO_01",
+
+		Interventions: InterventionSpec{
+			OffTopicSlot:    "T2_INT_TOPIC",
+			PolitenessSlot:  "T2_INT_POLITE",
+			DialogueSlot:    "T2_INT_DIALOG",
+			ClarifyExpSlot:  "EXP_37",
+			ClarifyQuestion: "T2CLAR_Q1",
+			SilenceQuestion: "T2SIL_Q1",
+			ThanksExpSlot:   "EXP_38",
 		},
 	}
 }

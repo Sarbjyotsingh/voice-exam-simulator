@@ -72,7 +72,7 @@ func MustLoad() Config {
 		OpenAIAPIKey:            os.Getenv("OPENAI_API_KEY"),
 		UseDecisionsAPI:         getEnvBool("USE_DECISIONS_API", os.Getenv("OPENAI_API_KEY") != ""),
 		DecisionsMaxConcurrency: getEnvInt("DECISIONS_MAX_CONCURRENCY", 8),
-		DecisionsEnabledTeils:   loadEnabledTeils(getEnv("DECISIONS_ENABLED_TEILS", "1")),
+		DecisionsEnabledTeils:   loadEnabledTeils(getEnv("DECISIONS_ENABLED_TEILS", "1,2")),
 	}
 
 	if c.GroqAPIKey == "" {

@@ -67,6 +67,149 @@ func TestParseScriptCatalogueAll5Samples(t *testing.T) {
 	}
 }
 
+func TestParseScriptCatalogueTeil2All16Samples(t *testing.T) {
+	samples := []struct {
+		folder    string
+		primary   string
+		secondary string
+		expPrefix string
+	}{
+		{"B1_Exam_Sample_01", "Leyla", "Herr Wagner", "DE_LEY_"},
+		{"B1_Exam_Sample_02", "Omar", "Frau Fischer", "DE_OMA_"},
+		{"B1_Exam_Sample_03", "Elena", "Frau Erdoğan", "DE_ELE_"},
+		{"B1_Exam_Sample_04", "Mateo", "Herr Richter", "DE_MAT_"},
+		{"B1_Exam_Sample_05", "Janusz", "Frau Dr. Meyer", "DE_JAN_"},
+		{"B1_Exam_Sample_06", "Leyla", "Herr Wagner", "DE_LEY_"},
+		{"B1_Exam_Sample_07", "Omar", "Frau Fischer", "DE_OMA_"},
+		{"B1_Exam_Sample_08", "Elena", "Frau Erdoğan", "DE_ELE_"},
+		{"B1_Exam_Sample_09", "Leyla", "Herr Wagner", "DE_LEY_"},
+		{"B1_Exam_Sample_10", "Omar", "Frau Fischer", "DE_OMA_"},
+		{"B1_Exam_Sample_11", "Elena", "Frau Erdoğan", "DE_ELE_"},
+		{"B1_Exam_Sample_12", "Mateo", "Herr Richter", "DE_MAT_"},
+		{"B1_Exam_Sample_13", "Janusz", "Frau Dr. Meyer", "DE_JAN_"},
+		{"B1_Exam_Sample_14", "Leyla", "Herr Wagner", "DE_LEY_"},
+		{"B1_Exam_Sample_15", "Omar", "Frau Fischer", "DE_OMA_"},
+		{"B1_Exam_Sample_16", "Elena", "Frau Erdoğan", "DE_ELE_"},
+	}
+
+	for _, s := range samples {
+		p := filepath.Join("..", "exam_generator", "output_s3", s.folder, "Teil_2", "script.json")
+		b, err := os.ReadFile(p)
+		if err != nil {
+			t.Fatalf("could not read %s: %v", p, err)
+		}
+
+		var scriptData struct {
+			Dialogues []map[string]interface{} `json:"dialogues"`
+		}
+		if err := json.Unmarshal(b, &scriptData); err != nil {
+			t.Fatalf("failed to decode %s: %v", p, err)
+		}
+		dialoguesJSON, _ := json.Marshal(scriptData.Dialogues)
+		wrappedPrompt := "AVAILABLE PRE-RECORDED AUDIO SCRIPT:\n" + string(dialoguesJSON) + "\n\n### 1. PERSONAS\n..."
+
+		cat, err := ParseScriptCatalogue(wrappedPrompt, s.primary, s.secondary)
+		if err != nil {
+			t.Fatalf("[%s/Teil_2] ParseScriptCatalogue failed: %v", s.folder, err)
+		}
+
+		if len(cat.ClipsByID) != 44 {
+			t.Errorf("[%s/Teil_2] expected 44 clips, got %d", s.folder, len(cat.ClipsByID))
+		}
+		if len(cat.PartnerExp) != 18 {
+			t.Errorf("[%s/Teil_2] expected 18 EXP clips, got %d", s.folder, len(cat.PartnerExp))
+		}
+		for _, required := range []string{"PRES", "OPIN", "HAB", "HOME", "PRO"} {
+			if _, ok := cat.PartnerQuestions[required]; !ok {
+				t.Errorf("[%s/Teil_2] missing PartnerQuestion for %s", s.folder, required)
+			}
+			if _, ok := cat.PartnerAnswers[required]; !ok {
+				t.Errorf("[%s/Teil_2] missing PartnerAnswer for %s", s.folder, required)
+			}
+		}
+		for _, required := range []string{"T2_INT_TOPIC", "T2_INT_POLITE", "T2_INT_DIALOG", "T2_OUTRO_01", "T2_FOLLOW_01"} {
+			if _, ok := cat.ExaminerClips[required]; !ok {
+				t.Errorf("[%s/Teil_2] missing ExaminerClip for %s", s.folder, required)
+			}
+		}
+	}
+}
+
+func TestDecisionRouterTeil2DeterministicComposition(t *testing.T) {
+	p := filepath.Join("..", "exam_generator", "output_s3", "B1_Exam_Sample_01", "Teil_2", "script.json")
+	b, err := os.ReadFile(p)
+	if err != nil {
+		t.Fatalf("could not read %s: %v", p, err)
+	}
+	var scriptData struct {
+		Dialogues []map[string]interface{} `json:"dialogues"`
+	}
+	_ = json.Unmarshal(b, &scriptData)
+	dialoguesJSON, _ := json.Marshal(scriptData.Dialogues)
+	wrappedPrompt := "AVAILABLE PRE-RECORDED AUDIO SCRIPT:\n" + string(dialoguesJSON) + "\n\n### 1. PERSONAS\n..."
+
+	cat, err := ParseScriptCatalogue(wrappedPrompt, "Leyla", "Herr Wagner")
+	if err != nil {
+		t.Fatalf("failed to parse: %v", err)
+	}
+
+	spec := DefaultB1Teil2Spec()
+	router := &DecisionRouter{}
+
+	// Turn 1: Candidate summarizes Hannes Leivig -> Partner must react with EXP_36, share OPIN_A1, and ask OPIN_Q1
+	st1 := ConversationState{CoveredTopics: map[string]bool{"presentation": true}, TurnCount: 1}
+	ans1 := map[string]DecisionAnswer{
+		"topic_addressed":       {Choice: "presentation"},
+		"reaction_clip":         {Choice: "EXP_21"},
+		"learner_asked_partner": {Probability: floatPtr(0.0)},
+	}
+	res1, err := router.composeNormalTurn(spec, cat, st1, ans1)
+	if err != nil || res1.Fallback || len(res1.Parts) != 3 {
+		t.Fatalf("expected 3 parts on Teil 2 Turn 1 presentation, got %+v", res1.Parts)
+	}
+	if res1.Parts[0]["audio_id"] != "DE_LEY_EXP_36" {
+		t.Errorf("expected DE_LEY_EXP_36, got %v", res1.Parts[0]["audio_id"])
+	}
+	if res1.Parts[1]["audio_id"] != "DE_LEYT1A_OPIN_A1" {
+		t.Errorf("expected DE_LEYT1A_OPIN_A1, got %v", res1.Parts[1]["audio_id"])
+	}
+	if res1.Parts[2]["audio_id"] != "DE_LEYT1_OPIN_Q1" {
+		t.Errorf("expected DE_LEYT1_OPIN_Q1, got %v", res1.Parts[2]["audio_id"])
+	}
+
+	// Turn 1 Premature-Discussion Guard: if learner skips text summary and gives personal opinion on Turn 1 -> [DE_LEY_EXP_27, DE_LEY_PRES_Q2]
+	ansPremature := map[string]DecisionAnswer{
+		"topic_addressed":       {Choice: "opinion"},
+		"reaction_clip":         {Choice: "EXP_21"},
+		"learner_asked_partner": {Probability: floatPtr(0.0)},
+	}
+	resPremature, err := router.composeNormalTurn(spec, cat, st1, ansPremature)
+	if err != nil || resPremature.Fallback || len(resPremature.Parts) != 2 {
+		t.Fatalf("expected 2 parts on Teil 2 Turn 1 premature discussion, got %+v", resPremature.Parts)
+	}
+	if resPremature.Parts[0]["audio_id"] != "DE_LEY_EXP_27" || resPremature.Parts[1]["audio_id"] != "DE_LEY_PRES_Q2" {
+		t.Errorf("expected [DE_LEY_EXP_27, DE_LEY_PRES_Q2], got %+v", resPremature.Parts)
+	}
+
+	// Turn 5: Once all 5 required slots (presentation, opinion, habits_germany, home_country, pros_cons) are covered -> T2CLOSE_01 + T2_FOLLOW_01
+	stAll5 := ConversationState{
+		CoveredTopics: map[string]bool{
+			"presentation": true, "opinion": true, "habits_germany": true,
+			"home_country": true, "pros_cons": true,
+		},
+		TurnCount: 5,
+	}
+	ansWrap := map[string]DecisionAnswer{
+		"topic_addressed":       {Choice: "pros_cons"},
+		"reaction_clip":         {Choice: "EXP_25"},
+		"learner_asked_partner": {Probability: floatPtr(0.0)},
+	}
+	resWrap, _ := router.composeNormalTurn(spec, cat, stAll5, ansWrap)
+	if len(resWrap.Parts) != 3 || resWrap.Parts[1]["audio_id"] != "DE_LEY_T2CLOSE_01" || resWrap.Parts[2]["audio_id"] != "DE_EX1T1_T2_FOLLOW_01" {
+		t.Fatalf("expected [DE_LEY_EXP_25, DE_LEY_T2CLOSE_01, DE_EX1T1_T2_FOLLOW_01] on Teil 2 wrap-up, got %+v", resWrap.Parts)
+	}
+}
+
 func TestDecisionRouterDeterministicComposition(t *testing.T) {
 	p := filepath.Join("..", "exam_generator", "output_s3", "B1_Exam_Sample_01", "Teil_1", "script.json")
 	b, err := os.ReadFile(p)

@@ -126,12 +126,23 @@ func ParseScriptCatalogue(rawScript string, primary, secondary string) (*ScriptC
 			} else if strings.Contains(id, "_EX") || strings.Contains(id, "DE_W_") {
 				// Examiner clip: find slot name
 				// e.g. DE_EX1_FOLLOW_01 -> "FOLLOW_01"
+				// e.g. DE_EX1_T2_FOLLOW_01 -> "T2_FOLLOW_01" (and fallback "FOLLOW_01")
 				// e.g. DE_EX1_INT_TOPIC -> "INT_TOPIC"
 				// e.g. DE_EX1_OUTRO_01 -> "OUTRO_01"
-				for _, slot := range []string{"FOLLOW_01", "FOLLOW_02", "FOLLOW_03", "FOLLOW_04", "FOLLOW_05",
-					"INT_TOPIC", "INT_POLITE", "INT_DIALOG", "OUTRO_01", "OUTRO_02", "INTRO_01", "INTRO_02"} {
+				for _, slot := range []string{
+					"T2_FOLLOW_01", "T2_FOLLOW_02", "T2_INT_TOPIC", "T2_INT_POLITE", "T2_INT_DIALOG", "T2_OUTRO_01", "T2_INTRO_01",
+					"FOLLOW_01", "FOLLOW_02", "FOLLOW_03", "FOLLOW_04", "FOLLOW_05",
+					"INT_TOPIC", "INT_POLITE", "INT_DIALOG", "OUTRO_01", "OUTRO_02", "INTRO_01", "INTRO_02",
+				} {
 					if strings.Contains(id, slot) {
 						cat.ExaminerClips[slot] = clip
+						// Also index under the canonical base slot (without T2_ prefix) if not already set
+						if strings.HasPrefix(slot, "T2_") {
+							baseSlot := strings.TrimPrefix(slot, "T2_")
+							if _, exists := cat.ExaminerClips[baseSlot]; !exists {
+								cat.ExaminerClips[baseSlot] = clip
+							}
+						}
 						break
 					}
 				}
@@ -613,16 +624,53 @@ func (r *DecisionRouter) composeNormalTurn(
 		}
 	}
 
+	// Teil 2 Turn 1 Premature-Discussion Guard:
+	// If on Turn 1 the learner skips summarizing their stimulus card and jumps straight into personal opinion/habits,
+	// gently remind them to present their quote card first using EXP_27 + PRES_Q2.
+	if st.TurnCount == 1 && spec.TeilNumber == 2 &&
+		(topicAddressed == "opinion" || topicAddressed == "habits_germany" || topicAddressed == "home_country" || topicAddressed == "pros_cons") {
+		if expClip, ok := cat.PartnerExp["EXP_27"]; ok {
+			parts = append(parts, map[string]interface{}{
+				"audio_id": expClip.AudioID,
+				"text":     expClip.Text,
+				"speaker":  expClip.Speaker,
+				"role":     expClip.Role,
+			})
+		}
+		if presQ2, ok := cat.PartnerQ2["PRES"]; ok {
+			parts = append(parts, map[string]interface{}{
+				"audio_id": presQ2.AudioID,
+				"text":     presQ2.Text,
+				"speaker":  presQ2.Speaker,
+				"role":     presQ2.Role,
+			})
+			respJSON, _ := json.Marshal(map[string]interface{}{
+				"exam_ended": false,
+				"parts":      parts,
+			})
+			return RouteResult{
+				Fallback:  false,
+				Response:  string(respJSON),
+				ExamEnded: false,
+				Parts:     parts,
+			}, nil
+		}
+	}
+
 	// 1. Part 1: Reaction Expression
 	reactionCode := ""
 	if rx, ok := ans["reaction_clip"]; ok && rx.Choice != "" {
 		reactionCode = rx.Choice
 	}
-	// Turn 1 special rule: if learner just shared their name, use EXP_11 ("Das freut mich!")
+	// Turn 1 / Presentation transition special rule:
+	// - In Teil 1: if learner just shared their name on Turn 1, use EXP_11 ("Das freut mich!")
+	// - In Teil 2: when learner summarizes their stimulus text (before OPIN_A1 is used), use EXP_36 ("Danke für die Zusammenfassung! Das ist eine interessante Meinung.")
 	if st.TurnCount <= 1 && topicAddressed == "name" {
 		reactionCode = "EXP_11"
+	} else if spec.TeilNumber == 2 && topicAddressed == "presentation" && !st.UsedAnswers["OPIN"] {
+		reactionCode = "EXP_36"
 	}
-	// Mid-exam "Danke": use EXP_15 ("Gerne! Kein Problem.")
+	// Mid-exam "Danke": use spec.Interventions.ThanksExpSlot
 	if topicAddressed == "thanks" {
 		reactionCode = spec.Interventions.ThanksExpSlot
 	}
@@ -639,10 +687,17 @@ func (r *DecisionRouter) composeNormalTurn(
 		}
 	}
 
-	// 2. Part 2: Partner Answer (only if learner asked a question, or shared origin on Turn 1)
+	// 2. Part 2: Partner Answer (only if learner asked a question, or shared origin on Turn 1 in Teil 1, or presented text in Teil 2)
 	shouldAnswer := learnerAsked
 	if st.TurnCount <= 1 && (topicAddressed == "origin" || originMentionedOnTurn1) {
 		shouldAnswer = true
+	}
+	if spec.TeilNumber == 2 && topicAddressed == "presentation" && !st.UsedAnswers["OPIN"] {
+		// In Teil 2, right after the candidate summarizes their stimulus text,
+		// the partner transitions into the discussion by stating their own opinion (OPIN_A1)
+		// and asking for the candidate's personal opinion (OPIN_Q1).
+		shouldAnswer = true
+		answerSlot = "OPIN"
 	}
 
 	// Turn 1 anti-self-reply: partner must NEVER play NAME_A1 or DUSIE_A1 on Turn 1
@@ -761,6 +816,13 @@ func (r *DecisionRouter) composeNormalTurn(
 				"text":     backQ.Text,
 				"speaker":  backQ.Speaker,
 				"role":     backQ.Role,
+			})
+		} else if backQ2, ok := cat.PartnerQuestions["T2BACK"]; ok {
+			parts = append(parts, map[string]interface{}{
+				"audio_id": backQ2.AudioID,
+				"text":     backQ2.Text,
+				"speaker":  backQ2.Speaker,
+				"role":     backQ2.Role,
 			})
 		}
 	}

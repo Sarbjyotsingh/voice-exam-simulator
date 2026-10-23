@@ -35,8 +35,8 @@ const (
 	PingPeriod = 30 * time.Second
 	PongWait   = 90 * time.Second
 
-	// Groq Whisper initial_prompt to bias STT towards Telc B1 speaking vocabulary and reduce phonetic hallucinations
-	GroqWhisperPrompt = "Mündliche Prüfung telc Deutsch B1, Teil 1 Kontaktaufnahme. Hallo, wollen wir du oder Sie sagen? Ich heiße, mein Vorname, mein Nachname, Familienname, buchstabieren. Ich komme aus, ich wohne in, Wohnung, Wohngemeinschaft, WG, verheiratet, ledig, Familie, Kinder. Ich arbeite als Softwareentwickler, Ausbildung, Studium, Beruf, Muttersprache, Integrationskurs, Sprachschule, Volkshochschule, Freizeit, Hobbys, spazieren gehen. Und du? Woher kommst du? Wo wohnst du? Was machst du beruflich?"
+	// Groq Whisper initial_prompt to bias STT towards Telc B1 speaking vocabulary and reduce phonetic hallucinations (must be <= 896 chars)
+	GroqWhisperPrompt = "telc Deutsch B1, Teil 1, Teil 2. Wollen wir du oder Sie sagen? Vorname, Familienname, buchstabieren, WG, Softwareentwickler, Muttersprache, Integrationskurs, Hobbys, spazieren gehen. Auf meinem Zettel steht, Hannes Leivig, Bettina Sommer, Lena Becker, Markus Weber, Sabine Lindner, Thomas Keller, Julia Neumann, Tobias Berg, Ilona Schmitz, Stefan Baum, Alex Müller, Ayşe Özel, Maria Lupo, Luca Giotto, Max Krüger, Melanie Roth. Meiner Meinung nach, ich stimme dir zu, Vorteil, Nachteil, Heimatland, Biomarkt, Fast Food, Verkehrsmittel, Deutschlandticket, Pauschalreise, Rucksackreise, Online-Shopping, Großstadt, Dorf, soziale Medien, Fitnessstudio, Rauchverbot. Und du? Wie siehst du das?"
 
 	// Default System Prompts
 	DefaultSystemPrompt = "You are a helpful German language speaking partner."

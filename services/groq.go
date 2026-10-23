@@ -56,7 +56,11 @@ func (g *Groq) Transcribe(ctx context.Context, wav []byte) (string, error) {
 	defer putBuffer(buf)
 	writer := multipart.NewWriter(buf)
 
-	part, err := writer.CreateFormFile("file", "audio.wav")
+	filename := "audio.wav"
+	if len(wav) >= 8 && string(wav[4:8]) == "ftyp" {
+		filename = "audio.m4a"
+	}
+	part, err := writer.CreateFormFile("file", filename)
 	if err != nil {
 		return "", err
 	}
@@ -64,10 +68,15 @@ func (g *Groq) Transcribe(ctx context.Context, wav []byte) (string, error) {
 		return "", err
 	}
 
+	prompt := config.GroqWhisperPrompt
+	if len(prompt) > 890 {
+		prompt = prompt[:890]
+	}
+
 	_ = writer.WriteField("model", config.GroqWhisperModel)
 	_ = writer.WriteField("response_format", "verbose_json")
 	_ = writer.WriteField("language", config.GroqSTTLanguage)
-	_ = writer.WriteField("prompt", config.GroqWhisperPrompt)
+	_ = writer.WriteField("prompt", prompt)
 	_ = writer.WriteField("temperature", "0")
 
 	if err := writer.Close(); err != nil {
