@@ -934,6 +934,12 @@ def update_manifests(variants: list):
                     "path": f"{t2_folder}/Teil_2/",
                     "script": "script.json",
                 },
+                {
+                    "index": 3,
+                    "name": "Teil 3",
+                    "path": f"{t1_folder}/Teil_3/",
+                    "script": "script.json",
+                },
             ],
         })
 

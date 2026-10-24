@@ -130,17 +130,20 @@ func ParseScriptCatalogue(rawScript string, primary, secondary string) (*ScriptC
 				// e.g. DE_EX1_INT_TOPIC -> "INT_TOPIC"
 				// e.g. DE_EX1_OUTRO_01 -> "OUTRO_01"
 				for _, slot := range []string{
+					"T3_INTRO_01", "T3_INT_TOPIC", "T3_INT_POLITE", "T3_INT_DIALOG", "T3_INT_SILENCE", "T3_OUTRO_01",
 					"T2_FOLLOW_01", "T2_FOLLOW_02", "T2_INT_TOPIC", "T2_INT_POLITE", "T2_INT_DIALOG", "T2_OUTRO_01", "T2_INTRO_01",
 					"FOLLOW_01", "FOLLOW_02", "FOLLOW_03", "FOLLOW_04", "FOLLOW_05",
 					"INT_TOPIC", "INT_POLITE", "INT_DIALOG", "OUTRO_01", "OUTRO_02", "INTRO_01", "INTRO_02",
 				} {
 					if strings.Contains(id, slot) {
 						cat.ExaminerClips[slot] = clip
-						// Also index under the canonical base slot (without T2_ prefix) if not already set
-						if strings.HasPrefix(slot, "T2_") {
-							baseSlot := strings.TrimPrefix(slot, "T2_")
-							if _, exists := cat.ExaminerClips[baseSlot]; !exists {
-								cat.ExaminerClips[baseSlot] = clip
+						// Also index under the canonical base slot (without T2_ / T3_ prefix) if not already set
+						for _, pfx := range []string{"T2_", "T3_"} {
+							if strings.HasPrefix(slot, pfx) {
+								baseSlot := strings.TrimPrefix(slot, pfx)
+								if _, exists := cat.ExaminerClips[baseSlot]; !exists {
+									cat.ExaminerClips[baseSlot] = clip
+								}
 							}
 						}
 						break
@@ -148,11 +151,11 @@ func ParseScriptCatalogue(rawScript string, primary, secondary string) (*ScriptC
 				}
 			} else {
 				// Partner topic question / answer
-				// e.g. DE_LEY_ORIG_Q1, DE_LEY_ORIG_A1, DE_LEY_DUSIE_A1, DE_LEY_CLOSE_01, DE_LEY_CLAR_Q1, DE_LEY_SIL_Q1
+				// e.g. DE_LEY_ORIG_Q1, DE_LEYT1_OPIN_Q1, DE_LEY_S1_TIME_Q1, DE_LEY_CLOSE_01, DE_LEY_T3CLOSE_01
 				parts := strings.Split(id, "_")
 				if len(parts) >= 4 {
-					slot := parts[2]
-					kind := parts[3]
+					slot := parts[len(parts)-2]
+					kind := parts[len(parts)-1]
 					switch kind {
 					case "Q1":
 						cat.PartnerQuestions[slot] = clip
@@ -255,7 +258,8 @@ func AnalyzeHistory(history []Message, cat *ScriptCatalogue, spec *TeilDecisionS
 					st.UsedAnswers[topic.SlotCode] = true
 					// In Turn 1, learners often introduce name + origin together without ORIG_Q1 being asked;
 					// when the partner responded with ORIG_A1, origin is already covered.
-					if topic.Key == "origin" {
+					// In Teil 3, any answered planning slot means that planning point has already been covered!
+					if topic.Key == "origin" || spec.TeilNumber == 3 {
 						st.CoveredTopics[topic.Key] = true
 					}
 				}
@@ -595,10 +599,9 @@ func (r *DecisionRouter) composeNormalTurn(
 	for _, t := range spec.Topics {
 		if t.Key == topicAddressed {
 			addressedSlot = t.SlotCode
-			// Only mark "origin" covered directly from topicAddressed (for Turn 1/2 when volunteered before ORIG_Q1).
-			// All other required topics are marked covered only when their _Q1/_Q2 question has been asked,
-			// ensuring no topic question (like german_learning or hobbies) is ever skipped.
-			if t.Key == "origin" {
+			// In Teil 1, only mark "origin" covered directly from topicAddressed.
+			// In Teil 3, any addressed planning point (proposing venue, food, transport) marks that topic covered.
+			if t.Key == "origin" || spec.TeilNumber == 3 {
 				st.CoveredTopics[t.Key] = true
 			}
 			break
@@ -687,7 +690,7 @@ func (r *DecisionRouter) composeNormalTurn(
 		}
 	}
 
-	// 2. Part 2: Partner Answer (only if learner asked a question, or shared origin on Turn 1 in Teil 1, or presented text in Teil 2)
+	// 2. Part 2: Partner Answer (only if learner asked a question, or shared origin on Turn 1 in Teil 1, or presented text in Teil 2, or collaborative planning in Teil 3)
 	shouldAnswer := learnerAsked
 	if st.TurnCount <= 1 && (topicAddressed == "origin" || originMentionedOnTurn1) {
 		shouldAnswer = true
@@ -698,6 +701,16 @@ func (r *DecisionRouter) composeNormalTurn(
 		// and asking for the candidate's personal opinion (OPIN_Q1).
 		shouldAnswer = true
 		answerSlot = "OPIN"
+	}
+	if spec.TeilNumber == 3 {
+		// In Teil 3 collaborative planning, the partner actively contributes their proposal/compromise (_A1)
+		// for each planning slot (TIME on Turn 1, then LOC, FOOD, TASK) before moving to the next point.
+		if st.TurnCount <= 1 && (answerSlot == "" || answerSlot == "TIME") && !st.UsedAnswers["TIME"] {
+			answerSlot = "TIME"
+			shouldAnswer = true
+		} else if answerSlot != "" && answerSlot != "SUM" && !st.UsedAnswers[answerSlot] {
+			shouldAnswer = true
+		}
 	}
 
 	// Turn 1 anti-self-reply: partner must NEVER play NAME_A1 or DUSIE_A1 on Turn 1
@@ -721,10 +734,19 @@ func (r *DecisionRouter) composeNormalTurn(
 			if answerSlot == "ORIG" {
 				st.CoveredTopics["origin"] = true
 			}
+			// In Teil 3, answering a planning slot covers that topic so it is never re-asked
+			if spec.TeilNumber == 3 {
+				for _, t := range spec.Topics {
+					if t.SlotCode == answerSlot {
+						st.CoveredTopics[t.Key] = true
+						break
+					}
+				}
+			}
 		}
 	}
 
-	// 3. Part 3: Next Question or Transition to Phase 3 (Examiner Follow-Up)
+	// 3. Part 3: Next Question or Transition to Phase 3 (Examiner Follow-Up) / Final Exam Sign-Off
 	// Count covered required topics
 	coveredRequired := 0
 	for _, t := range spec.Topics {
@@ -775,6 +797,35 @@ func (r *DecisionRouter) composeNormalTurn(
 			ExamEnded: false,
 			Parts:     parts,
 		}, nil
+	} else if coveredRequired >= spec.MinTopicsForWrapUp && !spec.HasExaminerFollowUp {
+		// Teil 3 Final Sign-Off (no post-task examiner follow-up question):
+		// Partner plays farewell (T3CLOSE_01) + Examiner plays official final exam outro (T3_OUTRO_01) with exam_ended: true.
+		if closeClip, ok := cat.PartnerSpecial[spec.PartnerCloseSlot]; ok {
+			parts = append(parts, map[string]interface{}{
+				"audio_id": closeClip.AudioID,
+				"text":     closeClip.Text,
+				"speaker":  closeClip.Speaker,
+				"role":     closeClip.Role,
+			})
+		}
+		if outroClip, ok := cat.ExaminerClips[spec.ExaminerOutroSlot]; ok {
+			parts = append(parts, map[string]interface{}{
+				"audio_id": outroClip.AudioID,
+				"text":     outroClip.Text,
+				"speaker":  outroClip.Speaker,
+				"role":     outroClip.Role,
+			})
+		}
+		respJSON, _ := json.Marshal(map[string]interface{}{
+			"exam_ended": true,
+			"parts":      parts,
+		})
+		return RouteResult{
+			Fallback:  false,
+			Response:  string(respJSON),
+			ExamEnded: true,
+			Parts:     parts,
+		}, nil
 	}
 
 	// Pick next uncovered topic in natural conversational order
@@ -788,6 +839,19 @@ func (r *DecisionRouter) composeNormalTurn(
 	}
 
 	if nextTopic != nil {
+		// In Teil 3, when reaching the final Summary slot ("SUM"), play the full plan recap (SUM_A1)
+		// right before the completeness check question (SUM_Q1).
+		if nextTopic.SlotCode == "SUM" && !st.UsedAnswers["SUM"] {
+			if sumAns, ok := cat.PartnerAnswers["SUM"]; ok {
+				parts = append(parts, map[string]interface{}{
+					"audio_id": sumAns.AudioID,
+					"text":     sumAns.Text,
+					"speaker":  sumAns.Speaker,
+					"role":     sumAns.Role,
+				})
+				st.UsedAnswers["SUM"] = true
+			}
+		}
 		if qClip, ok := cat.PartnerQuestions[nextTopic.SlotCode]; ok {
 			parts = append(parts, map[string]interface{}{
 				"audio_id": qClip.AudioID,
@@ -823,6 +887,13 @@ func (r *DecisionRouter) composeNormalTurn(
 				"text":     backQ2.Text,
 				"speaker":  backQ2.Speaker,
 				"role":     backQ2.Role,
+			})
+		} else if backQ3, ok := cat.PartnerQuestions["T3BACK"]; ok {
+			parts = append(parts, map[string]interface{}{
+				"audio_id": backQ3.AudioID,
+				"text":     backQ3.Text,
+				"speaker":  backQ3.Speaker,
+				"role":     backQ3.Role,
 			})
 		}
 	}

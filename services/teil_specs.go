@@ -71,9 +71,10 @@ func NewSpecRegistry() *SpecRegistry {
 	r := &SpecRegistry{
 		specs: make(map[string]*TeilDecisionSpec),
 	}
-	// Register built-in B1 Teil 1 & Teil 2 specs
+	// Register built-in B1 Teil 1, Teil 2 & Teil 3 specs
 	r.Register(DefaultB1Teil1Spec())
 	r.Register(DefaultB1Teil2Spec())
+	r.Register(DefaultB1Teil3Spec())
 	return r
 }
 
@@ -222,6 +223,67 @@ func DefaultB1Teil2Spec() *TeilDecisionSpec {
 			ClarifyQuestion: "T2CLAR_Q1",
 			SilenceQuestion: "T2SIL_Q1",
 			ThanksExpSlot:   "EXP_38",
+		},
+	}
+}
+
+// DefaultB1Teil3Spec returns the official Telc B1 Teil 3 (Gemeinsam etwas planen) specification.
+func DefaultB1Teil3Spec() *TeilDecisionSpec {
+	return &TeilDecisionSpec{
+		Level:          "B1",
+		TeilNumber:     3,
+		TeilName:       "Teil 3: Gemeinsam etwas planen",
+		ContextSummary: "Telc B1 German speaking exam, Teil 3 (collaborative planning task: agreeing on time, location/materials, food/items, task division/transport, and final plan summary).",
+		FallbackInstruction: "Did the learner ask a specific, unusual question to the partner that CANNOT be answered by the partner's standard planning clips (date/time compromise, venue/materials/rain backup, food/drinks/gifts, task division/transport, or final summary)? Answer true ONLY if pre-recorded planning clips cannot reasonably answer what the learner asked.",
+		FallbackThreshold:   0.70,
+
+		Topics: []TopicSpec{
+			{Key: "time", SlotCode: "TIME", Description: "when to meet or hold the event (day, date, time, weekend vs. weekday)", Required: true},
+			{Key: "location", SlotCode: "LOC", Description: "where to meet/celebrate, weather rain backup, or where to get tools/materials", Required: true},
+			{Key: "food_items", SlotCode: "FOOD", Description: "what food, drinks, gifts, or equipment to bring or buy", Required: true},
+			{Key: "tasks_transport", SlotCode: "TASK", Description: "how to divide tasks (who does what) and how to travel/transport things", Required: true},
+			{Key: "summary", SlotCode: "SUM", Description: "final summary of the agreed plan and checking if anything is missing", Required: true},
+		},
+
+		InitialCoveredTopics: []string{"time"},
+		NoSelfAnswerOnTurn1:  []string{"T3OPEN"},
+
+		Reactions: []ReactionSpec{
+			{Code: "EXP_41", Description: "enthusiastic agreement with a great idea (Das ist eine super Idee!)"},
+			{Code: "EXP_42", Description: "upbeat agreement on how to proceed (Klasse, so machen wir das!)"},
+			{Code: "EXP_43", Description: "confirming a proposed time or date (Perfekt, das passt mir sehr gut.)"},
+			{Code: "EXP_44", Description: "polite B1 agreement with a multi-step suggestion (Einverstanden, das klingt nach einem sehr guten Plan.)"},
+			{Code: "EXP_45", Description: "energetic agreement with an activity or food proposal (Super Vorschlag, da bin ich sofort dabei!)"},
+			{Code: "EXP_46", Description: "crisp confirmation sealing an agreement (Alles klar, abgemacht!)"},
+			{Code: "EXP_47", Description: "polite doubt or hesitation (Hmm, da bin ich mir noch nicht ganz sicher.)"},
+			{Code: "EXP_48", Description: "polite scheduling concern when time is tight (Das wird zeitlich vielleicht ein bisschen knapp.)"},
+			{Code: "EXP_49", Description: "polite rejection of an inconvenient time (Ehrlich gesagt passt mir dieser Termin nicht so gut.)"},
+			{Code: "EXP_50", Description: "practical weather caveat for outdoor plans (Die Idee ist gut, aber was machen wir, wenn das Wetter schlecht ist?)"},
+			{Code: "EXP_51", Description: "constructive counter-proposal lead-in (Ich hätte da noch einen anderen Vorschlag.)"},
+			{Code: "EXP_52", Description: "collaborative counter-suggestion to do something together (Wäre es nicht praktischer, wenn wir das zusammen erledigen?)"},
+			{Code: "EXP_53", Description: "validating the learner's counter-proposal or objection (Ja, du hast recht, das ist wirklich viel praktischer so.)"},
+			{Code: "EXP_54", Description: "gladly accepting a task assigned by the learner (Sehr gerne, darum kümmere ich mich!)"},
+			{Code: "EXP_55", Description: "reciprocal task division between learner and partner (Abgemacht! Wenn du das übernimmst, kümmere ich mich um den Rest.)"},
+			{Code: "EXP_56", Description: "upbeat transition to final plan summary (Super, wir haben jetzt fast alle Punkte geklärt!)"},
+			{Code: "EXP_57", Description: "neutral clarification acknowledgement (Ach so, alles klar, jetzt habe ich dich verstanden.)"},
+			{Code: "EXP_58", Description: "warm response to 'Danke' during planning (Gerne! Es macht richtig Spaß, das mit dir zusammen zu planen.)"},
+		},
+		NoRepeatReactions: true,
+
+		MinTopicsForWrapUp:  5,
+		HasExaminerFollowUp: false,
+		FollowUpSlots:       nil,
+		PartnerCloseSlot:    "T3CLOSE_01",
+		ExaminerOutroSlot:   "T3_OUTRO_01",
+
+		Interventions: InterventionSpec{
+			OffTopicSlot:    "T3_INT_TOPIC",
+			PolitenessSlot:  "T3_INT_POLITE",
+			DialogueSlot:    "T3_INT_DIALOG",
+			ClarifyExpSlot:  "EXP_57",
+			ClarifyQuestion: "T3CLAR_Q1",
+			SilenceQuestion: "T3SIL_Q1",
+			ThanksExpSlot:   "EXP_58",
 		},
 	}
 }
