@@ -3,7 +3,7 @@ package providers
 import (
 	"context"
 
-	"voice-exam-simulator/internal/contracts"
+	"voice-engine/internal/contracts"
 )
 
 // STTRequest defines a Speech-to-Text transcription request.

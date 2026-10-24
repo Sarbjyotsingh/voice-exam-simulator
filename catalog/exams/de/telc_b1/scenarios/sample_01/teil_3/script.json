@@ -1,0 +1,1278 @@
+{
+  "scenario_id": "S1",
+  "scenario_title": "Abschiedsparty für den Deutschkurs organisieren",
+  "exam_hint": "Teil 3: Gemeinsam etwas planen — „Abschiedsparty für den Deutschkurs“\n\nSituation:\nIhr Deutschkurs geht nächste Woche zu Ende. Sie und Ihre Gesprächspartnerin Leyla möchten für die ganze Gruppe (ca. 15 Personen) und Ihre Lehrerin eine Abschiedsparty organisieren.\n\nPlanen Sie gemeinsam die Party. Überlegen Sie sich:\n• Wann? (Welcher Tag und welche Uhrzeit passen allen am besten?)\n• Wo & Wetter? (Im Stadtpark grillen oder ein Raum bei Regen?)\n• Essen & Getränke? (Internationales Buffet, Getränke, Kosten teilen?)\n• Geschenk & Aufgabenverteilung? (Kleines Geschenk für die Lehrerin, Musik, Einladung – wer macht was?)",
+  "voice_profiles": {
+    "Herr Wagner": "Jvf6TAXwMUVTSR20U0f9",
+    "Leyla": "NE7AIW5DoJ7lUosXV2KR"
+  },
+  "auto_play_sequence": [
+    "DE_EX1_T3_INTRO_01",
+    "DE_LEY_S1_T3OPEN_01"
+  ],
+  "end_audio_id": "DE_EX1_T3_OUTRO_01",
+  "dialogues": [
+    {
+      "topic": "Introduction (Teil 3)",
+      "speaker": "Herr Wagner",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Herr Wagner",
+          "text": "Vielen Dank. Wir kommen nun zum dritten und letzten Teil der Prüfung: Gemeinsam etwas planen. Sie haben das gemeinsame Aufgabenblatt vor sich liegen. Bitte machen Sie Vorschläge, reagieren Sie aufeinander und einigen Sie sich am Ende auf einen gemeinsamen Plan. Leyla, möchten Sie beginnen?",
+          "german": "Vielen Dank. Wir kommen nun zum dritten und letzten Teil der Prüfung: Gemeinsam etwas planen. Sie haben das gemeinsame Aufgabenblatt vor sich liegen. Bitte machen Sie Vorschläge, reagieren Sie aufeinander und einigen Sie sich am Ende auf einen gemeinsamen Plan. Leyla, möchten Sie beginnen?",
+          "english": "",
+          "audio_id": "DE_EX1_T3_INTRO_01"
+        }
+      }
+    },
+    {
+      "topic": "Opening & Initial Time Proposal (Wann?)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Leyla",
+          "text": "Hallo! Unser Deutschkurs ist ja nächste Woche endlich fertig und wir wollen zusammen eine schöne Abschiedsparty für unsere Gruppe organisieren. Wollen wir zuerst überlegen, wann wir feiern? Ich würde Freitagabend um achtzehn Uhr vorschlagen. Passt dir das, oder hast du einen besseren Termin?",
+          "german": "Hallo! Unser Deutschkurs ist ja nächste Woche endlich fertig und wir wollen zusammen eine schöne Abschiedsparty für unsere Gruppe organisieren. Wollen wir zuerst überlegen, wann wir feiern? Ich würde Freitagabend um achtzehn Uhr vorschlagen. Passt dir das, oder hast du einen besseren Termin?",
+          "english": "",
+          "audio_id": "DE_LEY_S1_T3OPEN_01"
+        }
+      }
+    },
+    {
+      "topic": "Time Counter-Proposal / Compromise (Samstagabend)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "answer": {
+          "speaker": "Leyla",
+          "text": "Am Samstagabend passt es mir sogar noch besser als am Freitag! Am Freitag sind viele aus dem Kurs nach der Arbeit bestimmt müde, aber am Samstag ab siebzehn Uhr haben alle frei und wir haben viel mehr Zeit zum Feiern.",
+          "german": "Am Samstagabend passt es mir sogar noch besser als am Freitag! Am Freitag sind viele aus dem Kurs nach der Arbeit bestimmt müde, aber am Samstag ab siebzehn Uhr haben alle frei und wir haben viel mehr Zeit zum Feiern.",
+          "english": "",
+          "audio_id": "DE_LEY_S1_TIME_A1"
+        }
+      }
+    },
+    {
+      "topic": "Time Follow-Up Question (Wann feiern?)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Leyla",
+          "text": "An welchem Tag und um wie viel Uhr sollen wir die Abschiedsparty am besten machen? Passt dir Samstagabend?",
+          "german": "An welchem Tag und um wie viel Uhr sollen wir die Abschiedsparty am besten machen? Passt dir Samstagabend?",
+          "english": "",
+          "audio_id": "DE_LEY_S1_TIME_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Time Simpler Re-Ask (Freitag oder Samstag?)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Leyla",
+          "text": "Sollen wir die Party lieber am Freitag oder am Samstagabend machen?",
+          "german": "Sollen wir die Party lieber am Freitag oder am Samstagabend machen?",
+          "english": "",
+          "audio_id": "DE_LEY_S1_TIME_Q2"
+        }
+      }
+    },
+    {
+      "topic": "Location & Weather Question (Wo feiern?)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Leyla",
+          "text": "Und wo wollen wir die Party feiern? Sollen wir bei schönem Wetter im Stadtpark grillen, oder hast du eine Idee, falls es regnet?",
+          "german": "Und wo wollen wir die Party feiern? Sollen wir bei schönem Wetter im Stadtpark grillen, oder hast du eine Idee, falls es regnet?",
+          "english": "",
+          "audio_id": "DE_LEY_S1_LOC_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Location Simpler Re-Ask (Park oder Raum?)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Leyla",
+          "text": "Was meinst du zum Ort: Feiern wir lieber draußen im Park oder drinnen in einem Raum?",
+          "german": "Was meinst du zum Ort: Feiern wir lieber draußen im Park oder drinnen in einem Raum?",
+          "english": "",
+          "audio_id": "DE_LEY_S1_LOC_Q2"
+        }
+      }
+    },
+    {
+      "topic": "Location Proposal & Rain Backup (Park + Sprachschule)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "answer": {
+          "speaker": "Leyla",
+          "text": "Im Stadtpark zu feiern ist bei Sonne super, aber in Deutschland weiß man beim Wetter ja nie. Falls es regnet, könnten wir den großen Gemeinschaftsraum in unserer Sprachschule reservieren. Ich kann morgen im Büro fragen, ob wir den Schlüssel für Samstag bekommen.",
+          "german": "Im Stadtpark zu feiern ist bei Sonne super, aber in Deutschland weiß man beim Wetter ja nie. Falls es regnet, könnten wir den großen Gemeinschaftsraum in unserer Sprachschule reservieren. Ich kann morgen im Büro fragen, ob wir den Schlüssel für Samstag bekommen.",
+          "english": "",
+          "audio_id": "DE_LEY_S1_LOC_A1"
+        }
+      }
+    },
+    {
+      "topic": "Food & Drinks Question (Essen & Getränke)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Leyla",
+          "text": "Wie machen wir das mit dem Essen und den Getränken? Wir sind ja ungefähr fünfzehn Leute aus vielen Ländern – was sollen wir besorgen?",
+          "german": "Wie machen wir das mit dem Essen und den Getränken? Wir sind ja ungefähr fünfzehn Leute aus vielen Ländern – was sollen wir besorgen?",
+          "english": "",
+          "audio_id": "DE_LEY_S1_FOOD_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Food & Drinks Proposal (Buffet & Getränke)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "answer": {
+          "speaker": "Leyla",
+          "text": "Wenn jeder aus dem Kurs eine Spezialität aus seinem Heimatland mitbringt, haben wir ein tolles internationales Buffet! Ich mache gerne türkisches Börek und einen großen Salat. Für Wasser, Saft und Pappteller könnten wir einfach von jedem fünf Euro einsammeln.",
+          "german": "Wenn jeder aus dem Kurs eine Spezialität aus seinem Heimatland mitbringt, haben wir ein tolles internationales Buffet! Ich mache gerne türkisches Börek und einen großen Salat. Für Wasser, Saft und Pappteller könnten wir einfach von jedem fünf Euro einsammeln.",
+          "english": "",
+          "audio_id": "DE_LEY_S1_FOOD_A1"
+        }
+      }
+    },
+    {
+      "topic": "Gift & Task Division Question (Geschenk & Aufgaben)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Leyla",
+          "text": "Wir brauchen natürlich noch Musik und ein kleines Abschiedsgeschenk für unsere Deutschlehrerin. Was könnten wir ihr schenken, und wie teilen wir die Aufgaben unter uns auf?",
+          "german": "Wir brauchen natürlich noch Musik und ein kleines Abschiedsgeschenk für unsere Deutschlehrerin. Was könnten wir ihr schenken, und wie teilen wir die Aufgaben unter uns auf?",
+          "english": "",
+          "audio_id": "DE_LEY_S1_TASK_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Gift & Task Division Proposal (Blumen, Karte & Musik)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "answer": {
+          "speaker": "Leyla",
+          "text": "Ein Blumenstrauß, eine Packung Pralinen und eine schöne Karte mit den Unterschriften von allen Kursteilnehmern sind eine wunderbare Idee! Ich kann am Freitag die Blumen, die Karte und die Getränke kaufen. Schreibst du dann die Einladung in unsere WhatsApp-Gruppe und bringst eine kleine Musikbox mit?",
+          "german": "Ein Blumenstrauß, eine Packung Pralinen und eine schöne Karte mit den Unterschriften von allen Kursteilnehmern sind eine wunderbare Idee! Ich kann am Freitag die Blumen, die Karte und die Getränke kaufen. Schreibst du dann die Einladung in unsere WhatsApp-Gruppe und bringst eine kleine Musikbox mit?",
+          "english": "",
+          "audio_id": "DE_LEY_S1_TASK_A1"
+        }
+      }
+    },
+    {
+      "topic": "Final Plan Summary (Zusammenfassung)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "answer": {
+          "speaker": "Leyla",
+          "text": "Super, dann fasse ich unseren Plan kurz zusammen: Wir feiern am Samstag ab siebzehn Uhr im Park oder bei Regen im Raum der Sprachschule. Jeder bringt etwas für das Buffet mit, ich besorge die Getränke sowie die Blumen und die Karte für unsere Lehrerin, und du schreibst in die WhatsApp-Gruppe und kümmerst dich um die Musik.",
+          "german": "Super, dann fasse ich unseren Plan kurz zusammen: Wir feiern am Samstag ab siebzehn Uhr im Park oder bei Regen im Raum der Sprachschule. Jeder bringt etwas für das Buffet mit, ich besorge die Getränke sowie die Blumen und die Karte für unsere Lehrerin, und du schreibst in die WhatsApp-Gruppe und kümmerst dich um die Musik.",
+          "english": "",
+          "audio_id": "DE_LEY_S1_SUM_A1"
+        }
+      }
+    },
+    {
+      "topic": "Summary Completeness Check (Alles besprochen?)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Leyla",
+          "text": "Haben wir damit an alles gedacht, oder haben wir noch etwas Wichtiges für die Party vergessen?",
+          "german": "Haben wir damit an alles gedacht, oder haben wir noch etwas Wichtiges für die Party vergessen?",
+          "english": "",
+          "audio_id": "DE_LEY_S1_SUM_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Counter-Question (Planning Feedback 1)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Leyla",
+          "text": "Was meinst du dazu? Findest du den Vorschlag gut?",
+          "german": "Was meinst du dazu? Findest du den Vorschlag gut?",
+          "english": "",
+          "audio_id": "DE_LEY_T3BACK_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Counter-Question (Planning Feedback 2)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Leyla",
+          "text": "Hast du vielleicht noch eine andere Idee dazu?",
+          "german": "Hast du vielleicht noch eine andere Idee dazu?",
+          "english": "",
+          "audio_id": "DE_LEY_T3BACK_Q2"
+        }
+      }
+    },
+    {
+      "topic": "Clarification (Repeat Proposal)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Leyla",
+          "text": "Entschuldigung, ich habe deinen Vorschlag akustisch nicht ganz verstanden. Kannst du das bitte noch einmal kurz wiederholen?",
+          "german": "Entschuldigung, ich habe deinen Vorschlag akustisch nicht ganz verstanden. Kannst du das bitte noch einmal kurz wiederholen?",
+          "english": "",
+          "audio_id": "DE_LEY_T3CLAR_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Silence Recovery",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Leyla",
+          "text": "Hallo? Bist du noch da? Wollen wir weiter zusammen planen?",
+          "german": "Hallo? Bist du noch da? Wollen wir weiter zusammen planen?",
+          "english": "",
+          "audio_id": "DE_LEY_T3SIL_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Closing & Farewell (Teil 3)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Leyla",
+          "text": "Super, dann machen wir das genau so! Ich freue mich schon sehr darauf. Bis dann, tschüss!",
+          "german": "Super, dann machen wir das genau so! Ich freue mich schon sehr darauf. Bis dann, tschüss!",
+          "english": "",
+          "audio_id": "DE_LEY_T3CLOSE_01"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - Super Idee)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Leyla",
+          "text": "Das ist eine super Idee!",
+          "german": "Das ist eine super Idee!",
+          "english": "",
+          "audio_id": "DE_LEY_EXP_41"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - So machen wir das)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Leyla",
+          "text": "Klasse, so machen wir das!",
+          "german": "Klasse, so machen wir das!",
+          "english": "",
+          "audio_id": "DE_LEY_EXP_42"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - Passt sehr gut)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Leyla",
+          "text": "Perfekt, das passt mir sehr gut.",
+          "german": "Perfekt, das passt mir sehr gut.",
+          "english": "",
+          "audio_id": "DE_LEY_EXP_43"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - Einverstanden)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Leyla",
+          "text": "Einverstanden, das klingt nach einem sehr guten Plan.",
+          "german": "Einverstanden, das klingt nach einem sehr guten Plan.",
+          "english": "",
+          "audio_id": "DE_LEY_EXP_44"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - Sofort dabei)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Leyla",
+          "text": "Super Vorschlag, da bin ich sofort dabei!",
+          "german": "Super Vorschlag, da bin ich sofort dabei!",
+          "english": "",
+          "audio_id": "DE_LEY_EXP_45"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - Abgemacht)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Leyla",
+          "text": "Alles klar, abgemacht!",
+          "german": "Alles klar, abgemacht!",
+          "english": "",
+          "audio_id": "DE_LEY_EXP_46"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Doubt - Nicht ganz sicher)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Leyla",
+          "text": "Hmm, da bin ich mir noch nicht ganz sicher.",
+          "german": "Hmm, da bin ich mir noch nicht ganz sicher.",
+          "english": "",
+          "audio_id": "DE_LEY_EXP_47"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Doubt - Zeitlich knapp)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Leyla",
+          "text": "Das wird zeitlich vielleicht ein bisschen knapp.",
+          "german": "Das wird zeitlich vielleicht ein bisschen knapp.",
+          "english": "",
+          "audio_id": "DE_LEY_EXP_48"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Doubt - Termin passt nicht)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Leyla",
+          "text": "Ehrlich gesagt passt mir dieser Termin nicht so gut.",
+          "german": "Ehrlich gesagt passt mir dieser Termin nicht so gut.",
+          "english": "",
+          "audio_id": "DE_LEY_EXP_49"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Doubt - Schlechtes Wetter)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Leyla",
+          "text": "Die Idee ist gut, aber was machen wir, wenn das Wetter schlecht ist?",
+          "german": "Die Idee ist gut, aber was machen wir, wenn das Wetter schlecht ist?",
+          "english": "",
+          "audio_id": "DE_LEY_EXP_50"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Counter-Proposal - Anderer Vorschlag)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Leyla",
+          "text": "Ich hätte da noch einen anderen Vorschlag.",
+          "german": "Ich hätte da noch einen anderen Vorschlag.",
+          "english": "",
+          "audio_id": "DE_LEY_EXP_51"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Counter-Proposal - Zusammen erledigen)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Leyla",
+          "text": "Wäre es nicht praktischer, wenn wir das zusammen erledigen?",
+          "german": "Wäre es nicht praktischer, wenn wir das zusammen erledigen?",
+          "english": "",
+          "audio_id": "DE_LEY_EXP_52"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Compromise - Viel praktischer)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Leyla",
+          "text": "Ja, du hast recht, das ist wirklich viel praktischer so.",
+          "german": "Ja, du hast recht, das ist wirklich viel praktischer so.",
+          "english": "",
+          "audio_id": "DE_LEY_EXP_53"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Task Allocation - Kümmere mich)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Leyla",
+          "text": "Sehr gerne, darum kümmere ich mich!",
+          "german": "Sehr gerne, darum kümmere ich mich!",
+          "english": "",
+          "audio_id": "DE_LEY_EXP_54"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Task Allocation - Aufgaben teilen)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Leyla",
+          "text": "Abgemacht! Wenn du das übernimmst, kümmere ich mich um den Rest.",
+          "german": "Abgemacht! Wenn du das übernimmst, kümmere ich mich um den Rest.",
+          "english": "",
+          "audio_id": "DE_LEY_EXP_55"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Summary Lead-in - Fast alle Punkte)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Leyla",
+          "text": "Super, wir haben jetzt fast alle Punkte geklärt!",
+          "german": "Super, wir haben jetzt fast alle Punkte geklärt!",
+          "english": "",
+          "audio_id": "DE_LEY_EXP_56"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Clarification - Verstanden)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Leyla",
+          "text": "Ach so, alles klar, jetzt habe ich dich verstanden.",
+          "german": "Ach so, alles klar, jetzt habe ich dich verstanden.",
+          "english": "",
+          "audio_id": "DE_LEY_EXP_57"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Politeness - Spaß beim Planen)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Leyla",
+          "text": "Gerne! Es macht richtig Spaß, das mit dir zusammen zu planen.",
+          "german": "Gerne! Es macht richtig Spaß, das mit dir zusammen zu planen.",
+          "english": "",
+          "audio_id": "DE_LEY_EXP_58"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention (Off-Topic)",
+      "speaker": "Herr Wagner",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Herr Wagner",
+          "text": "Entschuldigung, ich muss kurz unterbrechen: Bitte bleiben Sie bei Ihrer Planungsaufgabe auf dem Aufgabenblatt.",
+          "german": "Entschuldigung, ich muss kurz unterbrechen: Bitte bleiben Sie bei Ihrer Planungsaufgabe auf dem Aufgabenblatt.",
+          "english": "",
+          "audio_id": "DE_EX1_T3_INT_TOPIC"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention (Monologue / No Negotiation)",
+      "speaker": "Herr Wagner",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Herr Wagner",
+          "text": "Kurzer Hinweis: Bitte planen Sie die Aufgabe gemeinsam im Dialog. Machen Sie Vorschläge und fragen Sie auch Ihre Partnerin nach ihrer Meinung.",
+          "german": "Kurzer Hinweis: Bitte planen Sie die Aufgabe gemeinsam im Dialog. Machen Sie Vorschläge und fragen Sie auch Ihre Partnerin nach ihrer Meinung.",
+          "english": "",
+          "audio_id": "DE_EX1_T3_INT_DIALOG"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention (Skipped Bullet Points / Silence)",
+      "speaker": "Herr Wagner",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Herr Wagner",
+          "text": "Schauen Sie bitte noch einmal kurz auf Ihr Aufgabenblatt: Haben Sie schon alle Punkte besprochen und die Aufgaben untereinander aufgeteilt?",
+          "german": "Schauen Sie bitte noch einmal kurz auf Ihr Aufgabenblatt: Haben Sie schon alle Punkte besprochen und die Aufgaben untereinander aufgeteilt?",
+          "english": "",
+          "audio_id": "DE_EX1_T3_INT_SILENCE"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention (Politeness)",
+      "speaker": "Herr Wagner",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Herr Wagner",
+          "text": "Ich bitte Sie um einen höflichen und sachlichen Umgangston während der Prüfung. Bitte fahren Sie fort.",
+          "german": "Ich bitte Sie um einen höflichen und sachlichen Umgangston während der Prüfung. Bitte fahren Sie fort.",
+          "english": "",
+          "audio_id": "DE_EX1_T3_INT_POLITE"
+        }
+      }
+    },
+    {
+      "topic": "Official Conclusion of the Oral Exam (Teil 3 Outro)",
+      "speaker": "Herr Wagner",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Herr Wagner",
+          "text": "Vielen Dank Ihnen beiden! Damit haben wir auch den dritten Teil geschafft, und Ihre mündliche Prüfung telc Deutsch B1 ist hiermit beendet. Die Ergebnisse erhalten Sie in circa vier Wochen. Ich wünsche Ihnen noch einen schönen Tag und alles Gute. Auf Wiedersehen!",
+          "german": "Vielen Dank Ihnen beiden! Damit haben wir auch den dritten Teil geschafft, und Ihre mündliche Prüfung telc Deutsch B1 ist hiermit beendet. Die Ergebnisse erhalten Sie in circa vier Wochen. Ich wünsche Ihnen noch einen schönen Tag und alles Gute. Auf Wiedersehen!",
+          "english": "",
+          "audio_id": "DE_EX1_T3_OUTRO_01"
+        }
+      }
+    }
+  ],
+  "teil3 dialogues": [
+    {
+      "topic": "Introduction (Teil 3)",
+      "speaker": "Herr Wagner",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Herr Wagner",
+          "text": "Vielen Dank. Wir kommen nun zum dritten und letzten Teil der Prüfung: Gemeinsam etwas planen. Sie haben das gemeinsame Aufgabenblatt vor sich liegen. Bitte machen Sie Vorschläge, reagieren Sie aufeinander und einigen Sie sich am Ende auf einen gemeinsamen Plan. Leyla, möchten Sie beginnen?",
+          "german": "Vielen Dank. Wir kommen nun zum dritten und letzten Teil der Prüfung: Gemeinsam etwas planen. Sie haben das gemeinsame Aufgabenblatt vor sich liegen. Bitte machen Sie Vorschläge, reagieren Sie aufeinander und einigen Sie sich am Ende auf einen gemeinsamen Plan. Leyla, möchten Sie beginnen?",
+          "english": "",
+          "audio_id": "DE_EX1_T3_INTRO_01"
+        }
+      }
+    },
+    {
+      "topic": "Opening & Initial Time Proposal (Wann?)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Leyla",
+          "text": "Hallo! Unser Deutschkurs ist ja nächste Woche endlich fertig und wir wollen zusammen eine schöne Abschiedsparty für unsere Gruppe organisieren. Wollen wir zuerst überlegen, wann wir feiern? Ich würde Freitagabend um achtzehn Uhr vorschlagen. Passt dir das, oder hast du einen besseren Termin?",
+          "german": "Hallo! Unser Deutschkurs ist ja nächste Woche endlich fertig und wir wollen zusammen eine schöne Abschiedsparty für unsere Gruppe organisieren. Wollen wir zuerst überlegen, wann wir feiern? Ich würde Freitagabend um achtzehn Uhr vorschlagen. Passt dir das, oder hast du einen besseren Termin?",
+          "english": "",
+          "audio_id": "DE_LEY_S1_T3OPEN_01"
+        }
+      }
+    },
+    {
+      "topic": "Time Counter-Proposal / Compromise (Samstagabend)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "answer": {
+          "speaker": "Leyla",
+          "text": "Am Samstagabend passt es mir sogar noch besser als am Freitag! Am Freitag sind viele aus dem Kurs nach der Arbeit bestimmt müde, aber am Samstag ab siebzehn Uhr haben alle frei und wir haben viel mehr Zeit zum Feiern.",
+          "german": "Am Samstagabend passt es mir sogar noch besser als am Freitag! Am Freitag sind viele aus dem Kurs nach der Arbeit bestimmt müde, aber am Samstag ab siebzehn Uhr haben alle frei und wir haben viel mehr Zeit zum Feiern.",
+          "english": "",
+          "audio_id": "DE_LEY_S1_TIME_A1"
+        }
+      }
+    },
+    {
+      "topic": "Time Follow-Up Question (Wann feiern?)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Leyla",
+          "text": "An welchem Tag und um wie viel Uhr sollen wir die Abschiedsparty am besten machen? Passt dir Samstagabend?",
+          "german": "An welchem Tag und um wie viel Uhr sollen wir die Abschiedsparty am besten machen? Passt dir Samstagabend?",
+          "english": "",
+          "audio_id": "DE_LEY_S1_TIME_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Time Simpler Re-Ask (Freitag oder Samstag?)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Leyla",
+          "text": "Sollen wir die Party lieber am Freitag oder am Samstagabend machen?",
+          "german": "Sollen wir die Party lieber am Freitag oder am Samstagabend machen?",
+          "english": "",
+          "audio_id": "DE_LEY_S1_TIME_Q2"
+        }
+      }
+    },
+    {
+      "topic": "Location & Weather Question (Wo feiern?)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Leyla",
+          "text": "Und wo wollen wir die Party feiern? Sollen wir bei schönem Wetter im Stadtpark grillen, oder hast du eine Idee, falls es regnet?",
+          "german": "Und wo wollen wir die Party feiern? Sollen wir bei schönem Wetter im Stadtpark grillen, oder hast du eine Idee, falls es regnet?",
+          "english": "",
+          "audio_id": "DE_LEY_S1_LOC_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Location Simpler Re-Ask (Park oder Raum?)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Leyla",
+          "text": "Was meinst du zum Ort: Feiern wir lieber draußen im Park oder drinnen in einem Raum?",
+          "german": "Was meinst du zum Ort: Feiern wir lieber draußen im Park oder drinnen in einem Raum?",
+          "english": "",
+          "audio_id": "DE_LEY_S1_LOC_Q2"
+        }
+      }
+    },
+    {
+      "topic": "Location Proposal & Rain Backup (Park + Sprachschule)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "answer": {
+          "speaker": "Leyla",
+          "text": "Im Stadtpark zu feiern ist bei Sonne super, aber in Deutschland weiß man beim Wetter ja nie. Falls es regnet, könnten wir den großen Gemeinschaftsraum in unserer Sprachschule reservieren. Ich kann morgen im Büro fragen, ob wir den Schlüssel für Samstag bekommen.",
+          "german": "Im Stadtpark zu feiern ist bei Sonne super, aber in Deutschland weiß man beim Wetter ja nie. Falls es regnet, könnten wir den großen Gemeinschaftsraum in unserer Sprachschule reservieren. Ich kann morgen im Büro fragen, ob wir den Schlüssel für Samstag bekommen.",
+          "english": "",
+          "audio_id": "DE_LEY_S1_LOC_A1"
+        }
+      }
+    },
+    {
+      "topic": "Food & Drinks Question (Essen & Getränke)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Leyla",
+          "text": "Wie machen wir das mit dem Essen und den Getränken? Wir sind ja ungefähr fünfzehn Leute aus vielen Ländern – was sollen wir besorgen?",
+          "german": "Wie machen wir das mit dem Essen und den Getränken? Wir sind ja ungefähr fünfzehn Leute aus vielen Ländern – was sollen wir besorgen?",
+          "english": "",
+          "audio_id": "DE_LEY_S1_FOOD_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Food & Drinks Proposal (Buffet & Getränke)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "answer": {
+          "speaker": "Leyla",
+          "text": "Wenn jeder aus dem Kurs eine Spezialität aus seinem Heimatland mitbringt, haben wir ein tolles internationales Buffet! Ich mache gerne türkisches Börek und einen großen Salat. Für Wasser, Saft und Pappteller könnten wir einfach von jedem fünf Euro einsammeln.",
+          "german": "Wenn jeder aus dem Kurs eine Spezialität aus seinem Heimatland mitbringt, haben wir ein tolles internationales Buffet! Ich mache gerne türkisches Börek und einen großen Salat. Für Wasser, Saft und Pappteller könnten wir einfach von jedem fünf Euro einsammeln.",
+          "english": "",
+          "audio_id": "DE_LEY_S1_FOOD_A1"
+        }
+      }
+    },
+    {
+      "topic": "Gift & Task Division Question (Geschenk & Aufgaben)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Leyla",
+          "text": "Wir brauchen natürlich noch Musik und ein kleines Abschiedsgeschenk für unsere Deutschlehrerin. Was könnten wir ihr schenken, und wie teilen wir die Aufgaben unter uns auf?",
+          "german": "Wir brauchen natürlich noch Musik und ein kleines Abschiedsgeschenk für unsere Deutschlehrerin. Was könnten wir ihr schenken, und wie teilen wir die Aufgaben unter uns auf?",
+          "english": "",
+          "audio_id": "DE_LEY_S1_TASK_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Gift & Task Division Proposal (Blumen, Karte & Musik)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "answer": {
+          "speaker": "Leyla",
+          "text": "Ein Blumenstrauß, eine Packung Pralinen und eine schöne Karte mit den Unterschriften von allen Kursteilnehmern sind eine wunderbare Idee! Ich kann am Freitag die Blumen, die Karte und die Getränke kaufen. Schreibst du dann die Einladung in unsere WhatsApp-Gruppe und bringst eine kleine Musikbox mit?",
+          "german": "Ein Blumenstrauß, eine Packung Pralinen und eine schöne Karte mit den Unterschriften von allen Kursteilnehmern sind eine wunderbare Idee! Ich kann am Freitag die Blumen, die Karte und die Getränke kaufen. Schreibst du dann die Einladung in unsere WhatsApp-Gruppe und bringst eine kleine Musikbox mit?",
+          "english": "",
+          "audio_id": "DE_LEY_S1_TASK_A1"
+        }
+      }
+    },
+    {
+      "topic": "Final Plan Summary (Zusammenfassung)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "answer": {
+          "speaker": "Leyla",
+          "text": "Super, dann fasse ich unseren Plan kurz zusammen: Wir feiern am Samstag ab siebzehn Uhr im Park oder bei Regen im Raum der Sprachschule. Jeder bringt etwas für das Buffet mit, ich besorge die Getränke sowie die Blumen und die Karte für unsere Lehrerin, und du schreibst in die WhatsApp-Gruppe und kümmerst dich um die Musik.",
+          "german": "Super, dann fasse ich unseren Plan kurz zusammen: Wir feiern am Samstag ab siebzehn Uhr im Park oder bei Regen im Raum der Sprachschule. Jeder bringt etwas für das Buffet mit, ich besorge die Getränke sowie die Blumen und die Karte für unsere Lehrerin, und du schreibst in die WhatsApp-Gruppe und kümmerst dich um die Musik.",
+          "english": "",
+          "audio_id": "DE_LEY_S1_SUM_A1"
+        }
+      }
+    },
+    {
+      "topic": "Summary Completeness Check (Alles besprochen?)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Leyla",
+          "text": "Haben wir damit an alles gedacht, oder haben wir noch etwas Wichtiges für die Party vergessen?",
+          "german": "Haben wir damit an alles gedacht, oder haben wir noch etwas Wichtiges für die Party vergessen?",
+          "english": "",
+          "audio_id": "DE_LEY_S1_SUM_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Counter-Question (Planning Feedback 1)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Leyla",
+          "text": "Was meinst du dazu? Findest du den Vorschlag gut?",
+          "german": "Was meinst du dazu? Findest du den Vorschlag gut?",
+          "english": "",
+          "audio_id": "DE_LEY_T3BACK_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Counter-Question (Planning Feedback 2)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Leyla",
+          "text": "Hast du vielleicht noch eine andere Idee dazu?",
+          "german": "Hast du vielleicht noch eine andere Idee dazu?",
+          "english": "",
+          "audio_id": "DE_LEY_T3BACK_Q2"
+        }
+      }
+    },
+    {
+      "topic": "Clarification (Repeat Proposal)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Leyla",
+          "text": "Entschuldigung, ich habe deinen Vorschlag akustisch nicht ganz verstanden. Kannst du das bitte noch einmal kurz wiederholen?",
+          "german": "Entschuldigung, ich habe deinen Vorschlag akustisch nicht ganz verstanden. Kannst du das bitte noch einmal kurz wiederholen?",
+          "english": "",
+          "audio_id": "DE_LEY_T3CLAR_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Silence Recovery",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Leyla",
+          "text": "Hallo? Bist du noch da? Wollen wir weiter zusammen planen?",
+          "german": "Hallo? Bist du noch da? Wollen wir weiter zusammen planen?",
+          "english": "",
+          "audio_id": "DE_LEY_T3SIL_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Closing & Farewell (Teil 3)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Leyla",
+          "text": "Super, dann machen wir das genau so! Ich freue mich schon sehr darauf. Bis dann, tschüss!",
+          "german": "Super, dann machen wir das genau so! Ich freue mich schon sehr darauf. Bis dann, tschüss!",
+          "english": "",
+          "audio_id": "DE_LEY_T3CLOSE_01"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - Super Idee)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Leyla",
+          "text": "Das ist eine super Idee!",
+          "german": "Das ist eine super Idee!",
+          "english": "",
+          "audio_id": "DE_LEY_EXP_41"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - So machen wir das)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Leyla",
+          "text": "Klasse, so machen wir das!",
+          "german": "Klasse, so machen wir das!",
+          "english": "",
+          "audio_id": "DE_LEY_EXP_42"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - Passt sehr gut)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Leyla",
+          "text": "Perfekt, das passt mir sehr gut.",
+          "german": "Perfekt, das passt mir sehr gut.",
+          "english": "",
+          "audio_id": "DE_LEY_EXP_43"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - Einverstanden)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Leyla",
+          "text": "Einverstanden, das klingt nach einem sehr guten Plan.",
+          "german": "Einverstanden, das klingt nach einem sehr guten Plan.",
+          "english": "",
+          "audio_id": "DE_LEY_EXP_44"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - Sofort dabei)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Leyla",
+          "text": "Super Vorschlag, da bin ich sofort dabei!",
+          "german": "Super Vorschlag, da bin ich sofort dabei!",
+          "english": "",
+          "audio_id": "DE_LEY_EXP_45"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - Abgemacht)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Leyla",
+          "text": "Alles klar, abgemacht!",
+          "german": "Alles klar, abgemacht!",
+          "english": "",
+          "audio_id": "DE_LEY_EXP_46"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Doubt - Nicht ganz sicher)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Leyla",
+          "text": "Hmm, da bin ich mir noch nicht ganz sicher.",
+          "german": "Hmm, da bin ich mir noch nicht ganz sicher.",
+          "english": "",
+          "audio_id": "DE_LEY_EXP_47"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Doubt - Zeitlich knapp)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Leyla",
+          "text": "Das wird zeitlich vielleicht ein bisschen knapp.",
+          "german": "Das wird zeitlich vielleicht ein bisschen knapp.",
+          "english": "",
+          "audio_id": "DE_LEY_EXP_48"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Doubt - Termin passt nicht)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Leyla",
+          "text": "Ehrlich gesagt passt mir dieser Termin nicht so gut.",
+          "german": "Ehrlich gesagt passt mir dieser Termin nicht so gut.",
+          "english": "",
+          "audio_id": "DE_LEY_EXP_49"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Doubt - Schlechtes Wetter)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Leyla",
+          "text": "Die Idee ist gut, aber was machen wir, wenn das Wetter schlecht ist?",
+          "german": "Die Idee ist gut, aber was machen wir, wenn das Wetter schlecht ist?",
+          "english": "",
+          "audio_id": "DE_LEY_EXP_50"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Counter-Proposal - Anderer Vorschlag)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Leyla",
+          "text": "Ich hätte da noch einen anderen Vorschlag.",
+          "german": "Ich hätte da noch einen anderen Vorschlag.",
+          "english": "",
+          "audio_id": "DE_LEY_EXP_51"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Counter-Proposal - Zusammen erledigen)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Leyla",
+          "text": "Wäre es nicht praktischer, wenn wir das zusammen erledigen?",
+          "german": "Wäre es nicht praktischer, wenn wir das zusammen erledigen?",
+          "english": "",
+          "audio_id": "DE_LEY_EXP_52"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Compromise - Viel praktischer)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Leyla",
+          "text": "Ja, du hast recht, das ist wirklich viel praktischer so.",
+          "german": "Ja, du hast recht, das ist wirklich viel praktischer so.",
+          "english": "",
+          "audio_id": "DE_LEY_EXP_53"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Task Allocation - Kümmere mich)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Leyla",
+          "text": "Sehr gerne, darum kümmere ich mich!",
+          "german": "Sehr gerne, darum kümmere ich mich!",
+          "english": "",
+          "audio_id": "DE_LEY_EXP_54"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Task Allocation - Aufgaben teilen)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Leyla",
+          "text": "Abgemacht! Wenn du das übernimmst, kümmere ich mich um den Rest.",
+          "german": "Abgemacht! Wenn du das übernimmst, kümmere ich mich um den Rest.",
+          "english": "",
+          "audio_id": "DE_LEY_EXP_55"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Summary Lead-in - Fast alle Punkte)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Leyla",
+          "text": "Super, wir haben jetzt fast alle Punkte geklärt!",
+          "german": "Super, wir haben jetzt fast alle Punkte geklärt!",
+          "english": "",
+          "audio_id": "DE_LEY_EXP_56"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Clarification - Verstanden)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Leyla",
+          "text": "Ach so, alles klar, jetzt habe ich dich verstanden.",
+          "german": "Ach so, alles klar, jetzt habe ich dich verstanden.",
+          "english": "",
+          "audio_id": "DE_LEY_EXP_57"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Politeness - Spaß beim Planen)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Leyla",
+          "text": "Gerne! Es macht richtig Spaß, das mit dir zusammen zu planen.",
+          "german": "Gerne! Es macht richtig Spaß, das mit dir zusammen zu planen.",
+          "english": "",
+          "audio_id": "DE_LEY_EXP_58"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention (Off-Topic)",
+      "speaker": "Herr Wagner",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Herr Wagner",
+          "text": "Entschuldigung, ich muss kurz unterbrechen: Bitte bleiben Sie bei Ihrer Planungsaufgabe auf dem Aufgabenblatt.",
+          "german": "Entschuldigung, ich muss kurz unterbrechen: Bitte bleiben Sie bei Ihrer Planungsaufgabe auf dem Aufgabenblatt.",
+          "english": "",
+          "audio_id": "DE_EX1_T3_INT_TOPIC"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention (Monologue / No Negotiation)",
+      "speaker": "Herr Wagner",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Herr Wagner",
+          "text": "Kurzer Hinweis: Bitte planen Sie die Aufgabe gemeinsam im Dialog. Machen Sie Vorschläge und fragen Sie auch Ihre Partnerin nach ihrer Meinung.",
+          "german": "Kurzer Hinweis: Bitte planen Sie die Aufgabe gemeinsam im Dialog. Machen Sie Vorschläge und fragen Sie auch Ihre Partnerin nach ihrer Meinung.",
+          "english": "",
+          "audio_id": "DE_EX1_T3_INT_DIALOG"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention (Skipped Bullet Points / Silence)",
+      "speaker": "Herr Wagner",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Herr Wagner",
+          "text": "Schauen Sie bitte noch einmal kurz auf Ihr Aufgabenblatt: Haben Sie schon alle Punkte besprochen und die Aufgaben untereinander aufgeteilt?",
+          "german": "Schauen Sie bitte noch einmal kurz auf Ihr Aufgabenblatt: Haben Sie schon alle Punkte besprochen und die Aufgaben untereinander aufgeteilt?",
+          "english": "",
+          "audio_id": "DE_EX1_T3_INT_SILENCE"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention (Politeness)",
+      "speaker": "Herr Wagner",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Herr Wagner",
+          "text": "Ich bitte Sie um einen höflichen und sachlichen Umgangston während der Prüfung. Bitte fahren Sie fort.",
+          "german": "Ich bitte Sie um einen höflichen und sachlichen Umgangston während der Prüfung. Bitte fahren Sie fort.",
+          "english": "",
+          "audio_id": "DE_EX1_T3_INT_POLITE"
+        }
+      }
+    },
+    {
+      "topic": "Official Conclusion of the Oral Exam (Teil 3 Outro)",
+      "speaker": "Herr Wagner",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Herr Wagner",
+          "text": "Vielen Dank Ihnen beiden! Damit haben wir auch den dritten Teil geschafft, und Ihre mündliche Prüfung telc Deutsch B1 ist hiermit beendet. Die Ergebnisse erhalten Sie in circa vier Wochen. Ich wünsche Ihnen noch einen schönen Tag und alles Gute. Auf Wiedersehen!",
+          "german": "Vielen Dank Ihnen beiden! Damit haben wir auch den dritten Teil geschafft, und Ihre mündliche Prüfung telc Deutsch B1 ist hiermit beendet. Die Ergebnisse erhalten Sie in circa vier Wochen. Ich wünsche Ihnen noch einen schönen Tag und alles Gute. Auf Wiedersehen!",
+          "english": "",
+          "audio_id": "DE_EX1_T3_OUTRO_01"
+        }
+      }
+    }
+  ]
+}

@@ -3,8 +3,8 @@ package engine
 import (
 	"log/slog"
 
-	"voice-exam-simulator/config"
-	"voice-exam-simulator/services"
+	"voice-engine/config"
+	"voice-engine/services"
 )
 
 // Ledger aliases services.Ledger so engine consumers have a unified package entry point.

@@ -9,9 +9,9 @@ import (
 	"net/http"
 	"unicode/utf8"
 
-	"voice-exam-simulator/config"
-	"voice-exam-simulator/internal/contracts"
-	"voice-exam-simulator/services"
+	"voice-engine/config"
+	"voice-engine/internal/contracts"
+	"voice-engine/services"
 )
 
 // ElevenLabsTTS implements TTSProvider using ElevenLabs Flash v2.5.

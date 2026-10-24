@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"voice-exam-simulator/config"
+	"voice-engine/config"
 )
 
 // DecisionQuestion defines a single question sent to OpenAI Decisions API.

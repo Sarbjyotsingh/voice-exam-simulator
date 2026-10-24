@@ -3,8 +3,8 @@ package engine
 import (
 	"context"
 
-	"voice-exam-simulator/internal/contracts"
-	"voice-exam-simulator/services"
+	"voice-engine/internal/contracts"
+	"voice-engine/services"
 )
 
 // SessionContext carries resolved session state for one active WebSocket connection or evaluation request.

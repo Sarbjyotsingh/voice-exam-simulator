@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"strings"
 
-	"voice-exam-simulator/internal/contracts"
+	"voice-engine/internal/contracts"
 )
 
 // SchemaDecisionAdapter implements DecisionProvider on top of ANY standard Chat LLMProvider

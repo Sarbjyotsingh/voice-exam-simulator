@@ -194,8 +194,8 @@ func NewDecisionRouter(decisions *OpenAIDecisions, registry *SpecRegistry, logge
 
 // RouteResult is returned by RouteTurn.
 type RouteResult struct {
-	Fallback  bool                   // if true, handler must fall back to Groq Chat + ElevenLabs
-	Response  string                 // JSON string matching {"exam_ended": bool, "parts": [...]}
+	Fallback  bool   // if true, handler must fall back to Groq Chat + ElevenLabs
+	Response  string // JSON string matching {"exam_ended": bool, "parts": [...]}
 	ExamEnded bool
 	Parts     []map[string]interface{}
 }

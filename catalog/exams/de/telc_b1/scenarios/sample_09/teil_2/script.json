@@ -1,0 +1,465 @@
+{
+  "exam_id": "B1_S09",
+  "topic_title": "Gesunde Ernährung vs. Fast Food",
+  "exam_hint": "Thema: „Gesunde Ernährung & Kochen vs. Fast Food“\n\nIhr Textzettel (Bettina Sommer, 28 Jahre, Lehrerin):\n„Für mich ist gesunde Ernährung extrem wichtig. Ich koche jeden Abend frisch mit viel Gemüse und kaufe fast nur Bio-Produkte auf dem Wochenmarkt. Fast Food oder Fertiggerichte esse ich überhaupt nicht, weil da zu viel Zucker, Fett und Salz drin sind. Kochen dauert zwar länger, aber es entspannt mich nach der Arbeit und hält mich fit.“\n\nAufgabe:\n1. Fassen Sie zuerst kurz zusammen, was Bettina Sommer sagt.\n2. Diskutieren Sie danach mit Ihrer Partnerin: Ihre eigene Meinung, Ihre Essgewohnheiten in Deutschland, wie man sich in Ihrem Heimatland ernährt und welche Vor- und Nachteile Sie sehen.",
+  "voice_profiles": {
+    "Leyla": "NE7AIW5DoJ7lUosXV2KR",
+    "Herr Wagner": "Jvf6TAXwMUVTSR20U0f9"
+  },
+  "auto_play_sequence": [
+    "DE_EX1_T2_INTRO_01",
+    "DE_LEYT1B_T2OPEN_01"
+  ],
+  "end_audio_id": "DE_EX1_T2_OUTRO_01",
+  "dialogues": [
+    {
+      "topic": "Einleitung Teil 2",
+      "speaker": "Herr Wagner",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX1_T2_INTRO_01",
+          "text": "Vielen Dank. Das war Teil 1. Wir kommen nun zu Teil 2: Gespräch über ein Thema. Sie haben in der Vorbereitungszeit beide einen kurzen Text zu einem Thema gelesen. Bitte stellen Sie Ihrem Partner oder Ihrer Partnerin zuerst kurz vor, was die Person in Ihrem Text sagt, und unterhalten Sie sich danach über Ihre eigene Meinung und Ihre Erfahrungen. Leyla, möchten Sie vielleicht beginnen?"
+        }
+      }
+    },
+    {
+      "topic": "Textpräsentation (Gesunde Ernährung vs. Fast Food)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_LEYT1B_T2OPEN_01",
+          "text": "Gerne! Mein Text handelt vom Thema Ernährung. Bei mir geht es um Hannes Leivig. Er ist 32 Jahre alt und arbeitet als Ingenieur. Er sagt, dass er jeden Tag bis 19 Uhr arbeitet und abends zu müde zum Kochen ist. Deshalb isst er mittags oft beim Imbiss und abends Tiefkühlpizza, weil ihm einfach die Zeit fehlt. Und was steht in deinem Text?"
+        }
+      }
+    },
+    {
+      "topic": "Textzusammenfassung",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_LEY_PRES_Q1",
+          "text": "Was steht denn in deinem Text? Kannst du mir deine Meinung auf dem Zettel kurz vorstellen?"
+        },
+        "answer": {
+          "audio_id": "DE_LEYT1B_PRES_A1",
+          "text": "In meinem Text sagt Hannes Leivig, ein 32-jähriger Ingenieur, dass er wegen seiner langen Arbeitszeiten fast nie selbst kocht und meistens Fast Food oder Tiefkühlpizza isst."
+        }
+      }
+    },
+    {
+      "topic": "Textzusammenfassung (Nachfrage)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_LEY_PRES_Q2",
+          "text": "Moment mal, bevor wir richtig diskutieren: Was steht eigentlich auf deinem Zettel? Kannst du kurz zusammenfassen, was die Person dort sagt?"
+        }
+      }
+    },
+    {
+      "topic": "Eigene Meinung zum Thema",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_LEYT1_OPIN_Q1",
+          "text": "Wie siehst du das? Achtest du auf gesunde Ernährung oder isst du auch oft schnelles Essen?"
+        },
+        "answer": {
+          "audio_id": "DE_LEYT1B_OPIN_A1",
+          "text": "Ich kann Hannes ehrlich gesagt gut verstehen. Unter der Woche habe ich wegen der Arbeit auch oft wenig Zeit, aber am Wochenende versuche ich zumindest frisch zu kochen."
+        }
+      }
+    },
+    {
+      "topic": "Eigene Meinung (Alternative)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_LEYT1_OPIN_Q2",
+          "text": "Ist gesundes Essen für dich wichtig oder fehlt dir im Alltag oft die Zeit dafür?"
+        }
+      }
+    },
+    {
+      "topic": "Erfahrungen und Gewohnheiten in Deutschland",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_LEYT1_HAB_Q1",
+          "text": "Wie machst du das hier in Deutschland? Kochst du meistens selbst zu Hause oder gehst du oft essen?"
+        },
+        "answer": {
+          "audio_id": "DE_LEYT1_HAB_A1",
+          "text": "Hier in Deutschland koche ich meistens abends selbst, oft türkische oder mediterrane Gerichte mit Reis und frischem Gemüse. Nur wenn ich viel Stress habe, hole ich mir mal einen Döner."
+        }
+      }
+    },
+    {
+      "topic": "Gewohnheiten in Deutschland (Alternative)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_LEYT1_HAB_Q2",
+          "text": "Was isst du denn normalerweise unter der Woche, wenn du arbeitest oder Deutsch lernst?"
+        }
+      }
+    },
+    {
+      "topic": "Situation im Heimatland",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_LEYT1_HOME_Q1",
+          "text": "Und wie ist das in deinem Heimatland? Kochen die Menschen dort jeden Tag frisch oder gibt es auch viel Fast Food?"
+        },
+        "answer": {
+          "audio_id": "DE_LEYT1_HOME_A1",
+          "text": "In meinem Heimatland, der Türkei, kocht man fast jeden Tag frisch für die ganze Familie. Tiefkühlpizza oder Fertiggerichte im Supermarkt sind dort viel seltener als in Deutschland."
+        }
+      }
+    },
+    {
+      "topic": "Vor- und Nachteile",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_LEYT1_PRO_Q1",
+          "text": "Was sind deiner Meinung nach die größten Vor- und Nachteile von Fast Food im Vergleich zum Selberkochen?"
+        },
+        "answer": {
+          "audio_id": "DE_LEYT1_PRO_A1",
+          "text": "Der große Vorteil beim Selberkochen ist natürlich, dass es gesünder und günstiger ist. Der Nachteil ist aber, dass Einkaufen und Kochen jeden Tag viel Zeit kosten."
+        }
+      }
+    },
+    {
+      "topic": "Rückfrage (Meinung)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_LEY_T2BACK_Q1",
+          "text": "Und wie siehst du das persönlich?"
+        }
+      }
+    },
+    {
+      "topic": "Rückfrage (Erfahrung)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_LEY_T2BACK_Q2",
+          "text": "Was hast du für Erfahrungen damit gemacht?"
+        }
+      }
+    },
+    {
+      "topic": "Verständnisfrage",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_LEY_T2CLAR_Q1",
+          "text": "Entschuldigung, das habe ich akustisch nicht ganz verstanden. Kannst du das bitte noch einmal erklären?"
+        }
+      }
+    },
+    {
+      "topic": "Nachfrage bei Stille",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_LEY_T2SIL_Q1",
+          "text": "Bist du noch da? Was meinst du denn zu diesem Thema?"
+        }
+      }
+    },
+    {
+      "topic": "Abschluss Partner",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_LEY_T2CLOSE_01",
+          "text": "Vielen Dank für die spannende Diskussion! Es hat wirklich Spaß gemacht, mit dir über dieses Thema zu sprechen."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Zustimmung",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_LEY_EXP_21",
+          "text": "Da hast du absolut recht."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Zustimmung",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_LEY_EXP_22",
+          "text": "Ganz genau, das sehe ich genauso."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Zustimmung",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_LEY_EXP_23",
+          "text": "Stimmt, das ist ein sehr guter Punkt."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Zustimmung",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_LEY_EXP_24",
+          "text": "Da bin ich ganz deiner Meinung."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Zustimmung",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_LEY_EXP_25",
+          "text": "Ja, das kann ich total gut verstehen."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Zustimmung",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_LEY_EXP_26",
+          "text": "Das finde ich auch sehr wichtig."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Höflicher Widerspruch",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_LEY_EXP_27",
+          "text": "Da bin ich etwas anderer Meinung."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Höflicher Widerspruch",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_LEY_EXP_28",
+          "text": "Das sehe ich nicht ganz so."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Höflicher Widerspruch",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_LEY_EXP_29",
+          "text": "Ehrlich gesagt ist das bei mir ein bisschen anders."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Höflicher Widerspruch",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_LEY_EXP_30",
+          "text": "Ja, vielleicht, aber man muss auch die andere Seite sehen."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Höflicher Widerspruch",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_LEY_EXP_31",
+          "text": "Das stimmt zwar, aber für mich persönlich passt das nicht so gut."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Interesse",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_LEY_EXP_32",
+          "text": "Ach wirklich? Das ist ja interessant!"
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Interesse",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_LEY_EXP_33",
+          "text": "Das kann ich mir sehr gut vorstellen."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Interesse",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_LEY_EXP_34",
+          "text": "Interessant! So habe ich das noch gar nicht gesehen."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Heimatland",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_LEY_EXP_35",
+          "text": "Ach so ist das in deinem Heimatland! Sehr spannend."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Zusammenfassung",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_LEY_EXP_36",
+          "text": "Danke für die Zusammenfassung! Das ist eine interessante Meinung."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Empathie",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_LEY_EXP_37",
+          "text": "Ja, das kenne ich aus eigener Erfahrung auch sehr gut."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Höflichkeit",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_LEY_EXP_38",
+          "text": "Gern geschehen!"
+        }
+      }
+    },
+    {
+      "topic": "Prüfer-Nachfrage 1",
+      "speaker": "Herr Wagner",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX1T1_T2_FOLLOW_01",
+          "text": "Darf ich noch kurz etwas fragen: Glauben Sie, dass gesunde Lebensmittel im Supermarkt heute zu teuer sind?"
+        }
+      }
+    },
+    {
+      "topic": "Prüfer-Nachfrage 2",
+      "speaker": "Herr Wagner",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX1T1_T2_FOLLOW_02",
+          "text": "Noch eine kurze Frage an Sie: Sollte man schon in der Schule lernen, wie man gesund kocht?"
+        }
+      }
+    },
+    {
+      "topic": "Prüfer-Intervention: Thema",
+      "speaker": "Herr Wagner",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX1_T2_INT_TOPIC",
+          "text": "Entschuldigung, ich muss kurz unterbrechen. Bitte bleiben Sie bei Ihrem Prüfungsthema und tauschen Sie Ihre Erfahrungen dazu aus."
+        }
+      }
+    },
+    {
+      "topic": "Prüfer-Intervention: Höflichkeit",
+      "speaker": "Herr Wagner",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX1_T2_INT_POLITE",
+          "text": "Ich bitte Sie um einen höflichen und respektvollen Ton. Das hier ist eine offizielle Sprachprüfung. Bitte fahren Sie sachlich mit der Diskussion fort."
+        }
+      }
+    },
+    {
+      "topic": "Prüfer-Intervention: Dialog",
+      "speaker": "Herr Wagner",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX1_T2_INT_DIALOG",
+          "text": "Denken Sie bitte daran, dass es ein gemeinsames Gespräch sein soll. Stellen Sie auch Ihrer Partnerin Fragen und gehen Sie aufeinander ein."
+        }
+      }
+    },
+    {
+      "topic": "Abschluss Teil 2",
+      "speaker": "Herr Wagner",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX1_T2_OUTRO_01",
+          "text": "Vielen Dank. Das war Teil 2. Wir kommen nun zu Teil 3: Gemeinsam eine Aufgabe lösen."
+        }
+      }
+    }
+  ]
+}

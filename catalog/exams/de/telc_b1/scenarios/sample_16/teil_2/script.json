@@ -1,0 +1,465 @@
+{
+  "exam_id": "B1_S16",
+  "topic_title": "Rauchen & Gesundheit",
+  "exam_hint": "Thema: „Rauchen & Rauchverbot in der Öffentlichkeit“\n\nIhr Textzettel (Melanie Roth, 37 Jahre, Journalistin):\n„Ich finde Rauchen schrecklich und habe in meinem Leben noch nie eine Zigarette geraucht. Meine Eltern waren starke Raucher und der kalte Rauch in der Wohnung hat mich schon als Kind gestört. Es ist gut, dass Rauchen in Restaurants und Zügen verboten ist, denn Nichtraucher müssen vor Passivrauchen geschützt werden.“\n\nAufgabe:\n1. Fassen Sie zuerst kurz zusammen, was Melanie Roth sagt.\n2. Diskutieren Sie danach mit Ihrer Partnerin: Ihre eigene Meinung zum Thema Rauchen, Ihre Erfahrungen in Deutschland, wie die Situation in Ihrem Heimatland ist und was Sie von Rauchverboten halten.",
+  "voice_profiles": {
+    "Elena": "gVOibprogMfmHVVyo5r6",
+    "Frau Erdoğan": "zKHQdbB8oaQ7roNTiDTK"
+  },
+  "auto_play_sequence": [
+    "DE_EX3_T2_INTRO_01",
+    "DE_ELET8B_T2OPEN_01"
+  ],
+  "end_audio_id": "DE_EX3_T2_OUTRO_01",
+  "dialogues": [
+    {
+      "topic": "Einleitung Teil 2",
+      "speaker": "Frau Erdoğan",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX3_T2_INTRO_01",
+          "text": "Super, vielen Dank. Das war schon Teil 1. Kommen wir nun zu Teil 2: Gespräch über ein Thema. Sie haben in der Vorbereitungszeit zwei kurze Texte zu einem Thema bekommen. Stellen Sie sich bitte gegenseitig vor, was Sie gelesen haben, und tauschen Sie dann Ihre persönliche Meinung und Ihre Erfahrungen aus. Elena, möchten Sie starten?"
+        }
+      }
+    },
+    {
+      "topic": "Textpräsentation (Rauchen & Gesundheit)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_ELET8B_T2OPEN_01",
+          "text": "Gerne! Mein Text ist über das Thema Rauchen. Bei mir spricht Max Krüger, er ist 40 Jahre alt und Elektriker. Er raucht seit 20 Jahren und weiß zwar, dass es ungesund ist, aber die Zigarettenpause hilft ihm bei Stress auf der Arbeit und er findet, jeder Erwachsene sollte das selbst entscheiden. Und was steht auf deinem Zettel?"
+        }
+      }
+    },
+    {
+      "topic": "Textzusammenfassung",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_ELE_PRES_Q1",
+          "text": "Was steht denn in deinem Text? Kannst du mir deine Meinung auf dem Zettel kurz vorstellen?"
+        },
+        "answer": {
+          "audio_id": "DE_ELET8B_PRES_A1",
+          "text": "In meinem Text sagt Max Krüger, ein 40-jähriger Elektriker, dass er seit 20 Jahren raucht, weil es ihm bei Stress hilft, obwohl er weiß, dass es ungesund ist."
+        }
+      }
+    },
+    {
+      "topic": "Textzusammenfassung (Nachfrage)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_ELE_PRES_Q2",
+          "text": "Moment mal, bevor wir richtig diskutieren: Was steht eigentlich auf deinem Zettel? Kannst du kurz zusammenfassen, was die Person dort sagt?"
+        }
+      }
+    },
+    {
+      "topic": "Eigene Meinung zum Thema",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_ELET8_OPIN_Q1",
+          "text": "Wie stehst du zum Thema Rauchen? Rauchst du selbst oder bist du auch gegen das Rauchen?"
+        },
+        "answer": {
+          "audio_id": "DE_ELET8B_OPIN_A1",
+          "text": "Als Krankenschwester sehe ich das natürlich ganz anders als Max. Ich sehe im Krankenhaus jeden Tag, wie gefährlich Rauchen für die Lunge und das Herz ist."
+        }
+      }
+    },
+    {
+      "topic": "Eigene Meinung (Alternative)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_ELET8_OPIN_Q2",
+          "text": "Was ist deine persönliche Meinung zum Rauchen und zu Rauchverboten?"
+        }
+      }
+    },
+    {
+      "topic": "Erfahrungen und Gewohnheiten in Deutschland",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_ELET8_HAB_Q1",
+          "text": "Was sind deine Erfahrungen hier in Deutschland? Findest du die Regeln für Raucher und Nichtraucher hier gut?"
+        },
+        "answer": {
+          "audio_id": "DE_ELET8_HAB_A1",
+          "text": "Hier in Deutschland finde ich es sehr angenehm, dass in allen Restaurants, Cafés und Bahnhöfen Rauchverbot gilt. Mich stört es nur, wenn Leute direkt an der Bushaltestelle im Regen unter dem Dach rauchen."
+        }
+      }
+    },
+    {
+      "topic": "Gewohnheiten in Deutschland (Alternative)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_ELET8_HAB_Q2",
+          "text": "Rauchen in deinem Freundeskreis oder bei deiner Arbeit viele Kollegen?"
+        }
+      }
+    },
+    {
+      "topic": "Situation im Heimatland",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_ELET8_HOME_Q1",
+          "text": "Und wie ist die Situation in deinem Heimatland? Rauchen dort viele Menschen und gibt es dort auch strenge Rauchverbote?"
+        },
+        "answer": {
+          "audio_id": "DE_ELET8_HOME_A1",
+          "text": "In meinem Heimatland Rumänien wurde früher fast überall geraucht, sogar in Cafés. Inzwischen gibt es dort zum Glück auch ein Rauchverbot in geschlossenen Räumen, aber draußen rauchen immer noch sehr viele Menschen."
+        }
+      }
+    },
+    {
+      "topic": "Vor- und Nachteile",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_ELET8_PRO_Q1",
+          "text": "Warum fangen deiner Meinung nach immer noch so viele junge Leute mit dem Rauchen oder mit E-Zigaretten an?"
+        },
+        "answer": {
+          "audio_id": "DE_ELET8_PRO_A1",
+          "text": "Raucher sagen oft, dass eine Zigarette kurz gegen Stress hilft und man in der Pause leicht ins Gespräch kommt. Aber die Nachteile sind riesig: Es kostet extrem viel Geld, schadet der Gesundheit und belastet auch andere Menschen durch Passivrauchen."
+        }
+      }
+    },
+    {
+      "topic": "Rückfrage (Meinung)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_ELE_T2BACK_Q1",
+          "text": "Und wie siehst du das persönlich?"
+        }
+      }
+    },
+    {
+      "topic": "Rückfrage (Erfahrung)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_ELE_T2BACK_Q2",
+          "text": "Was hast du für Erfahrungen damit gemacht?"
+        }
+      }
+    },
+    {
+      "topic": "Verständnisfrage",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_ELE_T2CLAR_Q1",
+          "text": "Entschuldigung, das habe ich akustisch nicht ganz verstanden. Kannst du das bitte noch einmal erklären?"
+        }
+      }
+    },
+    {
+      "topic": "Nachfrage bei Stille",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_ELE_T2SIL_Q1",
+          "text": "Bist du noch da? Was meinst du denn zu diesem Thema?"
+        }
+      }
+    },
+    {
+      "topic": "Abschluss Partner",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_ELE_T2CLOSE_01",
+          "text": "Vielen Dank für die spannende Diskussion! Es hat wirklich Spaß gemacht, mit dir über dieses Thema zu sprechen."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Zustimmung",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_ELE_EXP_21",
+          "text": "Da hast du absolut recht."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Zustimmung",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_ELE_EXP_22",
+          "text": "Ganz genau, das sehe ich genauso."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Zustimmung",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_ELE_EXP_23",
+          "text": "Stimmt, das ist ein sehr guter Punkt."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Zustimmung",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_ELE_EXP_24",
+          "text": "Da bin ich ganz deiner Meinung."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Zustimmung",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_ELE_EXP_25",
+          "text": "Ja, das kann ich total gut verstehen."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Zustimmung",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_ELE_EXP_26",
+          "text": "Das finde ich auch sehr wichtig."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Höflicher Widerspruch",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_ELE_EXP_27",
+          "text": "Da bin ich etwas anderer Meinung."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Höflicher Widerspruch",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_ELE_EXP_28",
+          "text": "Das sehe ich nicht ganz so."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Höflicher Widerspruch",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_ELE_EXP_29",
+          "text": "Ehrlich gesagt ist das bei mir ein bisschen anders."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Höflicher Widerspruch",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_ELE_EXP_30",
+          "text": "Ja, vielleicht, aber man muss auch die andere Seite sehen."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Höflicher Widerspruch",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_ELE_EXP_31",
+          "text": "Das stimmt zwar, aber für mich persönlich passt das nicht so gut."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Interesse",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_ELE_EXP_32",
+          "text": "Ach wirklich? Das ist ja interessant!"
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Interesse",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_ELE_EXP_33",
+          "text": "Das kann ich mir sehr gut vorstellen."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Interesse",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_ELE_EXP_34",
+          "text": "Interessant! So habe ich das noch gar nicht gesehen."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Heimatland",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_ELE_EXP_35",
+          "text": "Ach so ist das in deinem Heimatland! Sehr spannend."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Zusammenfassung",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_ELE_EXP_36",
+          "text": "Danke für die Zusammenfassung! Das ist eine interessante Meinung."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Empathie",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_ELE_EXP_37",
+          "text": "Ja, das kenne ich aus eigener Erfahrung auch sehr gut."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Höflichkeit",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_ELE_EXP_38",
+          "text": "Gern geschehen!"
+        }
+      }
+    },
+    {
+      "topic": "Prüfer-Nachfrage 1",
+      "speaker": "Frau Erdoğan",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX3T8_T2_FOLLOW_01",
+          "text": "Darf ich noch kurz fragen: Glauben Sie, dass Zigaretten noch teurer werden sollten, damit weniger Menschen rauchen?"
+        }
+      }
+    },
+    {
+      "topic": "Prüfer-Nachfrage 2",
+      "speaker": "Frau Erdoğan",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX3T8_T2_FOLLOW_02",
+          "text": "Noch eine kurze Abschlussfrage: Was halten Sie von E-Zigaretten und Vapes — sollten diese genauso streng geregelt werden?"
+        }
+      }
+    },
+    {
+      "topic": "Prüfer-Intervention: Thema",
+      "speaker": "Frau Erdoğan",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX3_T2_INT_TOPIC",
+          "text": "Einen kleinen Moment bitte — Sie weichen gerade vom Thema ab. Kommen Sie bitte wieder zurück zu Ihrem Prüfungsthema."
+        }
+      }
+    },
+    {
+      "topic": "Prüfer-Intervention: Höflichkeit",
+      "speaker": "Frau Erdoğan",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX3_T2_INT_POLITE",
+          "text": "Ich möchte Sie bitten, höflich und respektvoll miteinander umzugehen. Bitte setzen Sie das Gespräch sachlich fort."
+        }
+      }
+    },
+    {
+      "topic": "Prüfer-Intervention: Dialog",
+      "speaker": "Frau Erdoğan",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX3_T2_INT_DIALOG",
+          "text": "Denken Sie bitte daran, dass Sie miteinander diskutieren sollen. Reagieren Sie auf Ihre Partnerin und stellen Sie Fragen."
+        }
+      }
+    },
+    {
+      "topic": "Abschluss Teil 2",
+      "speaker": "Frau Erdoğan",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX3_T2_OUTRO_01",
+          "text": "Vielen Dank, das reicht schon für Teil 2. Sehr schön. Wir kommen jetzt zum dritten und letzten Teil der Prüfung: Gemeinsam etwas planen."
+        }
+      }
+    }
+  ]
+}

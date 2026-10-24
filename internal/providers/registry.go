@@ -10,9 +10,9 @@ import (
 	"strconv"
 	"strings"
 
-	"voice-exam-simulator/config"
-	"voice-exam-simulator/internal/contracts"
-	"voice-exam-simulator/services"
+	"voice-engine/config"
+	"voice-engine/internal/contracts"
+	"voice-engine/services"
 )
 
 // RouteConfig specifies primary and fallback model keys for one capability.

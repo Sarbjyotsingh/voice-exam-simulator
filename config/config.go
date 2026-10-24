@@ -36,10 +36,10 @@ type Config struct {
 	LedgerDir               string // on-disk per-user cost ledger (mount a volume in production)
 
 	// OpenAI Decisions API (fast non-autoregressive turn router)
-	OpenAIAPIKey          string
-	UseDecisionsAPI       bool
+	OpenAIAPIKey            string
+	UseDecisionsAPI         bool
 	DecisionsMaxConcurrency int
-	DecisionsEnabledTeils map[int]bool
+	DecisionsEnabledTeils   map[int]bool
 }
 
 func MustLoad() Config {

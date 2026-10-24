@@ -1,8 +1,8 @@
 package engine
 
 import (
-	"voice-exam-simulator/internal/contracts"
-	"voice-exam-simulator/services"
+	"voice-engine/internal/contracts"
+	"voice-engine/services"
 )
 
 // IsHallucination filters out Whisper silence/subtitle hallucinations for the given language.

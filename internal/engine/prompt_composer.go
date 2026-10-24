@@ -7,7 +7,7 @@ import (
 	"strings"
 	"sync"
 
-	"voice-exam-simulator/internal/contracts"
+	"voice-engine/internal/contracts"
 )
 
 // PromptLayerQuery specifies which 4-layer prompt stack to compose.

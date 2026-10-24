@@ -1,0 +1,805 @@
+{
+  "voice_profiles": {
+    "Herr Richter": "z1EhmmPwF0ENGYE8dBE6",
+    "Mateo": "1J0wWp4zPQIvsK7Xwh34"
+  },
+  "auto_play_sequence": [
+    "DE_EX4_INTRO_01",
+    "DE_MAT_OPEN_01"
+  ],
+  "end_audio_id": "DE_EX4_OUTRO_01",
+  "dialogues": [
+    {
+      "topic": "Exam Introduction",
+      "speaker": "Herr Richter",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX4_INTRO_01",
+          "text": "Guten Tag! Ich begrüße Sie ganz herzlich zur mündlichen telc B1 Prüfung. Mein Name ist Herr Richter und das ist meine Kollegin Frau Schwarz. Wir beginnen mit dem ersten Teil: Bitte unterhalten Sie sich und stellen Sie sich einander vor. Bitte beginnen Sie."
+        }
+      }
+    },
+    {
+      "topic": "Opening & Du/Sie Proposal",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_MAT_OPEN_01",
+          "text": "Hallo! Lass uns gerne du sagen. Ich bin Mateo Morales. Und wie heißt du?"
+        },
+        "answer": {
+          "audio_id": "DE_MAT_DUSIE_A1",
+          "text": "Ja, gerne! Wir können sehr gerne du sagen."
+        },
+        "dialogue": {
+          "audio_id": "DE_MAT_DUSIE_Q1",
+          "text": "Hallo! Wollen wir du oder Sie sagen?"
+        }
+      }
+    },
+    {
+      "topic": "Name & Surname",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_MAT_NAME_Q1",
+          "text": "Wie heißt du? Und wie ist dein Nachname?"
+        },
+        "answer": {
+          "audio_id": "DE_MAT_NAME_A1",
+          "text": "Ich heiße Mateo, und mein Nachname ist Morales."
+        },
+        "dialogue": {
+          "audio_id": "DE_MAT_NAME_Q2",
+          "text": "Und wie ist dein Familienname?"
+        }
+      }
+    },
+    {
+      "topic": "Age",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_MAT_AGE_Q1",
+          "text": "Und wie alt bist du, wenn ich fragen darf?"
+        },
+        "answer": {
+          "audio_id": "DE_MAT_AGE_A1",
+          "text": "Ich bin siebenundzwanzig Jahre alt."
+        }
+      }
+    },
+    {
+      "topic": "Origin & Hometown",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_MAT_ORIG_Q1",
+          "text": "Woher kommst du eigentlich?"
+        },
+        "answer": {
+          "audio_id": "DE_MAT_ORIG_A1",
+          "text": "Ich komme aus Spanien und bin in der Hauptstadt Madrid geboren."
+        },
+        "dialogue": {
+          "audio_id": "DE_MAT_ORIG_Q2",
+          "text": "Aus welcher Stadt kommst du genau?"
+        }
+      }
+    },
+    {
+      "topic": "Residence & Housing",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_MAT_RES_Q1",
+          "text": "Wo wohnst du jetzt hier in Deutschland?"
+        },
+        "answer": {
+          "audio_id": "DE_MAT_RES_A1",
+          "text": "Ich wohne seit einem Jahr in Frankfurt am Main, allein in einer kleinen Zweizimmerwohnung in der dritten Etage."
+        },
+        "dialogue": {
+          "audio_id": "DE_MAT_RES_Q2",
+          "text": "Wohnst du in einer Wohnung, in einem Haus oder in einer WG?"
+        }
+      }
+    },
+    {
+      "topic": "Family & Marital Status",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_MAT_FAM_Q1",
+          "text": "Lebst du allein hier oder hast du Familie in Deutschland?"
+        },
+        "answer": {
+          "audio_id": "DE_MAT_FAM_A1",
+          "text": "Ich bin ledig und wohne hier allein. Meine Eltern und meine jüngere Schwester leben alle noch in Madrid."
+        },
+        "dialogue": {
+          "audio_id": "DE_MAT_FAM_Q2",
+          "text": "Bist du verheiratet und hast du Kinder?"
+        }
+      }
+    },
+    {
+      "topic": "Work & Education",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_MAT_WORK_Q1",
+          "text": "Was machst du beruflich? Arbeitest du schon oder machst du eine Ausbildung?"
+        },
+        "answer": {
+          "audio_id": "DE_MAT_WORK_A1",
+          "text": "Ich bin Informatiker von Beruf und arbeite als Softwareentwickler bei einer Firma hier in Frankfurt."
+        }
+      }
+    },
+    {
+      "topic": "Languages",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_MAT_LANG_Q1",
+          "text": "Welche Sprachen sprichst du? Was ist deine Muttersprache?"
+        },
+        "answer": {
+          "audio_id": "DE_MAT_LANG_A1",
+          "text": "Meine Muttersprache ist Spanisch. Außerdem spreche ich fließend Englisch, ein bisschen Italienisch und Deutsch."
+        }
+      }
+    },
+    {
+      "topic": "Learning German",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_MAT_GER_Q1",
+          "text": "Wo und wie lange hast du schon Deutsch gelernt?"
+        },
+        "answer": {
+          "audio_id": "DE_MAT_GER_A1",
+          "text": "Ich habe schon in Spanien an der Universität ein bisschen Deutsch gelernt und besuche jetzt abends nach der Arbeit einen Sprachkurs."
+        }
+      }
+    },
+    {
+      "topic": "Hobbies & Free Time",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_MAT_HOB_Q1",
+          "text": "Was machst du gern in deiner Freizeit? Hast du Hobbys?"
+        },
+        "answer": {
+          "audio_id": "DE_MAT_HOB_A1",
+          "text": "In meiner Freizeit spiele ich gerne Gitarre, ich gehe oft am Fluss joggen und abends schaue ich gerne Filme."
+        }
+      }
+    },
+    {
+      "topic": "Counter-Questions & Closing",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_MAT_BACK_Q1",
+          "text": "Und du?"
+        },
+        "answer": {
+          "audio_id": "DE_MAT_BACK_Q2",
+          "text": "Und wie ist das bei dir?"
+        },
+        "dialogue": {
+          "audio_id": "DE_MAT_CLOSE_01",
+          "text": "Vielen Dank für das nette Gespräch! Es hat mich sehr gefreut, dich kennenzulernen."
+        }
+      }
+    },
+    {
+      "topic": "Clarification & Silence Recovery",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_MAT_CLAR_Q1",
+          "text": "Entschuldigung, kannst du das bitte noch einmal wiederholen? Ich habe dich akustisch nicht ganz verstanden."
+        },
+        "dialogue": {
+          "audio_id": "DE_MAT_SIL_Q1",
+          "text": "Hallo? Bist du noch da? Wollen wir weitermachen?"
+        }
+      }
+    },
+    {
+      "topic": "Modular Expressions (EXP_01-EXP_03)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_MAT_EXP_01",
+          "text": "Ah, interessant!"
+        },
+        "question": {
+          "audio_id": "DE_MAT_EXP_02",
+          "text": "Oh, schön!"
+        },
+        "answer": {
+          "audio_id": "DE_MAT_EXP_03",
+          "text": "Super!"
+        }
+      }
+    },
+    {
+      "topic": "Modular Expressions (EXP_04-EXP_06)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_MAT_EXP_04",
+          "text": "Das klingt ja toll!"
+        },
+        "question": {
+          "audio_id": "DE_MAT_EXP_05",
+          "text": "Ach so, ich verstehe."
+        },
+        "answer": {
+          "audio_id": "DE_MAT_EXP_06",
+          "text": "Oh, wirklich? Das ist ja spannend!"
+        }
+      }
+    },
+    {
+      "topic": "Modular Expressions (EXP_07-EXP_09)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_MAT_EXP_07",
+          "text": "Alles klar!"
+        },
+        "question": {
+          "audio_id": "DE_MAT_EXP_08",
+          "text": "Ja, das kenne ich gut."
+        },
+        "answer": {
+          "audio_id": "DE_MAT_EXP_09",
+          "text": "Cool!"
+        }
+      }
+    },
+    {
+      "topic": "Modular Expressions (EXP_10-EXP_12)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_MAT_EXP_10",
+          "text": "Ah, okay!"
+        },
+        "question": {
+          "audio_id": "DE_MAT_EXP_11",
+          "text": "Das freut mich!"
+        },
+        "answer": {
+          "audio_id": "DE_MAT_EXP_12",
+          "text": "Oh, ich auch!"
+        }
+      }
+    },
+    {
+      "topic": "Modular Expressions (EXP_13-EXP_15)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_MAT_EXP_13",
+          "text": "Ja, das stimmt."
+        },
+        "question": {
+          "audio_id": "DE_MAT_EXP_14",
+          "text": "Ich wünsche dir viel Erfolg dabei!"
+        },
+        "answer": {
+          "audio_id": "DE_MAT_EXP_15",
+          "text": "Gerne! Kein Problem."
+        }
+      }
+    },
+    {
+      "topic": "Modular Expressions (EXP_16-EXP_18)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_MAT_EXP_16",
+          "text": "Oh, das tut mir leid."
+        },
+        "question": {
+          "audio_id": "DE_MAT_EXP_17",
+          "text": "Sehr gut!"
+        },
+        "answer": {
+          "audio_id": "DE_MAT_EXP_18",
+          "text": "Danke, gleichfalls!"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Follow-Up 1",
+      "speaker": "Herr Richter",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX4_FOLLOW_01",
+          "text": "Danke sehr. Eine kurze Zusatzfrage hätte ich noch an Sie: Was möchten Sie beruflich in Zukunft hier in Deutschland machen?"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Follow-Up 2",
+      "speaker": "Herr Richter",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX4_FOLLOW_02",
+          "text": "Vielen Dank Ihnen beiden. Eine kurze Frage noch: Können Sie Ihren Nachnamen bitte einmal buchstabieren?"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention: Stay on Topic",
+      "speaker": "Herr Richter",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX4_INT_TOPIC",
+          "text": "Bitte bleiben Sie beim Thema und führen Sie das Gespräch über die persönlichen Punkte fort."
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention: Politeness",
+      "speaker": "Herr Richter",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX4_INT_POLITE",
+          "text": "Bitte wahren Sie die Höflichkeit im Prüfungsgespräch."
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention: Dialogue Format",
+      "speaker": "Herr Richter",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX4_INT_DIALOG",
+          "text": "Bitte denken Sie daran, einander Fragen zu stellen und nicht nur alleine zu sprechen."
+        }
+      }
+    },
+    {
+      "topic": "Moderation Teil 1 Ende",
+      "speaker": "Herr Richter",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX4_OUTRO_01",
+          "text": "Vielen Dank Ihnen beiden, das war der erste Teil. Jetzt machen wir mit Teil zwei weiter."
+        }
+      }
+    }
+  ],
+  "teil1 dailogues": [
+    {
+      "topic": "Exam Introduction",
+      "speaker": "Herr Richter",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX4_INTRO_01",
+          "text": "Guten Tag! Ich begrüße Sie ganz herzlich zur mündlichen telc B1 Prüfung. Mein Name ist Herr Richter und das ist meine Kollegin Frau Schwarz. Wir beginnen mit dem ersten Teil: Bitte unterhalten Sie sich und stellen Sie sich einander vor. Bitte beginnen Sie."
+        }
+      }
+    },
+    {
+      "topic": "Opening & Du/Sie Proposal",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_MAT_OPEN_01",
+          "text": "Hallo! Lass uns gerne du sagen. Ich bin Mateo Morales. Und wie heißt du?"
+        },
+        "answer": {
+          "audio_id": "DE_MAT_DUSIE_A1",
+          "text": "Ja, gerne! Wir können sehr gerne du sagen."
+        },
+        "dialogue": {
+          "audio_id": "DE_MAT_DUSIE_Q1",
+          "text": "Hallo! Wollen wir du oder Sie sagen?"
+        }
+      }
+    },
+    {
+      "topic": "Name & Surname",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_MAT_NAME_Q1",
+          "text": "Wie heißt du? Und wie ist dein Nachname?"
+        },
+        "answer": {
+          "audio_id": "DE_MAT_NAME_A1",
+          "text": "Ich heiße Mateo, und mein Nachname ist Morales."
+        },
+        "dialogue": {
+          "audio_id": "DE_MAT_NAME_Q2",
+          "text": "Und wie ist dein Familienname?"
+        }
+      }
+    },
+    {
+      "topic": "Age",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_MAT_AGE_Q1",
+          "text": "Und wie alt bist du, wenn ich fragen darf?"
+        },
+        "answer": {
+          "audio_id": "DE_MAT_AGE_A1",
+          "text": "Ich bin siebenundzwanzig Jahre alt."
+        }
+      }
+    },
+    {
+      "topic": "Origin & Hometown",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_MAT_ORIG_Q1",
+          "text": "Woher kommst du eigentlich?"
+        },
+        "answer": {
+          "audio_id": "DE_MAT_ORIG_A1",
+          "text": "Ich komme aus Spanien und bin in der Hauptstadt Madrid geboren."
+        },
+        "dialogue": {
+          "audio_id": "DE_MAT_ORIG_Q2",
+          "text": "Aus welcher Stadt kommst du genau?"
+        }
+      }
+    },
+    {
+      "topic": "Residence & Housing",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_MAT_RES_Q1",
+          "text": "Wo wohnst du jetzt hier in Deutschland?"
+        },
+        "answer": {
+          "audio_id": "DE_MAT_RES_A1",
+          "text": "Ich wohne seit einem Jahr in Frankfurt am Main, allein in einer kleinen Zweizimmerwohnung in der dritten Etage."
+        },
+        "dialogue": {
+          "audio_id": "DE_MAT_RES_Q2",
+          "text": "Wohnst du in einer Wohnung, in einem Haus oder in einer WG?"
+        }
+      }
+    },
+    {
+      "topic": "Family & Marital Status",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_MAT_FAM_Q1",
+          "text": "Lebst du allein hier oder hast du Familie in Deutschland?"
+        },
+        "answer": {
+          "audio_id": "DE_MAT_FAM_A1",
+          "text": "Ich bin ledig und wohne hier allein. Meine Eltern und meine jüngere Schwester leben alle noch in Madrid."
+        },
+        "dialogue": {
+          "audio_id": "DE_MAT_FAM_Q2",
+          "text": "Bist du verheiratet und hast du Kinder?"
+        }
+      }
+    },
+    {
+      "topic": "Work & Education",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_MAT_WORK_Q1",
+          "text": "Was machst du beruflich? Arbeitest du schon oder machst du eine Ausbildung?"
+        },
+        "answer": {
+          "audio_id": "DE_MAT_WORK_A1",
+          "text": "Ich bin Informatiker von Beruf und arbeite als Softwareentwickler bei einer Firma hier in Frankfurt."
+        }
+      }
+    },
+    {
+      "topic": "Languages",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_MAT_LANG_Q1",
+          "text": "Welche Sprachen sprichst du? Was ist deine Muttersprache?"
+        },
+        "answer": {
+          "audio_id": "DE_MAT_LANG_A1",
+          "text": "Meine Muttersprache ist Spanisch. Außerdem spreche ich fließend Englisch, ein bisschen Italienisch und Deutsch."
+        }
+      }
+    },
+    {
+      "topic": "Learning German",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_MAT_GER_Q1",
+          "text": "Wo und wie lange hast du schon Deutsch gelernt?"
+        },
+        "answer": {
+          "audio_id": "DE_MAT_GER_A1",
+          "text": "Ich habe schon in Spanien an der Universität ein bisschen Deutsch gelernt und besuche jetzt abends nach der Arbeit einen Sprachkurs."
+        }
+      }
+    },
+    {
+      "topic": "Hobbies & Free Time",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_MAT_HOB_Q1",
+          "text": "Was machst du gern in deiner Freizeit? Hast du Hobbys?"
+        },
+        "answer": {
+          "audio_id": "DE_MAT_HOB_A1",
+          "text": "In meiner Freizeit spiele ich gerne Gitarre, ich gehe oft am Fluss joggen und abends schaue ich gerne Filme."
+        }
+      }
+    },
+    {
+      "topic": "Counter-Questions & Closing",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_MAT_BACK_Q1",
+          "text": "Und du?"
+        },
+        "answer": {
+          "audio_id": "DE_MAT_BACK_Q2",
+          "text": "Und wie ist das bei dir?"
+        },
+        "dialogue": {
+          "audio_id": "DE_MAT_CLOSE_01",
+          "text": "Vielen Dank für das nette Gespräch! Es hat mich sehr gefreut, dich kennenzulernen."
+        }
+      }
+    },
+    {
+      "topic": "Clarification & Silence Recovery",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_MAT_CLAR_Q1",
+          "text": "Entschuldigung, kannst du das bitte noch einmal wiederholen? Ich habe dich akustisch nicht ganz verstanden."
+        },
+        "dialogue": {
+          "audio_id": "DE_MAT_SIL_Q1",
+          "text": "Hallo? Bist du noch da? Wollen wir weitermachen?"
+        }
+      }
+    },
+    {
+      "topic": "Modular Expressions (EXP_01-EXP_03)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_MAT_EXP_01",
+          "text": "Ah, interessant!"
+        },
+        "question": {
+          "audio_id": "DE_MAT_EXP_02",
+          "text": "Oh, schön!"
+        },
+        "answer": {
+          "audio_id": "DE_MAT_EXP_03",
+          "text": "Super!"
+        }
+      }
+    },
+    {
+      "topic": "Modular Expressions (EXP_04-EXP_06)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_MAT_EXP_04",
+          "text": "Das klingt ja toll!"
+        },
+        "question": {
+          "audio_id": "DE_MAT_EXP_05",
+          "text": "Ach so, ich verstehe."
+        },
+        "answer": {
+          "audio_id": "DE_MAT_EXP_06",
+          "text": "Oh, wirklich? Das ist ja spannend!"
+        }
+      }
+    },
+    {
+      "topic": "Modular Expressions (EXP_07-EXP_09)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_MAT_EXP_07",
+          "text": "Alles klar!"
+        },
+        "question": {
+          "audio_id": "DE_MAT_EXP_08",
+          "text": "Ja, das kenne ich gut."
+        },
+        "answer": {
+          "audio_id": "DE_MAT_EXP_09",
+          "text": "Cool!"
+        }
+      }
+    },
+    {
+      "topic": "Modular Expressions (EXP_10-EXP_12)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_MAT_EXP_10",
+          "text": "Ah, okay!"
+        },
+        "question": {
+          "audio_id": "DE_MAT_EXP_11",
+          "text": "Das freut mich!"
+        },
+        "answer": {
+          "audio_id": "DE_MAT_EXP_12",
+          "text": "Oh, ich auch!"
+        }
+      }
+    },
+    {
+      "topic": "Modular Expressions (EXP_13-EXP_15)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_MAT_EXP_13",
+          "text": "Ja, das stimmt."
+        },
+        "question": {
+          "audio_id": "DE_MAT_EXP_14",
+          "text": "Ich wünsche dir viel Erfolg dabei!"
+        },
+        "answer": {
+          "audio_id": "DE_MAT_EXP_15",
+          "text": "Gerne! Kein Problem."
+        }
+      }
+    },
+    {
+      "topic": "Modular Expressions (EXP_16-EXP_18)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_MAT_EXP_16",
+          "text": "Oh, das tut mir leid."
+        },
+        "question": {
+          "audio_id": "DE_MAT_EXP_17",
+          "text": "Sehr gut!"
+        },
+        "answer": {
+          "audio_id": "DE_MAT_EXP_18",
+          "text": "Danke, gleichfalls!"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Follow-Up 1",
+      "speaker": "Herr Richter",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX4_FOLLOW_01",
+          "text": "Danke sehr. Eine kurze Zusatzfrage hätte ich noch an Sie: Was möchten Sie beruflich in Zukunft hier in Deutschland machen?"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Follow-Up 2",
+      "speaker": "Herr Richter",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX4_FOLLOW_02",
+          "text": "Vielen Dank Ihnen beiden. Eine kurze Frage noch: Können Sie Ihren Nachnamen bitte einmal buchstabieren?"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention: Stay on Topic",
+      "speaker": "Herr Richter",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX4_INT_TOPIC",
+          "text": "Bitte bleiben Sie beim Thema und führen Sie das Gespräch über die persönlichen Punkte fort."
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention: Politeness",
+      "speaker": "Herr Richter",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX4_INT_POLITE",
+          "text": "Bitte wahren Sie die Höflichkeit im Prüfungsgespräch."
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention: Dialogue Format",
+      "speaker": "Herr Richter",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX4_INT_DIALOG",
+          "text": "Bitte denken Sie daran, einander Fragen zu stellen und nicht nur alleine zu sprechen."
+        }
+      }
+    },
+    {
+      "topic": "Moderation Teil 1 Ende",
+      "speaker": "Herr Richter",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX4_OUTRO_01",
+          "text": "Vielen Dank Ihnen beiden, das war der erste Teil. Jetzt machen wir mit Teil zwei weiter."
+        }
+      }
+    }
+  ]
+}

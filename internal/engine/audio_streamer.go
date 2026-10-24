@@ -6,8 +6,8 @@ import (
 	"strings"
 	"sync"
 
-	"voice-exam-simulator/internal/contracts"
-	"voice-exam-simulator/internal/providers"
+	"voice-engine/internal/contracts"
+	"voice-engine/internal/providers"
 )
 
 // FrameSender abstracts WebSocket JSON and binary frame sending.

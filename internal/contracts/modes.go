@@ -95,12 +95,12 @@ func NormalizeCEFRLevel(raw string) CEFRLevel {
 type ProviderID string
 
 const (
-	ProviderGroqSTT          ProviderID = "groq_stt"
-	ProviderOpenAISTT        ProviderID = "openai_stt"
-	ProviderOpenAIDecisions  ProviderID = "openai_decisions"
-	ProviderSchemaDecisions  ProviderID = "schema_decisions"
-	ProviderGroqLLM          ProviderID = "groq_llm"
-	ProviderOpenAILLM        ProviderID = "openai_llm"
-	ProviderElevenLabsTTS    ProviderID = "elevenlabs_tts"
-	ProviderOpenAITTS        ProviderID = "openai_tts"
+	ProviderGroqSTT         ProviderID = "groq_stt"
+	ProviderOpenAISTT       ProviderID = "openai_stt"
+	ProviderOpenAIDecisions ProviderID = "openai_decisions"
+	ProviderSchemaDecisions ProviderID = "schema_decisions"
+	ProviderGroqLLM         ProviderID = "groq_llm"
+	ProviderOpenAILLM       ProviderID = "openai_llm"
+	ProviderElevenLabsTTS   ProviderID = "elevenlabs_tts"
+	ProviderOpenAITTS       ProviderID = "openai_tts"
 )

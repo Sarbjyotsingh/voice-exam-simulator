@@ -1,0 +1,465 @@
+{
+  "exam_id": "B1_S03",
+  "topic_title": "Urlaub & Reisen: Individualreise vs. Gruppenreise",
+  "exam_hint": "Thema: „Urlaub & Reisen: Allein reisen vs. Gruppenreise“\n\nIhr Textzettel (Sabine Lindner, 29 Jahre, Grafikdesignerin):\n„Im Urlaub möchte ich frei und unabhängig sein. Deshalb reise ich am liebsten allein mit dem Rucksack und buche nur den Flug vorab. Vor Ort entscheide ich jeden Tag spontan, wohin ich fahre und wo ich übernachte. Bei einer Gruppenreise muss man immer auf andere warten, aber allein lernt man viel schneller Einheimische kennen.“\n\nAufgabe:\n1. Fassen Sie zuerst kurz zusammen, was Sabine Lindner sagt.\n2. Diskutieren Sie danach mit Ihrer Partnerin: Ihre eigene Meinung zum Thema Reisen, wie Sie selbst Urlaub machen, wie man in Ihrem Heimatland reist und welche Vor- und Nachteile beide Reisearten haben.",
+  "voice_profiles": {
+    "Elena": "gVOibprogMfmHVVyo5r6",
+    "Frau Erdoğan": "zKHQdbB8oaQ7roNTiDTK"
+  },
+  "auto_play_sequence": [
+    "DE_EX3_T2_INTRO_01",
+    "DE_ELET3A_T2OPEN_01"
+  ],
+  "end_audio_id": "DE_EX3_T2_OUTRO_01",
+  "dialogues": [
+    {
+      "topic": "Einleitung Teil 2",
+      "speaker": "Frau Erdoğan",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX3_T2_INTRO_01",
+          "text": "Super, vielen Dank. Das war schon Teil 1. Kommen wir nun zu Teil 2: Gespräch über ein Thema. Sie haben in der Vorbereitungszeit zwei kurze Texte zu einem Thema bekommen. Stellen Sie sich bitte gegenseitig vor, was Sie gelesen haben, und tauschen Sie dann Ihre persönliche Meinung und Ihre Erfahrungen aus. Elena, möchten Sie starten?"
+        }
+      }
+    },
+    {
+      "topic": "Textpräsentation (Urlaub & Reisen: Individualreise vs. Gruppenreise)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_ELET3A_T2OPEN_01",
+          "text": "Natürlich! In meinem Text geht es um Thomas Keller. Er ist 47 Jahre alt und Bankangestellter von Beruf. Er bucht im Urlaub immer eine organisierte Gruppenreise mit Hotel und Reiseleiter, weil er sich nach der Arbeit um nichts kümmern möchte und sich in der Gruppe sicherer fühlt. Und welche Meinung steht auf deinem Zettel?"
+        }
+      }
+    },
+    {
+      "topic": "Textzusammenfassung",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_ELE_PRES_Q1",
+          "text": "Was steht denn in deinem Text? Kannst du mir deine Meinung auf dem Zettel kurz vorstellen?"
+        },
+        "answer": {
+          "audio_id": "DE_ELET3A_PRES_A1",
+          "text": "In meinem Text erzählt Thomas Keller, ein 47-jähriger Bankangestellter, dass er organisierte Gruppenreisen bevorzugt, weil dort alles geplant und sicher ist."
+        }
+      }
+    },
+    {
+      "topic": "Textzusammenfassung (Nachfrage)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_ELE_PRES_Q2",
+          "text": "Moment mal, bevor wir richtig diskutieren: Was steht eigentlich auf deinem Zettel? Kannst du kurz zusammenfassen, was die Person dort sagt?"
+        }
+      }
+    },
+    {
+      "topic": "Eigene Meinung zum Thema",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_ELET3_OPIN_Q1",
+          "text": "Wie ist deine Meinung dazu? Reist du lieber individuell und unabhängig oder in einer organisierten Gruppe?"
+        },
+        "answer": {
+          "audio_id": "DE_ELET3A_OPIN_A1",
+          "text": "Für mich persönlich wäre eine große Gruppenreise wie bei Thomas nichts. Ich reise lieber individuell mit meinem Mann oder mit Freunden, damit wir selbst entscheiden können, was wir besichtigen."
+        }
+      }
+    },
+    {
+      "topic": "Eigene Meinung (Alternative)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_ELET3_OPIN_Q2",
+          "text": "Was gefällt dir im Urlaub besser: alles selbst planen oder eine fertige Reise buchen?"
+        }
+      }
+    },
+    {
+      "topic": "Erfahrungen und Gewohnheiten in Deutschland",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_ELET3_HAB_Q1",
+          "text": "Wie machst du normalerweise Urlaub? Wohin bist du bei deinem letzten Urlaub gereist?"
+        },
+        "answer": {
+          "audio_id": "DE_ELET3_HAB_A1",
+          "text": "Seit ich in Deutschland lebe, mache ich oft Städtetrips mit dem Zug in Europa oder fliege im Sommer ans Meer. Ich buche das Hotel und die Tickets immer selbst im Internet."
+        }
+      }
+    },
+    {
+      "topic": "Gewohnheiten in Deutschland (Alternative)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_ELET3_HAB_Q2",
+          "text": "Mit wem verreist du am liebsten, wenn du Urlaub hast?"
+        }
+      }
+    },
+    {
+      "topic": "Situation im Heimatland",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_ELET3_HOME_Q1",
+          "text": "Und wie machen die Menschen in deinem Heimatland am liebsten Urlaub? Reisen sie eher mit der Familie oder in Reisegruppen?"
+        },
+        "answer": {
+          "audio_id": "DE_ELET3_HOME_A1",
+          "text": "In meinem Heimatland Rumänien fahren viele Familien im Sommer gemeinsam ans Schwarze Meer oder in die Berge. Ältere Menschen buchen dort aber auch sehr gern Busreisen in einer Gruppe."
+        }
+      }
+    },
+    {
+      "topic": "Vor- und Nachteile",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_ELET3_PRO_Q1",
+          "text": "Was sind für dich die wichtigsten Vor- und Nachteile von Gruppenreisen im Vergleich zum individuellen Reisen?"
+        },
+        "answer": {
+          "audio_id": "DE_ELET3_PRO_A1",
+          "text": "Bei einer Gruppenreise ist der Vorteil, dass man keinen Stress mit der Organisation hat. Dafür hat man bei einer Individualreise viel mehr Freiheit und kann länger bleiben, wo es schön ist."
+        }
+      }
+    },
+    {
+      "topic": "Rückfrage (Meinung)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_ELE_T2BACK_Q1",
+          "text": "Und wie siehst du das persönlich?"
+        }
+      }
+    },
+    {
+      "topic": "Rückfrage (Erfahrung)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_ELE_T2BACK_Q2",
+          "text": "Was hast du für Erfahrungen damit gemacht?"
+        }
+      }
+    },
+    {
+      "topic": "Verständnisfrage",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_ELE_T2CLAR_Q1",
+          "text": "Entschuldigung, das habe ich akustisch nicht ganz verstanden. Kannst du das bitte noch einmal erklären?"
+        }
+      }
+    },
+    {
+      "topic": "Nachfrage bei Stille",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_ELE_T2SIL_Q1",
+          "text": "Bist du noch da? Was meinst du denn zu diesem Thema?"
+        }
+      }
+    },
+    {
+      "topic": "Abschluss Partner",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_ELE_T2CLOSE_01",
+          "text": "Vielen Dank für die spannende Diskussion! Es hat wirklich Spaß gemacht, mit dir über dieses Thema zu sprechen."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Zustimmung",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_ELE_EXP_21",
+          "text": "Da hast du absolut recht."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Zustimmung",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_ELE_EXP_22",
+          "text": "Ganz genau, das sehe ich genauso."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Zustimmung",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_ELE_EXP_23",
+          "text": "Stimmt, das ist ein sehr guter Punkt."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Zustimmung",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_ELE_EXP_24",
+          "text": "Da bin ich ganz deiner Meinung."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Zustimmung",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_ELE_EXP_25",
+          "text": "Ja, das kann ich total gut verstehen."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Zustimmung",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_ELE_EXP_26",
+          "text": "Das finde ich auch sehr wichtig."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Höflicher Widerspruch",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_ELE_EXP_27",
+          "text": "Da bin ich etwas anderer Meinung."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Höflicher Widerspruch",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_ELE_EXP_28",
+          "text": "Das sehe ich nicht ganz so."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Höflicher Widerspruch",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_ELE_EXP_29",
+          "text": "Ehrlich gesagt ist das bei mir ein bisschen anders."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Höflicher Widerspruch",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_ELE_EXP_30",
+          "text": "Ja, vielleicht, aber man muss auch die andere Seite sehen."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Höflicher Widerspruch",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_ELE_EXP_31",
+          "text": "Das stimmt zwar, aber für mich persönlich passt das nicht so gut."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Interesse",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_ELE_EXP_32",
+          "text": "Ach wirklich? Das ist ja interessant!"
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Interesse",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_ELE_EXP_33",
+          "text": "Das kann ich mir sehr gut vorstellen."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Interesse",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_ELE_EXP_34",
+          "text": "Interessant! So habe ich das noch gar nicht gesehen."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Heimatland",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_ELE_EXP_35",
+          "text": "Ach so ist das in deinem Heimatland! Sehr spannend."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Zusammenfassung",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_ELE_EXP_36",
+          "text": "Danke für die Zusammenfassung! Das ist eine interessante Meinung."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Empathie",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_ELE_EXP_37",
+          "text": "Ja, das kenne ich aus eigener Erfahrung auch sehr gut."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Höflichkeit",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_ELE_EXP_38",
+          "text": "Gern geschehen!"
+        }
+      }
+    },
+    {
+      "topic": "Prüfer-Nachfrage 1",
+      "speaker": "Frau Erdoğan",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX3T3_T2_FOLLOW_01",
+          "text": "Darf ich kurz nachfragen: Ist ein Urlaub im eigenen Land für Sie genauso erholsam wie eine weite Flugreise?"
+        }
+      }
+    },
+    {
+      "topic": "Prüfer-Nachfrage 2",
+      "speaker": "Frau Erdoğan",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX3T3_T2_FOLLOW_02",
+          "text": "Noch eine kurze Frage: Wie wichtig sind Ihnen Fremdsprachenkenntnisse, wenn Sie in ein anderes Land reisen?"
+        }
+      }
+    },
+    {
+      "topic": "Prüfer-Intervention: Thema",
+      "speaker": "Frau Erdoğan",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX3_T2_INT_TOPIC",
+          "text": "Einen kleinen Moment bitte — Sie weichen gerade vom Thema ab. Kommen Sie bitte wieder zurück zu Ihrem Prüfungsthema."
+        }
+      }
+    },
+    {
+      "topic": "Prüfer-Intervention: Höflichkeit",
+      "speaker": "Frau Erdoğan",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX3_T2_INT_POLITE",
+          "text": "Ich möchte Sie bitten, höflich und respektvoll miteinander umzugehen. Bitte setzen Sie das Gespräch sachlich fort."
+        }
+      }
+    },
+    {
+      "topic": "Prüfer-Intervention: Dialog",
+      "speaker": "Frau Erdoğan",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX3_T2_INT_DIALOG",
+          "text": "Denken Sie bitte daran, dass Sie miteinander diskutieren sollen. Reagieren Sie auf Ihre Partnerin und stellen Sie Fragen."
+        }
+      }
+    },
+    {
+      "topic": "Abschluss Teil 2",
+      "speaker": "Frau Erdoğan",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX3_T2_OUTRO_01",
+          "text": "Vielen Dank, das reicht schon für Teil 2. Sehr schön. Wir kommen jetzt zum dritten und letzten Teil der Prüfung: Gemeinsam etwas planen."
+        }
+      }
+    }
+  ]
+}

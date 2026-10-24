@@ -1,0 +1,805 @@
+{
+  "voice_profiles": {
+    "Frau Fischer": "MGG5Irb57ATHvyIeTEYo",
+    "Omar": "A2eYGaZmwykOiEVBlQ7h"
+  },
+  "auto_play_sequence": [
+    "DE_EX2_INTRO_01",
+    "DE_OMA_OPEN_01"
+  ],
+  "end_audio_id": "DE_EX2_OUTRO_01",
+  "dialogues": [
+    {
+      "topic": "Exam Introduction",
+      "speaker": "Frau Fischer",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX2_INTRO_01",
+          "text": "Schönen guten Tag und herzlich willkommen zur mündlichen Prüfung telc Deutsch B1. Mein Name ist Ellen Fischer und das ist meine Kollegin Frau Bergmann. Die Prüfung besteht aus drei Teilen und wir starten gleich mit Teil eins: Bitte lernen Sie sich im Dialog kennen. Fangen Sie bitte an."
+        }
+      }
+    },
+    {
+      "topic": "Opening & Du/Sie Proposal",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_OMA_OPEN_01",
+          "text": "Hallo! Können wir ruhig du sagen? Ich heiße Omar Al-Masri. Und wie ist dein Name?"
+        },
+        "answer": {
+          "audio_id": "DE_OMA_DUSIE_A1",
+          "text": "Ja, gerne! Wir können sehr gerne du sagen."
+        },
+        "dialogue": {
+          "audio_id": "DE_OMA_DUSIE_Q1",
+          "text": "Hallo! Wollen wir du oder Sie sagen?"
+        }
+      }
+    },
+    {
+      "topic": "Name & Surname",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_OMA_NAME_Q1",
+          "text": "Wie heißt du? Und wie ist dein Nachname?"
+        },
+        "answer": {
+          "audio_id": "DE_OMA_NAME_A1",
+          "text": "Ich heiße Omar, und mein Familienname ist Al-Masri."
+        },
+        "dialogue": {
+          "audio_id": "DE_OMA_NAME_Q2",
+          "text": "Und wie ist dein Familienname?"
+        }
+      }
+    },
+    {
+      "topic": "Age",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_OMA_AGE_Q1",
+          "text": "Und wie alt bist du, wenn ich fragen darf?"
+        },
+        "answer": {
+          "audio_id": "DE_OMA_AGE_A1",
+          "text": "Ich bin fünfundzwanzig Jahre alt."
+        }
+      }
+    },
+    {
+      "topic": "Origin & Hometown",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_OMA_ORIG_Q1",
+          "text": "Woher kommst du eigentlich?"
+        },
+        "answer": {
+          "audio_id": "DE_OMA_ORIG_A1",
+          "text": "Ich komme aus Syrien, aus der Hauptstadt Damaskus."
+        },
+        "dialogue": {
+          "audio_id": "DE_OMA_ORIG_Q2",
+          "text": "Aus welcher Stadt kommst du genau?"
+        }
+      }
+    },
+    {
+      "topic": "Residence & Housing",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_OMA_RES_Q1",
+          "text": "Wo wohnst du jetzt hier in Deutschland?"
+        },
+        "answer": {
+          "audio_id": "DE_OMA_RES_A1",
+          "text": "Momentan wohne ich in Berlin in einer Wohngemeinschaft mit zwei Freunden. Aber ich suche gerade eine eigene kleine Wohnung."
+        },
+        "dialogue": {
+          "audio_id": "DE_OMA_RES_Q2",
+          "text": "Wohnst du in einer Wohnung, in einem Haus oder in einer WG?"
+        }
+      }
+    },
+    {
+      "topic": "Family & Marital Status",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_OMA_FAM_Q1",
+          "text": "Lebst du allein hier oder hast du Familie in Deutschland?"
+        },
+        "answer": {
+          "audio_id": "DE_OMA_FAM_A1",
+          "text": "Ich bin noch ledig und habe keine Kinder. Meine Eltern und meine zwei Brüder leben noch in Syrien."
+        },
+        "dialogue": {
+          "audio_id": "DE_OMA_FAM_Q2",
+          "text": "Bist du verheiratet und hast du Kinder?"
+        }
+      }
+    },
+    {
+      "topic": "Work & Education",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_OMA_WORK_Q1",
+          "text": "Was machst du beruflich? Arbeitest du schon oder machst du eine Ausbildung?"
+        },
+        "answer": {
+          "audio_id": "DE_OMA_WORK_A1",
+          "text": "In Syrien habe ich als Buchhalter gearbeitet. Jetzt mache ich hier in Berlin eine Ausbildung als Kaufmann für Büromanagement."
+        }
+      }
+    },
+    {
+      "topic": "Languages",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_OMA_LANG_Q1",
+          "text": "Welche Sprachen sprichst du? Was ist deine Muttersprache?"
+        },
+        "answer": {
+          "audio_id": "DE_OMA_LANG_A1",
+          "text": "Meine Muttersprache ist Arabisch. Außerdem spreche ich Englisch, ein wenig Französisch und jetzt natürlich Deutsch."
+        }
+      }
+    },
+    {
+      "topic": "Learning German",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_OMA_GER_Q1",
+          "text": "Wo und wie lange hast du schon Deutsch gelernt?"
+        },
+        "answer": {
+          "audio_id": "DE_OMA_GER_A1",
+          "text": "Ich lerne seit einem Jahr Deutsch in einer Sprachschule in Berlin. Für meine Ausbildung im Büro brauche ich das B1-Zertifikat."
+        }
+      }
+    },
+    {
+      "topic": "Hobbies & Free Time",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_OMA_HOB_Q1",
+          "text": "Was machst du gern in deiner Freizeit? Hast du Hobbys?"
+        },
+        "answer": {
+          "audio_id": "DE_OMA_HOB_A1",
+          "text": "Nach der Arbeit gehe ich regelmäßig ins Fitnessstudio, ich spiele Fußball im Verein und am Wochenende treffe ich mich gern mit Freunden im Café."
+        }
+      }
+    },
+    {
+      "topic": "Counter-Questions & Closing",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_OMA_BACK_Q1",
+          "text": "Und du?"
+        },
+        "answer": {
+          "audio_id": "DE_OMA_BACK_Q2",
+          "text": "Und wie ist das bei dir?"
+        },
+        "dialogue": {
+          "audio_id": "DE_OMA_CLOSE_01",
+          "text": "Vielen Dank für das nette Gespräch! Es hat mich sehr gefreut, dich kennenzulernen."
+        }
+      }
+    },
+    {
+      "topic": "Clarification & Silence Recovery",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_OMA_CLAR_Q1",
+          "text": "Entschuldigung, kannst du das bitte noch einmal wiederholen? Ich habe dich akustisch nicht ganz verstanden."
+        },
+        "dialogue": {
+          "audio_id": "DE_OMA_SIL_Q1",
+          "text": "Hallo? Bist du noch da? Wollen wir weitermachen?"
+        }
+      }
+    },
+    {
+      "topic": "Modular Expressions (EXP_01-EXP_03)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_OMA_EXP_01",
+          "text": "Ah, interessant!"
+        },
+        "question": {
+          "audio_id": "DE_OMA_EXP_02",
+          "text": "Oh, schön!"
+        },
+        "answer": {
+          "audio_id": "DE_OMA_EXP_03",
+          "text": "Super!"
+        }
+      }
+    },
+    {
+      "topic": "Modular Expressions (EXP_04-EXP_06)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_OMA_EXP_04",
+          "text": "Das klingt ja toll!"
+        },
+        "question": {
+          "audio_id": "DE_OMA_EXP_05",
+          "text": "Ach so, ich verstehe."
+        },
+        "answer": {
+          "audio_id": "DE_OMA_EXP_06",
+          "text": "Oh, wirklich? Das ist ja spannend!"
+        }
+      }
+    },
+    {
+      "topic": "Modular Expressions (EXP_07-EXP_09)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_OMA_EXP_07",
+          "text": "Alles klar!"
+        },
+        "question": {
+          "audio_id": "DE_OMA_EXP_08",
+          "text": "Ja, das kenne ich gut."
+        },
+        "answer": {
+          "audio_id": "DE_OMA_EXP_09",
+          "text": "Cool!"
+        }
+      }
+    },
+    {
+      "topic": "Modular Expressions (EXP_10-EXP_12)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_OMA_EXP_10",
+          "text": "Ah, okay!"
+        },
+        "question": {
+          "audio_id": "DE_OMA_EXP_11",
+          "text": "Das freut mich!"
+        },
+        "answer": {
+          "audio_id": "DE_OMA_EXP_12",
+          "text": "Oh, ich auch!"
+        }
+      }
+    },
+    {
+      "topic": "Modular Expressions (EXP_13-EXP_15)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_OMA_EXP_13",
+          "text": "Ja, das stimmt."
+        },
+        "question": {
+          "audio_id": "DE_OMA_EXP_14",
+          "text": "Ich wünsche dir viel Erfolg dabei!"
+        },
+        "answer": {
+          "audio_id": "DE_OMA_EXP_15",
+          "text": "Gerne! Kein Problem."
+        }
+      }
+    },
+    {
+      "topic": "Modular Expressions (EXP_16-EXP_18)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_OMA_EXP_16",
+          "text": "Oh, das tut mir leid."
+        },
+        "question": {
+          "audio_id": "DE_OMA_EXP_17",
+          "text": "Sehr gut!"
+        },
+        "answer": {
+          "audio_id": "DE_OMA_EXP_18",
+          "text": "Danke, gleichfalls!"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Follow-Up 1",
+      "speaker": "Frau Fischer",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX2_FOLLOW_01",
+          "text": "Danke schön. Ich hätte auch noch eine kurze Frage an Sie: Wo und wie lange haben Sie denn schon Deutsch gelernt?"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Follow-Up 2",
+      "speaker": "Frau Fischer",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX2_FOLLOW_02",
+          "text": "Vielen Dank. Eine kurze Frage noch von meiner Seite: Was möchten Sie beruflich in Zukunft hier in Deutschland machen?"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention: Stay on Topic",
+      "speaker": "Frau Fischer",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX2_INT_TOPIC",
+          "text": "Bitte bleiben Sie bei den Themen von Teil eins und sprechen Sie über Ihre persönlichen Erfahrungen."
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention: Politeness",
+      "speaker": "Frau Fischer",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX2_INT_POLITE",
+          "text": "Bitte achten Sie auf einen höflichen und angemessenen Ton während der Prüfung."
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention: Dialogue Format",
+      "speaker": "Frau Fischer",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX2_INT_DIALOG",
+          "text": "Entschuldigung, denken Sie bitte daran, dass dies ein Dialog ist. Geben Sie auch Ihrem Partner die Möglichkeit zu sprechen."
+        }
+      }
+    },
+    {
+      "topic": "Moderation Teil 1 Ende",
+      "speaker": "Frau Fischer",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX2_OUTRO_01",
+          "text": "Prima, vielen Dank Ihnen beiden! Das war schon Teil eins. Dann kommen wir jetzt zum zweiten Teil der Prüfung."
+        }
+      }
+    }
+  ],
+  "teil1 dailogues": [
+    {
+      "topic": "Exam Introduction",
+      "speaker": "Frau Fischer",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX2_INTRO_01",
+          "text": "Schönen guten Tag und herzlich willkommen zur mündlichen Prüfung telc Deutsch B1. Mein Name ist Ellen Fischer und das ist meine Kollegin Frau Bergmann. Die Prüfung besteht aus drei Teilen und wir starten gleich mit Teil eins: Bitte lernen Sie sich im Dialog kennen. Fangen Sie bitte an."
+        }
+      }
+    },
+    {
+      "topic": "Opening & Du/Sie Proposal",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_OMA_OPEN_01",
+          "text": "Hallo! Können wir ruhig du sagen? Ich heiße Omar Al-Masri. Und wie ist dein Name?"
+        },
+        "answer": {
+          "audio_id": "DE_OMA_DUSIE_A1",
+          "text": "Ja, gerne! Wir können sehr gerne du sagen."
+        },
+        "dialogue": {
+          "audio_id": "DE_OMA_DUSIE_Q1",
+          "text": "Hallo! Wollen wir du oder Sie sagen?"
+        }
+      }
+    },
+    {
+      "topic": "Name & Surname",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_OMA_NAME_Q1",
+          "text": "Wie heißt du? Und wie ist dein Nachname?"
+        },
+        "answer": {
+          "audio_id": "DE_OMA_NAME_A1",
+          "text": "Ich heiße Omar, und mein Familienname ist Al-Masri."
+        },
+        "dialogue": {
+          "audio_id": "DE_OMA_NAME_Q2",
+          "text": "Und wie ist dein Familienname?"
+        }
+      }
+    },
+    {
+      "topic": "Age",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_OMA_AGE_Q1",
+          "text": "Und wie alt bist du, wenn ich fragen darf?"
+        },
+        "answer": {
+          "audio_id": "DE_OMA_AGE_A1",
+          "text": "Ich bin fünfundzwanzig Jahre alt."
+        }
+      }
+    },
+    {
+      "topic": "Origin & Hometown",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_OMA_ORIG_Q1",
+          "text": "Woher kommst du eigentlich?"
+        },
+        "answer": {
+          "audio_id": "DE_OMA_ORIG_A1",
+          "text": "Ich komme aus Syrien, aus der Hauptstadt Damaskus."
+        },
+        "dialogue": {
+          "audio_id": "DE_OMA_ORIG_Q2",
+          "text": "Aus welcher Stadt kommst du genau?"
+        }
+      }
+    },
+    {
+      "topic": "Residence & Housing",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_OMA_RES_Q1",
+          "text": "Wo wohnst du jetzt hier in Deutschland?"
+        },
+        "answer": {
+          "audio_id": "DE_OMA_RES_A1",
+          "text": "Momentan wohne ich in Berlin in einer Wohngemeinschaft mit zwei Freunden. Aber ich suche gerade eine eigene kleine Wohnung."
+        },
+        "dialogue": {
+          "audio_id": "DE_OMA_RES_Q2",
+          "text": "Wohnst du in einer Wohnung, in einem Haus oder in einer WG?"
+        }
+      }
+    },
+    {
+      "topic": "Family & Marital Status",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_OMA_FAM_Q1",
+          "text": "Lebst du allein hier oder hast du Familie in Deutschland?"
+        },
+        "answer": {
+          "audio_id": "DE_OMA_FAM_A1",
+          "text": "Ich bin noch ledig und habe keine Kinder. Meine Eltern und meine zwei Brüder leben noch in Syrien."
+        },
+        "dialogue": {
+          "audio_id": "DE_OMA_FAM_Q2",
+          "text": "Bist du verheiratet und hast du Kinder?"
+        }
+      }
+    },
+    {
+      "topic": "Work & Education",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_OMA_WORK_Q1",
+          "text": "Was machst du beruflich? Arbeitest du schon oder machst du eine Ausbildung?"
+        },
+        "answer": {
+          "audio_id": "DE_OMA_WORK_A1",
+          "text": "In Syrien habe ich als Buchhalter gearbeitet. Jetzt mache ich hier in Berlin eine Ausbildung als Kaufmann für Büromanagement."
+        }
+      }
+    },
+    {
+      "topic": "Languages",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_OMA_LANG_Q1",
+          "text": "Welche Sprachen sprichst du? Was ist deine Muttersprache?"
+        },
+        "answer": {
+          "audio_id": "DE_OMA_LANG_A1",
+          "text": "Meine Muttersprache ist Arabisch. Außerdem spreche ich Englisch, ein wenig Französisch und jetzt natürlich Deutsch."
+        }
+      }
+    },
+    {
+      "topic": "Learning German",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_OMA_GER_Q1",
+          "text": "Wo und wie lange hast du schon Deutsch gelernt?"
+        },
+        "answer": {
+          "audio_id": "DE_OMA_GER_A1",
+          "text": "Ich lerne seit einem Jahr Deutsch in einer Sprachschule in Berlin. Für meine Ausbildung im Büro brauche ich das B1-Zertifikat."
+        }
+      }
+    },
+    {
+      "topic": "Hobbies & Free Time",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_OMA_HOB_Q1",
+          "text": "Was machst du gern in deiner Freizeit? Hast du Hobbys?"
+        },
+        "answer": {
+          "audio_id": "DE_OMA_HOB_A1",
+          "text": "Nach der Arbeit gehe ich regelmäßig ins Fitnessstudio, ich spiele Fußball im Verein und am Wochenende treffe ich mich gern mit Freunden im Café."
+        }
+      }
+    },
+    {
+      "topic": "Counter-Questions & Closing",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_OMA_BACK_Q1",
+          "text": "Und du?"
+        },
+        "answer": {
+          "audio_id": "DE_OMA_BACK_Q2",
+          "text": "Und wie ist das bei dir?"
+        },
+        "dialogue": {
+          "audio_id": "DE_OMA_CLOSE_01",
+          "text": "Vielen Dank für das nette Gespräch! Es hat mich sehr gefreut, dich kennenzulernen."
+        }
+      }
+    },
+    {
+      "topic": "Clarification & Silence Recovery",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_OMA_CLAR_Q1",
+          "text": "Entschuldigung, kannst du das bitte noch einmal wiederholen? Ich habe dich akustisch nicht ganz verstanden."
+        },
+        "dialogue": {
+          "audio_id": "DE_OMA_SIL_Q1",
+          "text": "Hallo? Bist du noch da? Wollen wir weitermachen?"
+        }
+      }
+    },
+    {
+      "topic": "Modular Expressions (EXP_01-EXP_03)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_OMA_EXP_01",
+          "text": "Ah, interessant!"
+        },
+        "question": {
+          "audio_id": "DE_OMA_EXP_02",
+          "text": "Oh, schön!"
+        },
+        "answer": {
+          "audio_id": "DE_OMA_EXP_03",
+          "text": "Super!"
+        }
+      }
+    },
+    {
+      "topic": "Modular Expressions (EXP_04-EXP_06)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_OMA_EXP_04",
+          "text": "Das klingt ja toll!"
+        },
+        "question": {
+          "audio_id": "DE_OMA_EXP_05",
+          "text": "Ach so, ich verstehe."
+        },
+        "answer": {
+          "audio_id": "DE_OMA_EXP_06",
+          "text": "Oh, wirklich? Das ist ja spannend!"
+        }
+      }
+    },
+    {
+      "topic": "Modular Expressions (EXP_07-EXP_09)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_OMA_EXP_07",
+          "text": "Alles klar!"
+        },
+        "question": {
+          "audio_id": "DE_OMA_EXP_08",
+          "text": "Ja, das kenne ich gut."
+        },
+        "answer": {
+          "audio_id": "DE_OMA_EXP_09",
+          "text": "Cool!"
+        }
+      }
+    },
+    {
+      "topic": "Modular Expressions (EXP_10-EXP_12)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_OMA_EXP_10",
+          "text": "Ah, okay!"
+        },
+        "question": {
+          "audio_id": "DE_OMA_EXP_11",
+          "text": "Das freut mich!"
+        },
+        "answer": {
+          "audio_id": "DE_OMA_EXP_12",
+          "text": "Oh, ich auch!"
+        }
+      }
+    },
+    {
+      "topic": "Modular Expressions (EXP_13-EXP_15)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_OMA_EXP_13",
+          "text": "Ja, das stimmt."
+        },
+        "question": {
+          "audio_id": "DE_OMA_EXP_14",
+          "text": "Ich wünsche dir viel Erfolg dabei!"
+        },
+        "answer": {
+          "audio_id": "DE_OMA_EXP_15",
+          "text": "Gerne! Kein Problem."
+        }
+      }
+    },
+    {
+      "topic": "Modular Expressions (EXP_16-EXP_18)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_OMA_EXP_16",
+          "text": "Oh, das tut mir leid."
+        },
+        "question": {
+          "audio_id": "DE_OMA_EXP_17",
+          "text": "Sehr gut!"
+        },
+        "answer": {
+          "audio_id": "DE_OMA_EXP_18",
+          "text": "Danke, gleichfalls!"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Follow-Up 1",
+      "speaker": "Frau Fischer",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX2_FOLLOW_01",
+          "text": "Danke schön. Ich hätte auch noch eine kurze Frage an Sie: Wo und wie lange haben Sie denn schon Deutsch gelernt?"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Follow-Up 2",
+      "speaker": "Frau Fischer",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX2_FOLLOW_02",
+          "text": "Vielen Dank. Eine kurze Frage noch von meiner Seite: Was möchten Sie beruflich in Zukunft hier in Deutschland machen?"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention: Stay on Topic",
+      "speaker": "Frau Fischer",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX2_INT_TOPIC",
+          "text": "Bitte bleiben Sie bei den Themen von Teil eins und sprechen Sie über Ihre persönlichen Erfahrungen."
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention: Politeness",
+      "speaker": "Frau Fischer",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX2_INT_POLITE",
+          "text": "Bitte achten Sie auf einen höflichen und angemessenen Ton während der Prüfung."
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention: Dialogue Format",
+      "speaker": "Frau Fischer",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX2_INT_DIALOG",
+          "text": "Entschuldigung, denken Sie bitte daran, dass dies ein Dialog ist. Geben Sie auch Ihrem Partner die Möglichkeit zu sprechen."
+        }
+      }
+    },
+    {
+      "topic": "Moderation Teil 1 Ende",
+      "speaker": "Frau Fischer",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX2_OUTRO_01",
+          "text": "Prima, vielen Dank Ihnen beiden! Das war schon Teil eins. Dann kommen wir jetzt zum zweiten Teil der Prüfung."
+        }
+      }
+    }
+  ]
+}

@@ -5,7 +5,7 @@ import (
 	"sync"
 	"unicode/utf8"
 
-	"voice-exam-simulator/config"
+	"voice-engine/config"
 )
 
 // TTSCall records one dynamic ElevenLabs synthesis (pre-recorded clips never appear here).

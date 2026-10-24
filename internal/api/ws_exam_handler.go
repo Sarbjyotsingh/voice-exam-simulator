@@ -14,11 +14,11 @@ import (
 	"github.com/google/uuid"
 	"github.com/gorilla/websocket"
 
-	"voice-exam-simulator/config"
-	"voice-exam-simulator/internal/contracts"
-	"voice-exam-simulator/internal/engine"
-	"voice-exam-simulator/internal/providers"
-	"voice-exam-simulator/services"
+	"voice-engine/config"
+	"voice-engine/internal/contracts"
+	"voice-engine/internal/engine"
+	"voice-engine/internal/providers"
+	"voice-engine/services"
 )
 
 var upgrader = websocket.Upgrader{

@@ -1,0 +1,805 @@
+{
+  "voice_profiles": {
+    "Frau Erdoğan": "zKHQdbB8oaQ7roNTiDTK",
+    "Elena": "gVOibprogMfmHVVyo5r6"
+  },
+  "auto_play_sequence": [
+    "DE_EX3_INTRO_01",
+    "DE_ELE_OPEN_01"
+  ],
+  "end_audio_id": "DE_EX3_OUTRO_01",
+  "dialogues": [
+    {
+      "topic": "Exam Introduction",
+      "speaker": "Frau Erdoğan",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX3_INTRO_01",
+          "text": "Hallo und herzlich willkommen zu unserer mündlichen Prüfung telc B1. Mein Name ist Frau Erdoğan, neben mir sitzt mein lieber Kollege Herr Özcan. Im ersten Teil lernen Sie sich kennen – bitte im Dialog, also immer Frage und Antwort. Bitte schön."
+        }
+      }
+    },
+    {
+      "topic": "Opening & Du/Sie Proposal",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_ELE_OPEN_01",
+          "text": "Guten Tag! Wollen wir uns duzen? Mein Name ist Elena Kovalenko. Und wie heißt du?"
+        },
+        "answer": {
+          "audio_id": "DE_ELE_DUSIE_A1",
+          "text": "Ja, gerne! Wir können sehr gerne du sagen."
+        },
+        "dialogue": {
+          "audio_id": "DE_ELE_DUSIE_Q1",
+          "text": "Hallo! Wollen wir du oder Sie sagen?"
+        }
+      }
+    },
+    {
+      "topic": "Name & Surname",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_ELE_NAME_Q1",
+          "text": "Wie heißt du? Und wie ist dein Nachname?"
+        },
+        "answer": {
+          "audio_id": "DE_ELE_NAME_A1",
+          "text": "Mein Vorname ist Elena und mein Nachname ist Kovalenko."
+        },
+        "dialogue": {
+          "audio_id": "DE_ELE_NAME_Q2",
+          "text": "Und wie ist dein Familienname?"
+        }
+      }
+    },
+    {
+      "topic": "Age",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_ELE_AGE_Q1",
+          "text": "Und wie alt bist du, wenn ich fragen darf?"
+        },
+        "answer": {
+          "audio_id": "DE_ELE_AGE_A1",
+          "text": "Ich bin vierunddreißig Jahre alt."
+        }
+      }
+    },
+    {
+      "topic": "Origin & Hometown",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_ELE_ORIG_Q1",
+          "text": "Woher kommst du eigentlich?"
+        },
+        "answer": {
+          "audio_id": "DE_ELE_ORIG_A1",
+          "text": "Ich komme aus der Ukraine, aus der Stadt Charkiw."
+        },
+        "dialogue": {
+          "audio_id": "DE_ELE_ORIG_Q2",
+          "text": "Aus welcher Stadt kommst du genau?"
+        }
+      }
+    },
+    {
+      "topic": "Residence & Housing",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_ELE_RES_Q1",
+          "text": "Wo wohnst du jetzt hier in Deutschland?"
+        },
+        "answer": {
+          "audio_id": "DE_ELE_RES_A1",
+          "text": "Zurzeit wohne ich in München. Wir haben dort eine helle Wohnung mit drei Zimmern und einem kleinen Balkon."
+        },
+        "dialogue": {
+          "audio_id": "DE_ELE_RES_Q2",
+          "text": "Wohnst du in einer Wohnung, in einem Haus oder in einer WG?"
+        }
+      }
+    },
+    {
+      "topic": "Family & Marital Status",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_ELE_FAM_Q1",
+          "text": "Lebst du allein hier oder hast du Familie in Deutschland?"
+        },
+        "answer": {
+          "audio_id": "DE_ELE_FAM_A1",
+          "text": "Ich bin verheiratet und wir haben einen Sohn. Er ist acht Jahre alt und geht hier in die Grundschule."
+        },
+        "dialogue": {
+          "audio_id": "DE_ELE_FAM_Q2",
+          "text": "Bist du verheiratet und hast du Kinder?"
+        }
+      }
+    },
+    {
+      "topic": "Work & Education",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_ELE_WORK_Q1",
+          "text": "Was machst du beruflich? Arbeitest du schon oder machst du eine Ausbildung?"
+        },
+        "answer": {
+          "audio_id": "DE_ELE_WORK_A1",
+          "text": "Ich bin Krankenschwester von Beruf. Im Moment mache ich ein Praktikum im Krankenhaus, weil ich auf die Anerkennung von meinem Diplom warte."
+        }
+      }
+    },
+    {
+      "topic": "Languages",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_ELE_LANG_Q1",
+          "text": "Welche Sprachen sprichst du? Was ist deine Muttersprache?"
+        },
+        "answer": {
+          "audio_id": "DE_ELE_LANG_A1",
+          "text": "Meine Muttersprache ist Ukrainisch, aber ich spreche auch fließend Russisch, ein bisschen Englisch und jetzt Deutsch."
+        }
+      }
+    },
+    {
+      "topic": "Learning German",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_ELE_GER_Q1",
+          "text": "Wo und wie lange hast du schon Deutsch gelernt?"
+        },
+        "answer": {
+          "audio_id": "DE_ELE_GER_A1",
+          "text": "Zuerst habe ich drei Monate online im Internet Deutsch gelernt und danach einen Intensivkurs in München besucht."
+        }
+      }
+    },
+    {
+      "topic": "Hobbies & Free Time",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_ELE_HOB_Q1",
+          "text": "Was machst du gern in deiner Freizeit? Hast du Hobbys?"
+        },
+        "answer": {
+          "audio_id": "DE_ELE_HOB_A1",
+          "text": "In meiner Freizeit lese ich sehr gerne Bücher, ich male gern und am Wochenende gehe ich oft mit meinem Sohn schwimmen."
+        }
+      }
+    },
+    {
+      "topic": "Counter-Questions & Closing",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_ELE_BACK_Q1",
+          "text": "Und du?"
+        },
+        "answer": {
+          "audio_id": "DE_ELE_BACK_Q2",
+          "text": "Und wie ist das bei dir?"
+        },
+        "dialogue": {
+          "audio_id": "DE_ELE_CLOSE_01",
+          "text": "Vielen Dank für das nette Gespräch! Es hat mich sehr gefreut, dich kennenzulernen."
+        }
+      }
+    },
+    {
+      "topic": "Clarification & Silence Recovery",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_ELE_CLAR_Q1",
+          "text": "Entschuldigung, kannst du das bitte noch einmal wiederholen? Ich habe dich akustisch nicht ganz verstanden."
+        },
+        "dialogue": {
+          "audio_id": "DE_ELE_SIL_Q1",
+          "text": "Hallo? Bist du noch da? Wollen wir weitermachen?"
+        }
+      }
+    },
+    {
+      "topic": "Modular Expressions (EXP_01-EXP_03)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_ELE_EXP_01",
+          "text": "Ah, interessant!"
+        },
+        "question": {
+          "audio_id": "DE_ELE_EXP_02",
+          "text": "Oh, schön!"
+        },
+        "answer": {
+          "audio_id": "DE_ELE_EXP_03",
+          "text": "Super!"
+        }
+      }
+    },
+    {
+      "topic": "Modular Expressions (EXP_04-EXP_06)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_ELE_EXP_04",
+          "text": "Das klingt ja toll!"
+        },
+        "question": {
+          "audio_id": "DE_ELE_EXP_05",
+          "text": "Ach so, ich verstehe."
+        },
+        "answer": {
+          "audio_id": "DE_ELE_EXP_06",
+          "text": "Oh, wirklich? Das ist ja spannend!"
+        }
+      }
+    },
+    {
+      "topic": "Modular Expressions (EXP_07-EXP_09)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_ELE_EXP_07",
+          "text": "Alles klar!"
+        },
+        "question": {
+          "audio_id": "DE_ELE_EXP_08",
+          "text": "Ja, das kenne ich gut."
+        },
+        "answer": {
+          "audio_id": "DE_ELE_EXP_09",
+          "text": "Cool!"
+        }
+      }
+    },
+    {
+      "topic": "Modular Expressions (EXP_10-EXP_12)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_ELE_EXP_10",
+          "text": "Ah, okay!"
+        },
+        "question": {
+          "audio_id": "DE_ELE_EXP_11",
+          "text": "Das freut mich!"
+        },
+        "answer": {
+          "audio_id": "DE_ELE_EXP_12",
+          "text": "Oh, ich auch!"
+        }
+      }
+    },
+    {
+      "topic": "Modular Expressions (EXP_13-EXP_15)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_ELE_EXP_13",
+          "text": "Ja, das stimmt."
+        },
+        "question": {
+          "audio_id": "DE_ELE_EXP_14",
+          "text": "Ich wünsche dir viel Erfolg dabei!"
+        },
+        "answer": {
+          "audio_id": "DE_ELE_EXP_15",
+          "text": "Gerne! Kein Problem."
+        }
+      }
+    },
+    {
+      "topic": "Modular Expressions (EXP_16-EXP_18)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_ELE_EXP_16",
+          "text": "Oh, das tut mir leid."
+        },
+        "question": {
+          "audio_id": "DE_ELE_EXP_17",
+          "text": "Sehr gut!"
+        },
+        "answer": {
+          "audio_id": "DE_ELE_EXP_18",
+          "text": "Danke, gleichfalls!"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Follow-Up 1",
+      "speaker": "Frau Erdoğan",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX3_FOLLOW_01",
+          "text": "Vielen Dank. Dann stelle ich Ihnen auch noch eine Frage: Was machen Sie denn besonders gern am Wochenende in Ihrer Freizeit?"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Follow-Up 2",
+      "speaker": "Frau Erdoğan",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX3_FOLLOW_02",
+          "text": "Danke sehr. Eine kurze Frage noch: Gefällt es Ihnen in Ihrem Wohnort, oder möchten Sie später einmal umziehen?"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention: Stay on Topic",
+      "speaker": "Frau Erdoğan",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX3_INT_TOPIC",
+          "text": "Bitte kehren Sie zum Thema zurück und sprechen Sie über die vorgegebenen Stichpunkte."
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention: Politeness",
+      "speaker": "Frau Erdoğan",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX3_INT_POLITE",
+          "text": "Wir bitten Sie, im Rahmen dieser Prüfung stets respektvoll und sachlich zu bleiben."
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention: Dialogue Format",
+      "speaker": "Frau Erdoğan",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX3_INT_DIALOG",
+          "text": "Kurzer Hinweis: Bitte wechseln Sie sich ab. Ein Partner fragt, der andere antwortet."
+        }
+      }
+    },
+    {
+      "topic": "Moderation Teil 1 Ende",
+      "speaker": "Frau Erdoğan",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX3_OUTRO_01",
+          "text": "Sehr gut, vielen Dank! Teil eins ist damit beendet und wir gehen direkt über zu Teil zwei."
+        }
+      }
+    }
+  ],
+  "teil1 dailogues": [
+    {
+      "topic": "Exam Introduction",
+      "speaker": "Frau Erdoğan",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX3_INTRO_01",
+          "text": "Hallo und herzlich willkommen zu unserer mündlichen Prüfung telc B1. Mein Name ist Frau Erdoğan, neben mir sitzt mein lieber Kollege Herr Özcan. Im ersten Teil lernen Sie sich kennen – bitte im Dialog, also immer Frage und Antwort. Bitte schön."
+        }
+      }
+    },
+    {
+      "topic": "Opening & Du/Sie Proposal",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_ELE_OPEN_01",
+          "text": "Guten Tag! Wollen wir uns duzen? Mein Name ist Elena Kovalenko. Und wie heißt du?"
+        },
+        "answer": {
+          "audio_id": "DE_ELE_DUSIE_A1",
+          "text": "Ja, gerne! Wir können sehr gerne du sagen."
+        },
+        "dialogue": {
+          "audio_id": "DE_ELE_DUSIE_Q1",
+          "text": "Hallo! Wollen wir du oder Sie sagen?"
+        }
+      }
+    },
+    {
+      "topic": "Name & Surname",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_ELE_NAME_Q1",
+          "text": "Wie heißt du? Und wie ist dein Nachname?"
+        },
+        "answer": {
+          "audio_id": "DE_ELE_NAME_A1",
+          "text": "Mein Vorname ist Elena und mein Nachname ist Kovalenko."
+        },
+        "dialogue": {
+          "audio_id": "DE_ELE_NAME_Q2",
+          "text": "Und wie ist dein Familienname?"
+        }
+      }
+    },
+    {
+      "topic": "Age",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_ELE_AGE_Q1",
+          "text": "Und wie alt bist du, wenn ich fragen darf?"
+        },
+        "answer": {
+          "audio_id": "DE_ELE_AGE_A1",
+          "text": "Ich bin vierunddreißig Jahre alt."
+        }
+      }
+    },
+    {
+      "topic": "Origin & Hometown",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_ELE_ORIG_Q1",
+          "text": "Woher kommst du eigentlich?"
+        },
+        "answer": {
+          "audio_id": "DE_ELE_ORIG_A1",
+          "text": "Ich komme aus der Ukraine, aus der Stadt Charkiw."
+        },
+        "dialogue": {
+          "audio_id": "DE_ELE_ORIG_Q2",
+          "text": "Aus welcher Stadt kommst du genau?"
+        }
+      }
+    },
+    {
+      "topic": "Residence & Housing",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_ELE_RES_Q1",
+          "text": "Wo wohnst du jetzt hier in Deutschland?"
+        },
+        "answer": {
+          "audio_id": "DE_ELE_RES_A1",
+          "text": "Zurzeit wohne ich in München. Wir haben dort eine helle Wohnung mit drei Zimmern und einem kleinen Balkon."
+        },
+        "dialogue": {
+          "audio_id": "DE_ELE_RES_Q2",
+          "text": "Wohnst du in einer Wohnung, in einem Haus oder in einer WG?"
+        }
+      }
+    },
+    {
+      "topic": "Family & Marital Status",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_ELE_FAM_Q1",
+          "text": "Lebst du allein hier oder hast du Familie in Deutschland?"
+        },
+        "answer": {
+          "audio_id": "DE_ELE_FAM_A1",
+          "text": "Ich bin verheiratet und wir haben einen Sohn. Er ist acht Jahre alt und geht hier in die Grundschule."
+        },
+        "dialogue": {
+          "audio_id": "DE_ELE_FAM_Q2",
+          "text": "Bist du verheiratet und hast du Kinder?"
+        }
+      }
+    },
+    {
+      "topic": "Work & Education",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_ELE_WORK_Q1",
+          "text": "Was machst du beruflich? Arbeitest du schon oder machst du eine Ausbildung?"
+        },
+        "answer": {
+          "audio_id": "DE_ELE_WORK_A1",
+          "text": "Ich bin Krankenschwester von Beruf. Im Moment mache ich ein Praktikum im Krankenhaus, weil ich auf die Anerkennung von meinem Diplom warte."
+        }
+      }
+    },
+    {
+      "topic": "Languages",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_ELE_LANG_Q1",
+          "text": "Welche Sprachen sprichst du? Was ist deine Muttersprache?"
+        },
+        "answer": {
+          "audio_id": "DE_ELE_LANG_A1",
+          "text": "Meine Muttersprache ist Ukrainisch, aber ich spreche auch fließend Russisch, ein bisschen Englisch und jetzt Deutsch."
+        }
+      }
+    },
+    {
+      "topic": "Learning German",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_ELE_GER_Q1",
+          "text": "Wo und wie lange hast du schon Deutsch gelernt?"
+        },
+        "answer": {
+          "audio_id": "DE_ELE_GER_A1",
+          "text": "Zuerst habe ich drei Monate online im Internet Deutsch gelernt und danach einen Intensivkurs in München besucht."
+        }
+      }
+    },
+    {
+      "topic": "Hobbies & Free Time",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_ELE_HOB_Q1",
+          "text": "Was machst du gern in deiner Freizeit? Hast du Hobbys?"
+        },
+        "answer": {
+          "audio_id": "DE_ELE_HOB_A1",
+          "text": "In meiner Freizeit lese ich sehr gerne Bücher, ich male gern und am Wochenende gehe ich oft mit meinem Sohn schwimmen."
+        }
+      }
+    },
+    {
+      "topic": "Counter-Questions & Closing",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_ELE_BACK_Q1",
+          "text": "Und du?"
+        },
+        "answer": {
+          "audio_id": "DE_ELE_BACK_Q2",
+          "text": "Und wie ist das bei dir?"
+        },
+        "dialogue": {
+          "audio_id": "DE_ELE_CLOSE_01",
+          "text": "Vielen Dank für das nette Gespräch! Es hat mich sehr gefreut, dich kennenzulernen."
+        }
+      }
+    },
+    {
+      "topic": "Clarification & Silence Recovery",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_ELE_CLAR_Q1",
+          "text": "Entschuldigung, kannst du das bitte noch einmal wiederholen? Ich habe dich akustisch nicht ganz verstanden."
+        },
+        "dialogue": {
+          "audio_id": "DE_ELE_SIL_Q1",
+          "text": "Hallo? Bist du noch da? Wollen wir weitermachen?"
+        }
+      }
+    },
+    {
+      "topic": "Modular Expressions (EXP_01-EXP_03)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_ELE_EXP_01",
+          "text": "Ah, interessant!"
+        },
+        "question": {
+          "audio_id": "DE_ELE_EXP_02",
+          "text": "Oh, schön!"
+        },
+        "answer": {
+          "audio_id": "DE_ELE_EXP_03",
+          "text": "Super!"
+        }
+      }
+    },
+    {
+      "topic": "Modular Expressions (EXP_04-EXP_06)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_ELE_EXP_04",
+          "text": "Das klingt ja toll!"
+        },
+        "question": {
+          "audio_id": "DE_ELE_EXP_05",
+          "text": "Ach so, ich verstehe."
+        },
+        "answer": {
+          "audio_id": "DE_ELE_EXP_06",
+          "text": "Oh, wirklich? Das ist ja spannend!"
+        }
+      }
+    },
+    {
+      "topic": "Modular Expressions (EXP_07-EXP_09)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_ELE_EXP_07",
+          "text": "Alles klar!"
+        },
+        "question": {
+          "audio_id": "DE_ELE_EXP_08",
+          "text": "Ja, das kenne ich gut."
+        },
+        "answer": {
+          "audio_id": "DE_ELE_EXP_09",
+          "text": "Cool!"
+        }
+      }
+    },
+    {
+      "topic": "Modular Expressions (EXP_10-EXP_12)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_ELE_EXP_10",
+          "text": "Ah, okay!"
+        },
+        "question": {
+          "audio_id": "DE_ELE_EXP_11",
+          "text": "Das freut mich!"
+        },
+        "answer": {
+          "audio_id": "DE_ELE_EXP_12",
+          "text": "Oh, ich auch!"
+        }
+      }
+    },
+    {
+      "topic": "Modular Expressions (EXP_13-EXP_15)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_ELE_EXP_13",
+          "text": "Ja, das stimmt."
+        },
+        "question": {
+          "audio_id": "DE_ELE_EXP_14",
+          "text": "Ich wünsche dir viel Erfolg dabei!"
+        },
+        "answer": {
+          "audio_id": "DE_ELE_EXP_15",
+          "text": "Gerne! Kein Problem."
+        }
+      }
+    },
+    {
+      "topic": "Modular Expressions (EXP_16-EXP_18)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_ELE_EXP_16",
+          "text": "Oh, das tut mir leid."
+        },
+        "question": {
+          "audio_id": "DE_ELE_EXP_17",
+          "text": "Sehr gut!"
+        },
+        "answer": {
+          "audio_id": "DE_ELE_EXP_18",
+          "text": "Danke, gleichfalls!"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Follow-Up 1",
+      "speaker": "Frau Erdoğan",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX3_FOLLOW_01",
+          "text": "Vielen Dank. Dann stelle ich Ihnen auch noch eine Frage: Was machen Sie denn besonders gern am Wochenende in Ihrer Freizeit?"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Follow-Up 2",
+      "speaker": "Frau Erdoğan",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX3_FOLLOW_02",
+          "text": "Danke sehr. Eine kurze Frage noch: Gefällt es Ihnen in Ihrem Wohnort, oder möchten Sie später einmal umziehen?"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention: Stay on Topic",
+      "speaker": "Frau Erdoğan",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX3_INT_TOPIC",
+          "text": "Bitte kehren Sie zum Thema zurück und sprechen Sie über die vorgegebenen Stichpunkte."
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention: Politeness",
+      "speaker": "Frau Erdoğan",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX3_INT_POLITE",
+          "text": "Wir bitten Sie, im Rahmen dieser Prüfung stets respektvoll und sachlich zu bleiben."
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention: Dialogue Format",
+      "speaker": "Frau Erdoğan",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX3_INT_DIALOG",
+          "text": "Kurzer Hinweis: Bitte wechseln Sie sich ab. Ein Partner fragt, der andere antwortet."
+        }
+      }
+    },
+    {
+      "topic": "Moderation Teil 1 Ende",
+      "speaker": "Frau Erdoğan",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX3_OUTRO_01",
+          "text": "Sehr gut, vielen Dank! Teil eins ist damit beendet und wir gehen direkt über zu Teil zwei."
+        }
+      }
+    }
+  ]
+}

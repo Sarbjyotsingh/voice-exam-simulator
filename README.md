@@ -1,6 +1,6 @@
-# Voice Exam Simulator Backend (Go)
+# Voice Engine Backend (Go)
 
-This is the Go backend for the telc German Exam Simulator. It uses a "Glass Pipe" architecture to provide real-time STT (Groq), LLM (Groq), and TTS (ElevenLabs) via WebSockets.
+This is the Go backend for the Voice Engine. It provides a real-time voice pipeline (STT, LLM, TTS, turn routing, and evaluations) supporting both structured speaking exams and conversational practice via WebSockets.
 
 ## 🛠️ Local Development
 

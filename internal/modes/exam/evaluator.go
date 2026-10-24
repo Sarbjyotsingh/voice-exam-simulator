@@ -7,10 +7,10 @@ import (
 	"strconv"
 	"strings"
 
-	"voice-exam-simulator/config"
-	"voice-exam-simulator/internal/contracts"
-	"voice-exam-simulator/internal/engine"
-	"voice-exam-simulator/internal/providers"
+	"voice-engine/config"
+	"voice-engine/internal/contracts"
+	"voice-engine/internal/engine"
+	"voice-engine/internal/providers"
 )
 
 // CompletionClient is the subset of ProviderRegistry or LLMProvider used by ExamEvaluator.

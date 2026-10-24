@@ -1,0 +1,1278 @@
+{
+  "scenario_id": "S3",
+  "scenario_title": "Gemeinsamer Wochenendausflug / Picknick in der Natur",
+  "exam_hint": "Teil 3: Gemeinsam etwas planen — „Wochenendausflug mit Picknick“\n\nSituation:\nAm kommenden Wochenende soll das Wetter sehr schön werden. Sie und Ihre Gesprächspartnerin Elena möchten zusammen einen Tagesausflug in die Natur mit einem Picknick machen.\n\nPlanen Sie gemeinsam den Ausflug. Überlegen Sie sich:\n• Wann? (Samstag oder Sonntag? Um wie viel Uhr treffen und losfahren?)\n• Wohin & Wetter-Alternative? (An den See oder in die Berge? Was machen, falls es doch regnet?)\n• Was mitbringen? (Essen, Getränke, Picknickdecke, Spiele – Achtung: Supermärkte sind sonntags zu!)\n• Anreise & Aufgabenverteilung? (Mit dem Auto oder mit dem Zug / Deutschlandticket? Wer besorgt was?)",
+  "voice_profiles": {
+    "Frau Erdoğan": "zKHQdbB8oaQ7roNTiDTK",
+    "Elena": "gVOibprogMfmHVVyo5r6"
+  },
+  "auto_play_sequence": [
+    "DE_EX3_T3_INTRO_01",
+    "DE_ELE_S3_T3OPEN_01"
+  ],
+  "end_audio_id": "DE_EX3_T3_OUTRO_01",
+  "dialogues": [
+    {
+      "topic": "Introduction (Teil 3)",
+      "speaker": "Frau Erdoğan",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Frau Erdoğan",
+          "text": "Super, vielen Dank. Nun kommen wir zum letzten Teil der Prüfung, Teil drei: Gemeinsam etwas planen. Sie haben das Aufgabenblatt schon in der Vorbereitungszeit gesehen. Machen Sie bitte Vorschläge, finden Sie Kompromisse und verteilen Sie die Aufgaben. Elena, möchten Sie starten?",
+          "german": "Super, vielen Dank. Nun kommen wir zum letzten Teil der Prüfung, Teil drei: Gemeinsam etwas planen. Sie haben das Aufgabenblatt schon in der Vorbereitungszeit gesehen. Machen Sie bitte Vorschläge, finden Sie Kompromisse und verteilen Sie die Aufgaben. Elena, möchten Sie starten?",
+          "english": "",
+          "audio_id": "DE_EX3_T3_INTRO_01"
+        }
+      }
+    },
+    {
+      "topic": "Opening & Initial Time Proposal (Wann?)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Elena",
+          "text": "Hallo! Am Wochenende soll das Wetter ja endlich warm und sonnig werden, deshalb wollen wir zusammen einen schönen Tagesausflug mit einem Picknick machen. Wollen wir zuerst überlegen, an welchem Tag wir fahren? Mir würde Sonntagmorgen um zehn Uhr sehr gut passen. Wie sieht es bei dir aus?",
+          "german": "Hallo! Am Wochenende soll das Wetter ja endlich warm und sonnig werden, deshalb wollen wir zusammen einen schönen Tagesausflug mit einem Picknick machen. Wollen wir zuerst überlegen, an welchem Tag wir fahren? Mir würde Sonntagmorgen um zehn Uhr sehr gut passen. Wie sieht es bei dir aus?",
+          "english": "",
+          "audio_id": "DE_ELE_S3_T3OPEN_01"
+        }
+      }
+    },
+    {
+      "topic": "Time Counter-Proposal / Compromise (Sonntag 9:30 Uhr)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "answer": {
+          "speaker": "Elena",
+          "text": "Alles klar, wenn wir uns schon um neun Uhr dreißig treffen, haben wir den ganzen Tag vor uns und es ist noch nicht so voll. Und falls dir Samstag lieber ist, kann ich meinen Termin verschieben – mir passen beide Tage am Wochenende!",
+          "german": "Alles klar, wenn wir uns schon um neun Uhr dreißig treffen, haben wir den ganzen Tag vor uns und es ist noch nicht so voll. Und falls dir Samstag lieber ist, kann ich meinen Termin verschieben – mir passen beide Tage am Wochenende!",
+          "english": "",
+          "audio_id": "DE_ELE_S3_TIME_A1"
+        }
+      }
+    },
+    {
+      "topic": "Time Follow-Up Question (Wann starten?)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Elena",
+          "text": "Wann wollen wir unseren Ausflug starten? Passt dir Sonntagmorgen um halb zehn, oder ist dir Samstag lieber?",
+          "german": "Wann wollen wir unseren Ausflug starten? Passt dir Sonntagmorgen um halb zehn, oder ist dir Samstag lieber?",
+          "english": "",
+          "audio_id": "DE_ELE_S3_TIME_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Time Simpler Re-Ask (Tag & Uhrzeit)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Elena",
+          "text": "An welchem Tag und um wie viel Uhr sollen wir uns für den Ausflug treffen?",
+          "german": "An welchem Tag und um wie viel Uhr sollen wir uns für den Ausflug treffen?",
+          "english": "",
+          "audio_id": "DE_ELE_S3_TIME_Q2"
+        }
+      }
+    },
+    {
+      "topic": "Destination & Weather Question (See oder Berge?)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Elena",
+          "text": "Wohin wollen wir eigentlich fahren? Sollen wir lieber an den großen See fahren oder in den Bergen wandern gehen – und was machen wir, falls es plötzlich regnet?",
+          "german": "Wohin wollen wir eigentlich fahren? Sollen wir lieber an den großen See fahren oder in den Bergen wandern gehen – und was machen wir, falls es plötzlich regnet?",
+          "english": "",
+          "audio_id": "DE_ELE_S3_LOC_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Destination Simpler Re-Ask (See oder Wanderung?)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Elena",
+          "text": "Was gefällt dir besser für unser Picknick: ein Ausflug an den See oder eine Wanderung in den Bergen?",
+          "german": "Was gefällt dir besser für unser Picknick: ein Ausflug an den See oder eine Wanderung in den Bergen?",
+          "english": "",
+          "audio_id": "DE_ELE_S3_LOC_Q2"
+        }
+      }
+    },
+    {
+      "topic": "Destination Proposal & Rain Backup (Chiemsee + Seecafé)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "answer": {
+          "speaker": "Elena",
+          "text": "Ein Ausflug an den Chiemsee ist eine wunderbare Idee! Dort gibt es eine große grüne Wiese direkt am Wasser zum Picknicken und wir können spazieren gehen. Und falls das Wetter doch schlecht wird, gehen wir einfach in das schöne Seecafé oder besuchen das Schloss auf der Insel.",
+          "german": "Ein Ausflug an den Chiemsee ist eine wunderbare Idee! Dort gibt es eine große grüne Wiese direkt am Wasser zum Picknicken und wir können spazieren gehen. Und falls das Wetter doch schlecht wird, gehen wir einfach in das schöne Seecafé oder besuchen das Schloss auf der Insel.",
+          "english": "",
+          "audio_id": "DE_ELE_S3_LOC_A1"
+        }
+      }
+    },
+    {
+      "topic": "Picnic Items Question (Essen & Ausrüstung)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Elena",
+          "text": "Was wollen wir für unser Picknick alles zu essen und zu trinken mitnehmen? Am Sonntag sind die Supermärkte ja geschlossen, deshalb müssen wir schon am Samstag einkaufen.",
+          "german": "Was wollen wir für unser Picknick alles zu essen und zu trinken mitnehmen? Am Sonntag sind die Supermärkte ja geschlossen, deshalb müssen wir schon am Samstag einkaufen.",
+          "english": "",
+          "audio_id": "DE_ELE_S3_FOOD_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Picnic Items Proposal (Sandwiches, Obst, Decke & Ball)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "answer": {
+          "speaker": "Elena",
+          "text": "Genau, am Samstag kaufen wir alles frisch ein! Ich kann gerne Sandwiches mit Käse, frisches Obst wie Erdbeeren und Äpfel sowie eine große Picknickdecke mitbringen. Außerdem nehme ich einen Volleyball und ein Kartenspiel mit, damit uns nicht langweilig wird.",
+          "german": "Genau, am Samstag kaufen wir alles frisch ein! Ich kann gerne Sandwiches mit Käse, frisches Obst wie Erdbeeren und Äpfel sowie eine große Picknickdecke mitbringen. Außerdem nehme ich einen Volleyball und ein Kartenspiel mit, damit uns nicht langweilig wird.",
+          "english": "",
+          "audio_id": "DE_ELE_S3_FOOD_A1"
+        }
+      }
+    },
+    {
+      "topic": "Transport & Task Division Question (Zug/Auto & Aufgaben)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Elena",
+          "text": "Wie wollen wir eigentlich zum See fahren – mit dem Auto oder lieber gemeinsam mit dem Zug? Und was möchtest du für das Picknick besorgen?",
+          "german": "Wie wollen wir eigentlich zum See fahren – mit dem Auto oder lieber gemeinsam mit dem Zug? Und was möchtest du für das Picknick besorgen?",
+          "english": "",
+          "audio_id": "DE_ELE_S3_TASK_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Transport & Task Division Proposal (Regionalzug + Deutschlandticket)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "answer": {
+          "speaker": "Elena",
+          "text": "Mit dem Regionalzug zu fahren ist super praktisch, weil wir alle das Deutschlandticket haben und am See am Wochenende kaum Parkplätze frei sind. Treffen wir uns einfach um neun Uhr fünfzehn am Hauptbahnhof! Ich mache die Sandwiches und das Obst, und du bringst die Getränke und etwas Süßes mit.",
+          "german": "Mit dem Regionalzug zu fahren ist super praktisch, weil wir alle das Deutschlandticket haben und am See am Wochenende kaum Parkplätze frei sind. Treffen wir uns einfach um neun Uhr fünfzehn am Hauptbahnhof! Ich mache die Sandwiches und das Obst, und du bringst die Getränke und etwas Süßes mit.",
+          "english": "",
+          "audio_id": "DE_ELE_S3_TASK_A1"
+        }
+      }
+    },
+    {
+      "topic": "Final Plan Summary (Zusammenfassung)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "answer": {
+          "speaker": "Elena",
+          "text": "Wunderbar, dann fasse ich kurz zusammen: Wir treffen uns am Sonntag um neun Uhr fünfzehn am Hauptbahnhof und fahren mit dem Zug und dem Deutschlandticket an den See. Ich bringe die Picknickdecke, den Ball, Sandwiches und Obst mit, und du kümmerst dich um die Getränke und die Snacks.",
+          "german": "Wunderbar, dann fasse ich kurz zusammen: Wir treffen uns am Sonntag um neun Uhr fünfzehn am Hauptbahnhof und fahren mit dem Zug und dem Deutschlandticket an den See. Ich bringe die Picknickdecke, den Ball, Sandwiches und Obst mit, und du kümmerst dich um die Getränke und die Snacks.",
+          "english": "",
+          "audio_id": "DE_ELE_S3_SUM_A1"
+        }
+      }
+    },
+    {
+      "topic": "Summary Completeness Check (Alles besprochen?)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Elena",
+          "text": "Haben wir damit alles für unseren Ausflug geplant, oder müssen wir noch an etwas denken?",
+          "german": "Haben wir damit alles für unseren Ausflug geplant, oder müssen wir noch an etwas denken?",
+          "english": "",
+          "audio_id": "DE_ELE_S3_SUM_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Counter-Question (Planning Feedback 1)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Elena",
+          "text": "Was meinst du dazu? Findest du den Vorschlag gut?",
+          "german": "Was meinst du dazu? Findest du den Vorschlag gut?",
+          "english": "",
+          "audio_id": "DE_ELE_T3BACK_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Counter-Question (Planning Feedback 2)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Elena",
+          "text": "Hast du vielleicht noch eine andere Idee dazu?",
+          "german": "Hast du vielleicht noch eine andere Idee dazu?",
+          "english": "",
+          "audio_id": "DE_ELE_T3BACK_Q2"
+        }
+      }
+    },
+    {
+      "topic": "Clarification (Repeat Proposal)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Elena",
+          "text": "Entschuldigung, ich habe deinen Vorschlag akustisch nicht ganz verstanden. Kannst du das bitte noch einmal kurz wiederholen?",
+          "german": "Entschuldigung, ich habe deinen Vorschlag akustisch nicht ganz verstanden. Kannst du das bitte noch einmal kurz wiederholen?",
+          "english": "",
+          "audio_id": "DE_ELE_T3CLAR_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Silence Recovery",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Elena",
+          "text": "Hallo? Bist du noch da? Wollen wir weiter zusammen planen?",
+          "german": "Hallo? Bist du noch da? Wollen wir weiter zusammen planen?",
+          "english": "",
+          "audio_id": "DE_ELE_T3SIL_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Closing & Farewell (Teil 3)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Elena",
+          "text": "Super, dann machen wir das genau so! Ich freue mich schon sehr darauf. Bis dann, tschüss!",
+          "german": "Super, dann machen wir das genau so! Ich freue mich schon sehr darauf. Bis dann, tschüss!",
+          "english": "",
+          "audio_id": "DE_ELE_T3CLOSE_01"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - Super Idee)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Elena",
+          "text": "Das ist eine super Idee!",
+          "german": "Das ist eine super Idee!",
+          "english": "",
+          "audio_id": "DE_ELE_EXP_41"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - So machen wir das)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Elena",
+          "text": "Klasse, so machen wir das!",
+          "german": "Klasse, so machen wir das!",
+          "english": "",
+          "audio_id": "DE_ELE_EXP_42"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - Passt sehr gut)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Elena",
+          "text": "Perfekt, das passt mir sehr gut.",
+          "german": "Perfekt, das passt mir sehr gut.",
+          "english": "",
+          "audio_id": "DE_ELE_EXP_43"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - Einverstanden)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Elena",
+          "text": "Einverstanden, das klingt nach einem sehr guten Plan.",
+          "german": "Einverstanden, das klingt nach einem sehr guten Plan.",
+          "english": "",
+          "audio_id": "DE_ELE_EXP_44"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - Sofort dabei)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Elena",
+          "text": "Super Vorschlag, da bin ich sofort dabei!",
+          "german": "Super Vorschlag, da bin ich sofort dabei!",
+          "english": "",
+          "audio_id": "DE_ELE_EXP_45"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - Abgemacht)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Elena",
+          "text": "Alles klar, abgemacht!",
+          "german": "Alles klar, abgemacht!",
+          "english": "",
+          "audio_id": "DE_ELE_EXP_46"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Doubt - Nicht ganz sicher)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Elena",
+          "text": "Hmm, da bin ich mir noch nicht ganz sicher.",
+          "german": "Hmm, da bin ich mir noch nicht ganz sicher.",
+          "english": "",
+          "audio_id": "DE_ELE_EXP_47"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Doubt - Zeitlich knapp)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Elena",
+          "text": "Das wird zeitlich vielleicht ein bisschen knapp.",
+          "german": "Das wird zeitlich vielleicht ein bisschen knapp.",
+          "english": "",
+          "audio_id": "DE_ELE_EXP_48"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Doubt - Termin passt nicht)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Elena",
+          "text": "Ehrlich gesagt passt mir dieser Termin nicht so gut.",
+          "german": "Ehrlich gesagt passt mir dieser Termin nicht so gut.",
+          "english": "",
+          "audio_id": "DE_ELE_EXP_49"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Doubt - Schlechtes Wetter)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Elena",
+          "text": "Die Idee ist gut, aber was machen wir, wenn das Wetter schlecht ist?",
+          "german": "Die Idee ist gut, aber was machen wir, wenn das Wetter schlecht ist?",
+          "english": "",
+          "audio_id": "DE_ELE_EXP_50"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Counter-Proposal - Anderer Vorschlag)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Elena",
+          "text": "Ich hätte da noch einen anderen Vorschlag.",
+          "german": "Ich hätte da noch einen anderen Vorschlag.",
+          "english": "",
+          "audio_id": "DE_ELE_EXP_51"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Counter-Proposal - Zusammen erledigen)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Elena",
+          "text": "Wäre es nicht praktischer, wenn wir das zusammen erledigen?",
+          "german": "Wäre es nicht praktischer, wenn wir das zusammen erledigen?",
+          "english": "",
+          "audio_id": "DE_ELE_EXP_52"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Compromise - Viel praktischer)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Elena",
+          "text": "Ja, du hast recht, das ist wirklich viel praktischer so.",
+          "german": "Ja, du hast recht, das ist wirklich viel praktischer so.",
+          "english": "",
+          "audio_id": "DE_ELE_EXP_53"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Task Allocation - Kümmere mich)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Elena",
+          "text": "Sehr gerne, darum kümmere ich mich!",
+          "german": "Sehr gerne, darum kümmere ich mich!",
+          "english": "",
+          "audio_id": "DE_ELE_EXP_54"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Task Allocation - Aufgaben teilen)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Elena",
+          "text": "Abgemacht! Wenn du das übernimmst, kümmere ich mich um den Rest.",
+          "german": "Abgemacht! Wenn du das übernimmst, kümmere ich mich um den Rest.",
+          "english": "",
+          "audio_id": "DE_ELE_EXP_55"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Summary Lead-in - Fast alle Punkte)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Elena",
+          "text": "Super, wir haben jetzt fast alle Punkte geklärt!",
+          "german": "Super, wir haben jetzt fast alle Punkte geklärt!",
+          "english": "",
+          "audio_id": "DE_ELE_EXP_56"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Clarification - Verstanden)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Elena",
+          "text": "Ach so, alles klar, jetzt habe ich dich verstanden.",
+          "german": "Ach so, alles klar, jetzt habe ich dich verstanden.",
+          "english": "",
+          "audio_id": "DE_ELE_EXP_57"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Politeness - Spaß beim Planen)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Elena",
+          "text": "Gerne! Es macht richtig Spaß, das mit dir zusammen zu planen.",
+          "german": "Gerne! Es macht richtig Spaß, das mit dir zusammen zu planen.",
+          "english": "",
+          "audio_id": "DE_ELE_EXP_58"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention (Off-Topic)",
+      "speaker": "Frau Erdoğan",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Frau Erdoğan",
+          "text": "Einen kleinen Moment bitte: Sie weichen gerade von der Aufgabe ab. Kommen Sie bitte zurück zu Ihrer gemeinsamen Planung.",
+          "german": "Einen kleinen Moment bitte: Sie weichen gerade von der Aufgabe ab. Kommen Sie bitte zurück zu Ihrer gemeinsamen Planung.",
+          "english": "",
+          "audio_id": "DE_EX3_T3_INT_TOPIC"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention (Monologue / No Negotiation)",
+      "speaker": "Frau Erdoğan",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Frau Erdoğan",
+          "text": "Bitte führen Sie ein gemeinsames Planungsgespräch. Fragen Sie auch Ihre Partnerin, was sie vorschlägt.",
+          "german": "Bitte führen Sie ein gemeinsames Planungsgespräch. Fragen Sie auch Ihre Partnerin, was sie vorschlägt.",
+          "english": "",
+          "audio_id": "DE_EX3_T3_INT_DIALOG"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention (Skipped Bullet Points / Silence)",
+      "speaker": "Frau Erdoğan",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Frau Erdoğan",
+          "text": "Schauen Sie bitte noch einmal auf die Punkte auf Ihrem Blatt: Haben Sie schon geklärt, wer was mitbringt und wie Sie fahren?",
+          "german": "Schauen Sie bitte noch einmal auf die Punkte auf Ihrem Blatt: Haben Sie schon geklärt, wer was mitbringt und wie Sie fahren?",
+          "english": "",
+          "audio_id": "DE_EX3_T3_INT_SILENCE"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention (Politeness)",
+      "speaker": "Frau Erdoğan",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Frau Erdoğan",
+          "text": "Ich möchte Sie bitten, höflich und sachlich miteinander umzugehen. Bitte setzen Sie die Planung fort.",
+          "german": "Ich möchte Sie bitten, höflich und sachlich miteinander umzugehen. Bitte setzen Sie die Planung fort.",
+          "english": "",
+          "audio_id": "DE_EX3_T3_INT_POLITE"
+        }
+      }
+    },
+    {
+      "topic": "Official Conclusion of the Oral Exam (Teil 3 Outro)",
+      "speaker": "Frau Erdoğan",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Frau Erdoğan",
+          "text": "Okay, vielen Dank! Das hat sehr gut geklappt. Damit ist Teil drei und auch Ihre gesamte mündliche Prüfung beendet. Die Notizen lassen Sie bitte hier, und die Ergebnisse erhalten Sie in ungefähr vier Wochen. Einen schönen Tag noch!",
+          "german": "Okay, vielen Dank! Das hat sehr gut geklappt. Damit ist Teil drei und auch Ihre gesamte mündliche Prüfung beendet. Die Notizen lassen Sie bitte hier, und die Ergebnisse erhalten Sie in ungefähr vier Wochen. Einen schönen Tag noch!",
+          "english": "",
+          "audio_id": "DE_EX3_T3_OUTRO_01"
+        }
+      }
+    }
+  ],
+  "teil3 dialogues": [
+    {
+      "topic": "Introduction (Teil 3)",
+      "speaker": "Frau Erdoğan",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Frau Erdoğan",
+          "text": "Super, vielen Dank. Nun kommen wir zum letzten Teil der Prüfung, Teil drei: Gemeinsam etwas planen. Sie haben das Aufgabenblatt schon in der Vorbereitungszeit gesehen. Machen Sie bitte Vorschläge, finden Sie Kompromisse und verteilen Sie die Aufgaben. Elena, möchten Sie starten?",
+          "german": "Super, vielen Dank. Nun kommen wir zum letzten Teil der Prüfung, Teil drei: Gemeinsam etwas planen. Sie haben das Aufgabenblatt schon in der Vorbereitungszeit gesehen. Machen Sie bitte Vorschläge, finden Sie Kompromisse und verteilen Sie die Aufgaben. Elena, möchten Sie starten?",
+          "english": "",
+          "audio_id": "DE_EX3_T3_INTRO_01"
+        }
+      }
+    },
+    {
+      "topic": "Opening & Initial Time Proposal (Wann?)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Elena",
+          "text": "Hallo! Am Wochenende soll das Wetter ja endlich warm und sonnig werden, deshalb wollen wir zusammen einen schönen Tagesausflug mit einem Picknick machen. Wollen wir zuerst überlegen, an welchem Tag wir fahren? Mir würde Sonntagmorgen um zehn Uhr sehr gut passen. Wie sieht es bei dir aus?",
+          "german": "Hallo! Am Wochenende soll das Wetter ja endlich warm und sonnig werden, deshalb wollen wir zusammen einen schönen Tagesausflug mit einem Picknick machen. Wollen wir zuerst überlegen, an welchem Tag wir fahren? Mir würde Sonntagmorgen um zehn Uhr sehr gut passen. Wie sieht es bei dir aus?",
+          "english": "",
+          "audio_id": "DE_ELE_S3_T3OPEN_01"
+        }
+      }
+    },
+    {
+      "topic": "Time Counter-Proposal / Compromise (Sonntag 9:30 Uhr)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "answer": {
+          "speaker": "Elena",
+          "text": "Alles klar, wenn wir uns schon um neun Uhr dreißig treffen, haben wir den ganzen Tag vor uns und es ist noch nicht so voll. Und falls dir Samstag lieber ist, kann ich meinen Termin verschieben – mir passen beide Tage am Wochenende!",
+          "german": "Alles klar, wenn wir uns schon um neun Uhr dreißig treffen, haben wir den ganzen Tag vor uns und es ist noch nicht so voll. Und falls dir Samstag lieber ist, kann ich meinen Termin verschieben – mir passen beide Tage am Wochenende!",
+          "english": "",
+          "audio_id": "DE_ELE_S3_TIME_A1"
+        }
+      }
+    },
+    {
+      "topic": "Time Follow-Up Question (Wann starten?)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Elena",
+          "text": "Wann wollen wir unseren Ausflug starten? Passt dir Sonntagmorgen um halb zehn, oder ist dir Samstag lieber?",
+          "german": "Wann wollen wir unseren Ausflug starten? Passt dir Sonntagmorgen um halb zehn, oder ist dir Samstag lieber?",
+          "english": "",
+          "audio_id": "DE_ELE_S3_TIME_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Time Simpler Re-Ask (Tag & Uhrzeit)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Elena",
+          "text": "An welchem Tag und um wie viel Uhr sollen wir uns für den Ausflug treffen?",
+          "german": "An welchem Tag und um wie viel Uhr sollen wir uns für den Ausflug treffen?",
+          "english": "",
+          "audio_id": "DE_ELE_S3_TIME_Q2"
+        }
+      }
+    },
+    {
+      "topic": "Destination & Weather Question (See oder Berge?)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Elena",
+          "text": "Wohin wollen wir eigentlich fahren? Sollen wir lieber an den großen See fahren oder in den Bergen wandern gehen – und was machen wir, falls es plötzlich regnet?",
+          "german": "Wohin wollen wir eigentlich fahren? Sollen wir lieber an den großen See fahren oder in den Bergen wandern gehen – und was machen wir, falls es plötzlich regnet?",
+          "english": "",
+          "audio_id": "DE_ELE_S3_LOC_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Destination Simpler Re-Ask (See oder Wanderung?)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Elena",
+          "text": "Was gefällt dir besser für unser Picknick: ein Ausflug an den See oder eine Wanderung in den Bergen?",
+          "german": "Was gefällt dir besser für unser Picknick: ein Ausflug an den See oder eine Wanderung in den Bergen?",
+          "english": "",
+          "audio_id": "DE_ELE_S3_LOC_Q2"
+        }
+      }
+    },
+    {
+      "topic": "Destination Proposal & Rain Backup (Chiemsee + Seecafé)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "answer": {
+          "speaker": "Elena",
+          "text": "Ein Ausflug an den Chiemsee ist eine wunderbare Idee! Dort gibt es eine große grüne Wiese direkt am Wasser zum Picknicken und wir können spazieren gehen. Und falls das Wetter doch schlecht wird, gehen wir einfach in das schöne Seecafé oder besuchen das Schloss auf der Insel.",
+          "german": "Ein Ausflug an den Chiemsee ist eine wunderbare Idee! Dort gibt es eine große grüne Wiese direkt am Wasser zum Picknicken und wir können spazieren gehen. Und falls das Wetter doch schlecht wird, gehen wir einfach in das schöne Seecafé oder besuchen das Schloss auf der Insel.",
+          "english": "",
+          "audio_id": "DE_ELE_S3_LOC_A1"
+        }
+      }
+    },
+    {
+      "topic": "Picnic Items Question (Essen & Ausrüstung)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Elena",
+          "text": "Was wollen wir für unser Picknick alles zu essen und zu trinken mitnehmen? Am Sonntag sind die Supermärkte ja geschlossen, deshalb müssen wir schon am Samstag einkaufen.",
+          "german": "Was wollen wir für unser Picknick alles zu essen und zu trinken mitnehmen? Am Sonntag sind die Supermärkte ja geschlossen, deshalb müssen wir schon am Samstag einkaufen.",
+          "english": "",
+          "audio_id": "DE_ELE_S3_FOOD_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Picnic Items Proposal (Sandwiches, Obst, Decke & Ball)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "answer": {
+          "speaker": "Elena",
+          "text": "Genau, am Samstag kaufen wir alles frisch ein! Ich kann gerne Sandwiches mit Käse, frisches Obst wie Erdbeeren und Äpfel sowie eine große Picknickdecke mitbringen. Außerdem nehme ich einen Volleyball und ein Kartenspiel mit, damit uns nicht langweilig wird.",
+          "german": "Genau, am Samstag kaufen wir alles frisch ein! Ich kann gerne Sandwiches mit Käse, frisches Obst wie Erdbeeren und Äpfel sowie eine große Picknickdecke mitbringen. Außerdem nehme ich einen Volleyball und ein Kartenspiel mit, damit uns nicht langweilig wird.",
+          "english": "",
+          "audio_id": "DE_ELE_S3_FOOD_A1"
+        }
+      }
+    },
+    {
+      "topic": "Transport & Task Division Question (Zug/Auto & Aufgaben)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Elena",
+          "text": "Wie wollen wir eigentlich zum See fahren – mit dem Auto oder lieber gemeinsam mit dem Zug? Und was möchtest du für das Picknick besorgen?",
+          "german": "Wie wollen wir eigentlich zum See fahren – mit dem Auto oder lieber gemeinsam mit dem Zug? Und was möchtest du für das Picknick besorgen?",
+          "english": "",
+          "audio_id": "DE_ELE_S3_TASK_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Transport & Task Division Proposal (Regionalzug + Deutschlandticket)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "answer": {
+          "speaker": "Elena",
+          "text": "Mit dem Regionalzug zu fahren ist super praktisch, weil wir alle das Deutschlandticket haben und am See am Wochenende kaum Parkplätze frei sind. Treffen wir uns einfach um neun Uhr fünfzehn am Hauptbahnhof! Ich mache die Sandwiches und das Obst, und du bringst die Getränke und etwas Süßes mit.",
+          "german": "Mit dem Regionalzug zu fahren ist super praktisch, weil wir alle das Deutschlandticket haben und am See am Wochenende kaum Parkplätze frei sind. Treffen wir uns einfach um neun Uhr fünfzehn am Hauptbahnhof! Ich mache die Sandwiches und das Obst, und du bringst die Getränke und etwas Süßes mit.",
+          "english": "",
+          "audio_id": "DE_ELE_S3_TASK_A1"
+        }
+      }
+    },
+    {
+      "topic": "Final Plan Summary (Zusammenfassung)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "answer": {
+          "speaker": "Elena",
+          "text": "Wunderbar, dann fasse ich kurz zusammen: Wir treffen uns am Sonntag um neun Uhr fünfzehn am Hauptbahnhof und fahren mit dem Zug und dem Deutschlandticket an den See. Ich bringe die Picknickdecke, den Ball, Sandwiches und Obst mit, und du kümmerst dich um die Getränke und die Snacks.",
+          "german": "Wunderbar, dann fasse ich kurz zusammen: Wir treffen uns am Sonntag um neun Uhr fünfzehn am Hauptbahnhof und fahren mit dem Zug und dem Deutschlandticket an den See. Ich bringe die Picknickdecke, den Ball, Sandwiches und Obst mit, und du kümmerst dich um die Getränke und die Snacks.",
+          "english": "",
+          "audio_id": "DE_ELE_S3_SUM_A1"
+        }
+      }
+    },
+    {
+      "topic": "Summary Completeness Check (Alles besprochen?)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Elena",
+          "text": "Haben wir damit alles für unseren Ausflug geplant, oder müssen wir noch an etwas denken?",
+          "german": "Haben wir damit alles für unseren Ausflug geplant, oder müssen wir noch an etwas denken?",
+          "english": "",
+          "audio_id": "DE_ELE_S3_SUM_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Counter-Question (Planning Feedback 1)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Elena",
+          "text": "Was meinst du dazu? Findest du den Vorschlag gut?",
+          "german": "Was meinst du dazu? Findest du den Vorschlag gut?",
+          "english": "",
+          "audio_id": "DE_ELE_T3BACK_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Counter-Question (Planning Feedback 2)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Elena",
+          "text": "Hast du vielleicht noch eine andere Idee dazu?",
+          "german": "Hast du vielleicht noch eine andere Idee dazu?",
+          "english": "",
+          "audio_id": "DE_ELE_T3BACK_Q2"
+        }
+      }
+    },
+    {
+      "topic": "Clarification (Repeat Proposal)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Elena",
+          "text": "Entschuldigung, ich habe deinen Vorschlag akustisch nicht ganz verstanden. Kannst du das bitte noch einmal kurz wiederholen?",
+          "german": "Entschuldigung, ich habe deinen Vorschlag akustisch nicht ganz verstanden. Kannst du das bitte noch einmal kurz wiederholen?",
+          "english": "",
+          "audio_id": "DE_ELE_T3CLAR_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Silence Recovery",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Elena",
+          "text": "Hallo? Bist du noch da? Wollen wir weiter zusammen planen?",
+          "german": "Hallo? Bist du noch da? Wollen wir weiter zusammen planen?",
+          "english": "",
+          "audio_id": "DE_ELE_T3SIL_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Closing & Farewell (Teil 3)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Elena",
+          "text": "Super, dann machen wir das genau so! Ich freue mich schon sehr darauf. Bis dann, tschüss!",
+          "german": "Super, dann machen wir das genau so! Ich freue mich schon sehr darauf. Bis dann, tschüss!",
+          "english": "",
+          "audio_id": "DE_ELE_T3CLOSE_01"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - Super Idee)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Elena",
+          "text": "Das ist eine super Idee!",
+          "german": "Das ist eine super Idee!",
+          "english": "",
+          "audio_id": "DE_ELE_EXP_41"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - So machen wir das)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Elena",
+          "text": "Klasse, so machen wir das!",
+          "german": "Klasse, so machen wir das!",
+          "english": "",
+          "audio_id": "DE_ELE_EXP_42"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - Passt sehr gut)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Elena",
+          "text": "Perfekt, das passt mir sehr gut.",
+          "german": "Perfekt, das passt mir sehr gut.",
+          "english": "",
+          "audio_id": "DE_ELE_EXP_43"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - Einverstanden)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Elena",
+          "text": "Einverstanden, das klingt nach einem sehr guten Plan.",
+          "german": "Einverstanden, das klingt nach einem sehr guten Plan.",
+          "english": "",
+          "audio_id": "DE_ELE_EXP_44"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - Sofort dabei)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Elena",
+          "text": "Super Vorschlag, da bin ich sofort dabei!",
+          "german": "Super Vorschlag, da bin ich sofort dabei!",
+          "english": "",
+          "audio_id": "DE_ELE_EXP_45"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - Abgemacht)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Elena",
+          "text": "Alles klar, abgemacht!",
+          "german": "Alles klar, abgemacht!",
+          "english": "",
+          "audio_id": "DE_ELE_EXP_46"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Doubt - Nicht ganz sicher)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Elena",
+          "text": "Hmm, da bin ich mir noch nicht ganz sicher.",
+          "german": "Hmm, da bin ich mir noch nicht ganz sicher.",
+          "english": "",
+          "audio_id": "DE_ELE_EXP_47"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Doubt - Zeitlich knapp)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Elena",
+          "text": "Das wird zeitlich vielleicht ein bisschen knapp.",
+          "german": "Das wird zeitlich vielleicht ein bisschen knapp.",
+          "english": "",
+          "audio_id": "DE_ELE_EXP_48"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Doubt - Termin passt nicht)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Elena",
+          "text": "Ehrlich gesagt passt mir dieser Termin nicht so gut.",
+          "german": "Ehrlich gesagt passt mir dieser Termin nicht so gut.",
+          "english": "",
+          "audio_id": "DE_ELE_EXP_49"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Doubt - Schlechtes Wetter)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Elena",
+          "text": "Die Idee ist gut, aber was machen wir, wenn das Wetter schlecht ist?",
+          "german": "Die Idee ist gut, aber was machen wir, wenn das Wetter schlecht ist?",
+          "english": "",
+          "audio_id": "DE_ELE_EXP_50"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Counter-Proposal - Anderer Vorschlag)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Elena",
+          "text": "Ich hätte da noch einen anderen Vorschlag.",
+          "german": "Ich hätte da noch einen anderen Vorschlag.",
+          "english": "",
+          "audio_id": "DE_ELE_EXP_51"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Counter-Proposal - Zusammen erledigen)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Elena",
+          "text": "Wäre es nicht praktischer, wenn wir das zusammen erledigen?",
+          "german": "Wäre es nicht praktischer, wenn wir das zusammen erledigen?",
+          "english": "",
+          "audio_id": "DE_ELE_EXP_52"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Compromise - Viel praktischer)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Elena",
+          "text": "Ja, du hast recht, das ist wirklich viel praktischer so.",
+          "german": "Ja, du hast recht, das ist wirklich viel praktischer so.",
+          "english": "",
+          "audio_id": "DE_ELE_EXP_53"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Task Allocation - Kümmere mich)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Elena",
+          "text": "Sehr gerne, darum kümmere ich mich!",
+          "german": "Sehr gerne, darum kümmere ich mich!",
+          "english": "",
+          "audio_id": "DE_ELE_EXP_54"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Task Allocation - Aufgaben teilen)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Elena",
+          "text": "Abgemacht! Wenn du das übernimmst, kümmere ich mich um den Rest.",
+          "german": "Abgemacht! Wenn du das übernimmst, kümmere ich mich um den Rest.",
+          "english": "",
+          "audio_id": "DE_ELE_EXP_55"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Summary Lead-in - Fast alle Punkte)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Elena",
+          "text": "Super, wir haben jetzt fast alle Punkte geklärt!",
+          "german": "Super, wir haben jetzt fast alle Punkte geklärt!",
+          "english": "",
+          "audio_id": "DE_ELE_EXP_56"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Clarification - Verstanden)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Elena",
+          "text": "Ach so, alles klar, jetzt habe ich dich verstanden.",
+          "german": "Ach so, alles klar, jetzt habe ich dich verstanden.",
+          "english": "",
+          "audio_id": "DE_ELE_EXP_57"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Politeness - Spaß beim Planen)",
+      "speaker": "Elena",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Elena",
+          "text": "Gerne! Es macht richtig Spaß, das mit dir zusammen zu planen.",
+          "german": "Gerne! Es macht richtig Spaß, das mit dir zusammen zu planen.",
+          "english": "",
+          "audio_id": "DE_ELE_EXP_58"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention (Off-Topic)",
+      "speaker": "Frau Erdoğan",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Frau Erdoğan",
+          "text": "Einen kleinen Moment bitte: Sie weichen gerade von der Aufgabe ab. Kommen Sie bitte zurück zu Ihrer gemeinsamen Planung.",
+          "german": "Einen kleinen Moment bitte: Sie weichen gerade von der Aufgabe ab. Kommen Sie bitte zurück zu Ihrer gemeinsamen Planung.",
+          "english": "",
+          "audio_id": "DE_EX3_T3_INT_TOPIC"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention (Monologue / No Negotiation)",
+      "speaker": "Frau Erdoğan",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Frau Erdoğan",
+          "text": "Bitte führen Sie ein gemeinsames Planungsgespräch. Fragen Sie auch Ihre Partnerin, was sie vorschlägt.",
+          "german": "Bitte führen Sie ein gemeinsames Planungsgespräch. Fragen Sie auch Ihre Partnerin, was sie vorschlägt.",
+          "english": "",
+          "audio_id": "DE_EX3_T3_INT_DIALOG"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention (Skipped Bullet Points / Silence)",
+      "speaker": "Frau Erdoğan",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Frau Erdoğan",
+          "text": "Schauen Sie bitte noch einmal auf die Punkte auf Ihrem Blatt: Haben Sie schon geklärt, wer was mitbringt und wie Sie fahren?",
+          "german": "Schauen Sie bitte noch einmal auf die Punkte auf Ihrem Blatt: Haben Sie schon geklärt, wer was mitbringt und wie Sie fahren?",
+          "english": "",
+          "audio_id": "DE_EX3_T3_INT_SILENCE"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention (Politeness)",
+      "speaker": "Frau Erdoğan",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Frau Erdoğan",
+          "text": "Ich möchte Sie bitten, höflich und sachlich miteinander umzugehen. Bitte setzen Sie die Planung fort.",
+          "german": "Ich möchte Sie bitten, höflich und sachlich miteinander umzugehen. Bitte setzen Sie die Planung fort.",
+          "english": "",
+          "audio_id": "DE_EX3_T3_INT_POLITE"
+        }
+      }
+    },
+    {
+      "topic": "Official Conclusion of the Oral Exam (Teil 3 Outro)",
+      "speaker": "Frau Erdoğan",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Frau Erdoğan",
+          "text": "Okay, vielen Dank! Das hat sehr gut geklappt. Damit ist Teil drei und auch Ihre gesamte mündliche Prüfung beendet. Die Notizen lassen Sie bitte hier, und die Ergebnisse erhalten Sie in ungefähr vier Wochen. Einen schönen Tag noch!",
+          "german": "Okay, vielen Dank! Das hat sehr gut geklappt. Damit ist Teil drei und auch Ihre gesamte mündliche Prüfung beendet. Die Notizen lassen Sie bitte hier, und die Ergebnisse erhalten Sie in ungefähr vier Wochen. Einen schönen Tag noch!",
+          "english": "",
+          "audio_id": "DE_EX3_T3_OUTRO_01"
+        }
+      }
+    }
+  ]
+}

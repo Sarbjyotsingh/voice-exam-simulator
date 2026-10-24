@@ -10,9 +10,9 @@ import (
 	"strconv"
 	"strings"
 
-	"voice-exam-simulator/internal/contracts"
-	"voice-exam-simulator/internal/providers"
-	"voice-exam-simulator/services"
+	"voice-engine/internal/contracts"
+	"voice-engine/internal/providers"
+	"voice-engine/services"
 )
 
 // DecisionClient is the subset of ProviderRegistry or DecisionProvider used by ExamDecisionRouter.
@@ -22,11 +22,11 @@ type DecisionClient interface {
 
 // ExamDecisionRouter routes exam turns using spec.yaml + DecisionClient + deterministic clip composition.
 type ExamDecisionRouter struct {
-	decisions DecisionClient
-	specs     *services.SpecRegistry
+	decisions    DecisionClient
+	specs        *services.SpecRegistry
 	defaultHints map[string]string
 	maxScores    map[string]int
-	log       *slog.Logger
+	log          *slog.Logger
 }
 
 // NewExamDecisionRouter loads catalog/exams/de/telc_b1/teil_1..3/spec.yaml into SpecRegistry and returns an ExamDecisionRouter.

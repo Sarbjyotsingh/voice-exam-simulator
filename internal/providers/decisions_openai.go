@@ -8,9 +8,9 @@ import (
 	"io"
 	"net/http"
 
-	"voice-exam-simulator/config"
-	"voice-exam-simulator/internal/contracts"
-	"voice-exam-simulator/services"
+	"voice-engine/config"
+	"voice-engine/internal/contracts"
+	"voice-engine/services"
 )
 
 // OpenAIDecisionsProvider implements DecisionProvider using OpenAI's /v1/decisions endpoint (gpt-6-luna).

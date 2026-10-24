@@ -8,8 +8,8 @@ import (
 	"io"
 	"net/http"
 
-	"voice-exam-simulator/internal/contracts"
-	"voice-exam-simulator/services"
+	"voice-engine/internal/contracts"
+	"voice-engine/services"
 )
 
 // OpenAICompatLLM implements LLMProvider for any OpenAI-compatible Chat Completions endpoint (Groq, OpenAI, Together, etc.).

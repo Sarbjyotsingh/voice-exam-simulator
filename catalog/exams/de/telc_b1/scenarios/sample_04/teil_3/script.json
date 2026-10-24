@@ -1,0 +1,1278 @@
+{
+  "scenario_id": "S4",
+  "scenario_title": "Besuch eines kranken Kollegen / Mitschülers im Krankenhaus",
+  "exam_hint": "Teil 3: Gemeinsam etwas planen — „Krankenbesuch im Krankenhaus“\n\nSituation:\nIhr gemeinsamer Mitschüler und Freund Lukas hatte beim Fußballspielen einen Unfall, hat sich das Bein gebrochen und liegt seit gestern im Krankenhaus. Sie und Ihr Gesprächspartner Mateo möchten ihn besuchen und ihm helfen.\n\nPlanen Sie gemeinsam den Besuch. Überlegen Sie sich:\n• Wann? (An welchem Tag und zu welcher Uhrzeit? Wann sind die Besuchszeiten im Krankenhaus?)\n• Wo treffen & Wie hinfahren? (Wo treffen Sie sich vorher und fahren Sie mit Bus, Bahn oder Auto?)\n• Was mitbringen? (Welches Geschenk oder welche Überraschung bringen Sie Lukas gegen die Langeweile mit?)\n• Wie noch helfen & Aufgabenverteilung? (Hilfe im Alltag oder für den Deutschkurs – wer erledigt was?)",
+  "voice_profiles": {
+    "Herr Richter": "z1EhmmPwF0ENGYE8dBE6",
+    "Mateo": "1J0wWp4zPQIvsK7Xwh34"
+  },
+  "auto_play_sequence": [
+    "DE_EX4_T3_INTRO_01",
+    "DE_MAT_S4_T3OPEN_01"
+  ],
+  "end_audio_id": "DE_EX4_T3_OUTRO_01",
+  "dialogues": [
+    {
+      "topic": "Introduction (Teil 3)",
+      "speaker": "Herr Richter",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Herr Richter",
+          "text": "Gut, dann kommen wir jetzt zum dritten und letzten Teil der Prüfung: Gemeinsam etwas planen. Auf dem Blatt vor Ihnen sehen Sie die Situation. Bitte überlegen Sie zusammen, wann und wie Sie das machen und wer welche Aufgabe übernimmt. Mateo, fangen Sie bitte an.",
+          "german": "Gut, dann kommen wir jetzt zum dritten und letzten Teil der Prüfung: Gemeinsam etwas planen. Auf dem Blatt vor Ihnen sehen Sie die Situation. Bitte überlegen Sie zusammen, wann und wie Sie das machen und wer welche Aufgabe übernimmt. Mateo, fangen Sie bitte an.",
+          "english": "",
+          "audio_id": "DE_EX4_T3_INTRO_01"
+        }
+      }
+    },
+    {
+      "topic": "Opening & Initial Time Proposal (Wann besuchen?)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Mateo",
+          "text": "Hallo! Hast du schon gehört, was passiert ist? Unser Mitschüler Lukas hat sich beim Fußballspielen das Bein gebrochen und liegt im Krankenhaus. Wir sollten ihn unbedingt zusammen besuchen! Ich könnte morgen Nachmittag direkt um vierzehn Uhr. Hast du da schon Zeit, oder musst du arbeiten?",
+          "german": "Hallo! Hast du schon gehört, was passiert ist? Unser Mitschüler Lukas hat sich beim Fußballspielen das Bein gebrochen und liegt im Krankenhaus. Wir sollten ihn unbedingt zusammen besuchen! Ich könnte morgen Nachmittag direkt um vierzehn Uhr. Hast du da schon Zeit, oder musst du arbeiten?",
+          "english": "",
+          "audio_id": "DE_MAT_S4_T3OPEN_01"
+        }
+      }
+    },
+    {
+      "topic": "Time Counter-Proposal / Compromise (Morgen 16:30 Uhr)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "answer": {
+          "speaker": "Mateo",
+          "text": "Ach so, du hast bis sechzehn Uhr Unterricht beziehungsweise Arbeit, das verstehe ich. Im städtischen Krankenhaus ist die Besuchszeit zum Glück bis neunzehn Uhr geöffnet! Dann lass uns doch morgen Nachmittag um sechzehn Uhr dreißig gehen, dann haben wir eine gute Stunde Zeit bei ihm.",
+          "german": "Ach so, du hast bis sechzehn Uhr Unterricht beziehungsweise Arbeit, das verstehe ich. Im städtischen Krankenhaus ist die Besuchszeit zum Glück bis neunzehn Uhr geöffnet! Dann lass uns doch morgen Nachmittag um sechzehn Uhr dreißig gehen, dann haben wir eine gute Stunde Zeit bei ihm.",
+          "english": "",
+          "audio_id": "DE_MAT_S4_TIME_A1"
+        }
+      }
+    },
+    {
+      "topic": "Time Follow-Up Question (Wann besuchen?)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Mateo",
+          "text": "An welchem Tag und um wie viel Uhr wollen wir Lukas im Krankenhaus besuchen? Passt dir morgen um sechzehn Uhr dreißig?",
+          "german": "An welchem Tag und um wie viel Uhr wollen wir Lukas im Krankenhaus besuchen? Passt dir morgen um sechzehn Uhr dreißig?",
+          "english": "",
+          "audio_id": "DE_MAT_S4_TIME_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Time Simpler Re-Ask (Morgen oder Wochenende?)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Mateo",
+          "text": "Wann hast du Zeit für den Krankenbesuch – morgen am späten Nachmittag oder lieber am Wochenende?",
+          "german": "Wann hast du Zeit für den Krankenbesuch – morgen am späten Nachmittag oder lieber am Wochenende?",
+          "english": "",
+          "audio_id": "DE_MAT_S4_TIME_Q2"
+        }
+      }
+    },
+    {
+      "topic": "Meeting Point & Transport Question (Treffpunkt & Anfahrt)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Mateo",
+          "text": "Wo sollen wir uns vor dem Besuch treffen, und wie kommen wir am besten zum Krankenhaus – mit dem Bus, mit der Straßenbahn oder mit dem Auto?",
+          "german": "Wo sollen wir uns vor dem Besuch treffen, und wie kommen wir am besten zum Krankenhaus – mit dem Bus, mit der Straßenbahn oder mit dem Auto?",
+          "english": "",
+          "audio_id": "DE_MAT_S4_LOC_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Meeting Point Simpler Re-Ask (Wie hinfahren?)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Mateo",
+          "text": "Wie wollen wir zum Krankenhaus fahren, und wo treffen wir uns vorher?",
+          "german": "Wie wollen wir zum Krankenhaus fahren, und wo treffen wir uns vorher?",
+          "english": "",
+          "audio_id": "DE_MAT_S4_LOC_Q2"
+        }
+      }
+    },
+    {
+      "topic": "Meeting Point & Transport Proposal (Bahnhof + Straßenbahn Linie 4)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "answer": {
+          "speaker": "Mateo",
+          "text": "Beim Krankenhaus ist das Parken extrem teuer, deshalb fahren wir am besten mit der Straßenbahn Linie vier. Die hält direkt vor dem Haupteingang! Lass uns um sechzehn Uhr fünfzehn am Bahnhof vor der Bäckerei treffen und dann zusammen hinfahren.",
+          "german": "Beim Krankenhaus ist das Parken extrem teuer, deshalb fahren wir am besten mit der Straßenbahn Linie vier. Die hält direkt vor dem Haupteingang! Lass uns um sechzehn Uhr fünfzehn am Bahnhof vor der Bäckerei treffen und dann zusammen hinfahren.",
+          "english": "",
+          "audio_id": "DE_MAT_S4_LOC_A1"
+        }
+      }
+    },
+    {
+      "topic": "Gift & Care Items Question (Geschenk & Überraschung)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Mateo",
+          "text": "Wir können natürlich nicht mit leeren Händen ins Krankenhaus kommen. Im Krankenhaus ist es ja oft total langweilig – was sollen wir Lukas als Geschenk oder kleine Überraschung mitbringen?",
+          "german": "Wir können natürlich nicht mit leeren Händen ins Krankenhaus kommen. Im Krankenhaus ist es ja oft total langweilig – was sollen wir Lukas als Geschenk oder kleine Überraschung mitbringen?",
+          "english": "",
+          "audio_id": "DE_MAT_S4_FOOD_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Gift & Care Items Proposal (Zeitschriften, Obst, Schokolade & Karte)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "answer": {
+          "speaker": "Mateo",
+          "text": "Ein spannendes Buch oder ein paar Sport-Zeitschriften, frisches Obst und seine Lieblingsschokolade sind eine super Idee! Außerdem können wir eine schöne Genesungskarte kaufen, auf der alle aus unserem Deutschkurs unterschreiben.",
+          "german": "Ein spannendes Buch oder ein paar Sport-Zeitschriften, frisches Obst und seine Lieblingsschokolade sind eine super Idee! Außerdem können wir eine schöne Genesungskarte kaufen, auf der alle aus unserem Deutschkurs unterschreiben.",
+          "english": "",
+          "audio_id": "DE_MAT_S4_FOOD_A1"
+        }
+      }
+    },
+    {
+      "topic": "Helping Lukas & Task Division Question (Hilfe & Aufgaben)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Mateo",
+          "text": "Da Lukas mit seinem Gipsbein bestimmt zwei Wochen nicht in den Kurs kommen und auch nicht selbst einkaufen kann: Wie können wir ihm noch helfen, und wer von uns besorgt was für morgen?",
+          "german": "Da Lukas mit seinem Gipsbein bestimmt zwei Wochen nicht in den Kurs kommen und auch nicht selbst einkaufen kann: Wie können wir ihm noch helfen, und wer von uns besorgt was für morgen?",
+          "english": "",
+          "audio_id": "DE_MAT_S4_TASK_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Helping Lukas & Task Division Proposal (Kursnotizen & Einkaufen)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "answer": {
+          "speaker": "Mateo",
+          "text": "Sehr gute Idee! Ich fotografiere jeden Tag unsere Hausaufgaben und Notizen aus dem Deutschkurs und schicke sie ihm per WhatsApp, und ich kaufe heute noch die Karte und die Zeitschriften. Besorgst du dann morgen das Obst und die Schokolade, und wir fragen ihn im Krankenhaus, ob wir am Wochenende für ihn im Supermarkt einkaufen sollen?",
+          "german": "Sehr gute Idee! Ich fotografiere jeden Tag unsere Hausaufgaben und Notizen aus dem Deutschkurs und schicke sie ihm per WhatsApp, und ich kaufe heute noch die Karte und die Zeitschriften. Besorgst du dann morgen das Obst und die Schokolade, und wir fragen ihn im Krankenhaus, ob wir am Wochenende für ihn im Supermarkt einkaufen sollen?",
+          "english": "",
+          "audio_id": "DE_MAT_S4_TASK_A1"
+        }
+      }
+    },
+    {
+      "topic": "Final Plan Summary (Zusammenfassung)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "answer": {
+          "speaker": "Mateo",
+          "text": "Alles klar, dann fasse ich kurz zusammen: Wir treffen uns morgen um sechzehn Uhr fünfzehn am Bahnhof und fahren mit der Straßenbahn zum Krankenhaus. Ich kümmere mich um die Genesungskarte mit den Unterschriften, die Zeitschriften und die Kursnotizen, und du bringst das Obst und die Schokolade mit.",
+          "german": "Alles klar, dann fasse ich kurz zusammen: Wir treffen uns morgen um sechzehn Uhr fünfzehn am Bahnhof und fahren mit der Straßenbahn zum Krankenhaus. Ich kümmere mich um die Genesungskarte mit den Unterschriften, die Zeitschriften und die Kursnotizen, und du bringst das Obst und die Schokolade mit.",
+          "english": "",
+          "audio_id": "DE_MAT_S4_SUM_A1"
+        }
+      }
+    },
+    {
+      "topic": "Summary Completeness Check (Alles besprochen?)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Mateo",
+          "text": "Haben wir damit an alles für unseren Krankenbesuch gedacht, oder fällt dir noch etwas ein?",
+          "german": "Haben wir damit an alles für unseren Krankenbesuch gedacht, oder fällt dir noch etwas ein?",
+          "english": "",
+          "audio_id": "DE_MAT_S4_SUM_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Counter-Question (Planning Feedback 1)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Mateo",
+          "text": "Was meinst du dazu? Findest du den Vorschlag gut?",
+          "german": "Was meinst du dazu? Findest du den Vorschlag gut?",
+          "english": "",
+          "audio_id": "DE_MAT_T3BACK_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Counter-Question (Planning Feedback 2)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Mateo",
+          "text": "Hast du vielleicht noch eine andere Idee dazu?",
+          "german": "Hast du vielleicht noch eine andere Idee dazu?",
+          "english": "",
+          "audio_id": "DE_MAT_T3BACK_Q2"
+        }
+      }
+    },
+    {
+      "topic": "Clarification (Repeat Proposal)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Mateo",
+          "text": "Entschuldigung, ich habe deinen Vorschlag akustisch nicht ganz verstanden. Kannst du das bitte noch einmal kurz wiederholen?",
+          "german": "Entschuldigung, ich habe deinen Vorschlag akustisch nicht ganz verstanden. Kannst du das bitte noch einmal kurz wiederholen?",
+          "english": "",
+          "audio_id": "DE_MAT_T3CLAR_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Silence Recovery",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Mateo",
+          "text": "Hallo? Bist du noch da? Wollen wir weiter zusammen planen?",
+          "german": "Hallo? Bist du noch da? Wollen wir weiter zusammen planen?",
+          "english": "",
+          "audio_id": "DE_MAT_T3SIL_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Closing & Farewell (Teil 3)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Mateo",
+          "text": "Super, dann machen wir das genau so! Ich freue mich schon sehr darauf. Bis dann, tschüss!",
+          "german": "Super, dann machen wir das genau so! Ich freue mich schon sehr darauf. Bis dann, tschüss!",
+          "english": "",
+          "audio_id": "DE_MAT_T3CLOSE_01"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - Super Idee)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Mateo",
+          "text": "Das ist eine super Idee!",
+          "german": "Das ist eine super Idee!",
+          "english": "",
+          "audio_id": "DE_MAT_EXP_41"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - So machen wir das)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Mateo",
+          "text": "Klasse, so machen wir das!",
+          "german": "Klasse, so machen wir das!",
+          "english": "",
+          "audio_id": "DE_MAT_EXP_42"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - Passt sehr gut)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Mateo",
+          "text": "Perfekt, das passt mir sehr gut.",
+          "german": "Perfekt, das passt mir sehr gut.",
+          "english": "",
+          "audio_id": "DE_MAT_EXP_43"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - Einverstanden)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Mateo",
+          "text": "Einverstanden, das klingt nach einem sehr guten Plan.",
+          "german": "Einverstanden, das klingt nach einem sehr guten Plan.",
+          "english": "",
+          "audio_id": "DE_MAT_EXP_44"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - Sofort dabei)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Mateo",
+          "text": "Super Vorschlag, da bin ich sofort dabei!",
+          "german": "Super Vorschlag, da bin ich sofort dabei!",
+          "english": "",
+          "audio_id": "DE_MAT_EXP_45"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - Abgemacht)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Mateo",
+          "text": "Alles klar, abgemacht!",
+          "german": "Alles klar, abgemacht!",
+          "english": "",
+          "audio_id": "DE_MAT_EXP_46"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Doubt - Nicht ganz sicher)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Mateo",
+          "text": "Hmm, da bin ich mir noch nicht ganz sicher.",
+          "german": "Hmm, da bin ich mir noch nicht ganz sicher.",
+          "english": "",
+          "audio_id": "DE_MAT_EXP_47"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Doubt - Zeitlich knapp)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Mateo",
+          "text": "Das wird zeitlich vielleicht ein bisschen knapp.",
+          "german": "Das wird zeitlich vielleicht ein bisschen knapp.",
+          "english": "",
+          "audio_id": "DE_MAT_EXP_48"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Doubt - Termin passt nicht)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Mateo",
+          "text": "Ehrlich gesagt passt mir dieser Termin nicht so gut.",
+          "german": "Ehrlich gesagt passt mir dieser Termin nicht so gut.",
+          "english": "",
+          "audio_id": "DE_MAT_EXP_49"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Doubt - Schlechtes Wetter)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Mateo",
+          "text": "Die Idee ist gut, aber was machen wir, wenn das Wetter schlecht ist?",
+          "german": "Die Idee ist gut, aber was machen wir, wenn das Wetter schlecht ist?",
+          "english": "",
+          "audio_id": "DE_MAT_EXP_50"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Counter-Proposal - Anderer Vorschlag)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Mateo",
+          "text": "Ich hätte da noch einen anderen Vorschlag.",
+          "german": "Ich hätte da noch einen anderen Vorschlag.",
+          "english": "",
+          "audio_id": "DE_MAT_EXP_51"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Counter-Proposal - Zusammen erledigen)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Mateo",
+          "text": "Wäre es nicht praktischer, wenn wir das zusammen erledigen?",
+          "german": "Wäre es nicht praktischer, wenn wir das zusammen erledigen?",
+          "english": "",
+          "audio_id": "DE_MAT_EXP_52"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Compromise - Viel praktischer)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Mateo",
+          "text": "Ja, du hast recht, das ist wirklich viel praktischer so.",
+          "german": "Ja, du hast recht, das ist wirklich viel praktischer so.",
+          "english": "",
+          "audio_id": "DE_MAT_EXP_53"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Task Allocation - Kümmere mich)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Mateo",
+          "text": "Sehr gerne, darum kümmere ich mich!",
+          "german": "Sehr gerne, darum kümmere ich mich!",
+          "english": "",
+          "audio_id": "DE_MAT_EXP_54"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Task Allocation - Aufgaben teilen)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Mateo",
+          "text": "Abgemacht! Wenn du das übernimmst, kümmere ich mich um den Rest.",
+          "german": "Abgemacht! Wenn du das übernimmst, kümmere ich mich um den Rest.",
+          "english": "",
+          "audio_id": "DE_MAT_EXP_55"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Summary Lead-in - Fast alle Punkte)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Mateo",
+          "text": "Super, wir haben jetzt fast alle Punkte geklärt!",
+          "german": "Super, wir haben jetzt fast alle Punkte geklärt!",
+          "english": "",
+          "audio_id": "DE_MAT_EXP_56"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Clarification - Verstanden)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Mateo",
+          "text": "Ach so, alles klar, jetzt habe ich dich verstanden.",
+          "german": "Ach so, alles klar, jetzt habe ich dich verstanden.",
+          "english": "",
+          "audio_id": "DE_MAT_EXP_57"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Politeness - Spaß beim Planen)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Mateo",
+          "text": "Gerne! Es macht richtig Spaß, das mit dir zusammen zu planen.",
+          "german": "Gerne! Es macht richtig Spaß, das mit dir zusammen zu planen.",
+          "english": "",
+          "audio_id": "DE_MAT_EXP_58"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention (Off-Topic)",
+      "speaker": "Herr Richter",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Herr Richter",
+          "text": "Entschuldigung, bitte bleiben Sie bei der Planungsaufgabe auf Ihrem Aufgabenblatt.",
+          "german": "Entschuldigung, bitte bleiben Sie bei der Planungsaufgabe auf Ihrem Aufgabenblatt.",
+          "english": "",
+          "audio_id": "DE_EX4_T3_INT_TOPIC"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention (Monologue / No Negotiation)",
+      "speaker": "Herr Richter",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Herr Richter",
+          "text": "Bitte sprechen Sie nicht nur allein, sondern planen Sie gemeinsam mit Ihrem Partner und reagieren Sie auf seine Vorschläge.",
+          "german": "Bitte sprechen Sie nicht nur allein, sondern planen Sie gemeinsam mit Ihrem Partner und reagieren Sie auf seine Vorschläge.",
+          "english": "",
+          "audio_id": "DE_EX4_T3_INT_DIALOG"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention (Skipped Bullet Points / Silence)",
+      "speaker": "Herr Richter",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Herr Richter",
+          "text": "Prüfen Sie bitte noch kurz auf Ihrem Aufgabenblatt, ob Sie schon alle Punkte und die Aufgabenverteilung besprochen haben.",
+          "german": "Prüfen Sie bitte noch kurz auf Ihrem Aufgabenblatt, ob Sie schon alle Punkte und die Aufgabenverteilung besprochen haben.",
+          "english": "",
+          "audio_id": "DE_EX4_T3_INT_SILENCE"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention (Politeness)",
+      "speaker": "Herr Richter",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Herr Richter",
+          "text": "Bitte bewahren Sie einen sachlichen und höflichen Ton in der Prüfung.",
+          "german": "Bitte bewahren Sie einen sachlichen und höflichen Ton in der Prüfung.",
+          "english": "",
+          "audio_id": "DE_EX4_T3_INT_POLITE"
+        }
+      }
+    },
+    {
+      "topic": "Official Conclusion of the Oral Exam (Teil 3 Outro)",
+      "speaker": "Herr Richter",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Herr Richter",
+          "text": "Besten Dank Ihnen beiden! Damit sind alle drei Teile geschafft und Ihre mündliche Prüfung ist hiermit offiziell beendet. Ihre Ergebnisse bekommen Sie in vier bis sechs Wochen. Ich wünsche Ihnen alles Gute und einen schönen Tag!",
+          "german": "Besten Dank Ihnen beiden! Damit sind alle drei Teile geschafft und Ihre mündliche Prüfung ist hiermit offiziell beendet. Ihre Ergebnisse bekommen Sie in vier bis sechs Wochen. Ich wünsche Ihnen alles Gute und einen schönen Tag!",
+          "english": "",
+          "audio_id": "DE_EX4_T3_OUTRO_01"
+        }
+      }
+    }
+  ],
+  "teil3 dialogues": [
+    {
+      "topic": "Introduction (Teil 3)",
+      "speaker": "Herr Richter",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Herr Richter",
+          "text": "Gut, dann kommen wir jetzt zum dritten und letzten Teil der Prüfung: Gemeinsam etwas planen. Auf dem Blatt vor Ihnen sehen Sie die Situation. Bitte überlegen Sie zusammen, wann und wie Sie das machen und wer welche Aufgabe übernimmt. Mateo, fangen Sie bitte an.",
+          "german": "Gut, dann kommen wir jetzt zum dritten und letzten Teil der Prüfung: Gemeinsam etwas planen. Auf dem Blatt vor Ihnen sehen Sie die Situation. Bitte überlegen Sie zusammen, wann und wie Sie das machen und wer welche Aufgabe übernimmt. Mateo, fangen Sie bitte an.",
+          "english": "",
+          "audio_id": "DE_EX4_T3_INTRO_01"
+        }
+      }
+    },
+    {
+      "topic": "Opening & Initial Time Proposal (Wann besuchen?)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Mateo",
+          "text": "Hallo! Hast du schon gehört, was passiert ist? Unser Mitschüler Lukas hat sich beim Fußballspielen das Bein gebrochen und liegt im Krankenhaus. Wir sollten ihn unbedingt zusammen besuchen! Ich könnte morgen Nachmittag direkt um vierzehn Uhr. Hast du da schon Zeit, oder musst du arbeiten?",
+          "german": "Hallo! Hast du schon gehört, was passiert ist? Unser Mitschüler Lukas hat sich beim Fußballspielen das Bein gebrochen und liegt im Krankenhaus. Wir sollten ihn unbedingt zusammen besuchen! Ich könnte morgen Nachmittag direkt um vierzehn Uhr. Hast du da schon Zeit, oder musst du arbeiten?",
+          "english": "",
+          "audio_id": "DE_MAT_S4_T3OPEN_01"
+        }
+      }
+    },
+    {
+      "topic": "Time Counter-Proposal / Compromise (Morgen 16:30 Uhr)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "answer": {
+          "speaker": "Mateo",
+          "text": "Ach so, du hast bis sechzehn Uhr Unterricht beziehungsweise Arbeit, das verstehe ich. Im städtischen Krankenhaus ist die Besuchszeit zum Glück bis neunzehn Uhr geöffnet! Dann lass uns doch morgen Nachmittag um sechzehn Uhr dreißig gehen, dann haben wir eine gute Stunde Zeit bei ihm.",
+          "german": "Ach so, du hast bis sechzehn Uhr Unterricht beziehungsweise Arbeit, das verstehe ich. Im städtischen Krankenhaus ist die Besuchszeit zum Glück bis neunzehn Uhr geöffnet! Dann lass uns doch morgen Nachmittag um sechzehn Uhr dreißig gehen, dann haben wir eine gute Stunde Zeit bei ihm.",
+          "english": "",
+          "audio_id": "DE_MAT_S4_TIME_A1"
+        }
+      }
+    },
+    {
+      "topic": "Time Follow-Up Question (Wann besuchen?)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Mateo",
+          "text": "An welchem Tag und um wie viel Uhr wollen wir Lukas im Krankenhaus besuchen? Passt dir morgen um sechzehn Uhr dreißig?",
+          "german": "An welchem Tag und um wie viel Uhr wollen wir Lukas im Krankenhaus besuchen? Passt dir morgen um sechzehn Uhr dreißig?",
+          "english": "",
+          "audio_id": "DE_MAT_S4_TIME_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Time Simpler Re-Ask (Morgen oder Wochenende?)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Mateo",
+          "text": "Wann hast du Zeit für den Krankenbesuch – morgen am späten Nachmittag oder lieber am Wochenende?",
+          "german": "Wann hast du Zeit für den Krankenbesuch – morgen am späten Nachmittag oder lieber am Wochenende?",
+          "english": "",
+          "audio_id": "DE_MAT_S4_TIME_Q2"
+        }
+      }
+    },
+    {
+      "topic": "Meeting Point & Transport Question (Treffpunkt & Anfahrt)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Mateo",
+          "text": "Wo sollen wir uns vor dem Besuch treffen, und wie kommen wir am besten zum Krankenhaus – mit dem Bus, mit der Straßenbahn oder mit dem Auto?",
+          "german": "Wo sollen wir uns vor dem Besuch treffen, und wie kommen wir am besten zum Krankenhaus – mit dem Bus, mit der Straßenbahn oder mit dem Auto?",
+          "english": "",
+          "audio_id": "DE_MAT_S4_LOC_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Meeting Point Simpler Re-Ask (Wie hinfahren?)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Mateo",
+          "text": "Wie wollen wir zum Krankenhaus fahren, und wo treffen wir uns vorher?",
+          "german": "Wie wollen wir zum Krankenhaus fahren, und wo treffen wir uns vorher?",
+          "english": "",
+          "audio_id": "DE_MAT_S4_LOC_Q2"
+        }
+      }
+    },
+    {
+      "topic": "Meeting Point & Transport Proposal (Bahnhof + Straßenbahn Linie 4)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "answer": {
+          "speaker": "Mateo",
+          "text": "Beim Krankenhaus ist das Parken extrem teuer, deshalb fahren wir am besten mit der Straßenbahn Linie vier. Die hält direkt vor dem Haupteingang! Lass uns um sechzehn Uhr fünfzehn am Bahnhof vor der Bäckerei treffen und dann zusammen hinfahren.",
+          "german": "Beim Krankenhaus ist das Parken extrem teuer, deshalb fahren wir am besten mit der Straßenbahn Linie vier. Die hält direkt vor dem Haupteingang! Lass uns um sechzehn Uhr fünfzehn am Bahnhof vor der Bäckerei treffen und dann zusammen hinfahren.",
+          "english": "",
+          "audio_id": "DE_MAT_S4_LOC_A1"
+        }
+      }
+    },
+    {
+      "topic": "Gift & Care Items Question (Geschenk & Überraschung)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Mateo",
+          "text": "Wir können natürlich nicht mit leeren Händen ins Krankenhaus kommen. Im Krankenhaus ist es ja oft total langweilig – was sollen wir Lukas als Geschenk oder kleine Überraschung mitbringen?",
+          "german": "Wir können natürlich nicht mit leeren Händen ins Krankenhaus kommen. Im Krankenhaus ist es ja oft total langweilig – was sollen wir Lukas als Geschenk oder kleine Überraschung mitbringen?",
+          "english": "",
+          "audio_id": "DE_MAT_S4_FOOD_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Gift & Care Items Proposal (Zeitschriften, Obst, Schokolade & Karte)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "answer": {
+          "speaker": "Mateo",
+          "text": "Ein spannendes Buch oder ein paar Sport-Zeitschriften, frisches Obst und seine Lieblingsschokolade sind eine super Idee! Außerdem können wir eine schöne Genesungskarte kaufen, auf der alle aus unserem Deutschkurs unterschreiben.",
+          "german": "Ein spannendes Buch oder ein paar Sport-Zeitschriften, frisches Obst und seine Lieblingsschokolade sind eine super Idee! Außerdem können wir eine schöne Genesungskarte kaufen, auf der alle aus unserem Deutschkurs unterschreiben.",
+          "english": "",
+          "audio_id": "DE_MAT_S4_FOOD_A1"
+        }
+      }
+    },
+    {
+      "topic": "Helping Lukas & Task Division Question (Hilfe & Aufgaben)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Mateo",
+          "text": "Da Lukas mit seinem Gipsbein bestimmt zwei Wochen nicht in den Kurs kommen und auch nicht selbst einkaufen kann: Wie können wir ihm noch helfen, und wer von uns besorgt was für morgen?",
+          "german": "Da Lukas mit seinem Gipsbein bestimmt zwei Wochen nicht in den Kurs kommen und auch nicht selbst einkaufen kann: Wie können wir ihm noch helfen, und wer von uns besorgt was für morgen?",
+          "english": "",
+          "audio_id": "DE_MAT_S4_TASK_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Helping Lukas & Task Division Proposal (Kursnotizen & Einkaufen)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "answer": {
+          "speaker": "Mateo",
+          "text": "Sehr gute Idee! Ich fotografiere jeden Tag unsere Hausaufgaben und Notizen aus dem Deutschkurs und schicke sie ihm per WhatsApp, und ich kaufe heute noch die Karte und die Zeitschriften. Besorgst du dann morgen das Obst und die Schokolade, und wir fragen ihn im Krankenhaus, ob wir am Wochenende für ihn im Supermarkt einkaufen sollen?",
+          "german": "Sehr gute Idee! Ich fotografiere jeden Tag unsere Hausaufgaben und Notizen aus dem Deutschkurs und schicke sie ihm per WhatsApp, und ich kaufe heute noch die Karte und die Zeitschriften. Besorgst du dann morgen das Obst und die Schokolade, und wir fragen ihn im Krankenhaus, ob wir am Wochenende für ihn im Supermarkt einkaufen sollen?",
+          "english": "",
+          "audio_id": "DE_MAT_S4_TASK_A1"
+        }
+      }
+    },
+    {
+      "topic": "Final Plan Summary (Zusammenfassung)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "answer": {
+          "speaker": "Mateo",
+          "text": "Alles klar, dann fasse ich kurz zusammen: Wir treffen uns morgen um sechzehn Uhr fünfzehn am Bahnhof und fahren mit der Straßenbahn zum Krankenhaus. Ich kümmere mich um die Genesungskarte mit den Unterschriften, die Zeitschriften und die Kursnotizen, und du bringst das Obst und die Schokolade mit.",
+          "german": "Alles klar, dann fasse ich kurz zusammen: Wir treffen uns morgen um sechzehn Uhr fünfzehn am Bahnhof und fahren mit der Straßenbahn zum Krankenhaus. Ich kümmere mich um die Genesungskarte mit den Unterschriften, die Zeitschriften und die Kursnotizen, und du bringst das Obst und die Schokolade mit.",
+          "english": "",
+          "audio_id": "DE_MAT_S4_SUM_A1"
+        }
+      }
+    },
+    {
+      "topic": "Summary Completeness Check (Alles besprochen?)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Mateo",
+          "text": "Haben wir damit an alles für unseren Krankenbesuch gedacht, oder fällt dir noch etwas ein?",
+          "german": "Haben wir damit an alles für unseren Krankenbesuch gedacht, oder fällt dir noch etwas ein?",
+          "english": "",
+          "audio_id": "DE_MAT_S4_SUM_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Counter-Question (Planning Feedback 1)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Mateo",
+          "text": "Was meinst du dazu? Findest du den Vorschlag gut?",
+          "german": "Was meinst du dazu? Findest du den Vorschlag gut?",
+          "english": "",
+          "audio_id": "DE_MAT_T3BACK_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Counter-Question (Planning Feedback 2)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Mateo",
+          "text": "Hast du vielleicht noch eine andere Idee dazu?",
+          "german": "Hast du vielleicht noch eine andere Idee dazu?",
+          "english": "",
+          "audio_id": "DE_MAT_T3BACK_Q2"
+        }
+      }
+    },
+    {
+      "topic": "Clarification (Repeat Proposal)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Mateo",
+          "text": "Entschuldigung, ich habe deinen Vorschlag akustisch nicht ganz verstanden. Kannst du das bitte noch einmal kurz wiederholen?",
+          "german": "Entschuldigung, ich habe deinen Vorschlag akustisch nicht ganz verstanden. Kannst du das bitte noch einmal kurz wiederholen?",
+          "english": "",
+          "audio_id": "DE_MAT_T3CLAR_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Silence Recovery",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Mateo",
+          "text": "Hallo? Bist du noch da? Wollen wir weiter zusammen planen?",
+          "german": "Hallo? Bist du noch da? Wollen wir weiter zusammen planen?",
+          "english": "",
+          "audio_id": "DE_MAT_T3SIL_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Closing & Farewell (Teil 3)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Mateo",
+          "text": "Super, dann machen wir das genau so! Ich freue mich schon sehr darauf. Bis dann, tschüss!",
+          "german": "Super, dann machen wir das genau so! Ich freue mich schon sehr darauf. Bis dann, tschüss!",
+          "english": "",
+          "audio_id": "DE_MAT_T3CLOSE_01"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - Super Idee)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Mateo",
+          "text": "Das ist eine super Idee!",
+          "german": "Das ist eine super Idee!",
+          "english": "",
+          "audio_id": "DE_MAT_EXP_41"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - So machen wir das)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Mateo",
+          "text": "Klasse, so machen wir das!",
+          "german": "Klasse, so machen wir das!",
+          "english": "",
+          "audio_id": "DE_MAT_EXP_42"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - Passt sehr gut)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Mateo",
+          "text": "Perfekt, das passt mir sehr gut.",
+          "german": "Perfekt, das passt mir sehr gut.",
+          "english": "",
+          "audio_id": "DE_MAT_EXP_43"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - Einverstanden)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Mateo",
+          "text": "Einverstanden, das klingt nach einem sehr guten Plan.",
+          "german": "Einverstanden, das klingt nach einem sehr guten Plan.",
+          "english": "",
+          "audio_id": "DE_MAT_EXP_44"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - Sofort dabei)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Mateo",
+          "text": "Super Vorschlag, da bin ich sofort dabei!",
+          "german": "Super Vorschlag, da bin ich sofort dabei!",
+          "english": "",
+          "audio_id": "DE_MAT_EXP_45"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - Abgemacht)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Mateo",
+          "text": "Alles klar, abgemacht!",
+          "german": "Alles klar, abgemacht!",
+          "english": "",
+          "audio_id": "DE_MAT_EXP_46"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Doubt - Nicht ganz sicher)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Mateo",
+          "text": "Hmm, da bin ich mir noch nicht ganz sicher.",
+          "german": "Hmm, da bin ich mir noch nicht ganz sicher.",
+          "english": "",
+          "audio_id": "DE_MAT_EXP_47"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Doubt - Zeitlich knapp)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Mateo",
+          "text": "Das wird zeitlich vielleicht ein bisschen knapp.",
+          "german": "Das wird zeitlich vielleicht ein bisschen knapp.",
+          "english": "",
+          "audio_id": "DE_MAT_EXP_48"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Doubt - Termin passt nicht)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Mateo",
+          "text": "Ehrlich gesagt passt mir dieser Termin nicht so gut.",
+          "german": "Ehrlich gesagt passt mir dieser Termin nicht so gut.",
+          "english": "",
+          "audio_id": "DE_MAT_EXP_49"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Doubt - Schlechtes Wetter)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Mateo",
+          "text": "Die Idee ist gut, aber was machen wir, wenn das Wetter schlecht ist?",
+          "german": "Die Idee ist gut, aber was machen wir, wenn das Wetter schlecht ist?",
+          "english": "",
+          "audio_id": "DE_MAT_EXP_50"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Counter-Proposal - Anderer Vorschlag)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Mateo",
+          "text": "Ich hätte da noch einen anderen Vorschlag.",
+          "german": "Ich hätte da noch einen anderen Vorschlag.",
+          "english": "",
+          "audio_id": "DE_MAT_EXP_51"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Counter-Proposal - Zusammen erledigen)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Mateo",
+          "text": "Wäre es nicht praktischer, wenn wir das zusammen erledigen?",
+          "german": "Wäre es nicht praktischer, wenn wir das zusammen erledigen?",
+          "english": "",
+          "audio_id": "DE_MAT_EXP_52"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Compromise - Viel praktischer)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Mateo",
+          "text": "Ja, du hast recht, das ist wirklich viel praktischer so.",
+          "german": "Ja, du hast recht, das ist wirklich viel praktischer so.",
+          "english": "",
+          "audio_id": "DE_MAT_EXP_53"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Task Allocation - Kümmere mich)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Mateo",
+          "text": "Sehr gerne, darum kümmere ich mich!",
+          "german": "Sehr gerne, darum kümmere ich mich!",
+          "english": "",
+          "audio_id": "DE_MAT_EXP_54"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Task Allocation - Aufgaben teilen)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Mateo",
+          "text": "Abgemacht! Wenn du das übernimmst, kümmere ich mich um den Rest.",
+          "german": "Abgemacht! Wenn du das übernimmst, kümmere ich mich um den Rest.",
+          "english": "",
+          "audio_id": "DE_MAT_EXP_55"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Summary Lead-in - Fast alle Punkte)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Mateo",
+          "text": "Super, wir haben jetzt fast alle Punkte geklärt!",
+          "german": "Super, wir haben jetzt fast alle Punkte geklärt!",
+          "english": "",
+          "audio_id": "DE_MAT_EXP_56"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Clarification - Verstanden)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Mateo",
+          "text": "Ach so, alles klar, jetzt habe ich dich verstanden.",
+          "german": "Ach so, alles klar, jetzt habe ich dich verstanden.",
+          "english": "",
+          "audio_id": "DE_MAT_EXP_57"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Politeness - Spaß beim Planen)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Mateo",
+          "text": "Gerne! Es macht richtig Spaß, das mit dir zusammen zu planen.",
+          "german": "Gerne! Es macht richtig Spaß, das mit dir zusammen zu planen.",
+          "english": "",
+          "audio_id": "DE_MAT_EXP_58"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention (Off-Topic)",
+      "speaker": "Herr Richter",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Herr Richter",
+          "text": "Entschuldigung, bitte bleiben Sie bei der Planungsaufgabe auf Ihrem Aufgabenblatt.",
+          "german": "Entschuldigung, bitte bleiben Sie bei der Planungsaufgabe auf Ihrem Aufgabenblatt.",
+          "english": "",
+          "audio_id": "DE_EX4_T3_INT_TOPIC"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention (Monologue / No Negotiation)",
+      "speaker": "Herr Richter",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Herr Richter",
+          "text": "Bitte sprechen Sie nicht nur allein, sondern planen Sie gemeinsam mit Ihrem Partner und reagieren Sie auf seine Vorschläge.",
+          "german": "Bitte sprechen Sie nicht nur allein, sondern planen Sie gemeinsam mit Ihrem Partner und reagieren Sie auf seine Vorschläge.",
+          "english": "",
+          "audio_id": "DE_EX4_T3_INT_DIALOG"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention (Skipped Bullet Points / Silence)",
+      "speaker": "Herr Richter",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Herr Richter",
+          "text": "Prüfen Sie bitte noch kurz auf Ihrem Aufgabenblatt, ob Sie schon alle Punkte und die Aufgabenverteilung besprochen haben.",
+          "german": "Prüfen Sie bitte noch kurz auf Ihrem Aufgabenblatt, ob Sie schon alle Punkte und die Aufgabenverteilung besprochen haben.",
+          "english": "",
+          "audio_id": "DE_EX4_T3_INT_SILENCE"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention (Politeness)",
+      "speaker": "Herr Richter",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Herr Richter",
+          "text": "Bitte bewahren Sie einen sachlichen und höflichen Ton in der Prüfung.",
+          "german": "Bitte bewahren Sie einen sachlichen und höflichen Ton in der Prüfung.",
+          "english": "",
+          "audio_id": "DE_EX4_T3_INT_POLITE"
+        }
+      }
+    },
+    {
+      "topic": "Official Conclusion of the Oral Exam (Teil 3 Outro)",
+      "speaker": "Herr Richter",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Herr Richter",
+          "text": "Besten Dank Ihnen beiden! Damit sind alle drei Teile geschafft und Ihre mündliche Prüfung ist hiermit offiziell beendet. Ihre Ergebnisse bekommen Sie in vier bis sechs Wochen. Ich wünsche Ihnen alles Gute und einen schönen Tag!",
+          "german": "Besten Dank Ihnen beiden! Damit sind alle drei Teile geschafft und Ihre mündliche Prüfung ist hiermit offiziell beendet. Ihre Ergebnisse bekommen Sie in vier bis sechs Wochen. Ich wünsche Ihnen alles Gute und einen schönen Tag!",
+          "english": "",
+          "audio_id": "DE_EX4_T3_OUTRO_01"
+        }
+      }
+    }
+  ]
+}

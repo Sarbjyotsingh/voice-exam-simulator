@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-APP_NAME="voice-exam-simulator"
+APP_NAME="voice-engine"
 IMAGE_NAME="${APP_NAME}:latest"
 PREV_IMAGE_NAME="${APP_NAME}:previous"
 

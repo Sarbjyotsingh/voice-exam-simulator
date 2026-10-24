@@ -1,0 +1,465 @@
+{
+  "exam_id": "B1_S04",
+  "topic_title": "Einkaufen: Online-Shopping vs. Geschäft vor Ort",
+  "exam_hint": "Thema: „Einkaufen im Internet (Online-Shopping) vs. Einkaufen im Geschäft“\n\nIhr Textzettel (Julia Neumann, 34 Jahre, Buchhalterin):\n„Ich kaufe fast alles im Internet — egal ob Kleidung, Schuhe oder Elektronik. Im Online-Shop habe ich eine riesige Auswahl, kann die Preise sofort vergleichen und auch abends um 22 Uhr bequem vom Sofa aus bestellen. Die Pakete werden direkt an meine Haustür geliefert und ich spare mir volle Geschäfte und lange Schlangen an der Kasse.“\n\nAufgabe:\n1. Fassen Sie zuerst kurz zusammen, was Julia Neumann sagt.\n2. Diskutieren Sie danach mit Ihrem Partner: Ihre eigene Meinung zum Thema Einkaufen, wie Sie in Deutschland einkaufen, wie das in Ihrem Heimatland ist und welche Vor- und Nachteile Online-Shopping hat.",
+  "voice_profiles": {
+    "Mateo": "1J0wWp4zPQIvsK7Xwh34",
+    "Herr Richter": "z1EhmmPwF0ENGYE8dBE6"
+  },
+  "auto_play_sequence": [
+    "DE_EX4_T2_INTRO_01",
+    "DE_MATT4A_T2OPEN_01"
+  ],
+  "end_audio_id": "DE_EX4_T2_OUTRO_01",
+  "dialogues": [
+    {
+      "topic": "Einleitung Teil 2",
+      "speaker": "Herr Richter",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX4_T2_INTRO_01",
+          "text": "Gut, vielen Dank für Teil 1. Jetzt machen wir weiter mit Teil 2: Gespräch über ein Thema. Sie haben beide eine Meinung auf Ihrem Aufgabenblatt gelesen. Bitte geben Sie zuerst wieder, was die Person auf Ihrem Blatt sagt, und sprechen Sie danach über Ihre eigenen Erfahrungen und Ansichten. Mateo, fangen Sie bitte an."
+        }
+      }
+    },
+    {
+      "topic": "Textpräsentation (Einkaufen: Online-Shopping vs. Geschäft vor Ort)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_MATT4A_T2OPEN_01",
+          "text": "Klar, ich fange gerne an! Auf meinem Blatt geht es um Tobias Berg, er ist 40 Jahre alt und arbeitet als Buchhändler. Er kauft viel lieber in den Geschäften in der Innenstadt ein, weil man dort Kleidung direkt anprobieren kann, persönlich beraten wird und nicht ständig Pakete zurückschicken muss. Und was steht auf deinem Aufgabenblatt?"
+        }
+      }
+    },
+    {
+      "topic": "Textzusammenfassung",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_MAT_PRES_Q1",
+          "text": "Was steht denn in deinem Text? Kannst du mir deine Meinung auf dem Zettel kurz vorstellen?"
+        },
+        "answer": {
+          "audio_id": "DE_MATT4A_PRES_A1",
+          "text": "In meinem Text sagt Tobias Berg, ein 40-jähriger Buchhändler, dass er lieber im Geschäft vor Ort einkauft, weil er persönliche Beratung schätzt und die Innenstädte unterstützen möchte."
+        }
+      }
+    },
+    {
+      "topic": "Textzusammenfassung (Nachfrage)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_MAT_PRES_Q2",
+          "text": "Moment mal, bevor wir richtig diskutieren: Was steht eigentlich auf deinem Zettel? Kannst du kurz zusammenfassen, was die Person dort sagt?"
+        }
+      }
+    },
+    {
+      "topic": "Eigene Meinung zum Thema",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_MATT4_OPIN_Q1",
+          "text": "Wie siehst du das? Kaufst du lieber im Internet ein oder gehst du lieber in ein Geschäft?"
+        },
+        "answer": {
+          "audio_id": "DE_MATT4A_OPIN_A1",
+          "text": "Ich finde, beide haben teilweise recht. Bei Kleidung gehe ich wie Tobias lieber ins Geschäft zum Anprobieren, aber Elektronik oder Bücher bestelle ich oft im Internet."
+        }
+      }
+    },
+    {
+      "topic": "Eigene Meinung (Alternative)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_MATT4_OPIN_Q2",
+          "text": "Was gefällt dir persönlich besser: Online-Shopping oder Einkaufen in der Stadt?"
+        }
+      }
+    },
+    {
+      "topic": "Erfahrungen und Gewohnheiten in Deutschland",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_MATT4_HAB_Q1",
+          "text": "Was kaufst du hier in Deutschland meistens online und wofür gehst du lieber ins Geschäft?"
+        },
+        "answer": {
+          "audio_id": "DE_MATT4_HAB_A1",
+          "text": "Hier in Deutschland kaufe ich Lebensmittel und Kleidung meistens im Geschäft in der Stadt. Aber wenn ich ein bestimmtes Kabel oder ein Buch suche, bestelle ich es oft online."
+        }
+      }
+    },
+    {
+      "topic": "Gewohnheiten in Deutschland (Alternative)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_MATT4_HAB_Q2",
+          "text": "Wie oft bestellst du ungefähr Sachen im Internet?"
+        }
+      }
+    },
+    {
+      "topic": "Situation im Heimatland",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_MATT4_HOME_Q1",
+          "text": "Und wie ist das in deinem Heimatland? Bestellen die Menschen dort auch so viel im Internet oder kaufen sie eher im Laden?"
+        },
+        "answer": {
+          "audio_id": "DE_MATT4_HOME_A1",
+          "text": "In meinem Heimatland Italien gehen die Menschen immer noch sehr gern in kleine Läden und auf den Markt, weil Einkaufen dort auch ein soziales Erlebnis ist. Aber bei jungen Leuten wächst Online-Shopping natürlich auch stark."
+        }
+      }
+    },
+    {
+      "topic": "Vor- und Nachteile",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_MATT4_PRO_Q1",
+          "text": "Welche Vor- und Nachteile siehst du beim Online-Shopping im Vergleich zum Einkaufen im Geschäft?"
+        },
+        "answer": {
+          "audio_id": "DE_MATT4_PRO_A1",
+          "text": "Der Vorteil beim Online-Shopping ist, dass es rund um die Uhr geht und oft günstiger ist. Der Nachteil ist aber der viele Verpackungsmüll und dass kleine Läden in der Stadt schließen müssen."
+        }
+      }
+    },
+    {
+      "topic": "Rückfrage (Meinung)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_MAT_T2BACK_Q1",
+          "text": "Und wie siehst du das persönlich?"
+        }
+      }
+    },
+    {
+      "topic": "Rückfrage (Erfahrung)",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_MAT_T2BACK_Q2",
+          "text": "Was hast du für Erfahrungen damit gemacht?"
+        }
+      }
+    },
+    {
+      "topic": "Verständnisfrage",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_MAT_T2CLAR_Q1",
+          "text": "Entschuldigung, das habe ich akustisch nicht ganz verstanden. Kannst du das bitte noch einmal erklären?"
+        }
+      }
+    },
+    {
+      "topic": "Nachfrage bei Stille",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_MAT_T2SIL_Q1",
+          "text": "Bist du noch da? Was meinst du denn zu diesem Thema?"
+        }
+      }
+    },
+    {
+      "topic": "Abschluss Partner",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_MAT_T2CLOSE_01",
+          "text": "Vielen Dank für die spannende Diskussion! Es hat wirklich Spaß gemacht, mit dir über dieses Thema zu sprechen."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Zustimmung",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_MAT_EXP_21",
+          "text": "Da hast du absolut recht."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Zustimmung",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_MAT_EXP_22",
+          "text": "Ganz genau, das sehe ich genauso."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Zustimmung",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_MAT_EXP_23",
+          "text": "Stimmt, das ist ein sehr guter Punkt."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Zustimmung",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_MAT_EXP_24",
+          "text": "Da bin ich ganz deiner Meinung."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Zustimmung",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_MAT_EXP_25",
+          "text": "Ja, das kann ich total gut verstehen."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Zustimmung",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_MAT_EXP_26",
+          "text": "Das finde ich auch sehr wichtig."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Höflicher Widerspruch",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_MAT_EXP_27",
+          "text": "Da bin ich etwas anderer Meinung."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Höflicher Widerspruch",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_MAT_EXP_28",
+          "text": "Das sehe ich nicht ganz so."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Höflicher Widerspruch",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_MAT_EXP_29",
+          "text": "Ehrlich gesagt ist das bei mir ein bisschen anders."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Höflicher Widerspruch",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_MAT_EXP_30",
+          "text": "Ja, vielleicht, aber man muss auch die andere Seite sehen."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Höflicher Widerspruch",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_MAT_EXP_31",
+          "text": "Das stimmt zwar, aber für mich persönlich passt das nicht so gut."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Interesse",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_MAT_EXP_32",
+          "text": "Ach wirklich? Das ist ja interessant!"
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Interesse",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_MAT_EXP_33",
+          "text": "Das kann ich mir sehr gut vorstellen."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Interesse",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_MAT_EXP_34",
+          "text": "Interessant! So habe ich das noch gar nicht gesehen."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Heimatland",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_MAT_EXP_35",
+          "text": "Ach so ist das in deinem Heimatland! Sehr spannend."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Zusammenfassung",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_MAT_EXP_36",
+          "text": "Danke für die Zusammenfassung! Das ist eine interessante Meinung."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Empathie",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_MAT_EXP_37",
+          "text": "Ja, das kenne ich aus eigener Erfahrung auch sehr gut."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Höflichkeit",
+      "speaker": "Mateo",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_MAT_EXP_38",
+          "text": "Gern geschehen!"
+        }
+      }
+    },
+    {
+      "topic": "Prüfer-Nachfrage 1",
+      "speaker": "Herr Richter",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX4T4_T2_FOLLOW_01",
+          "text": "Ich hätte noch eine kurze Frage: Sollte das Zurückschicken von Paketen beim Online-Shopping Geld kosten, um die Umwelt zu schützen?"
+        }
+      }
+    },
+    {
+      "topic": "Prüfer-Nachfrage 2",
+      "speaker": "Herr Richter",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX4T4_T2_FOLLOW_02",
+          "text": "Noch eine kurze Frage an Sie: Bezahlen Sie beim Einkaufen lieber bar oder mit Karte und Smartphone?"
+        }
+      }
+    },
+    {
+      "topic": "Prüfer-Intervention: Thema",
+      "speaker": "Herr Richter",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX4_T2_INT_TOPIC",
+          "text": "Entschuldigung, bitte bleiben Sie beim Thema Ihrer Aufgabenblätter und diskutieren Sie genau darüber weiter."
+        }
+      }
+    },
+    {
+      "topic": "Prüfer-Intervention: Höflichkeit",
+      "speaker": "Herr Richter",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX4_T2_INT_POLITE",
+          "text": "Bitte bewahren Sie einen sachlichen und höflichen Ton in der Prüfung. Fahren Sie bitte ordentlich mit dem Gespräch fort."
+        }
+      }
+    },
+    {
+      "topic": "Prüfer-Intervention: Dialog",
+      "speaker": "Herr Richter",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX4_T2_INT_DIALOG",
+          "text": "Bitte wechseln Sie sich beim Sprechen ab und stellen Sie Ihrem Partner auch Fragen, damit ein richtiges Gespräch entsteht."
+        }
+      }
+    },
+    {
+      "topic": "Abschluss Teil 2",
+      "speaker": "Herr Richter",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX4_T2_OUTRO_01",
+          "text": "Besten Dank Ihnen beiden. Damit ist Teil 2 beendet. Wir kommen nun zum letzten Teil der Prüfung, Teil 3: Gemeinsam eine Aufgabe lösen."
+        }
+      }
+    }
+  ]
+}

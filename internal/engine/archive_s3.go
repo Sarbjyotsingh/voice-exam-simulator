@@ -4,8 +4,8 @@ import (
 	"context"
 	"log/slog"
 
-	"voice-exam-simulator/config"
-	"voice-exam-simulator/services"
+	"voice-engine/config"
+	"voice-engine/services"
 )
 
 // Archiver aliases services.Archiver for async sharded S3 audit uploading.

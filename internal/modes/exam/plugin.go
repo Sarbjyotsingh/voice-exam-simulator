@@ -7,11 +7,11 @@ import (
 	"log/slog"
 	"strings"
 
-	"voice-exam-simulator/config"
-	"voice-exam-simulator/internal/contracts"
-	"voice-exam-simulator/internal/engine"
-	"voice-exam-simulator/internal/providers"
-	"voice-exam-simulator/services"
+	"voice-engine/config"
+	"voice-engine/internal/contracts"
+	"voice-engine/internal/engine"
+	"voice-engine/internal/providers"
+	"voice-engine/services"
 )
 
 // Plugin implements engine.ModeHandler for structured multi-phase speaking exams (ModeExam).

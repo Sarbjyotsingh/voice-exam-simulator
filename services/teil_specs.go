@@ -46,9 +46,9 @@ type TeilDecisionSpec struct {
 	FallbackInstruction string  `json:"fallback_instruction"` // custom instruction for needs_custom_fallback predicate
 	FallbackThreshold   float64 `json:"fallback_threshold"`   // probability threshold to trigger fallback (default 0.70)
 
-	Topics               []TopicSpec  `json:"topics"`
-	InitialCoveredTopics []string     `json:"initial_covered_topics"` // topics covered in auto_play_sequence before Turn 1
-	NoSelfAnswerOnTurn1  []string     `json:"no_self_answer_on_turn1"`  // slots partner shouldn't self-answer in Turn 1 (e.g. "name", "du_sie")
+	Topics               []TopicSpec `json:"topics"`
+	InitialCoveredTopics []string    `json:"initial_covered_topics"`  // topics covered in auto_play_sequence before Turn 1
+	NoSelfAnswerOnTurn1  []string    `json:"no_self_answer_on_turn1"` // slots partner shouldn't self-answer in Turn 1 (e.g. "name", "du_sie")
 
 	Reactions         []ReactionSpec `json:"reactions"`
 	NoRepeatReactions bool           `json:"no_repeat_reactions"` // true -> don't repeat any EXP_* in the same exam
@@ -56,7 +56,7 @@ type TeilDecisionSpec struct {
 	MinTopicsForWrapUp  int              `json:"min_topics_for_wrap_up"` // e.g. 6 for B1 Teil 1
 	HasExaminerFollowUp bool             `json:"has_examiner_follow_up"` // true for B1 Teil 1 (Phase 3 FOLLOW before OUTRO)
 	FollowUpSlots       []FollowUpRule   `json:"follow_up_slots"`
-	PartnerCloseSlot    string           `json:"partner_close_slot"` // e.g. "CLOSE_01"
+	PartnerCloseSlot    string           `json:"partner_close_slot"`  // e.g. "CLOSE_01"
 	ExaminerOutroSlot   string           `json:"examiner_outro_slot"` // e.g. "OUTRO_01"
 	Interventions       InterventionSpec `json:"interventions"`
 }
@@ -100,10 +100,10 @@ func (r *SpecRegistry) Get(level string, teil int) *TeilDecisionSpec {
 // DefaultB1Teil1Spec returns the official Telc B1 Teil 1 specification.
 func DefaultB1Teil1Spec() *TeilDecisionSpec {
 	return &TeilDecisionSpec{
-		Level:          "B1",
-		TeilNumber:     1,
-		TeilName:       "Teil 1: Kontaktaufnahme",
-		ContextSummary: "Telc B1 German speaking exam, Teil 1 (getting to know each other).",
+		Level:               "B1",
+		TeilNumber:          1,
+		TeilName:            "Teil 1: Kontaktaufnahme",
+		ContextSummary:      "Telc B1 German speaking exam, Teil 1 (getting to know each other).",
 		FallbackInstruction: "Did the learner ask a specific, unusual question to the partner that CANNOT be answered by the partner's standard biography clips (name, age, origin, residence, family, work/profession, languages, learning German, hobbies, or du/Sie)? Answer true ONLY if pre-recorded biography clips cannot reasonably answer what the learner asked.",
 		FallbackThreshold:   0.70,
 
@@ -167,10 +167,10 @@ func DefaultB1Teil1Spec() *TeilDecisionSpec {
 // DefaultB1Teil2Spec returns the official Telc B1 Teil 2 (Gespräch über ein Thema) specification.
 func DefaultB1Teil2Spec() *TeilDecisionSpec {
 	return &TeilDecisionSpec{
-		Level:          "B1",
-		TeilNumber:     2,
-		TeilName:       "Teil 2: Gespräch über ein Thema",
-		ContextSummary: "Telc B1 German speaking exam, Teil 2 (presenting a stimulus text opinion and discussing the topic with a partner).",
+		Level:               "B1",
+		TeilNumber:          2,
+		TeilName:            "Teil 2: Gespräch über ein Thema",
+		ContextSummary:      "Telc B1 German speaking exam, Teil 2 (presenting a stimulus text opinion and discussing the topic with a partner).",
 		FallbackInstruction: "Did the learner ask a specific, unusual question to the partner that CANNOT be answered by the partner's standard topic clips (stimulus text presentation, personal opinion on the topic, daily habits/experiences in Germany, comparison with home country, or pros/cons/compromises)? Answer true ONLY if pre-recorded topic clips cannot reasonably answer what the learner asked.",
 		FallbackThreshold:   0.70,
 
@@ -230,10 +230,10 @@ func DefaultB1Teil2Spec() *TeilDecisionSpec {
 // DefaultB1Teil3Spec returns the official Telc B1 Teil 3 (Gemeinsam etwas planen) specification.
 func DefaultB1Teil3Spec() *TeilDecisionSpec {
 	return &TeilDecisionSpec{
-		Level:          "B1",
-		TeilNumber:     3,
-		TeilName:       "Teil 3: Gemeinsam etwas planen",
-		ContextSummary: "Telc B1 German speaking exam, Teil 3 (collaborative planning task: agreeing on time, location/materials, food/items, task division/transport, and final plan summary).",
+		Level:               "B1",
+		TeilNumber:          3,
+		TeilName:            "Teil 3: Gemeinsam etwas planen",
+		ContextSummary:      "Telc B1 German speaking exam, Teil 3 (collaborative planning task: agreeing on time, location/materials, food/items, task division/transport, and final plan summary).",
 		FallbackInstruction: "Did the learner ask a specific, unusual question to the partner that CANNOT be answered by the partner's standard planning clips (date/time compromise, venue/materials/rain backup, food/drinks/gifts, task division/transport, or final summary)? Answer true ONLY if pre-recorded planning clips cannot reasonably answer what the learner asked.",
 		FallbackThreshold:   0.70,
 

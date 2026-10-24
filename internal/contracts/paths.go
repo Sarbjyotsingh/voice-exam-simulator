@@ -36,7 +36,7 @@ func SpecKey(mode ModeID, lang LanguageCode, provider ExamProvider, level CEFRLe
 
 // ExamFolderFromID maps an exam_id like "B1_S01" or "B1_Exam_Sample_01" to the canonical folder "B1_Exam_Sample_01".
 func ExamFolderFromID(level CEFRLevel, examID string) string {
-	lvl := string(NormalizeCEFRLevel( string(level) ))
+	lvl := string(NormalizeCEFRLevel(string(level)))
 	trimmed := strings.TrimSpace(examID)
 	if strings.Contains(trimmed, "_Exam_Sample_") {
 		return trimmed
@@ -52,20 +52,39 @@ func ExamFolderFromID(level CEFRLevel, examID string) string {
 	return trimmed
 }
 
+// SampleFolderFromID maps an exam_id like "B1_S01", "B1_Exam_Sample_01", or "Sample_01" to the catalog scenario folder "sample_01".
+func SampleFolderFromID(examID string) string {
+	trimmed := strings.TrimSpace(examID)
+	if m := sampleNumRe.FindStringSubmatch(trimmed); len(m) == 2 {
+		if n, err := strconv.Atoi(m[1]); err == nil && n > 0 {
+			return fmt.Sprintf("sample_%02d", n)
+		}
+	}
+	if trimmed == "" {
+		return "sample_01"
+	}
+	return strings.ToLower(trimmed)
+}
+
 // LocalScriptCandidates returns candidate local file paths for a (level, examID, teil) script.json.
 func LocalScriptCandidates(baseDir string, provider ExamProvider, level CEFRLevel, examID string, teil int) []string {
 	folder := ExamFolderFromID(level, examID)
+	sampleFolder := SampleFolderFromID(examID)
 	teilDir := fmt.Sprintf("Teil_%d", teil)
+	catalogTeilDir := fmt.Sprintf("teil_%d", teil)
 	provLower := strings.ToLower(string(NormalizeExamProvider(string(provider))))
 	lvlLower := strings.ToLower(string(NormalizeCEFRLevel(string(level))))
+	examSubDir := fmt.Sprintf("%s_%s", provLower, lvlLower)
 
 	var candidates []string
 	roots := []string{baseDir}
 	if baseDir == "" || baseDir == "." {
-		roots = []string{".", "..", "../.."}
+		roots = []string{".", "..", "../..", "../../.."}
 	}
 	for _, r := range roots {
 		candidates = append(candidates,
+			filepath.Join(r, "catalog", "exams", "de", examSubDir, "scenarios", sampleFolder, catalogTeilDir, "script.json"),
+			filepath.Join(r, "exams", "de", examSubDir, "scenarios", sampleFolder, catalogTeilDir, "script.json"),
 			filepath.Join(r, "exam_generator", "output_s3", folder, teilDir, "script.json"),
 			filepath.Join(r, "exam_generator", "upload_package", provLower, lvlLower, "speaking", folder, teilDir, "script.json"),
 		)

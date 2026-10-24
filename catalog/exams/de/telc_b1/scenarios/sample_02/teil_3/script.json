@@ -1,0 +1,1278 @@
+{
+  "scenario_id": "S2",
+  "scenario_title": "Einem Freund beim Renovieren und Umzug helfen",
+  "exam_hint": "Teil 3: Gemeinsam etwas planen — „Einem Freund beim Renovieren und Umzug helfen“\n\nSituation:\nIhr gemeinsamer Freund Karim zieht in eine neue Wohnung um. Vor dem Einzug müssen noch zwei Zimmer gestrichen und die Möbel transportiert werden. Sie und Ihr Gesprächspartner Omar möchten ihm helfen.\n\nPlanen Sie gemeinsam die Hilfe. Überlegen Sie sich:\n• Wann? (An welchem Tag und um wie viel Uhr? Achtung: Ruhezeiten am Sonntag!)\n• Werkzeuge & Material? (Farbe, Pinsel, Leiter, Bohrmaschine – wer hat was oder wo kaufen?)\n• Verpflegung für die Helfer? (Frühstück, Getränke und warmes Mittagessen organisieren)\n• Transport & Aufgabenverteilung? (Auto oder Kleintransporter für die Möbel – wer kümmert sich um was?)",
+  "voice_profiles": {
+    "Frau Fischer": "MGG5Irb57ATHvyIeTEYo",
+    "Omar": "A2eYGaZmwykOiEVBlQ7h"
+  },
+  "auto_play_sequence": [
+    "DE_EX2_T3_INTRO_01",
+    "DE_OMA_S2_T3OPEN_01"
+  ],
+  "end_audio_id": "DE_EX2_T3_OUTRO_01",
+  "dialogues": [
+    {
+      "topic": "Introduction (Teil 3)",
+      "speaker": "Frau Fischer",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Frau Fischer",
+          "text": "Danke schön. Jetzt kommen wir zum dritten und letzten Prüfungsteil: Gemeinsam eine Aufgabe lösen. Auf Ihrem Aufgabenblatt sehen Sie die Situation und die Punkte, die Sie zusammen planen sollen. Bitte überlegen Sie gemeinsam, wer was macht. Omar, fangen Sie bitte an.",
+          "german": "Danke schön. Jetzt kommen wir zum dritten und letzten Prüfungsteil: Gemeinsam eine Aufgabe lösen. Auf Ihrem Aufgabenblatt sehen Sie die Situation und die Punkte, die Sie zusammen planen sollen. Bitte überlegen Sie gemeinsam, wer was macht. Omar, fangen Sie bitte an.",
+          "english": "",
+          "audio_id": "DE_EX2_T3_INTRO_01"
+        }
+      }
+    },
+    {
+      "topic": "Opening & Initial Time Proposal (Wann?)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Omar",
+          "text": "Hallo! Unser Freund Karim zieht ja bald in seine neue Wohnung und braucht unsere Hilfe beim Streichen und beim Umzug. Wollen wir planen, wann wir ihm helfen? Ich hätte diesen Sonntag ab elf Uhr Zeit. Passt dir Sonntag auch, oder ist ein anderer Tag besser?",
+          "german": "Hallo! Unser Freund Karim zieht ja bald in seine neue Wohnung und braucht unsere Hilfe beim Streichen und beim Umzug. Wollen wir planen, wann wir ihm helfen? Ich hätte diesen Sonntag ab elf Uhr Zeit. Passt dir Sonntag auch, oder ist ein anderer Tag besser?",
+          "english": "",
+          "audio_id": "DE_OMA_S2_T3OPEN_01"
+        }
+      }
+    },
+    {
+      "topic": "Time Counter-Proposal / Compromise (Samstagmorgen)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "answer": {
+          "speaker": "Omar",
+          "text": "Da hast du recht: Am Sonntag darf man in Deutschland wegen der Ruhezeit keinen Lärm mit der Bohrmaschine machen und die Baumärkte sind geschlossen. Dann lass uns lieber am Samstagmorgen früh um neun Uhr anfangen, damit wir bis zum Abend fertig werden!",
+          "german": "Da hast du recht: Am Sonntag darf man in Deutschland wegen der Ruhezeit keinen Lärm mit der Bohrmaschine machen und die Baumärkte sind geschlossen. Dann lass uns lieber am Samstagmorgen früh um neun Uhr anfangen, damit wir bis zum Abend fertig werden!",
+          "english": "",
+          "audio_id": "DE_OMA_S2_TIME_A1"
+        }
+      }
+    },
+    {
+      "topic": "Time Follow-Up Question (Wann helfen?)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Omar",
+          "text": "Wann sollen wir Karim am besten helfen? Passt dir Samstagmorgen um neun Uhr?",
+          "german": "Wann sollen wir Karim am besten helfen? Passt dir Samstagmorgen um neun Uhr?",
+          "english": "",
+          "audio_id": "DE_OMA_S2_TIME_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Time Simpler Re-Ask (Samstag oder Sonntag?)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Omar",
+          "text": "An welchem Tag am Wochenende hast du Zeit zum Renovieren – am Samstag oder am Sonntag?",
+          "german": "An welchem Tag am Wochenende hast du Zeit zum Renovieren – am Samstag oder am Sonntag?",
+          "english": "",
+          "audio_id": "DE_OMA_S2_TIME_Q2"
+        }
+      }
+    },
+    {
+      "topic": "Tools & Hardware Store Question (Werkzeug & Baumarkt)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Omar",
+          "text": "Wir müssen in der neuen Wohnung zuerst das Wohnzimmer und das Schlafzimmer weiß streichen. Hast du zu Hause Werkzeuge wie Pinsel oder eine Leiter, oder wo sollen wir die Farbe und die Sachen besorgen?",
+          "german": "Wir müssen in der neuen Wohnung zuerst das Wohnzimmer und das Schlafzimmer weiß streichen. Hast du zu Hause Werkzeuge wie Pinsel oder eine Leiter, oder wo sollen wir die Farbe und die Sachen besorgen?",
+          "english": "",
+          "audio_id": "DE_OMA_S2_LOC_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Tools Simpler Re-Ask (Farbe & Werkzeug)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Omar",
+          "text": "Wo sollen wir die Wandfarbe und die Werkzeuge kaufen, und was können wir selbst von zu Hause mitbringen?",
+          "german": "Wo sollen wir die Wandfarbe und die Werkzeuge kaufen, und was können wir selbst von zu Hause mitbringen?",
+          "english": "",
+          "audio_id": "DE_OMA_S2_LOC_Q2"
+        }
+      }
+    },
+    {
+      "topic": "Tools & Hardware Store Proposal (Leiter + Baumarkt)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "answer": {
+          "speaker": "Omar",
+          "text": "Ich habe im Keller noch eine große Leiter, eine Bohrmaschine und Abdeckfolie, die bringe ich auf jeden Fall mit. Die weiße Wandfarbe und die Farbrollen können wir am Freitagabend zusammen im großen Baumarkt kaufen, dann verlieren wir am Samstagmorgen keine Zeit.",
+          "german": "Ich habe im Keller noch eine große Leiter, eine Bohrmaschine und Abdeckfolie, die bringe ich auf jeden Fall mit. Die weiße Wandfarbe und die Farbrollen können wir am Freitagabend zusammen im großen Baumarkt kaufen, dann verlieren wir am Samstagmorgen keine Zeit.",
+          "english": "",
+          "audio_id": "DE_OMA_S2_LOC_A1"
+        }
+      }
+    },
+    {
+      "topic": "Food for Helpers Question (Verpflegung)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Omar",
+          "text": "Vom Streichen und Möbeltragen bekommen wir mittags bestimmt großen Hunger, und in Karims neuer Wohnung steht ja noch keine Küche. Was sollen wir zu essen und zu trinken für alle Helfer organisieren?",
+          "german": "Vom Streichen und Möbeltragen bekommen wir mittags bestimmt großen Hunger, und in Karims neuer Wohnung steht ja noch keine Küche. Was sollen wir zu essen und zu trinken für alle Helfer organisieren?",
+          "english": "",
+          "audio_id": "DE_OMA_S2_FOOD_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Food for Helpers Proposal (Brötchen, Kaffee & Pizza)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "answer": {
+          "speaker": "Omar",
+          "text": "Das ist eine super Lösung! Ich bringe morgens frische Brötchen vom Bäcker, eine Kanne Kaffee und einen Kasten Wasser mit. Und zum Mittagessen bestellen wir uns einfach zwei große Familienpizzen direkt in die neue Wohnung.",
+          "german": "Das ist eine super Lösung! Ich bringe morgens frische Brötchen vom Bäcker, eine Kanne Kaffee und einen Kasten Wasser mit. Und zum Mittagessen bestellen wir uns einfach zwei große Familienpizzen direkt in die neue Wohnung.",
+          "english": "",
+          "audio_id": "DE_OMA_S2_FOOD_A1"
+        }
+      }
+    },
+    {
+      "topic": "Transport & Task Division Question (Transporter & Aufgaben)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Omar",
+          "text": "Am Nachmittag müssen wir noch Karims Sofa, das Bett und die Kartons transportieren. Ich habe leider kein eigenes Auto, aber ich habe einen Führerschein. Wie organisieren wir den Transport, und wer kümmert sich um was?",
+          "german": "Am Nachmittag müssen wir noch Karims Sofa, das Bett und die Kartons transportieren. Ich habe leider kein eigenes Auto, aber ich habe einen Führerschein. Wie organisieren wir den Transport, und wer kümmert sich um was?",
+          "english": "",
+          "audio_id": "DE_OMA_S2_TASK_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Transport & Task Division Proposal (Kleintransporter leihen)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "answer": {
+          "speaker": "Omar",
+          "text": "Perfekt! Mein Cousin hat einen großen Kleintransporter, den kann ich mir für Samstag kostenlos ausleihen und ich fahre ihn auch gern. Wenn du am Freitag die Farbe besorgst und am Samstag die Pizza bestellst, hole ich den Transporter, das Werkzeug und das Frühstück.",
+          "german": "Perfekt! Mein Cousin hat einen großen Kleintransporter, den kann ich mir für Samstag kostenlos ausleihen und ich fahre ihn auch gern. Wenn du am Freitag die Farbe besorgst und am Samstag die Pizza bestellst, hole ich den Transporter, das Werkzeug und das Frühstück.",
+          "english": "",
+          "audio_id": "DE_OMA_S2_TASK_A1"
+        }
+      }
+    },
+    {
+      "topic": "Final Plan Summary (Zusammenfassung)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "answer": {
+          "speaker": "Omar",
+          "text": "Klasse, dann steht unser Plan fest: Wir treffen uns am Samstagmorgen um neun Uhr bei Karims neuer Wohnung. Ich leihe den Transporter von meinem Cousin, bringe Werkzeug, Leiter, Kaffee und Brötchen mit, und du kümmerst dich um die Wandfarbe und bestellst mittags die Pizza für uns.",
+          "german": "Klasse, dann steht unser Plan fest: Wir treffen uns am Samstagmorgen um neun Uhr bei Karims neuer Wohnung. Ich leihe den Transporter von meinem Cousin, bringe Werkzeug, Leiter, Kaffee und Brötchen mit, und du kümmerst dich um die Wandfarbe und bestellst mittags die Pizza für uns.",
+          "english": "",
+          "audio_id": "DE_OMA_S2_SUM_A1"
+        }
+      }
+    },
+    {
+      "topic": "Summary Completeness Check (Alles besprochen?)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Omar",
+          "text": "Haben wir damit alles Wichtige für die Renovierung und den Umzug besprochen, oder fehlt noch etwas?",
+          "german": "Haben wir damit alles Wichtige für die Renovierung und den Umzug besprochen, oder fehlt noch etwas?",
+          "english": "",
+          "audio_id": "DE_OMA_S2_SUM_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Counter-Question (Planning Feedback 1)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Omar",
+          "text": "Was meinst du dazu? Findest du den Vorschlag gut?",
+          "german": "Was meinst du dazu? Findest du den Vorschlag gut?",
+          "english": "",
+          "audio_id": "DE_OMA_T3BACK_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Counter-Question (Planning Feedback 2)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Omar",
+          "text": "Hast du vielleicht noch eine andere Idee dazu?",
+          "german": "Hast du vielleicht noch eine andere Idee dazu?",
+          "english": "",
+          "audio_id": "DE_OMA_T3BACK_Q2"
+        }
+      }
+    },
+    {
+      "topic": "Clarification (Repeat Proposal)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Omar",
+          "text": "Entschuldigung, ich habe deinen Vorschlag akustisch nicht ganz verstanden. Kannst du das bitte noch einmal kurz wiederholen?",
+          "german": "Entschuldigung, ich habe deinen Vorschlag akustisch nicht ganz verstanden. Kannst du das bitte noch einmal kurz wiederholen?",
+          "english": "",
+          "audio_id": "DE_OMA_T3CLAR_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Silence Recovery",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Omar",
+          "text": "Hallo? Bist du noch da? Wollen wir weiter zusammen planen?",
+          "german": "Hallo? Bist du noch da? Wollen wir weiter zusammen planen?",
+          "english": "",
+          "audio_id": "DE_OMA_T3SIL_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Closing & Farewell (Teil 3)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Omar",
+          "text": "Super, dann machen wir das genau so! Ich freue mich schon sehr darauf. Bis dann, tschüss!",
+          "german": "Super, dann machen wir das genau so! Ich freue mich schon sehr darauf. Bis dann, tschüss!",
+          "english": "",
+          "audio_id": "DE_OMA_T3CLOSE_01"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - Super Idee)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Omar",
+          "text": "Das ist eine super Idee!",
+          "german": "Das ist eine super Idee!",
+          "english": "",
+          "audio_id": "DE_OMA_EXP_41"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - So machen wir das)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Omar",
+          "text": "Klasse, so machen wir das!",
+          "german": "Klasse, so machen wir das!",
+          "english": "",
+          "audio_id": "DE_OMA_EXP_42"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - Passt sehr gut)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Omar",
+          "text": "Perfekt, das passt mir sehr gut.",
+          "german": "Perfekt, das passt mir sehr gut.",
+          "english": "",
+          "audio_id": "DE_OMA_EXP_43"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - Einverstanden)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Omar",
+          "text": "Einverstanden, das klingt nach einem sehr guten Plan.",
+          "german": "Einverstanden, das klingt nach einem sehr guten Plan.",
+          "english": "",
+          "audio_id": "DE_OMA_EXP_44"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - Sofort dabei)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Omar",
+          "text": "Super Vorschlag, da bin ich sofort dabei!",
+          "german": "Super Vorschlag, da bin ich sofort dabei!",
+          "english": "",
+          "audio_id": "DE_OMA_EXP_45"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - Abgemacht)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Omar",
+          "text": "Alles klar, abgemacht!",
+          "german": "Alles klar, abgemacht!",
+          "english": "",
+          "audio_id": "DE_OMA_EXP_46"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Doubt - Nicht ganz sicher)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Omar",
+          "text": "Hmm, da bin ich mir noch nicht ganz sicher.",
+          "german": "Hmm, da bin ich mir noch nicht ganz sicher.",
+          "english": "",
+          "audio_id": "DE_OMA_EXP_47"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Doubt - Zeitlich knapp)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Omar",
+          "text": "Das wird zeitlich vielleicht ein bisschen knapp.",
+          "german": "Das wird zeitlich vielleicht ein bisschen knapp.",
+          "english": "",
+          "audio_id": "DE_OMA_EXP_48"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Doubt - Termin passt nicht)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Omar",
+          "text": "Ehrlich gesagt passt mir dieser Termin nicht so gut.",
+          "german": "Ehrlich gesagt passt mir dieser Termin nicht so gut.",
+          "english": "",
+          "audio_id": "DE_OMA_EXP_49"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Doubt - Schlechtes Wetter)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Omar",
+          "text": "Die Idee ist gut, aber was machen wir, wenn das Wetter schlecht ist?",
+          "german": "Die Idee ist gut, aber was machen wir, wenn das Wetter schlecht ist?",
+          "english": "",
+          "audio_id": "DE_OMA_EXP_50"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Counter-Proposal - Anderer Vorschlag)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Omar",
+          "text": "Ich hätte da noch einen anderen Vorschlag.",
+          "german": "Ich hätte da noch einen anderen Vorschlag.",
+          "english": "",
+          "audio_id": "DE_OMA_EXP_51"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Counter-Proposal - Zusammen erledigen)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Omar",
+          "text": "Wäre es nicht praktischer, wenn wir das zusammen erledigen?",
+          "german": "Wäre es nicht praktischer, wenn wir das zusammen erledigen?",
+          "english": "",
+          "audio_id": "DE_OMA_EXP_52"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Compromise - Viel praktischer)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Omar",
+          "text": "Ja, du hast recht, das ist wirklich viel praktischer so.",
+          "german": "Ja, du hast recht, das ist wirklich viel praktischer so.",
+          "english": "",
+          "audio_id": "DE_OMA_EXP_53"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Task Allocation - Kümmere mich)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Omar",
+          "text": "Sehr gerne, darum kümmere ich mich!",
+          "german": "Sehr gerne, darum kümmere ich mich!",
+          "english": "",
+          "audio_id": "DE_OMA_EXP_54"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Task Allocation - Aufgaben teilen)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Omar",
+          "text": "Abgemacht! Wenn du das übernimmst, kümmere ich mich um den Rest.",
+          "german": "Abgemacht! Wenn du das übernimmst, kümmere ich mich um den Rest.",
+          "english": "",
+          "audio_id": "DE_OMA_EXP_55"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Summary Lead-in - Fast alle Punkte)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Omar",
+          "text": "Super, wir haben jetzt fast alle Punkte geklärt!",
+          "german": "Super, wir haben jetzt fast alle Punkte geklärt!",
+          "english": "",
+          "audio_id": "DE_OMA_EXP_56"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Clarification - Verstanden)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Omar",
+          "text": "Ach so, alles klar, jetzt habe ich dich verstanden.",
+          "german": "Ach so, alles klar, jetzt habe ich dich verstanden.",
+          "english": "",
+          "audio_id": "DE_OMA_EXP_57"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Politeness - Spaß beim Planen)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Omar",
+          "text": "Gerne! Es macht richtig Spaß, das mit dir zusammen zu planen.",
+          "german": "Gerne! Es macht richtig Spaß, das mit dir zusammen zu planen.",
+          "english": "",
+          "audio_id": "DE_OMA_EXP_58"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention (Off-Topic)",
+      "speaker": "Frau Fischer",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Frau Fischer",
+          "text": "Darf ich Sie kurz daran erinnern, bei Ihrer gemeinsamen Planungsaufgabe zu bleiben? Bitte planen Sie weiter.",
+          "german": "Darf ich Sie kurz daran erinnern, bei Ihrer gemeinsamen Planungsaufgabe zu bleiben? Bitte planen Sie weiter.",
+          "english": "",
+          "audio_id": "DE_EX2_T3_INT_TOPIC"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention (Monologue / No Negotiation)",
+      "speaker": "Frau Fischer",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Frau Fischer",
+          "text": "Bitte denken Sie daran, dass Sie gemeinsam planen sollen. Gehen Sie auf die Vorschläge Ihres Partners ein und teilen Sie die Aufgaben auf.",
+          "german": "Bitte denken Sie daran, dass Sie gemeinsam planen sollen. Gehen Sie auf die Vorschläge Ihres Partners ein und teilen Sie die Aufgaben auf.",
+          "english": "",
+          "audio_id": "DE_EX2_T3_INT_DIALOG"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention (Skipped Bullet Points / Silence)",
+      "speaker": "Frau Fischer",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Frau Fischer",
+          "text": "Überlegen Sie bitte noch kurz gemeinsam: Haben Sie schon alle Punkte auf dem Blatt geklärt und festgelegt, wer was übernimmt?",
+          "german": "Überlegen Sie bitte noch kurz gemeinsam: Haben Sie schon alle Punkte auf dem Blatt geklärt und festgelegt, wer was übernimmt?",
+          "english": "",
+          "audio_id": "DE_EX2_T3_INT_SILENCE"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention (Politeness)",
+      "speaker": "Frau Fischer",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Frau Fischer",
+          "text": "Bitte achten Sie während der gesamten Prüfung auf eine höfliche und respektvolle Ausdrucksweise.",
+          "german": "Bitte achten Sie während der gesamten Prüfung auf eine höfliche und respektvolle Ausdrucksweise.",
+          "english": "",
+          "audio_id": "DE_EX2_T3_INT_POLITE"
+        }
+      }
+    },
+    {
+      "topic": "Official Conclusion of the Oral Exam (Teil 3 Outro)",
+      "speaker": "Frau Fischer",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Frau Fischer",
+          "text": "Herzlichen Dank Ihnen beiden! Das war der dritte Teil, und damit ist Ihre gesamte mündliche Prüfung beendet. Ihre Ergebnisse bekommen Sie in etwa vier bis sechs Wochen. Wir wünschen Ihnen alles Gute. Tschüss!",
+          "german": "Herzlichen Dank Ihnen beiden! Das war der dritte Teil, und damit ist Ihre gesamte mündliche Prüfung beendet. Ihre Ergebnisse bekommen Sie in etwa vier bis sechs Wochen. Wir wünschen Ihnen alles Gute. Tschüss!",
+          "english": "",
+          "audio_id": "DE_EX2_T3_OUTRO_01"
+        }
+      }
+    }
+  ],
+  "teil3 dialogues": [
+    {
+      "topic": "Introduction (Teil 3)",
+      "speaker": "Frau Fischer",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Frau Fischer",
+          "text": "Danke schön. Jetzt kommen wir zum dritten und letzten Prüfungsteil: Gemeinsam eine Aufgabe lösen. Auf Ihrem Aufgabenblatt sehen Sie die Situation und die Punkte, die Sie zusammen planen sollen. Bitte überlegen Sie gemeinsam, wer was macht. Omar, fangen Sie bitte an.",
+          "german": "Danke schön. Jetzt kommen wir zum dritten und letzten Prüfungsteil: Gemeinsam eine Aufgabe lösen. Auf Ihrem Aufgabenblatt sehen Sie die Situation und die Punkte, die Sie zusammen planen sollen. Bitte überlegen Sie gemeinsam, wer was macht. Omar, fangen Sie bitte an.",
+          "english": "",
+          "audio_id": "DE_EX2_T3_INTRO_01"
+        }
+      }
+    },
+    {
+      "topic": "Opening & Initial Time Proposal (Wann?)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Omar",
+          "text": "Hallo! Unser Freund Karim zieht ja bald in seine neue Wohnung und braucht unsere Hilfe beim Streichen und beim Umzug. Wollen wir planen, wann wir ihm helfen? Ich hätte diesen Sonntag ab elf Uhr Zeit. Passt dir Sonntag auch, oder ist ein anderer Tag besser?",
+          "german": "Hallo! Unser Freund Karim zieht ja bald in seine neue Wohnung und braucht unsere Hilfe beim Streichen und beim Umzug. Wollen wir planen, wann wir ihm helfen? Ich hätte diesen Sonntag ab elf Uhr Zeit. Passt dir Sonntag auch, oder ist ein anderer Tag besser?",
+          "english": "",
+          "audio_id": "DE_OMA_S2_T3OPEN_01"
+        }
+      }
+    },
+    {
+      "topic": "Time Counter-Proposal / Compromise (Samstagmorgen)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "answer": {
+          "speaker": "Omar",
+          "text": "Da hast du recht: Am Sonntag darf man in Deutschland wegen der Ruhezeit keinen Lärm mit der Bohrmaschine machen und die Baumärkte sind geschlossen. Dann lass uns lieber am Samstagmorgen früh um neun Uhr anfangen, damit wir bis zum Abend fertig werden!",
+          "german": "Da hast du recht: Am Sonntag darf man in Deutschland wegen der Ruhezeit keinen Lärm mit der Bohrmaschine machen und die Baumärkte sind geschlossen. Dann lass uns lieber am Samstagmorgen früh um neun Uhr anfangen, damit wir bis zum Abend fertig werden!",
+          "english": "",
+          "audio_id": "DE_OMA_S2_TIME_A1"
+        }
+      }
+    },
+    {
+      "topic": "Time Follow-Up Question (Wann helfen?)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Omar",
+          "text": "Wann sollen wir Karim am besten helfen? Passt dir Samstagmorgen um neun Uhr?",
+          "german": "Wann sollen wir Karim am besten helfen? Passt dir Samstagmorgen um neun Uhr?",
+          "english": "",
+          "audio_id": "DE_OMA_S2_TIME_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Time Simpler Re-Ask (Samstag oder Sonntag?)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Omar",
+          "text": "An welchem Tag am Wochenende hast du Zeit zum Renovieren – am Samstag oder am Sonntag?",
+          "german": "An welchem Tag am Wochenende hast du Zeit zum Renovieren – am Samstag oder am Sonntag?",
+          "english": "",
+          "audio_id": "DE_OMA_S2_TIME_Q2"
+        }
+      }
+    },
+    {
+      "topic": "Tools & Hardware Store Question (Werkzeug & Baumarkt)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Omar",
+          "text": "Wir müssen in der neuen Wohnung zuerst das Wohnzimmer und das Schlafzimmer weiß streichen. Hast du zu Hause Werkzeuge wie Pinsel oder eine Leiter, oder wo sollen wir die Farbe und die Sachen besorgen?",
+          "german": "Wir müssen in der neuen Wohnung zuerst das Wohnzimmer und das Schlafzimmer weiß streichen. Hast du zu Hause Werkzeuge wie Pinsel oder eine Leiter, oder wo sollen wir die Farbe und die Sachen besorgen?",
+          "english": "",
+          "audio_id": "DE_OMA_S2_LOC_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Tools Simpler Re-Ask (Farbe & Werkzeug)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Omar",
+          "text": "Wo sollen wir die Wandfarbe und die Werkzeuge kaufen, und was können wir selbst von zu Hause mitbringen?",
+          "german": "Wo sollen wir die Wandfarbe und die Werkzeuge kaufen, und was können wir selbst von zu Hause mitbringen?",
+          "english": "",
+          "audio_id": "DE_OMA_S2_LOC_Q2"
+        }
+      }
+    },
+    {
+      "topic": "Tools & Hardware Store Proposal (Leiter + Baumarkt)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "answer": {
+          "speaker": "Omar",
+          "text": "Ich habe im Keller noch eine große Leiter, eine Bohrmaschine und Abdeckfolie, die bringe ich auf jeden Fall mit. Die weiße Wandfarbe und die Farbrollen können wir am Freitagabend zusammen im großen Baumarkt kaufen, dann verlieren wir am Samstagmorgen keine Zeit.",
+          "german": "Ich habe im Keller noch eine große Leiter, eine Bohrmaschine und Abdeckfolie, die bringe ich auf jeden Fall mit. Die weiße Wandfarbe und die Farbrollen können wir am Freitagabend zusammen im großen Baumarkt kaufen, dann verlieren wir am Samstagmorgen keine Zeit.",
+          "english": "",
+          "audio_id": "DE_OMA_S2_LOC_A1"
+        }
+      }
+    },
+    {
+      "topic": "Food for Helpers Question (Verpflegung)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Omar",
+          "text": "Vom Streichen und Möbeltragen bekommen wir mittags bestimmt großen Hunger, und in Karims neuer Wohnung steht ja noch keine Küche. Was sollen wir zu essen und zu trinken für alle Helfer organisieren?",
+          "german": "Vom Streichen und Möbeltragen bekommen wir mittags bestimmt großen Hunger, und in Karims neuer Wohnung steht ja noch keine Küche. Was sollen wir zu essen und zu trinken für alle Helfer organisieren?",
+          "english": "",
+          "audio_id": "DE_OMA_S2_FOOD_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Food for Helpers Proposal (Brötchen, Kaffee & Pizza)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "answer": {
+          "speaker": "Omar",
+          "text": "Das ist eine super Lösung! Ich bringe morgens frische Brötchen vom Bäcker, eine Kanne Kaffee und einen Kasten Wasser mit. Und zum Mittagessen bestellen wir uns einfach zwei große Familienpizzen direkt in die neue Wohnung.",
+          "german": "Das ist eine super Lösung! Ich bringe morgens frische Brötchen vom Bäcker, eine Kanne Kaffee und einen Kasten Wasser mit. Und zum Mittagessen bestellen wir uns einfach zwei große Familienpizzen direkt in die neue Wohnung.",
+          "english": "",
+          "audio_id": "DE_OMA_S2_FOOD_A1"
+        }
+      }
+    },
+    {
+      "topic": "Transport & Task Division Question (Transporter & Aufgaben)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Omar",
+          "text": "Am Nachmittag müssen wir noch Karims Sofa, das Bett und die Kartons transportieren. Ich habe leider kein eigenes Auto, aber ich habe einen Führerschein. Wie organisieren wir den Transport, und wer kümmert sich um was?",
+          "german": "Am Nachmittag müssen wir noch Karims Sofa, das Bett und die Kartons transportieren. Ich habe leider kein eigenes Auto, aber ich habe einen Führerschein. Wie organisieren wir den Transport, und wer kümmert sich um was?",
+          "english": "",
+          "audio_id": "DE_OMA_S2_TASK_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Transport & Task Division Proposal (Kleintransporter leihen)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "answer": {
+          "speaker": "Omar",
+          "text": "Perfekt! Mein Cousin hat einen großen Kleintransporter, den kann ich mir für Samstag kostenlos ausleihen und ich fahre ihn auch gern. Wenn du am Freitag die Farbe besorgst und am Samstag die Pizza bestellst, hole ich den Transporter, das Werkzeug und das Frühstück.",
+          "german": "Perfekt! Mein Cousin hat einen großen Kleintransporter, den kann ich mir für Samstag kostenlos ausleihen und ich fahre ihn auch gern. Wenn du am Freitag die Farbe besorgst und am Samstag die Pizza bestellst, hole ich den Transporter, das Werkzeug und das Frühstück.",
+          "english": "",
+          "audio_id": "DE_OMA_S2_TASK_A1"
+        }
+      }
+    },
+    {
+      "topic": "Final Plan Summary (Zusammenfassung)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "answer": {
+          "speaker": "Omar",
+          "text": "Klasse, dann steht unser Plan fest: Wir treffen uns am Samstagmorgen um neun Uhr bei Karims neuer Wohnung. Ich leihe den Transporter von meinem Cousin, bringe Werkzeug, Leiter, Kaffee und Brötchen mit, und du kümmerst dich um die Wandfarbe und bestellst mittags die Pizza für uns.",
+          "german": "Klasse, dann steht unser Plan fest: Wir treffen uns am Samstagmorgen um neun Uhr bei Karims neuer Wohnung. Ich leihe den Transporter von meinem Cousin, bringe Werkzeug, Leiter, Kaffee und Brötchen mit, und du kümmerst dich um die Wandfarbe und bestellst mittags die Pizza für uns.",
+          "english": "",
+          "audio_id": "DE_OMA_S2_SUM_A1"
+        }
+      }
+    },
+    {
+      "topic": "Summary Completeness Check (Alles besprochen?)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Omar",
+          "text": "Haben wir damit alles Wichtige für die Renovierung und den Umzug besprochen, oder fehlt noch etwas?",
+          "german": "Haben wir damit alles Wichtige für die Renovierung und den Umzug besprochen, oder fehlt noch etwas?",
+          "english": "",
+          "audio_id": "DE_OMA_S2_SUM_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Counter-Question (Planning Feedback 1)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Omar",
+          "text": "Was meinst du dazu? Findest du den Vorschlag gut?",
+          "german": "Was meinst du dazu? Findest du den Vorschlag gut?",
+          "english": "",
+          "audio_id": "DE_OMA_T3BACK_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Counter-Question (Planning Feedback 2)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Omar",
+          "text": "Hast du vielleicht noch eine andere Idee dazu?",
+          "german": "Hast du vielleicht noch eine andere Idee dazu?",
+          "english": "",
+          "audio_id": "DE_OMA_T3BACK_Q2"
+        }
+      }
+    },
+    {
+      "topic": "Clarification (Repeat Proposal)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Omar",
+          "text": "Entschuldigung, ich habe deinen Vorschlag akustisch nicht ganz verstanden. Kannst du das bitte noch einmal kurz wiederholen?",
+          "german": "Entschuldigung, ich habe deinen Vorschlag akustisch nicht ganz verstanden. Kannst du das bitte noch einmal kurz wiederholen?",
+          "english": "",
+          "audio_id": "DE_OMA_T3CLAR_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Silence Recovery",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Omar",
+          "text": "Hallo? Bist du noch da? Wollen wir weiter zusammen planen?",
+          "german": "Hallo? Bist du noch da? Wollen wir weiter zusammen planen?",
+          "english": "",
+          "audio_id": "DE_OMA_T3SIL_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Closing & Farewell (Teil 3)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Omar",
+          "text": "Super, dann machen wir das genau so! Ich freue mich schon sehr darauf. Bis dann, tschüss!",
+          "german": "Super, dann machen wir das genau so! Ich freue mich schon sehr darauf. Bis dann, tschüss!",
+          "english": "",
+          "audio_id": "DE_OMA_T3CLOSE_01"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - Super Idee)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Omar",
+          "text": "Das ist eine super Idee!",
+          "german": "Das ist eine super Idee!",
+          "english": "",
+          "audio_id": "DE_OMA_EXP_41"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - So machen wir das)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Omar",
+          "text": "Klasse, so machen wir das!",
+          "german": "Klasse, so machen wir das!",
+          "english": "",
+          "audio_id": "DE_OMA_EXP_42"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - Passt sehr gut)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Omar",
+          "text": "Perfekt, das passt mir sehr gut.",
+          "german": "Perfekt, das passt mir sehr gut.",
+          "english": "",
+          "audio_id": "DE_OMA_EXP_43"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - Einverstanden)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Omar",
+          "text": "Einverstanden, das klingt nach einem sehr guten Plan.",
+          "german": "Einverstanden, das klingt nach einem sehr guten Plan.",
+          "english": "",
+          "audio_id": "DE_OMA_EXP_44"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - Sofort dabei)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Omar",
+          "text": "Super Vorschlag, da bin ich sofort dabei!",
+          "german": "Super Vorschlag, da bin ich sofort dabei!",
+          "english": "",
+          "audio_id": "DE_OMA_EXP_45"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - Abgemacht)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Omar",
+          "text": "Alles klar, abgemacht!",
+          "german": "Alles klar, abgemacht!",
+          "english": "",
+          "audio_id": "DE_OMA_EXP_46"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Doubt - Nicht ganz sicher)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Omar",
+          "text": "Hmm, da bin ich mir noch nicht ganz sicher.",
+          "german": "Hmm, da bin ich mir noch nicht ganz sicher.",
+          "english": "",
+          "audio_id": "DE_OMA_EXP_47"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Doubt - Zeitlich knapp)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Omar",
+          "text": "Das wird zeitlich vielleicht ein bisschen knapp.",
+          "german": "Das wird zeitlich vielleicht ein bisschen knapp.",
+          "english": "",
+          "audio_id": "DE_OMA_EXP_48"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Doubt - Termin passt nicht)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Omar",
+          "text": "Ehrlich gesagt passt mir dieser Termin nicht so gut.",
+          "german": "Ehrlich gesagt passt mir dieser Termin nicht so gut.",
+          "english": "",
+          "audio_id": "DE_OMA_EXP_49"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Doubt - Schlechtes Wetter)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Omar",
+          "text": "Die Idee ist gut, aber was machen wir, wenn das Wetter schlecht ist?",
+          "german": "Die Idee ist gut, aber was machen wir, wenn das Wetter schlecht ist?",
+          "english": "",
+          "audio_id": "DE_OMA_EXP_50"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Counter-Proposal - Anderer Vorschlag)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Omar",
+          "text": "Ich hätte da noch einen anderen Vorschlag.",
+          "german": "Ich hätte da noch einen anderen Vorschlag.",
+          "english": "",
+          "audio_id": "DE_OMA_EXP_51"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Counter-Proposal - Zusammen erledigen)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Omar",
+          "text": "Wäre es nicht praktischer, wenn wir das zusammen erledigen?",
+          "german": "Wäre es nicht praktischer, wenn wir das zusammen erledigen?",
+          "english": "",
+          "audio_id": "DE_OMA_EXP_52"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Compromise - Viel praktischer)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Omar",
+          "text": "Ja, du hast recht, das ist wirklich viel praktischer so.",
+          "german": "Ja, du hast recht, das ist wirklich viel praktischer so.",
+          "english": "",
+          "audio_id": "DE_OMA_EXP_53"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Task Allocation - Kümmere mich)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Omar",
+          "text": "Sehr gerne, darum kümmere ich mich!",
+          "german": "Sehr gerne, darum kümmere ich mich!",
+          "english": "",
+          "audio_id": "DE_OMA_EXP_54"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Task Allocation - Aufgaben teilen)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Omar",
+          "text": "Abgemacht! Wenn du das übernimmst, kümmere ich mich um den Rest.",
+          "german": "Abgemacht! Wenn du das übernimmst, kümmere ich mich um den Rest.",
+          "english": "",
+          "audio_id": "DE_OMA_EXP_55"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Summary Lead-in - Fast alle Punkte)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Omar",
+          "text": "Super, wir haben jetzt fast alle Punkte geklärt!",
+          "german": "Super, wir haben jetzt fast alle Punkte geklärt!",
+          "english": "",
+          "audio_id": "DE_OMA_EXP_56"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Clarification - Verstanden)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Omar",
+          "text": "Ach so, alles klar, jetzt habe ich dich verstanden.",
+          "german": "Ach so, alles klar, jetzt habe ich dich verstanden.",
+          "english": "",
+          "audio_id": "DE_OMA_EXP_57"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Politeness - Spaß beim Planen)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Omar",
+          "text": "Gerne! Es macht richtig Spaß, das mit dir zusammen zu planen.",
+          "german": "Gerne! Es macht richtig Spaß, das mit dir zusammen zu planen.",
+          "english": "",
+          "audio_id": "DE_OMA_EXP_58"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention (Off-Topic)",
+      "speaker": "Frau Fischer",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Frau Fischer",
+          "text": "Darf ich Sie kurz daran erinnern, bei Ihrer gemeinsamen Planungsaufgabe zu bleiben? Bitte planen Sie weiter.",
+          "german": "Darf ich Sie kurz daran erinnern, bei Ihrer gemeinsamen Planungsaufgabe zu bleiben? Bitte planen Sie weiter.",
+          "english": "",
+          "audio_id": "DE_EX2_T3_INT_TOPIC"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention (Monologue / No Negotiation)",
+      "speaker": "Frau Fischer",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Frau Fischer",
+          "text": "Bitte denken Sie daran, dass Sie gemeinsam planen sollen. Gehen Sie auf die Vorschläge Ihres Partners ein und teilen Sie die Aufgaben auf.",
+          "german": "Bitte denken Sie daran, dass Sie gemeinsam planen sollen. Gehen Sie auf die Vorschläge Ihres Partners ein und teilen Sie die Aufgaben auf.",
+          "english": "",
+          "audio_id": "DE_EX2_T3_INT_DIALOG"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention (Skipped Bullet Points / Silence)",
+      "speaker": "Frau Fischer",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Frau Fischer",
+          "text": "Überlegen Sie bitte noch kurz gemeinsam: Haben Sie schon alle Punkte auf dem Blatt geklärt und festgelegt, wer was übernimmt?",
+          "german": "Überlegen Sie bitte noch kurz gemeinsam: Haben Sie schon alle Punkte auf dem Blatt geklärt und festgelegt, wer was übernimmt?",
+          "english": "",
+          "audio_id": "DE_EX2_T3_INT_SILENCE"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention (Politeness)",
+      "speaker": "Frau Fischer",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Frau Fischer",
+          "text": "Bitte achten Sie während der gesamten Prüfung auf eine höfliche und respektvolle Ausdrucksweise.",
+          "german": "Bitte achten Sie während der gesamten Prüfung auf eine höfliche und respektvolle Ausdrucksweise.",
+          "english": "",
+          "audio_id": "DE_EX2_T3_INT_POLITE"
+        }
+      }
+    },
+    {
+      "topic": "Official Conclusion of the Oral Exam (Teil 3 Outro)",
+      "speaker": "Frau Fischer",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Frau Fischer",
+          "text": "Herzlichen Dank Ihnen beiden! Das war der dritte Teil, und damit ist Ihre gesamte mündliche Prüfung beendet. Ihre Ergebnisse bekommen Sie in etwa vier bis sechs Wochen. Wir wünschen Ihnen alles Gute. Tschüss!",
+          "german": "Herzlichen Dank Ihnen beiden! Das war der dritte Teil, und damit ist Ihre gesamte mündliche Prüfung beendet. Ihre Ergebnisse bekommen Sie in etwa vier bis sechs Wochen. Wir wünschen Ihnen alles Gute. Tschüss!",
+          "english": "",
+          "audio_id": "DE_EX2_T3_OUTRO_01"
+        }
+      }
+    }
+  ]
+}

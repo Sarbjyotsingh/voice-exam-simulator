@@ -21,7 +21,7 @@ echo ""
 
 if command -v go &> /dev/null; then
     echo "✨ Using local Go installation..."
-    go run .
+    go run ./cmd/server
 else
     echo "🐳 Go not found locally. Falling back to Docker..."
     ENV_ARG=""
@@ -35,5 +35,5 @@ else
         $ENV_ARG \
         -e PORT=${PORT} \
         golang:1.24-alpine \
-        go run .
+        go run ./cmd/server
 fi

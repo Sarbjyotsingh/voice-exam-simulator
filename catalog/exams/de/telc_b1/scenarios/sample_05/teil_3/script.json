@@ -1,0 +1,1278 @@
+{
+  "scenario_id": "S5",
+  "scenario_title": "Einen Film- und Spieleabend für Freunde veranstalten",
+  "exam_hint": "Teil 3: Gemeinsam etwas planen — „Film- und Spieleabend für Freunde“\n\nSituation:\nSie und Ihr Gesprächspartner Janusz möchten am Wochenende einen gemütlichen Film- und Spieleabend für ein paar gemeinsame Freunde aus Ihrem Deutschkurs veranstalten.\n\nPlanen Sie gemeinsam den Abend. Überlegen Sie sich:\n• Wann? (Freitagabend oder Samstagabend? Um wie viel Uhr sollen die Gäste kommen?)\n• Wo / Bei wem? (Bei wem zu Hause findet der Abend statt? Gibt es genug Platz und einen großen Fernseher?)\n• Welcher Film & welche Spiele? (Komödie oder Actionfilm auf Deutsch? Welche Spiele spielen Sie danach?)\n• Essen, Getränke & Aufgabenverteilung? (Pizza bestellen oder Snacks machen? Wer kauft was und wer lädt ein?)",
+  "voice_profiles": {
+    "Frau Dr. Meyer": "4YKI1ONIhgWEKHyAHYPC",
+    "Janusz": "K5ZVtkkBnuPY6YqXs70E"
+  },
+  "auto_play_sequence": [
+    "DE_EX5_T3_INTRO_01",
+    "DE_JAN_S5_T3OPEN_01"
+  ],
+  "end_audio_id": "DE_EX5_T3_OUTRO_01",
+  "dialogues": [
+    {
+      "topic": "Introduction (Teil 3)",
+      "speaker": "Frau Dr. Meyer",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Frau Dr. Meyer",
+          "text": "Nun kommen wir zum dritten und letzten Teil der mündlichen Prüfung: Gemeinsam etwas planen. Sie haben Ihr letztes Aufgabenblatt vor sich. Bitte machen Sie Vorschläge, einigen Sie sich auf die Details und verteilen Sie die Aufgaben. Janusz, beginnen Sie bitte.",
+          "german": "Nun kommen wir zum dritten und letzten Teil der mündlichen Prüfung: Gemeinsam etwas planen. Sie haben Ihr letztes Aufgabenblatt vor sich. Bitte machen Sie Vorschläge, einigen Sie sich auf die Details und verteilen Sie die Aufgaben. Janusz, beginnen Sie bitte.",
+          "english": "",
+          "audio_id": "DE_EX5_T3_INTRO_01"
+        }
+      }
+    },
+    {
+      "topic": "Opening & Initial Time Proposal (Wann?)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Janusz",
+          "text": "Hallo! Wir wollten doch schon lange mal einen gemütlichen Film- und Spieleabend für unsere Freunde aus dem Deutschkurs organisieren. Lass uns gleich überlegen, wann wir das machen! Wie wäre es diesen Freitagabend um neunzehn Uhr, oder passt dir Samstagabend besser?",
+          "german": "Hallo! Wir wollten doch schon lange mal einen gemütlichen Film- und Spieleabend für unsere Freunde aus dem Deutschkurs organisieren. Lass uns gleich überlegen, wann wir das machen! Wie wäre es diesen Freitagabend um neunzehn Uhr, oder passt dir Samstagabend besser?",
+          "english": "",
+          "audio_id": "DE_JAN_S5_T3OPEN_01"
+        }
+      }
+    },
+    {
+      "topic": "Time Counter-Proposal / Compromise (Samstag 19:30 Uhr)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "answer": {
+          "speaker": "Janusz",
+          "text": "Da hast du völlig recht: Am Freitagabend sind viele nach der ganzen Woche im Kurs und bei der Arbeit zu müde. Am Samstagabend um neunzehn Uhr dreißig ist es viel entspannter, weil am Sonntag alle ausschlafen können!",
+          "german": "Da hast du völlig recht: Am Freitagabend sind viele nach der ganzen Woche im Kurs und bei der Arbeit zu müde. Am Samstagabend um neunzehn Uhr dreißig ist es viel entspannter, weil am Sonntag alle ausschlafen können!",
+          "english": "",
+          "audio_id": "DE_JAN_S5_TIME_A1"
+        }
+      }
+    },
+    {
+      "topic": "Time Follow-Up Question (Welcher Abend?)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Janusz",
+          "text": "An welchem Tag und um wie viel Uhr wollen wir den Filmabend machen? Sollen wir Samstag um neunzehn Uhr dreißig festlegen?",
+          "german": "An welchem Tag und um wie viel Uhr wollen wir den Filmabend machen? Sollen wir Samstag um neunzehn Uhr dreißig festlegen?",
+          "english": "",
+          "audio_id": "DE_JAN_S5_TIME_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Time Simpler Re-Ask (Freitag oder Samstag?)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Janusz",
+          "text": "Passt dir für unseren Filmabend lieber der Freitagabend oder der Samstagabend?",
+          "german": "Passt dir für unseren Filmabend lieber der Freitagabend oder der Samstagabend?",
+          "english": "",
+          "audio_id": "DE_JAN_S5_TIME_Q2"
+        }
+      }
+    },
+    {
+      "topic": "Location / Whose Home Question (Bei wem zu Hause?)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Janusz",
+          "text": "Und bei wem zu Hause sollen wir den Abend machen? Wir sind ungefähr sechs Personen – hast du genug Platz bei dir, oder wollen wir uns bei mir treffen?",
+          "german": "Und bei wem zu Hause sollen wir den Abend machen? Wir sind ungefähr sechs Personen – hast du genug Platz bei dir, oder wollen wir uns bei mir treffen?",
+          "english": "",
+          "audio_id": "DE_JAN_S5_LOC_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Location Simpler Re-Ask (Bei dir oder bei mir?)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Janusz",
+          "text": "Wo wollen wir uns treffen: bei dir in der Wohnung oder bei mir im Haus?",
+          "german": "Wo wollen wir uns treffen: bei dir in der Wohnung oder bei mir im Haus?",
+          "english": "",
+          "audio_id": "DE_JAN_S5_LOC_Q2"
+        }
+      }
+    },
+    {
+      "topic": "Location Proposal (Janusz' Wohnzimmer in Essen)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "answer": {
+          "speaker": "Janusz",
+          "text": "Wir können das sehr gerne bei mir zu Hause in Essen machen! Wir haben ein großes Wohnzimmer mit einem gemütlichen Sofa, einem großen Fernseher und genug Stühlen für sechs Leute. Außerdem stören wir im Haus keine Nachbarn, wenn wir später noch Spiele spielen und lachen.",
+          "german": "Wir können das sehr gerne bei mir zu Hause in Essen machen! Wir haben ein großes Wohnzimmer mit einem gemütlichen Sofa, einem großen Fernseher und genug Stühlen für sechs Leute. Außerdem stören wir im Haus keine Nachbarn, wenn wir später noch Spiele spielen und lachen.",
+          "english": "",
+          "audio_id": "DE_JAN_S5_LOC_A1"
+        }
+      }
+    },
+    {
+      "topic": "Snacks & Drinks Question (Essen & Getränke)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Janusz",
+          "text": "Zu einem guten Filmabend gehören natürlich auch leckeres Essen und Getränke. Wollen wir selbst etwas kochen, oder was schlägst du für Essen und Trinken vor?",
+          "german": "Zu einem guten Filmabend gehören natürlich auch leckeres Essen und Getränke. Wollen wir selbst etwas kochen, oder was schlägst du für Essen und Trinken vor?",
+          "english": "",
+          "audio_id": "DE_JAN_S5_FOOD_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Snacks & Drinks Proposal (Familienpizza, Popcorn & Getränke)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "answer": {
+          "speaker": "Janusz",
+          "text": "Lange in der Küche zu stehen ist an dem Abend zu stressig. Wenn wir beim Italiener zwei große Familienpizzen bestellen – eine mit Gemüse und eine mit Salami – und dazu Chips, Popcorn, Cola und Saft auf den Tisch stellen, ist für jeden etwas dabei!",
+          "german": "Lange in der Küche zu stehen ist an dem Abend zu stressig. Wenn wir beim Italiener zwei große Familienpizzen bestellen – eine mit Gemüse und eine mit Salami – und dazu Chips, Popcorn, Cola und Saft auf den Tisch stellen, ist für jeden etwas dabei!",
+          "english": "",
+          "audio_id": "DE_JAN_S5_FOOD_A1"
+        }
+      }
+    },
+    {
+      "topic": "Movie/Games & Task Division Question (Filmauswahl & Aufgaben)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Janusz",
+          "text": "Welchen Film und welche Spiele wollen wir eigentlich auswählen? Und wie teilen wir die Aufgaben auf – wer besorgt die Getränke und die Snacks?",
+          "german": "Welchen Film und welche Spiele wollen wir eigentlich auswählen? Und wie teilen wir die Aufgaben auf – wer besorgt die Getränke und die Snacks?",
+          "english": "",
+          "audio_id": "DE_JAN_S5_TASK_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Movie/Games & Task Division Proposal (Deutsche Komödie & Spiele)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "answer": {
+          "speaker": "Janusz",
+          "text": "Eine lustige deutsche Komödie mit deutschen Untertiteln ist perfekt für unsere Gruppe, weil eine Serie zu lange dauert, und danach können wir noch Karten oder Activity spielen! Ich bereite das Wohnzimmer vor, kaufe die Getränke und suche zwei Filme zur Auswahl heraus. Bringst du dann die Chips und das Popcorn mit und gibst den anderen in der Gruppe Bescheid?",
+          "german": "Eine lustige deutsche Komödie mit deutschen Untertiteln ist perfekt für unsere Gruppe, weil eine Serie zu lange dauert, und danach können wir noch Karten oder Activity spielen! Ich bereite das Wohnzimmer vor, kaufe die Getränke und suche zwei Filme zur Auswahl heraus. Bringst du dann die Chips und das Popcorn mit und gibst den anderen in der Gruppe Bescheid?",
+          "english": "",
+          "audio_id": "DE_JAN_S5_TASK_A1"
+        }
+      }
+    },
+    {
+      "topic": "Final Plan Summary (Zusammenfassung)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "answer": {
+          "speaker": "Janusz",
+          "text": "Prima, dann fasse ich unseren Plan zusammen: Wir treffen uns am Samstagabend um neunzehn Uhr dreißig bei mir zu Hause. Wir bestellen zusammen Pizza, schauen eine deutsche Komödie und spielen danach Gesellschaftsspiele. Ich besorge die Getränke und bereite alles vor, und du bringst die Snacks mit und lädst unsere Freunde ein.",
+          "german": "Prima, dann fasse ich unseren Plan zusammen: Wir treffen uns am Samstagabend um neunzehn Uhr dreißig bei mir zu Hause. Wir bestellen zusammen Pizza, schauen eine deutsche Komödie und spielen danach Gesellschaftsspiele. Ich besorge die Getränke und bereite alles vor, und du bringst die Snacks mit und lädst unsere Freunde ein.",
+          "english": "",
+          "audio_id": "DE_JAN_S5_SUM_A1"
+        }
+      }
+    },
+    {
+      "topic": "Summary Completeness Check (Alles besprochen?)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Janusz",
+          "text": "Haben wir damit alles für unseren Film- und Spieleabend besprochen, oder fehlt noch eine Kleinigkeit?",
+          "german": "Haben wir damit alles für unseren Film- und Spieleabend besprochen, oder fehlt noch eine Kleinigkeit?",
+          "english": "",
+          "audio_id": "DE_JAN_S5_SUM_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Counter-Question (Planning Feedback 1)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Janusz",
+          "text": "Was meinst du dazu? Findest du den Vorschlag gut?",
+          "german": "Was meinst du dazu? Findest du den Vorschlag gut?",
+          "english": "",
+          "audio_id": "DE_JAN_T3BACK_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Counter-Question (Planning Feedback 2)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Janusz",
+          "text": "Hast du vielleicht noch eine andere Idee dazu?",
+          "german": "Hast du vielleicht noch eine andere Idee dazu?",
+          "english": "",
+          "audio_id": "DE_JAN_T3BACK_Q2"
+        }
+      }
+    },
+    {
+      "topic": "Clarification (Repeat Proposal)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Janusz",
+          "text": "Entschuldigung, ich habe deinen Vorschlag akustisch nicht ganz verstanden. Kannst du das bitte noch einmal kurz wiederholen?",
+          "german": "Entschuldigung, ich habe deinen Vorschlag akustisch nicht ganz verstanden. Kannst du das bitte noch einmal kurz wiederholen?",
+          "english": "",
+          "audio_id": "DE_JAN_T3CLAR_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Silence Recovery",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Janusz",
+          "text": "Hallo? Bist du noch da? Wollen wir weiter zusammen planen?",
+          "german": "Hallo? Bist du noch da? Wollen wir weiter zusammen planen?",
+          "english": "",
+          "audio_id": "DE_JAN_T3SIL_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Closing & Farewell (Teil 3)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Janusz",
+          "text": "Super, dann machen wir das genau so! Ich freue mich schon sehr darauf. Bis dann, tschüss!",
+          "german": "Super, dann machen wir das genau so! Ich freue mich schon sehr darauf. Bis dann, tschüss!",
+          "english": "",
+          "audio_id": "DE_JAN_T3CLOSE_01"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - Super Idee)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Janusz",
+          "text": "Das ist eine super Idee!",
+          "german": "Das ist eine super Idee!",
+          "english": "",
+          "audio_id": "DE_JAN_EXP_41"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - So machen wir das)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Janusz",
+          "text": "Klasse, so machen wir das!",
+          "german": "Klasse, so machen wir das!",
+          "english": "",
+          "audio_id": "DE_JAN_EXP_42"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - Passt sehr gut)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Janusz",
+          "text": "Perfekt, das passt mir sehr gut.",
+          "german": "Perfekt, das passt mir sehr gut.",
+          "english": "",
+          "audio_id": "DE_JAN_EXP_43"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - Einverstanden)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Janusz",
+          "text": "Einverstanden, das klingt nach einem sehr guten Plan.",
+          "german": "Einverstanden, das klingt nach einem sehr guten Plan.",
+          "english": "",
+          "audio_id": "DE_JAN_EXP_44"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - Sofort dabei)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Janusz",
+          "text": "Super Vorschlag, da bin ich sofort dabei!",
+          "german": "Super Vorschlag, da bin ich sofort dabei!",
+          "english": "",
+          "audio_id": "DE_JAN_EXP_45"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - Abgemacht)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Janusz",
+          "text": "Alles klar, abgemacht!",
+          "german": "Alles klar, abgemacht!",
+          "english": "",
+          "audio_id": "DE_JAN_EXP_46"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Doubt - Nicht ganz sicher)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Janusz",
+          "text": "Hmm, da bin ich mir noch nicht ganz sicher.",
+          "german": "Hmm, da bin ich mir noch nicht ganz sicher.",
+          "english": "",
+          "audio_id": "DE_JAN_EXP_47"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Doubt - Zeitlich knapp)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Janusz",
+          "text": "Das wird zeitlich vielleicht ein bisschen knapp.",
+          "german": "Das wird zeitlich vielleicht ein bisschen knapp.",
+          "english": "",
+          "audio_id": "DE_JAN_EXP_48"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Doubt - Termin passt nicht)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Janusz",
+          "text": "Ehrlich gesagt passt mir dieser Termin nicht so gut.",
+          "german": "Ehrlich gesagt passt mir dieser Termin nicht so gut.",
+          "english": "",
+          "audio_id": "DE_JAN_EXP_49"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Doubt - Schlechtes Wetter)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Janusz",
+          "text": "Die Idee ist gut, aber was machen wir, wenn das Wetter schlecht ist?",
+          "german": "Die Idee ist gut, aber was machen wir, wenn das Wetter schlecht ist?",
+          "english": "",
+          "audio_id": "DE_JAN_EXP_50"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Counter-Proposal - Anderer Vorschlag)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Janusz",
+          "text": "Ich hätte da noch einen anderen Vorschlag.",
+          "german": "Ich hätte da noch einen anderen Vorschlag.",
+          "english": "",
+          "audio_id": "DE_JAN_EXP_51"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Counter-Proposal - Zusammen erledigen)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Janusz",
+          "text": "Wäre es nicht praktischer, wenn wir das zusammen erledigen?",
+          "german": "Wäre es nicht praktischer, wenn wir das zusammen erledigen?",
+          "english": "",
+          "audio_id": "DE_JAN_EXP_52"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Compromise - Viel praktischer)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Janusz",
+          "text": "Ja, du hast recht, das ist wirklich viel praktischer so.",
+          "german": "Ja, du hast recht, das ist wirklich viel praktischer so.",
+          "english": "",
+          "audio_id": "DE_JAN_EXP_53"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Task Allocation - Kümmere mich)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Janusz",
+          "text": "Sehr gerne, darum kümmere ich mich!",
+          "german": "Sehr gerne, darum kümmere ich mich!",
+          "english": "",
+          "audio_id": "DE_JAN_EXP_54"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Task Allocation - Aufgaben teilen)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Janusz",
+          "text": "Abgemacht! Wenn du das übernimmst, kümmere ich mich um den Rest.",
+          "german": "Abgemacht! Wenn du das übernimmst, kümmere ich mich um den Rest.",
+          "english": "",
+          "audio_id": "DE_JAN_EXP_55"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Summary Lead-in - Fast alle Punkte)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Janusz",
+          "text": "Super, wir haben jetzt fast alle Punkte geklärt!",
+          "german": "Super, wir haben jetzt fast alle Punkte geklärt!",
+          "english": "",
+          "audio_id": "DE_JAN_EXP_56"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Clarification - Verstanden)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Janusz",
+          "text": "Ach so, alles klar, jetzt habe ich dich verstanden.",
+          "german": "Ach so, alles klar, jetzt habe ich dich verstanden.",
+          "english": "",
+          "audio_id": "DE_JAN_EXP_57"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Politeness - Spaß beim Planen)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Janusz",
+          "text": "Gerne! Es macht richtig Spaß, das mit dir zusammen zu planen.",
+          "german": "Gerne! Es macht richtig Spaß, das mit dir zusammen zu planen.",
+          "english": "",
+          "audio_id": "DE_JAN_EXP_58"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention (Off-Topic)",
+      "speaker": "Frau Dr. Meyer",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Frau Dr. Meyer",
+          "text": "Darf ich Sie kurz unterbrechen? Bitte konzentrieren Sie sich auf Ihre gemeinsame Planungsaufgabe.",
+          "german": "Darf ich Sie kurz unterbrechen? Bitte konzentrieren Sie sich auf Ihre gemeinsame Planungsaufgabe.",
+          "english": "",
+          "audio_id": "DE_EX5_T3_INT_TOPIC"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention (Monologue / No Negotiation)",
+      "speaker": "Frau Dr. Meyer",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Frau Dr. Meyer",
+          "text": "Bitte beziehen Sie Ihren Prüfungspartner aktiv in die Planung mit ein und fragen Sie ihn nach seinen Ideen.",
+          "german": "Bitte beziehen Sie Ihren Prüfungspartner aktiv in die Planung mit ein und fragen Sie ihn nach seinen Ideen.",
+          "english": "",
+          "audio_id": "DE_EX5_T3_INT_DIALOG"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention (Skipped Bullet Points / Silence)",
+      "speaker": "Frau Dr. Meyer",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Frau Dr. Meyer",
+          "text": "Werfen Sie bitte noch einen Blick auf Ihr Aufgabenblatt: Haben Sie schon alle Punkte geklärt und die Aufgaben aufgeteilt?",
+          "german": "Werfen Sie bitte noch einen Blick auf Ihr Aufgabenblatt: Haben Sie schon alle Punkte geklärt und die Aufgaben aufgeteilt?",
+          "english": "",
+          "audio_id": "DE_EX5_T3_INT_SILENCE"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention (Politeness)",
+      "speaker": "Frau Dr. Meyer",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Frau Dr. Meyer",
+          "text": "Ich muss Sie bitten, im Prüfungsgespräch höflich und respektvoll zu bleiben.",
+          "german": "Ich muss Sie bitten, im Prüfungsgespräch höflich und respektvoll zu bleiben.",
+          "english": "",
+          "audio_id": "DE_EX5_T3_INT_POLITE"
+        }
+      }
+    },
+    {
+      "topic": "Official Conclusion of the Oral Exam (Teil 3 Outro)",
+      "speaker": "Frau Dr. Meyer",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Frau Dr. Meyer",
+          "text": "Sehr gut gemacht, vielen Dank Ihnen beiden! Damit haben Sie alle Teile der mündlichen Prüfung erfolgreich abgeschlossen. Die Ergebnisse erhalten Sie in circa vier Wochen. Ich wünsche Ihnen alles Gute. Auf Wiedersehen!",
+          "german": "Sehr gut gemacht, vielen Dank Ihnen beiden! Damit haben Sie alle Teile der mündlichen Prüfung erfolgreich abgeschlossen. Die Ergebnisse erhalten Sie in circa vier Wochen. Ich wünsche Ihnen alles Gute. Auf Wiedersehen!",
+          "english": "",
+          "audio_id": "DE_EX5_T3_OUTRO_01"
+        }
+      }
+    }
+  ],
+  "teil3 dialogues": [
+    {
+      "topic": "Introduction (Teil 3)",
+      "speaker": "Frau Dr. Meyer",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Frau Dr. Meyer",
+          "text": "Nun kommen wir zum dritten und letzten Teil der mündlichen Prüfung: Gemeinsam etwas planen. Sie haben Ihr letztes Aufgabenblatt vor sich. Bitte machen Sie Vorschläge, einigen Sie sich auf die Details und verteilen Sie die Aufgaben. Janusz, beginnen Sie bitte.",
+          "german": "Nun kommen wir zum dritten und letzten Teil der mündlichen Prüfung: Gemeinsam etwas planen. Sie haben Ihr letztes Aufgabenblatt vor sich. Bitte machen Sie Vorschläge, einigen Sie sich auf die Details und verteilen Sie die Aufgaben. Janusz, beginnen Sie bitte.",
+          "english": "",
+          "audio_id": "DE_EX5_T3_INTRO_01"
+        }
+      }
+    },
+    {
+      "topic": "Opening & Initial Time Proposal (Wann?)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Janusz",
+          "text": "Hallo! Wir wollten doch schon lange mal einen gemütlichen Film- und Spieleabend für unsere Freunde aus dem Deutschkurs organisieren. Lass uns gleich überlegen, wann wir das machen! Wie wäre es diesen Freitagabend um neunzehn Uhr, oder passt dir Samstagabend besser?",
+          "german": "Hallo! Wir wollten doch schon lange mal einen gemütlichen Film- und Spieleabend für unsere Freunde aus dem Deutschkurs organisieren. Lass uns gleich überlegen, wann wir das machen! Wie wäre es diesen Freitagabend um neunzehn Uhr, oder passt dir Samstagabend besser?",
+          "english": "",
+          "audio_id": "DE_JAN_S5_T3OPEN_01"
+        }
+      }
+    },
+    {
+      "topic": "Time Counter-Proposal / Compromise (Samstag 19:30 Uhr)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "answer": {
+          "speaker": "Janusz",
+          "text": "Da hast du völlig recht: Am Freitagabend sind viele nach der ganzen Woche im Kurs und bei der Arbeit zu müde. Am Samstagabend um neunzehn Uhr dreißig ist es viel entspannter, weil am Sonntag alle ausschlafen können!",
+          "german": "Da hast du völlig recht: Am Freitagabend sind viele nach der ganzen Woche im Kurs und bei der Arbeit zu müde. Am Samstagabend um neunzehn Uhr dreißig ist es viel entspannter, weil am Sonntag alle ausschlafen können!",
+          "english": "",
+          "audio_id": "DE_JAN_S5_TIME_A1"
+        }
+      }
+    },
+    {
+      "topic": "Time Follow-Up Question (Welcher Abend?)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Janusz",
+          "text": "An welchem Tag und um wie viel Uhr wollen wir den Filmabend machen? Sollen wir Samstag um neunzehn Uhr dreißig festlegen?",
+          "german": "An welchem Tag und um wie viel Uhr wollen wir den Filmabend machen? Sollen wir Samstag um neunzehn Uhr dreißig festlegen?",
+          "english": "",
+          "audio_id": "DE_JAN_S5_TIME_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Time Simpler Re-Ask (Freitag oder Samstag?)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Janusz",
+          "text": "Passt dir für unseren Filmabend lieber der Freitagabend oder der Samstagabend?",
+          "german": "Passt dir für unseren Filmabend lieber der Freitagabend oder der Samstagabend?",
+          "english": "",
+          "audio_id": "DE_JAN_S5_TIME_Q2"
+        }
+      }
+    },
+    {
+      "topic": "Location / Whose Home Question (Bei wem zu Hause?)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Janusz",
+          "text": "Und bei wem zu Hause sollen wir den Abend machen? Wir sind ungefähr sechs Personen – hast du genug Platz bei dir, oder wollen wir uns bei mir treffen?",
+          "german": "Und bei wem zu Hause sollen wir den Abend machen? Wir sind ungefähr sechs Personen – hast du genug Platz bei dir, oder wollen wir uns bei mir treffen?",
+          "english": "",
+          "audio_id": "DE_JAN_S5_LOC_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Location Simpler Re-Ask (Bei dir oder bei mir?)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Janusz",
+          "text": "Wo wollen wir uns treffen: bei dir in der Wohnung oder bei mir im Haus?",
+          "german": "Wo wollen wir uns treffen: bei dir in der Wohnung oder bei mir im Haus?",
+          "english": "",
+          "audio_id": "DE_JAN_S5_LOC_Q2"
+        }
+      }
+    },
+    {
+      "topic": "Location Proposal (Janusz' Wohnzimmer in Essen)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "answer": {
+          "speaker": "Janusz",
+          "text": "Wir können das sehr gerne bei mir zu Hause in Essen machen! Wir haben ein großes Wohnzimmer mit einem gemütlichen Sofa, einem großen Fernseher und genug Stühlen für sechs Leute. Außerdem stören wir im Haus keine Nachbarn, wenn wir später noch Spiele spielen und lachen.",
+          "german": "Wir können das sehr gerne bei mir zu Hause in Essen machen! Wir haben ein großes Wohnzimmer mit einem gemütlichen Sofa, einem großen Fernseher und genug Stühlen für sechs Leute. Außerdem stören wir im Haus keine Nachbarn, wenn wir später noch Spiele spielen und lachen.",
+          "english": "",
+          "audio_id": "DE_JAN_S5_LOC_A1"
+        }
+      }
+    },
+    {
+      "topic": "Snacks & Drinks Question (Essen & Getränke)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Janusz",
+          "text": "Zu einem guten Filmabend gehören natürlich auch leckeres Essen und Getränke. Wollen wir selbst etwas kochen, oder was schlägst du für Essen und Trinken vor?",
+          "german": "Zu einem guten Filmabend gehören natürlich auch leckeres Essen und Getränke. Wollen wir selbst etwas kochen, oder was schlägst du für Essen und Trinken vor?",
+          "english": "",
+          "audio_id": "DE_JAN_S5_FOOD_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Snacks & Drinks Proposal (Familienpizza, Popcorn & Getränke)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "answer": {
+          "speaker": "Janusz",
+          "text": "Lange in der Küche zu stehen ist an dem Abend zu stressig. Wenn wir beim Italiener zwei große Familienpizzen bestellen – eine mit Gemüse und eine mit Salami – und dazu Chips, Popcorn, Cola und Saft auf den Tisch stellen, ist für jeden etwas dabei!",
+          "german": "Lange in der Küche zu stehen ist an dem Abend zu stressig. Wenn wir beim Italiener zwei große Familienpizzen bestellen – eine mit Gemüse und eine mit Salami – und dazu Chips, Popcorn, Cola und Saft auf den Tisch stellen, ist für jeden etwas dabei!",
+          "english": "",
+          "audio_id": "DE_JAN_S5_FOOD_A1"
+        }
+      }
+    },
+    {
+      "topic": "Movie/Games & Task Division Question (Filmauswahl & Aufgaben)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Janusz",
+          "text": "Welchen Film und welche Spiele wollen wir eigentlich auswählen? Und wie teilen wir die Aufgaben auf – wer besorgt die Getränke und die Snacks?",
+          "german": "Welchen Film und welche Spiele wollen wir eigentlich auswählen? Und wie teilen wir die Aufgaben auf – wer besorgt die Getränke und die Snacks?",
+          "english": "",
+          "audio_id": "DE_JAN_S5_TASK_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Movie/Games & Task Division Proposal (Deutsche Komödie & Spiele)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "answer": {
+          "speaker": "Janusz",
+          "text": "Eine lustige deutsche Komödie mit deutschen Untertiteln ist perfekt für unsere Gruppe, weil eine Serie zu lange dauert, und danach können wir noch Karten oder Activity spielen! Ich bereite das Wohnzimmer vor, kaufe die Getränke und suche zwei Filme zur Auswahl heraus. Bringst du dann die Chips und das Popcorn mit und gibst den anderen in der Gruppe Bescheid?",
+          "german": "Eine lustige deutsche Komödie mit deutschen Untertiteln ist perfekt für unsere Gruppe, weil eine Serie zu lange dauert, und danach können wir noch Karten oder Activity spielen! Ich bereite das Wohnzimmer vor, kaufe die Getränke und suche zwei Filme zur Auswahl heraus. Bringst du dann die Chips und das Popcorn mit und gibst den anderen in der Gruppe Bescheid?",
+          "english": "",
+          "audio_id": "DE_JAN_S5_TASK_A1"
+        }
+      }
+    },
+    {
+      "topic": "Final Plan Summary (Zusammenfassung)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "answer": {
+          "speaker": "Janusz",
+          "text": "Prima, dann fasse ich unseren Plan zusammen: Wir treffen uns am Samstagabend um neunzehn Uhr dreißig bei mir zu Hause. Wir bestellen zusammen Pizza, schauen eine deutsche Komödie und spielen danach Gesellschaftsspiele. Ich besorge die Getränke und bereite alles vor, und du bringst die Snacks mit und lädst unsere Freunde ein.",
+          "german": "Prima, dann fasse ich unseren Plan zusammen: Wir treffen uns am Samstagabend um neunzehn Uhr dreißig bei mir zu Hause. Wir bestellen zusammen Pizza, schauen eine deutsche Komödie und spielen danach Gesellschaftsspiele. Ich besorge die Getränke und bereite alles vor, und du bringst die Snacks mit und lädst unsere Freunde ein.",
+          "english": "",
+          "audio_id": "DE_JAN_S5_SUM_A1"
+        }
+      }
+    },
+    {
+      "topic": "Summary Completeness Check (Alles besprochen?)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Janusz",
+          "text": "Haben wir damit alles für unseren Film- und Spieleabend besprochen, oder fehlt noch eine Kleinigkeit?",
+          "german": "Haben wir damit alles für unseren Film- und Spieleabend besprochen, oder fehlt noch eine Kleinigkeit?",
+          "english": "",
+          "audio_id": "DE_JAN_S5_SUM_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Counter-Question (Planning Feedback 1)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Janusz",
+          "text": "Was meinst du dazu? Findest du den Vorschlag gut?",
+          "german": "Was meinst du dazu? Findest du den Vorschlag gut?",
+          "english": "",
+          "audio_id": "DE_JAN_T3BACK_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Counter-Question (Planning Feedback 2)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Janusz",
+          "text": "Hast du vielleicht noch eine andere Idee dazu?",
+          "german": "Hast du vielleicht noch eine andere Idee dazu?",
+          "english": "",
+          "audio_id": "DE_JAN_T3BACK_Q2"
+        }
+      }
+    },
+    {
+      "topic": "Clarification (Repeat Proposal)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Janusz",
+          "text": "Entschuldigung, ich habe deinen Vorschlag akustisch nicht ganz verstanden. Kannst du das bitte noch einmal kurz wiederholen?",
+          "german": "Entschuldigung, ich habe deinen Vorschlag akustisch nicht ganz verstanden. Kannst du das bitte noch einmal kurz wiederholen?",
+          "english": "",
+          "audio_id": "DE_JAN_T3CLAR_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Silence Recovery",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "question": {
+          "speaker": "Janusz",
+          "text": "Hallo? Bist du noch da? Wollen wir weiter zusammen planen?",
+          "german": "Hallo? Bist du noch da? Wollen wir weiter zusammen planen?",
+          "english": "",
+          "audio_id": "DE_JAN_T3SIL_Q1"
+        }
+      }
+    },
+    {
+      "topic": "Closing & Farewell (Teil 3)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Janusz",
+          "text": "Super, dann machen wir das genau so! Ich freue mich schon sehr darauf. Bis dann, tschüss!",
+          "german": "Super, dann machen wir das genau so! Ich freue mich schon sehr darauf. Bis dann, tschüss!",
+          "english": "",
+          "audio_id": "DE_JAN_T3CLOSE_01"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - Super Idee)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Janusz",
+          "text": "Das ist eine super Idee!",
+          "german": "Das ist eine super Idee!",
+          "english": "",
+          "audio_id": "DE_JAN_EXP_41"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - So machen wir das)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Janusz",
+          "text": "Klasse, so machen wir das!",
+          "german": "Klasse, so machen wir das!",
+          "english": "",
+          "audio_id": "DE_JAN_EXP_42"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - Passt sehr gut)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Janusz",
+          "text": "Perfekt, das passt mir sehr gut.",
+          "german": "Perfekt, das passt mir sehr gut.",
+          "english": "",
+          "audio_id": "DE_JAN_EXP_43"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - Einverstanden)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Janusz",
+          "text": "Einverstanden, das klingt nach einem sehr guten Plan.",
+          "german": "Einverstanden, das klingt nach einem sehr guten Plan.",
+          "english": "",
+          "audio_id": "DE_JAN_EXP_44"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - Sofort dabei)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Janusz",
+          "text": "Super Vorschlag, da bin ich sofort dabei!",
+          "german": "Super Vorschlag, da bin ich sofort dabei!",
+          "english": "",
+          "audio_id": "DE_JAN_EXP_45"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Agreement - Abgemacht)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Janusz",
+          "text": "Alles klar, abgemacht!",
+          "german": "Alles klar, abgemacht!",
+          "english": "",
+          "audio_id": "DE_JAN_EXP_46"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Doubt - Nicht ganz sicher)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Janusz",
+          "text": "Hmm, da bin ich mir noch nicht ganz sicher.",
+          "german": "Hmm, da bin ich mir noch nicht ganz sicher.",
+          "english": "",
+          "audio_id": "DE_JAN_EXP_47"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Doubt - Zeitlich knapp)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Janusz",
+          "text": "Das wird zeitlich vielleicht ein bisschen knapp.",
+          "german": "Das wird zeitlich vielleicht ein bisschen knapp.",
+          "english": "",
+          "audio_id": "DE_JAN_EXP_48"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Doubt - Termin passt nicht)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Janusz",
+          "text": "Ehrlich gesagt passt mir dieser Termin nicht so gut.",
+          "german": "Ehrlich gesagt passt mir dieser Termin nicht so gut.",
+          "english": "",
+          "audio_id": "DE_JAN_EXP_49"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Doubt - Schlechtes Wetter)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Janusz",
+          "text": "Die Idee ist gut, aber was machen wir, wenn das Wetter schlecht ist?",
+          "german": "Die Idee ist gut, aber was machen wir, wenn das Wetter schlecht ist?",
+          "english": "",
+          "audio_id": "DE_JAN_EXP_50"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Counter-Proposal - Anderer Vorschlag)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Janusz",
+          "text": "Ich hätte da noch einen anderen Vorschlag.",
+          "german": "Ich hätte da noch einen anderen Vorschlag.",
+          "english": "",
+          "audio_id": "DE_JAN_EXP_51"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Counter-Proposal - Zusammen erledigen)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Janusz",
+          "text": "Wäre es nicht praktischer, wenn wir das zusammen erledigen?",
+          "german": "Wäre es nicht praktischer, wenn wir das zusammen erledigen?",
+          "english": "",
+          "audio_id": "DE_JAN_EXP_52"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Compromise - Viel praktischer)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Janusz",
+          "text": "Ja, du hast recht, das ist wirklich viel praktischer so.",
+          "german": "Ja, du hast recht, das ist wirklich viel praktischer so.",
+          "english": "",
+          "audio_id": "DE_JAN_EXP_53"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Task Allocation - Kümmere mich)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Janusz",
+          "text": "Sehr gerne, darum kümmere ich mich!",
+          "german": "Sehr gerne, darum kümmere ich mich!",
+          "english": "",
+          "audio_id": "DE_JAN_EXP_54"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Task Allocation - Aufgaben teilen)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Janusz",
+          "text": "Abgemacht! Wenn du das übernimmst, kümmere ich mich um den Rest.",
+          "german": "Abgemacht! Wenn du das übernimmst, kümmere ich mich um den Rest.",
+          "english": "",
+          "audio_id": "DE_JAN_EXP_55"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Summary Lead-in - Fast alle Punkte)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Janusz",
+          "text": "Super, wir haben jetzt fast alle Punkte geklärt!",
+          "german": "Super, wir haben jetzt fast alle Punkte geklärt!",
+          "english": "",
+          "audio_id": "DE_JAN_EXP_56"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Clarification - Verstanden)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Janusz",
+          "text": "Ach so, alles klar, jetzt habe ich dich verstanden.",
+          "german": "Ach so, alles klar, jetzt habe ich dich verstanden.",
+          "english": "",
+          "audio_id": "DE_JAN_EXP_57"
+        }
+      }
+    },
+    {
+      "topic": "Expressions (Politeness - Spaß beim Planen)",
+      "speaker": "Janusz",
+      "role": "Participant",
+      "speaker_role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Janusz",
+          "text": "Gerne! Es macht richtig Spaß, das mit dir zusammen zu planen.",
+          "german": "Gerne! Es macht richtig Spaß, das mit dir zusammen zu planen.",
+          "english": "",
+          "audio_id": "DE_JAN_EXP_58"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention (Off-Topic)",
+      "speaker": "Frau Dr. Meyer",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Frau Dr. Meyer",
+          "text": "Darf ich Sie kurz unterbrechen? Bitte konzentrieren Sie sich auf Ihre gemeinsame Planungsaufgabe.",
+          "german": "Darf ich Sie kurz unterbrechen? Bitte konzentrieren Sie sich auf Ihre gemeinsame Planungsaufgabe.",
+          "english": "",
+          "audio_id": "DE_EX5_T3_INT_TOPIC"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention (Monologue / No Negotiation)",
+      "speaker": "Frau Dr. Meyer",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Frau Dr. Meyer",
+          "text": "Bitte beziehen Sie Ihren Prüfungspartner aktiv in die Planung mit ein und fragen Sie ihn nach seinen Ideen.",
+          "german": "Bitte beziehen Sie Ihren Prüfungspartner aktiv in die Planung mit ein und fragen Sie ihn nach seinen Ideen.",
+          "english": "",
+          "audio_id": "DE_EX5_T3_INT_DIALOG"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention (Skipped Bullet Points / Silence)",
+      "speaker": "Frau Dr. Meyer",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Frau Dr. Meyer",
+          "text": "Werfen Sie bitte noch einen Blick auf Ihr Aufgabenblatt: Haben Sie schon alle Punkte geklärt und die Aufgaben aufgeteilt?",
+          "german": "Werfen Sie bitte noch einen Blick auf Ihr Aufgabenblatt: Haben Sie schon alle Punkte geklärt und die Aufgaben aufgeteilt?",
+          "english": "",
+          "audio_id": "DE_EX5_T3_INT_SILENCE"
+        }
+      }
+    },
+    {
+      "topic": "Examiner Intervention (Politeness)",
+      "speaker": "Frau Dr. Meyer",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Frau Dr. Meyer",
+          "text": "Ich muss Sie bitten, im Prüfungsgespräch höflich und respektvoll zu bleiben.",
+          "german": "Ich muss Sie bitten, im Prüfungsgespräch höflich und respektvoll zu bleiben.",
+          "english": "",
+          "audio_id": "DE_EX5_T3_INT_POLITE"
+        }
+      }
+    },
+    {
+      "topic": "Official Conclusion of the Oral Exam (Teil 3 Outro)",
+      "speaker": "Frau Dr. Meyer",
+      "role": "Examiner",
+      "speaker_role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "speaker": "Frau Dr. Meyer",
+          "text": "Sehr gut gemacht, vielen Dank Ihnen beiden! Damit haben Sie alle Teile der mündlichen Prüfung erfolgreich abgeschlossen. Die Ergebnisse erhalten Sie in circa vier Wochen. Ich wünsche Ihnen alles Gute. Auf Wiedersehen!",
+          "german": "Sehr gut gemacht, vielen Dank Ihnen beiden! Damit haben Sie alle Teile der mündlichen Prüfung erfolgreich abgeschlossen. Die Ergebnisse erhalten Sie in circa vier Wochen. Ich wünsche Ihnen alles Gute. Auf Wiedersehen!",
+          "english": "",
+          "audio_id": "DE_EX5_T3_OUTRO_01"
+        }
+      }
+    }
+  ]
+}

@@ -9,7 +9,7 @@ import (
 	"mime/multipart"
 	"net/http"
 
-	"voice-exam-simulator/config"
+	"voice-engine/config"
 )
 
 type Message struct {
@@ -18,10 +18,10 @@ type Message struct {
 }
 
 type Groq struct {
-	apiKey     string
-	model      string
-	client     *http.Client
-	semaphore  chan struct{}
+	apiKey    string
+	model     string
+	client    *http.Client
+	semaphore chan struct{}
 }
 
 func NewGroq(cfg config.Config, client *http.Client) *Groq {

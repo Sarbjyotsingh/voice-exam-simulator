@@ -14,7 +14,7 @@ import (
 	"sync"
 	"time"
 
-	"voice-exam-simulator/config"
+	"voice-engine/config"
 )
 
 // ---------------------------------------------------------------------------

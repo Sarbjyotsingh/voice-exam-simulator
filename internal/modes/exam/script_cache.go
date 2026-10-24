@@ -8,11 +8,13 @@ import (
 	"log/slog"
 	"net/http"
 	"os"
+	"path/filepath"
+	"strconv"
 	"strings"
 	"sync"
 
-	"voice-exam-simulator/internal/contracts"
-	"voice-exam-simulator/services"
+	"voice-engine/internal/contracts"
+	"voice-engine/services"
 )
 
 // CachedScriptEntry holds the parsed ScriptCatalogue alongside script.json metadata (exam_hint, voice_profiles, raw dialogues JSON).
@@ -27,7 +29,7 @@ type CachedScriptEntry struct {
 	Catalogue        *services.ScriptCatalogue
 }
 
-// ScriptCache loads and caches script.json by (provider, level, exam_id, teil) from local disk or S3.
+// ScriptCache loads and caches script.json by (provider, level, exam_id, teil) from local catalog/ disk, with optional S3 fallback.
 type ScriptCache struct {
 	baseDir   string
 	s3BaseURL string
@@ -38,7 +40,7 @@ type ScriptCache struct {
 	entries map[string]*CachedScriptEntry
 }
 
-// NewScriptCache creates a ScriptCache.
+// NewScriptCache creates a ScriptCache and pre-warms all local B1 scenario scripts from catalog/ into memory at startup.
 func NewScriptCache(baseDir, s3BaseURL string, client *http.Client, log *slog.Logger) *ScriptCache {
 	if log == nil {
 		log = slog.Default()
@@ -46,13 +48,107 @@ func NewScriptCache(baseDir, s3BaseURL string, client *http.Client, log *slog.Lo
 	if s3BaseURL == "" {
 		s3BaseURL = "https://lingua-stories-exams.s3.eu-central-1.amazonaws.com"
 	}
-	return &ScriptCache{
+	c := &ScriptCache{
 		baseDir:   baseDir,
 		s3BaseURL: s3BaseURL,
 		client:    client,
 		log:       log.With("component", "script_cache"),
 		entries:   make(map[string]*CachedScriptEntry),
 	}
+	c.preloadCatalogScripts()
+	return c
+}
+
+func (c *ScriptCache) preloadCatalogScripts() {
+	var scenariosDirs []string
+	roots := []string{c.baseDir, ".", "..", "../..", "../../.."}
+	seen := make(map[string]bool)
+	for _, r := range roots {
+		if r == "" {
+			continue
+		}
+		for _, candidate := range []string{
+			filepath.Join(r, "catalog", "exams", "de", "telc_b1", "scenarios"),
+			filepath.Join(r, "exams", "de", "telc_b1", "scenarios"),
+		} {
+			abs, err := filepath.Abs(candidate)
+			if err != nil {
+				abs = candidate
+			}
+			if seen[abs] {
+				continue
+			}
+			if info, err := os.Stat(candidate); err == nil && info.IsDir() {
+				seen[abs] = true
+				scenariosDirs = append(scenariosDirs, candidate)
+			}
+		}
+	}
+
+	loaded := 0
+	for _, scenariosDir := range scenariosDirs {
+		sampleEntries, err := os.ReadDir(scenariosDir)
+		if err != nil {
+			continue
+		}
+		for _, sampleEntry := range sampleEntries {
+			if !sampleEntry.IsDir() {
+				continue
+			}
+			sampleName := sampleEntry.Name()
+			samplePath := filepath.Join(scenariosDir, sampleName)
+			teilEntries, err := os.ReadDir(samplePath)
+			if err != nil {
+				continue
+			}
+			for _, teilEntry := range teilEntries {
+				if !teilEntry.IsDir() {
+					continue
+				}
+				teilName := teilEntry.Name()
+				teilNum := parseTeilDirNumber(teilName)
+				if teilNum <= 0 {
+					continue
+				}
+				scriptPath := filepath.Join(samplePath, teilName, "script.json")
+				rawBytes, err := os.ReadFile(scriptPath)
+				if err != nil || len(rawBytes) == 0 {
+					continue
+				}
+				entry, err := parseScriptFileBytes(rawBytes)
+				if err != nil {
+					c.log.Warn("Failed to parse scenario script.json during pre-load", "path", scriptPath, "error", err)
+					continue
+				}
+				key := cacheKey(contracts.ExamTelc, contracts.LevelB1, sampleName, teilNum)
+				c.mu.Lock()
+				if _, exists := c.entries[key]; !exists {
+					c.entries[key] = entry
+					loaded++
+				}
+				c.mu.Unlock()
+			}
+		}
+		if loaded > 0 {
+			break
+		}
+	}
+
+	if loaded > 0 {
+		c.log.Info("Pre-loaded all B1 scenario scripts locally from catalog/ (0 network calls to S3)", "count", loaded)
+	}
+}
+
+func parseTeilDirNumber(name string) int {
+	trimmed := strings.TrimSpace(name)
+	for _, prefix := range []string{"Teil_", "teil_", "Teil", "teil"} {
+		if strings.HasPrefix(trimmed, prefix) {
+			if n, err := strconv.Atoi(strings.TrimPrefix(trimmed, prefix)); err == nil && n > 0 {
+				return n
+			}
+		}
+	}
+	return 0
 }
 
 func cacheKey(provider contracts.ExamProvider, level contracts.CEFRLevel, examID string, teil int) string {

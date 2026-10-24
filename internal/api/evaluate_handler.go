@@ -5,9 +5,9 @@ import (
 	"log/slog"
 	"net/http"
 
-	"voice-exam-simulator/internal/contracts"
-	"voice-exam-simulator/internal/engine"
-	"voice-exam-simulator/services"
+	"voice-engine/internal/contracts"
+	"voice-engine/internal/engine"
+	"voice-engine/services"
 )
 
 // NewEvaluateHandler handles POST /evaluate (and /api/v1/evaluate) for both thin-client server-assembled prompts and legacy evaluation_prompt payloads.

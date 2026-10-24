@@ -1,0 +1,465 @@
+{
+  "exam_id": "B1_S15",
+  "topic_title": "Sport & Bewegung im Alltag",
+  "exam_hint": "Thema: „Sport & Bewegung im Alltag“\n\nIhr Textzettel (Luca Giotto, 32 Jahre, Manager):\n„Ich sitze im Beruf zwar den ganzen Tag am Schreibtisch und weiß, dass Bewegung wichtig wäre. Aber nach zehn Stunden Arbeit im Büro bin ich abends einfach viel zu müde für das Fitnessstudio. Meine knappe Freizeit verbringe ich lieber gemütlich mit meiner Familie oder mit Freunden auf dem Sofa. Außerdem sind Fitnessstudios teuer und machen mir keinen Spaß.“\n\nAufgabe:\n1. Fassen Sie zuerst kurz zusammen, was Luca Giotto sagt.\n2. Diskutieren Sie danach mit Ihrem Partner: Ihre eigene Meinung zum Thema Sport, was Sie in Deutschland für Ihre Fitness tun, wie das in Ihrem Heimatland ist und welche Vor- und Nachteile Sport im Verein oder Fitnessstudio hat.",
+  "voice_profiles": {
+    "Omar": "A2eYGaZmwykOiEVBlQ7h",
+    "Frau Fischer": "MGG5Irb57ATHvyIeTEYo"
+  },
+  "auto_play_sequence": [
+    "DE_EX2_T2_INTRO_01",
+    "DE_OMAT7B_T2OPEN_01"
+  ],
+  "end_audio_id": "DE_EX2_T2_OUTRO_01",
+  "dialogues": [
+    {
+      "topic": "Einleitung Teil 2",
+      "speaker": "Frau Fischer",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX2_T2_INTRO_01",
+          "text": "Danke schön. Damit haben wir Teil 1 geschafft und kommen jetzt zu Teil 2: Gespräch über ein Thema. Sie haben beide eine unterschiedliche Meinung zum selben Thema gelesen. Bitte berichten Sie zuerst kurz, was auf Ihrem Aufgabenblatt steht, und diskutieren Sie anschließend gemeinsam darüber. Omar, fangen Sie bitte an."
+        }
+      }
+    },
+    {
+      "topic": "Textpräsentation (Sport & Bewegung im Alltag)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_OMAT7B_T2OPEN_01",
+          "text": "Ja, gerne! Mein Text ist zum Thema Bewegung und Sport im Alltag. Maria Lupo ist 23 Jahre alt und Studentin. Sie sagt, dass Bewegung für sie sehr wichtig ist: Sie fährt jeden Tag Rad, geht dreimal pro Woche ins Fitnessstudio und joggt im Park, weil Sport ihr Energie gibt und gegen Rückenschmerzen hilft. Und was steht in deinem Text?"
+        }
+      }
+    },
+    {
+      "topic": "Textzusammenfassung",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_OMA_PRES_Q1",
+          "text": "Was steht denn in deinem Text? Kannst du mir deine Meinung auf dem Zettel kurz vorstellen?"
+        },
+        "answer": {
+          "audio_id": "DE_OMAT7B_PRES_A1",
+          "text": "In meinem Text erzählt Maria Lupo, eine 23-jährige Studentin, dass sie mehrmals pro Woche Sport treibt und mit dem Rad fährt, um fit und ausgeglichen zu bleiben."
+        }
+      }
+    },
+    {
+      "topic": "Textzusammenfassung (Nachfrage)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_OMA_PRES_Q2",
+          "text": "Moment mal, bevor wir richtig diskutieren: Was steht eigentlich auf deinem Zettel? Kannst du kurz zusammenfassen, was die Person dort sagt?"
+        }
+      }
+    },
+    {
+      "topic": "Eigene Meinung zum Thema",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_OMAT7_OPIN_Q1",
+          "text": "Wie siehst du das? Ist regelmäßiger Sport für dich wichtig oder fehlt dir im Alltag auch oft die Motivation?"
+        },
+        "answer": {
+          "audio_id": "DE_OMAT7B_OPIN_A1",
+          "text": "Ich finde Marias Disziplin wirklich toll! Ich merke selbst auch, dass mir regelmäßige Bewegung nach der Arbeit sehr guttut, um den Kopf freizubekommen."
+        }
+      }
+    },
+    {
+      "topic": "Eigene Meinung (Alternative)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_OMAT7_OPIN_Q2",
+          "text": "Was denkst du zum Thema Bewegung im Alltag? Muss man regelmäßig Sport treiben, um gesund zu bleiben?"
+        }
+      }
+    },
+    {
+      "topic": "Erfahrungen und Gewohnheiten in Deutschland",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_OMAT7_HAB_Q1",
+          "text": "Und wie ist das bei dir hier in Deutschland? Machst du regelmäßig Sport oder bewegst du dich viel im Alltag?"
+        },
+        "answer": {
+          "audio_id": "DE_OMAT7_HAB_A1",
+          "text": "Hier in Deutschland spiele ich einmal pro Woche am Wochenende mit Freunden Fußball und fahre oft mit dem Fahrrad durch die Stadt. Für ein Fitnessstudio fehlt mir unter der Woche meistens die Zeit."
+        }
+      }
+    },
+    {
+      "topic": "Gewohnheiten in Deutschland (Alternative)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_OMAT7_HAB_Q2",
+          "text": "Welchen Sport machst du denn am liebsten, wenn du Freizeit hast?"
+        }
+      }
+    },
+    {
+      "topic": "Situation im Heimatland",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_OMAT7_HOME_Q1",
+          "text": "Wie ist das in deinem Heimatland? Treiben die Menschen dort viel Sport in der Freizeit und welche Sportarten sind beliebt?"
+        },
+        "answer": {
+          "audio_id": "DE_OMAT7_HOME_A1",
+          "text": "In meinem Heimatland Syrien spielen sehr viele junge Leute draußen Fußball oder gehen abends spazieren. Aber richtige Sportvereine für Erwachsene wie hier in Deutschland sind dort viel seltener."
+        }
+      }
+    },
+    {
+      "topic": "Vor- und Nachteile",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_OMAT7_PRO_Q1",
+          "text": "Was sind deiner Meinung nach die Vor- und Nachteile, wenn man im Fitnessstudio oder im Sportverein trainiert?"
+        },
+        "answer": {
+          "audio_id": "DE_OMAT7_PRO_A1",
+          "text": "Der große Vorteil von Sport ist, dass man gesund bleibt, Stress abbaut und im Verein neue Freunde findet. Der Nachteil ist nur, dass Fitnessstudios Geld kosten und man bei Sportverletzungen aufpassen muss."
+        }
+      }
+    },
+    {
+      "topic": "Rückfrage (Meinung)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_OMA_T2BACK_Q1",
+          "text": "Und wie siehst du das persönlich?"
+        }
+      }
+    },
+    {
+      "topic": "Rückfrage (Erfahrung)",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_OMA_T2BACK_Q2",
+          "text": "Was hast du für Erfahrungen damit gemacht?"
+        }
+      }
+    },
+    {
+      "topic": "Verständnisfrage",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_OMA_T2CLAR_Q1",
+          "text": "Entschuldigung, das habe ich akustisch nicht ganz verstanden. Kannst du das bitte noch einmal erklären?"
+        }
+      }
+    },
+    {
+      "topic": "Nachfrage bei Stille",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_OMA_T2SIL_Q1",
+          "text": "Bist du noch da? Was meinst du denn zu diesem Thema?"
+        }
+      }
+    },
+    {
+      "topic": "Abschluss Partner",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_OMA_T2CLOSE_01",
+          "text": "Vielen Dank für die spannende Diskussion! Es hat wirklich Spaß gemacht, mit dir über dieses Thema zu sprechen."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Zustimmung",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_OMA_EXP_21",
+          "text": "Da hast du absolut recht."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Zustimmung",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_OMA_EXP_22",
+          "text": "Ganz genau, das sehe ich genauso."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Zustimmung",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_OMA_EXP_23",
+          "text": "Stimmt, das ist ein sehr guter Punkt."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Zustimmung",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_OMA_EXP_24",
+          "text": "Da bin ich ganz deiner Meinung."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Zustimmung",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_OMA_EXP_25",
+          "text": "Ja, das kann ich total gut verstehen."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Zustimmung",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_OMA_EXP_26",
+          "text": "Das finde ich auch sehr wichtig."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Höflicher Widerspruch",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_OMA_EXP_27",
+          "text": "Da bin ich etwas anderer Meinung."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Höflicher Widerspruch",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_OMA_EXP_28",
+          "text": "Das sehe ich nicht ganz so."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Höflicher Widerspruch",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_OMA_EXP_29",
+          "text": "Ehrlich gesagt ist das bei mir ein bisschen anders."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Höflicher Widerspruch",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_OMA_EXP_30",
+          "text": "Ja, vielleicht, aber man muss auch die andere Seite sehen."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Höflicher Widerspruch",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_OMA_EXP_31",
+          "text": "Das stimmt zwar, aber für mich persönlich passt das nicht so gut."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Interesse",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_OMA_EXP_32",
+          "text": "Ach wirklich? Das ist ja interessant!"
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Interesse",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_OMA_EXP_33",
+          "text": "Das kann ich mir sehr gut vorstellen."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Interesse",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_OMA_EXP_34",
+          "text": "Interessant! So habe ich das noch gar nicht gesehen."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Heimatland",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_OMA_EXP_35",
+          "text": "Ach so ist das in deinem Heimatland! Sehr spannend."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Zusammenfassung",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_OMA_EXP_36",
+          "text": "Danke für die Zusammenfassung! Das ist eine interessante Meinung."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Empathie",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_OMA_EXP_37",
+          "text": "Ja, das kenne ich aus eigener Erfahrung auch sehr gut."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Höflichkeit",
+      "speaker": "Omar",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_OMA_EXP_38",
+          "text": "Gern geschehen!"
+        }
+      }
+    },
+    {
+      "topic": "Prüfer-Nachfrage 1",
+      "speaker": "Frau Fischer",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX2T7_T2_FOLLOW_01",
+          "text": "Ich hätte noch eine kurze Frage an Sie: Sollten Arbeitgeber ihren Mitarbeitern kostenlose Sportkurse während der Arbeitszeit anbieten?"
+        }
+      }
+    },
+    {
+      "topic": "Prüfer-Nachfrage 2",
+      "speaker": "Frau Fischer",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX2T7_T2_FOLLOW_02",
+          "text": "Noch eine Frage zum Schluss: Trainieren Sie lieber allein für sich oder lieber gemeinsam in einer Mannschaft?"
+        }
+      }
+    },
+    {
+      "topic": "Prüfer-Intervention: Thema",
+      "speaker": "Frau Fischer",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX2_T2_INT_TOPIC",
+          "text": "Entschuldigung, darf ich Sie kurz daran erinnern, beim Thema Ihrer Textkarten zu bleiben? Bitte diskutieren Sie weiter über das Thema."
+        }
+      }
+    },
+    {
+      "topic": "Prüfer-Intervention: Höflichkeit",
+      "speaker": "Frau Fischer",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX2_T2_INT_POLITE",
+          "text": "Bitte achten Sie auf eine angemessene und respektvolle Ausdrucksweise während der Prüfung. Machen Sie bitte sachlich weiter."
+        }
+      }
+    },
+    {
+      "topic": "Prüfer-Intervention: Dialog",
+      "speaker": "Frau Fischer",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX2_T2_INT_DIALOG",
+          "text": "Bitte führen Sie einen echten Dialog miteinander. Fragen Sie auch Ihren Partner nach seiner Meinung und seinen Erfahrungen."
+        }
+      }
+    },
+    {
+      "topic": "Abschluss Teil 2",
+      "speaker": "Frau Fischer",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX2_T2_OUTRO_01",
+          "text": "Herzlichen Dank Ihnen beiden. Das war Teil 2. Dann machen wir jetzt direkt weiter mit Teil 3: Gemeinsam etwas planen."
+        }
+      }
+    }
+  ]
+}

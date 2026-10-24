@@ -1,0 +1,405 @@
+{
+  "project": "Telc_B1_Speaking_Simulator",
+  "exams": [
+    {
+      "id": "B1_S01",
+      "name": "B1 Exam Sample 01 — Gesunde Ernährung vs. Fast Food (Fast Food & Zeitmangel)",
+      "level": "B1",
+      "teils": [
+        {
+          "index": 1,
+          "name": "Teil 1",
+          "path": "B1_Exam_Sample_01/Teil_1/",
+          "script": "script.json"
+        },
+        {
+          "index": 2,
+          "name": "Teil 2",
+          "path": "B1_Exam_Sample_01/Teil_2/",
+          "script": "script.json"
+        },
+        {
+          "index": 3,
+          "name": "Teil 3",
+          "path": "B1_Exam_Sample_01/Teil_3/",
+          "script": "script.json"
+        }
+      ]
+    },
+    {
+      "id": "B1_S02",
+      "name": "B1 Exam Sample 02 — Öffentliche Verkehrsmittel vs. Eigenes Auto (Pro Bus & Bahn (Deutschlandticket))",
+      "level": "B1",
+      "teils": [
+        {
+          "index": 1,
+          "name": "Teil 1",
+          "path": "B1_Exam_Sample_02/Teil_1/",
+          "script": "script.json"
+        },
+        {
+          "index": 2,
+          "name": "Teil 2",
+          "path": "B1_Exam_Sample_02/Teil_2/",
+          "script": "script.json"
+        },
+        {
+          "index": 3,
+          "name": "Teil 3",
+          "path": "B1_Exam_Sample_02/Teil_3/",
+          "script": "script.json"
+        }
+      ]
+    },
+    {
+      "id": "B1_S03",
+      "name": "B1 Exam Sample 03 — Urlaub & Reisen: Individualreise vs. Gruppenreise (Allein reisen / Individualurlaub)",
+      "level": "B1",
+      "teils": [
+        {
+          "index": 1,
+          "name": "Teil 1",
+          "path": "B1_Exam_Sample_03/Teil_1/",
+          "script": "script.json"
+        },
+        {
+          "index": 2,
+          "name": "Teil 2",
+          "path": "B1_Exam_Sample_03/Teil_2/",
+          "script": "script.json"
+        },
+        {
+          "index": 3,
+          "name": "Teil 3",
+          "path": "B1_Exam_Sample_03/Teil_3/",
+          "script": "script.json"
+        }
+      ]
+    },
+    {
+      "id": "B1_S04",
+      "name": "B1 Exam Sample 04 — Einkaufen: Online-Shopping vs. Geschäft vor Ort (Pro Online-Shopping)",
+      "level": "B1",
+      "teils": [
+        {
+          "index": 1,
+          "name": "Teil 1",
+          "path": "B1_Exam_Sample_04/Teil_1/",
+          "script": "script.json"
+        },
+        {
+          "index": 2,
+          "name": "Teil 2",
+          "path": "B1_Exam_Sample_04/Teil_2/",
+          "script": "script.json"
+        },
+        {
+          "index": 3,
+          "name": "Teil 3",
+          "path": "B1_Exam_Sample_04/Teil_3/",
+          "script": "script.json"
+        }
+      ]
+    },
+    {
+      "id": "B1_S05",
+      "name": "B1 Exam Sample 05 — Wohnen: Leben in der Großstadt vs. Leben auf dem Land (Pro Leben in der Großstadt)",
+      "level": "B1",
+      "teils": [
+        {
+          "index": 1,
+          "name": "Teil 1",
+          "path": "B1_Exam_Sample_05/Teil_1/",
+          "script": "script.json"
+        },
+        {
+          "index": 2,
+          "name": "Teil 2",
+          "path": "B1_Exam_Sample_05/Teil_2/",
+          "script": "script.json"
+        },
+        {
+          "index": 3,
+          "name": "Teil 3",
+          "path": "B1_Exam_Sample_05/Teil_3/",
+          "script": "script.json"
+        }
+      ]
+    },
+    {
+      "id": "B1_S06",
+      "name": "B1 Exam Sample 06 — Soziale Medien & Smartphone im Alltag (Pro Soziale Medien & Vernetzung)",
+      "level": "B1",
+      "teils": [
+        {
+          "index": 1,
+          "name": "Teil 1",
+          "path": "B1_Exam_Sample_01/Teil_1/",
+          "script": "script.json"
+        },
+        {
+          "index": 2,
+          "name": "Teil 2",
+          "path": "B1_Exam_Sample_06/Teil_2/",
+          "script": "script.json"
+        },
+        {
+          "index": 3,
+          "name": "Teil 3",
+          "path": "B1_Exam_Sample_01/Teil_3/",
+          "script": "script.json"
+        }
+      ]
+    },
+    {
+      "id": "B1_S07",
+      "name": "B1 Exam Sample 07 — Sport & Bewegung im Alltag (Pro regelmäßig Sport & Bewegung)",
+      "level": "B1",
+      "teils": [
+        {
+          "index": 1,
+          "name": "Teil 1",
+          "path": "B1_Exam_Sample_02/Teil_1/",
+          "script": "script.json"
+        },
+        {
+          "index": 2,
+          "name": "Teil 2",
+          "path": "B1_Exam_Sample_07/Teil_2/",
+          "script": "script.json"
+        },
+        {
+          "index": 3,
+          "name": "Teil 3",
+          "path": "B1_Exam_Sample_02/Teil_3/",
+          "script": "script.json"
+        }
+      ]
+    },
+    {
+      "id": "B1_S08",
+      "name": "B1 Exam Sample 08 — Rauchen & Gesundheit (Raucher aus Gewohnheit & gegen Stress)",
+      "level": "B1",
+      "teils": [
+        {
+          "index": 1,
+          "name": "Teil 1",
+          "path": "B1_Exam_Sample_03/Teil_1/",
+          "script": "script.json"
+        },
+        {
+          "index": 2,
+          "name": "Teil 2",
+          "path": "B1_Exam_Sample_08/Teil_2/",
+          "script": "script.json"
+        },
+        {
+          "index": 3,
+          "name": "Teil 3",
+          "path": "B1_Exam_Sample_03/Teil_3/",
+          "script": "script.json"
+        }
+      ]
+    },
+    {
+      "id": "B1_S09",
+      "name": "B1 Exam Sample 09 — Gesunde Ernährung vs. Fast Food (Frisch kochen & Bio-Gemüse)",
+      "level": "B1",
+      "teils": [
+        {
+          "index": 1,
+          "name": "Teil 1",
+          "path": "B1_Exam_Sample_01/Teil_1/",
+          "script": "script.json"
+        },
+        {
+          "index": 2,
+          "name": "Teil 2",
+          "path": "B1_Exam_Sample_09/Teil_2/",
+          "script": "script.json"
+        },
+        {
+          "index": 3,
+          "name": "Teil 3",
+          "path": "B1_Exam_Sample_01/Teil_3/",
+          "script": "script.json"
+        }
+      ]
+    },
+    {
+      "id": "B1_S10",
+      "name": "B1 Exam Sample 10 — Öffentliche Verkehrsmittel vs. Eigenes Auto (Pro eigenes Auto)",
+      "level": "B1",
+      "teils": [
+        {
+          "index": 1,
+          "name": "Teil 1",
+          "path": "B1_Exam_Sample_02/Teil_1/",
+          "script": "script.json"
+        },
+        {
+          "index": 2,
+          "name": "Teil 2",
+          "path": "B1_Exam_Sample_10/Teil_2/",
+          "script": "script.json"
+        },
+        {
+          "index": 3,
+          "name": "Teil 3",
+          "path": "B1_Exam_Sample_02/Teil_3/",
+          "script": "script.json"
+        }
+      ]
+    },
+    {
+      "id": "B1_S11",
+      "name": "B1 Exam Sample 11 — Urlaub & Reisen: Individualreise vs. Gruppenreise (Organisierte Pauschal- & Gruppenreise)",
+      "level": "B1",
+      "teils": [
+        {
+          "index": 1,
+          "name": "Teil 1",
+          "path": "B1_Exam_Sample_03/Teil_1/",
+          "script": "script.json"
+        },
+        {
+          "index": 2,
+          "name": "Teil 2",
+          "path": "B1_Exam_Sample_11/Teil_2/",
+          "script": "script.json"
+        },
+        {
+          "index": 3,
+          "name": "Teil 3",
+          "path": "B1_Exam_Sample_03/Teil_3/",
+          "script": "script.json"
+        }
+      ]
+    },
+    {
+      "id": "B1_S12",
+      "name": "B1 Exam Sample 12 — Einkaufen: Online-Shopping vs. Geschäft vor Ort (Pro Einkaufen im Geschäft vor Ort)",
+      "level": "B1",
+      "teils": [
+        {
+          "index": 1,
+          "name": "Teil 1",
+          "path": "B1_Exam_Sample_04/Teil_1/",
+          "script": "script.json"
+        },
+        {
+          "index": 2,
+          "name": "Teil 2",
+          "path": "B1_Exam_Sample_12/Teil_2/",
+          "script": "script.json"
+        },
+        {
+          "index": 3,
+          "name": "Teil 3",
+          "path": "B1_Exam_Sample_04/Teil_3/",
+          "script": "script.json"
+        }
+      ]
+    },
+    {
+      "id": "B1_S13",
+      "name": "B1 Exam Sample 13 — Wohnen: Leben in der Großstadt vs. Leben auf dem Land (Pro Leben auf dem Land)",
+      "level": "B1",
+      "teils": [
+        {
+          "index": 1,
+          "name": "Teil 1",
+          "path": "B1_Exam_Sample_05/Teil_1/",
+          "script": "script.json"
+        },
+        {
+          "index": 2,
+          "name": "Teil 2",
+          "path": "B1_Exam_Sample_13/Teil_2/",
+          "script": "script.json"
+        },
+        {
+          "index": 3,
+          "name": "Teil 3",
+          "path": "B1_Exam_Sample_05/Teil_3/",
+          "script": "script.json"
+        }
+      ]
+    },
+    {
+      "id": "B1_S14",
+      "name": "B1 Exam Sample 14 — Soziale Medien & Smartphone im Alltag (Kritisch gegenüber Sozialen Medien)",
+      "level": "B1",
+      "teils": [
+        {
+          "index": 1,
+          "name": "Teil 1",
+          "path": "B1_Exam_Sample_01/Teil_1/",
+          "script": "script.json"
+        },
+        {
+          "index": 2,
+          "name": "Teil 2",
+          "path": "B1_Exam_Sample_14/Teil_2/",
+          "script": "script.json"
+        },
+        {
+          "index": 3,
+          "name": "Teil 3",
+          "path": "B1_Exam_Sample_01/Teil_3/",
+          "script": "script.json"
+        }
+      ]
+    },
+    {
+      "id": "B1_S15",
+      "name": "B1 Exam Sample 15 — Sport & Bewegung im Alltag (Keine Zeit für Sport wegen Arbeit)",
+      "level": "B1",
+      "teils": [
+        {
+          "index": 1,
+          "name": "Teil 1",
+          "path": "B1_Exam_Sample_02/Teil_1/",
+          "script": "script.json"
+        },
+        {
+          "index": 2,
+          "name": "Teil 2",
+          "path": "B1_Exam_Sample_15/Teil_2/",
+          "script": "script.json"
+        },
+        {
+          "index": 3,
+          "name": "Teil 3",
+          "path": "B1_Exam_Sample_02/Teil_3/",
+          "script": "script.json"
+        }
+      ]
+    },
+    {
+      "id": "B1_S16",
+      "name": "B1 Exam Sample 16 — Rauchen & Gesundheit (Striktes Nichtrauchen & Rauchverbot)",
+      "level": "B1",
+      "teils": [
+        {
+          "index": 1,
+          "name": "Teil 1",
+          "path": "B1_Exam_Sample_03/Teil_1/",
+          "script": "script.json"
+        },
+        {
+          "index": 2,
+          "name": "Teil 2",
+          "path": "B1_Exam_Sample_16/Teil_2/",
+          "script": "script.json"
+        },
+        {
+          "index": 3,
+          "name": "Teil 3",
+          "path": "B1_Exam_Sample_03/Teil_3/",
+          "script": "script.json"
+        }
+      ]
+    }
+  ]
+}

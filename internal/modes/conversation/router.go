@@ -4,9 +4,9 @@ import (
 	"context"
 	"encoding/json"
 
-	"voice-exam-simulator/internal/contracts"
-	"voice-exam-simulator/internal/engine"
-	"voice-exam-simulator/internal/providers"
+	"voice-engine/internal/contracts"
+	"voice-engine/internal/engine"
+	"voice-engine/internal/providers"
 )
 
 // ChatClient is the subset of ProviderRegistry used by ConversationRouter.

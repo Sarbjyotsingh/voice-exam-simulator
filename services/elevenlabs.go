@@ -4,7 +4,7 @@ import (
 	"context"
 	"net/http"
 
-	"voice-exam-simulator/config"
+	"voice-engine/config"
 )
 
 type ElevenLabs struct {
@@ -52,8 +52,8 @@ func (e *ElevenLabs) Synthesize(ctx context.Context, text, voiceID string) ([]by
 	}
 
 	headers := map[string]string{
-		"Accept":       "audio/mpeg",
-		"xi-api-key":   e.apiKey,
+		"Accept":     "audio/mpeg",
+		"xi-api-key": e.apiKey,
 	}
 
 	audio, err := postJSON(ctx, e.client, url, headers, payload)

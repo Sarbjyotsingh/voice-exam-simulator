@@ -1,0 +1,465 @@
+{
+  "exam_id": "B1_S14",
+  "topic_title": "Soziale Medien & Smartphone im Alltag",
+  "exam_hint": "Thema: „Soziale Medien & Smartphone im Alltag“\n\nIhr Textzettel (Ayşe Özel, 43 Jahre, Lehrerin):\n„Ich sehe soziale Medien sehr kritisch. Als Lehrerin merke ich jeden Tag, dass Jugendliche stundenlang aufs Handy schauen und sich im Unterricht kaum noch konzentrieren können. Viele Menschen treffen sich immer seltener persönlich, vergleichen sich ständig mit anderen im Internet und glauben falschen Nachrichten. Ich nutze mein Smartphone deshalb nur zum Telefonieren.“\n\nAufgabe:\n1. Fassen Sie zuerst kurz zusammen, was Ayşe Özel sagt.\n2. Diskutieren Sie danach mit Ihrer Partnerin: Ihre eigene Meinung zu sozialen Medien, wie Sie das Smartphone im Alltag nutzen, wie das in Ihrem Heimatland ist und welche Vor- und Nachteile Sie sehen.",
+  "voice_profiles": {
+    "Leyla": "NE7AIW5DoJ7lUosXV2KR",
+    "Herr Wagner": "Jvf6TAXwMUVTSR20U0f9"
+  },
+  "auto_play_sequence": [
+    "DE_EX1_T2_INTRO_01",
+    "DE_LEYT6B_T2OPEN_01"
+  ],
+  "end_audio_id": "DE_EX1_T2_OUTRO_01",
+  "dialogues": [
+    {
+      "topic": "Einleitung Teil 2",
+      "speaker": "Herr Wagner",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX1_T2_INTRO_01",
+          "text": "Vielen Dank. Das war Teil 1. Wir kommen nun zu Teil 2: Gespräch über ein Thema. Sie haben in der Vorbereitungszeit beide einen kurzen Text zu einem Thema gelesen. Bitte stellen Sie Ihrem Partner oder Ihrer Partnerin zuerst kurz vor, was die Person in Ihrem Text sagt, und unterhalten Sie sich danach über Ihre eigene Meinung und Ihre Erfahrungen. Leyla, möchten Sie vielleicht beginnen?"
+        }
+      }
+    },
+    {
+      "topic": "Textpräsentation (Soziale Medien & Smartphone im Alltag)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_LEYT6B_T2OPEN_01",
+          "text": "Gerne! Ich habe einen Text zum Thema soziale Medien gelesen. Die Person heißt Alex Müller, er ist 23 Jahre alt und Student. Er findet soziale Medien super, weil er damit jeden Tag kostenlos Kontakt zu Freunden im Ausland halten, Fotos teilen und schnell aktuelle Nachrichten lesen kann. Und was steht auf deinem Zettel?"
+        }
+      }
+    },
+    {
+      "topic": "Textzusammenfassung",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_LEY_PRES_Q1",
+          "text": "Was steht denn in deinem Text? Kannst du mir deine Meinung auf dem Zettel kurz vorstellen?"
+        },
+        "answer": {
+          "audio_id": "DE_LEYT6B_PRES_A1",
+          "text": "In meinem Text sagt Alex Müller, ein 23-jähriger Student, dass soziale Medien für ihn unverzichtbar sind, um mit Freunden in Kontakt zu bleiben und sich zu informieren."
+        }
+      }
+    },
+    {
+      "topic": "Textzusammenfassung (Nachfrage)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_LEY_PRES_Q2",
+          "text": "Moment mal, bevor wir richtig diskutieren: Was steht eigentlich auf deinem Zettel? Kannst du kurz zusammenfassen, was die Person dort sagt?"
+        }
+      }
+    },
+    {
+      "topic": "Eigene Meinung zum Thema",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_LEYT6_OPIN_Q1",
+          "text": "Wie denkst du darüber? Sind soziale Medien für dich eher nützlich oder eher ein Problem?"
+        },
+        "answer": {
+          "audio_id": "DE_LEYT6B_OPIN_A1",
+          "text": "Ich sehe das ähnlich wie Alex, besonders weil meine Familie im Ausland lebt. Ohne WhatsApp und Videoanrufe wäre der Kontakt viel schwieriger, auch wenn man aufpassen muss, nicht zu viel Zeit am Handy zu verbringen."
+        }
+      }
+    },
+    {
+      "topic": "Eigene Meinung (Alternative)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_LEYT6_OPIN_Q2",
+          "text": "Was ist deine persönliche Meinung zu sozialen Netzwerken wie Instagram oder WhatsApp?"
+        }
+      }
+    },
+    {
+      "topic": "Erfahrungen und Gewohnheiten in Deutschland",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_LEYT6_HAB_Q1",
+          "text": "Wie nutzt du soziale Medien hier im Alltag? Wie viel Zeit verbringst du ungefähr am Handy?"
+        },
+        "answer": {
+          "audio_id": "DE_LEYT6_HAB_A1",
+          "text": "Hier in Deutschland nutze ich jeden Tag WhatsApp und Instagram, vor allem um mit meiner Familie in Izmir zu telefonieren und deutsche Nachrichten oder Lernvideos anzuschauen. Abends lege ich das Handy aber bewusst weg."
+        }
+      }
+    },
+    {
+      "topic": "Gewohnheiten in Deutschland (Alternative)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_LEYT6_HAB_Q2",
+          "text": "Welche Apps nutzt du auf deinem Smartphone am häufigsten?"
+        }
+      }
+    },
+    {
+      "topic": "Situation im Heimatland",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_LEYT6_HOME_Q1",
+          "text": "Und wie ist das in deinem Heimatland? Spielen soziale Medien dort auch eine so große Rolle im Alltag?"
+        },
+        "answer": {
+          "audio_id": "DE_LEYT6_HOME_A1",
+          "text": "In meinem Heimatland, der Türkei, nutzen fast alle Menschen — sogar meine Großeltern — jeden Tag soziale Medien, um Familienfotos zu teilen und Nachrichten zu lesen."
+        }
+      }
+    },
+    {
+      "topic": "Vor- und Nachteile",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_LEYT6_PRO_Q1",
+          "text": "Was sind deiner Meinung nach die wichtigsten Vor- und Nachteile von sozialen Medien?"
+        },
+        "answer": {
+          "audio_id": "DE_LEYT6_PRO_A1",
+          "text": "Der größte Vorteil ist definitiv die schnelle und kostenlose Verbindung weltweit. Der größte Nachteil ist aber die Suchtgefahr, der Datenschutz und dass Fake News sich so schnell verbreiten."
+        }
+      }
+    },
+    {
+      "topic": "Rückfrage (Meinung)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_LEY_T2BACK_Q1",
+          "text": "Und wie siehst du das persönlich?"
+        }
+      }
+    },
+    {
+      "topic": "Rückfrage (Erfahrung)",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_LEY_T2BACK_Q2",
+          "text": "Was hast du für Erfahrungen damit gemacht?"
+        }
+      }
+    },
+    {
+      "topic": "Verständnisfrage",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_LEY_T2CLAR_Q1",
+          "text": "Entschuldigung, das habe ich akustisch nicht ganz verstanden. Kannst du das bitte noch einmal erklären?"
+        }
+      }
+    },
+    {
+      "topic": "Nachfrage bei Stille",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "question": {
+          "audio_id": "DE_LEY_T2SIL_Q1",
+          "text": "Bist du noch da? Was meinst du denn zu diesem Thema?"
+        }
+      }
+    },
+    {
+      "topic": "Abschluss Partner",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_LEY_T2CLOSE_01",
+          "text": "Vielen Dank für die spannende Diskussion! Es hat wirklich Spaß gemacht, mit dir über dieses Thema zu sprechen."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Zustimmung",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_LEY_EXP_21",
+          "text": "Da hast du absolut recht."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Zustimmung",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_LEY_EXP_22",
+          "text": "Ganz genau, das sehe ich genauso."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Zustimmung",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_LEY_EXP_23",
+          "text": "Stimmt, das ist ein sehr guter Punkt."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Zustimmung",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_LEY_EXP_24",
+          "text": "Da bin ich ganz deiner Meinung."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Zustimmung",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_LEY_EXP_25",
+          "text": "Ja, das kann ich total gut verstehen."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Zustimmung",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_LEY_EXP_26",
+          "text": "Das finde ich auch sehr wichtig."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Höflicher Widerspruch",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_LEY_EXP_27",
+          "text": "Da bin ich etwas anderer Meinung."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Höflicher Widerspruch",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_LEY_EXP_28",
+          "text": "Das sehe ich nicht ganz so."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Höflicher Widerspruch",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_LEY_EXP_29",
+          "text": "Ehrlich gesagt ist das bei mir ein bisschen anders."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Höflicher Widerspruch",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_LEY_EXP_30",
+          "text": "Ja, vielleicht, aber man muss auch die andere Seite sehen."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Höflicher Widerspruch",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_LEY_EXP_31",
+          "text": "Das stimmt zwar, aber für mich persönlich passt das nicht so gut."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Interesse",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_LEY_EXP_32",
+          "text": "Ach wirklich? Das ist ja interessant!"
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Interesse",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_LEY_EXP_33",
+          "text": "Das kann ich mir sehr gut vorstellen."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Interesse",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_LEY_EXP_34",
+          "text": "Interessant! So habe ich das noch gar nicht gesehen."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Heimatland",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_LEY_EXP_35",
+          "text": "Ach so ist das in deinem Heimatland! Sehr spannend."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Zusammenfassung",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_LEY_EXP_36",
+          "text": "Danke für die Zusammenfassung! Das ist eine interessante Meinung."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Empathie",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_LEY_EXP_37",
+          "text": "Ja, das kenne ich aus eigener Erfahrung auch sehr gut."
+        }
+      }
+    },
+    {
+      "topic": "Reaktion: Höflichkeit",
+      "speaker": "Leyla",
+      "role": "Participant",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_LEY_EXP_38",
+          "text": "Gern geschehen!"
+        }
+      }
+    },
+    {
+      "topic": "Prüfer-Nachfrage 1",
+      "speaker": "Herr Wagner",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX1T6_T2_FOLLOW_01",
+          "text": "Darf ich noch kurz nachfragen: Sollte es an Schulen ein komplettes Handyverbot für Kinder und Jugendliche geben?"
+        }
+      }
+    },
+    {
+      "topic": "Prüfer-Nachfrage 2",
+      "speaker": "Herr Wagner",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX1T6_T2_FOLLOW_02",
+          "text": "Noch eine kurze Frage an Sie: Ab welchem Alter sollten Kinder Ihrer Meinung nach ein eigenes Smartphone bekommen?"
+        }
+      }
+    },
+    {
+      "topic": "Prüfer-Intervention: Thema",
+      "speaker": "Herr Wagner",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX1_T2_INT_TOPIC",
+          "text": "Entschuldigung, ich muss kurz unterbrechen. Bitte bleiben Sie bei Ihrem Prüfungsthema und tauschen Sie Ihre Erfahrungen dazu aus."
+        }
+      }
+    },
+    {
+      "topic": "Prüfer-Intervention: Höflichkeit",
+      "speaker": "Herr Wagner",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX1_T2_INT_POLITE",
+          "text": "Ich bitte Sie um einen höflichen und respektvollen Ton. Das hier ist eine offizielle Sprachprüfung. Bitte fahren Sie sachlich mit der Diskussion fort."
+        }
+      }
+    },
+    {
+      "topic": "Prüfer-Intervention: Dialog",
+      "speaker": "Herr Wagner",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX1_T2_INT_DIALOG",
+          "text": "Denken Sie bitte daran, dass es ein gemeinsames Gespräch sein soll. Stellen Sie auch Ihrer Partnerin Fragen und gehen Sie aufeinander ein."
+        }
+      }
+    },
+    {
+      "topic": "Abschluss Teil 2",
+      "speaker": "Herr Wagner",
+      "role": "Examiner",
+      "interaction": {
+        "dialogue": {
+          "audio_id": "DE_EX1_T2_OUTRO_01",
+          "text": "Vielen Dank. Das war Teil 2. Wir kommen nun zu Teil 3: Gemeinsam eine Aufgabe lösen."
+        }
+      }
+    }
+  ]
+}

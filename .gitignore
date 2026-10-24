@@ -23,8 +23,8 @@ wheels/
 
 # Go
 bin/
-server
-voice-exam-simulator
+/server
+/voice-engine
 .docker_env
 
 # Deployment

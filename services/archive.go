@@ -13,7 +13,7 @@ import (
 	awsconfig "github.com/aws/aws-sdk-go-v2/config"
 	"github.com/aws/aws-sdk-go-v2/service/s3"
 
-	"voice-exam-simulator/config"
+	"voice-engine/config"
 )
 
 // File is one object to write to the (write-only) log bucket.
