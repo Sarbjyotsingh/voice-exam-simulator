@@ -1,0 +1,81 @@
+# catalog/providers.yaml
+# Single source of truth for active AI providers, fallback chains, and USD pricing.
+
+routing:
+  stt:
+    primary: "groq_whisper_v3"
+    fallback: "openai_whisper_1"
+  decisions:
+    primary: "openai_luna_decisions"
+    fallback: "groq_gpt_oss_schema"
+  chat_fallback:
+    primary: "groq_gpt_oss_120b"
+    fallback: "openai_gpt_4o_mini"
+  evaluation:
+    primary: "groq_gpt_oss_120b"
+    fallback: "openai_gpt_4o_mini"
+  tts:
+    primary: "elevenlabs_flash_v2_5"
+    fallback: "openai_tts_1"
+
+models:
+  groq_whisper_v3:
+    provider: "groq_stt"
+    model: "whisper-large-v3"
+    pricing:
+      per_audio_second_usd: 0.0000308333
+
+  openai_whisper_1:
+    provider: "openai_stt"
+    model: "gpt-4o-mini-transcribe"
+    pricing:
+      per_audio_second_usd: 0.0000500000
+
+  openai_luna_decisions:
+    provider: "openai_decisions"
+    model: "gpt-6-luna"
+    pricing:
+      input_per_1m_usd: 0.10
+      cached_input_per_1m_usd: 0.02
+      output_per_1m_usd: 0.80
+
+  groq_gpt_oss_schema:
+    provider: "schema_decisions"
+    model: "openai/gpt-oss-120b"
+    temperature: 0.1
+    pricing:
+      input_per_1m_usd: 0.15
+      cached_input_per_1m_usd: 0.075
+      output_per_1m_usd: 0.60
+
+  groq_gpt_oss_120b:
+    provider: "groq_llm"
+    model: "openai/gpt-oss-120b"
+    temperature: 0.2
+    pricing:
+      input_per_1m_usd: 0.15
+      cached_input_per_1m_usd: 0.075
+      output_per_1m_usd: 0.60
+
+  openai_gpt_4o_mini:
+    provider: "openai_llm"
+    model: "gpt-4o-mini"
+    temperature: 0.2
+    pricing:
+      input_per_1m_usd: 0.15
+      cached_input_per_1m_usd: 0.075
+      output_per_1m_usd: 0.60
+
+  elevenlabs_flash_v2_5:
+    provider: "elevenlabs_tts"
+    model: "eleven_flash_v2_5"
+    stability: 0.5
+    similarity_boost: 0.75
+    pricing:
+      per_char_usd: 0.00005
+
+  openai_tts_1:
+    provider: "openai_tts"
+    model: "tts-1"
+    pricing:
+      per_char_usd: 0.000015

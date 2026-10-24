@@ -1,0 +1,114 @@
+level: "B1"
+teil_number: 1
+teil_name: "Teil 1: Kontaktaufnahme"
+max_score: 15
+default_exam_hint: |
+  Name
+  Woher sie oder er kommt
+  Wie sie oder er wohnt (Wohnung, Haus, Garten ...)
+  Familie
+  Wo sie oder er Deutsch gelernt hat
+  Was sie oder er macht (Schule, Studium, Beruf ...)
+  Sprachen (welche? wie lange? warum?)
+context_summary: "Telc B1 German speaking exam, Teil 1 (getting to know each other)."
+fallback_instruction: "Did the learner ask a specific, unusual question to the partner that CANNOT be answered by the partner's standard biography clips (name, age, origin, residence, family, work/profession, languages, learning German, hobbies, or du/Sie)? Answer true ONLY if pre-recorded biography clips cannot reasonably answer what the learner asked."
+fallback_threshold: 0.70
+
+topics:
+  - key: "name"
+    slot_code: "NAME"
+    description: "first name, surname, or family name"
+    required: true
+  - key: "origin"
+    slot_code: "ORIG"
+    description: "country of origin, hometown, or city"
+    required: true
+  - key: "residence"
+    slot_code: "RES"
+    description: "where and how they live in Germany (city, flat, house, WG)"
+    required: true
+  - key: "family"
+    slot_code: "FAM"
+    description: "marital status, children, spouse, or siblings"
+    required: true
+  - key: "work"
+    slot_code: "WORK"
+    description: "profession, job, study, or Ausbildung"
+    required: true
+  - key: "languages"
+    slot_code: "LANG"
+    description: "native mother tongue and other languages spoken"
+    required: true
+  - key: "german_learning"
+    slot_code: "GER"
+    description: "where, how long, and why they learned German"
+    required: true
+  - key: "hobbies"
+    slot_code: "HOB"
+    description: "free time, sports, cooking, music, or leisure activities"
+    required: true
+  - key: "age"
+    slot_code: "AGE"
+    description: "age in years"
+    required: false
+
+initial_covered_topics:
+  - "name"
+no_self_answer_on_turn1:
+  - "NAME"
+  - "DUSIE"
+
+reactions:
+  - code: "EXP_01"
+    description: "curious: learner shared origin/languages/profession (Ah, interessant!)"
+  - code: "EXP_02"
+    description: "warm: family, hometown, nice home (Oh, schön!)"
+  - code: "EXP_03"
+    description: "upbeat: agreed to 'du', positive hobby/job/achievement (Super!)"
+  - code: "EXP_04"
+    description: "enthusiastic: enjoyable hobby, interesting job/study (Das klingt ja toll!)"
+  - code: "EXP_05"
+    description: "empathetic: single, alone, unemployed, family far away (Ach so, ich verstehe.)"
+  - code: "EXP_06"
+    description: "surprised: many languages, unusual job (Oh, wirklich? Das ist ja spannend!)"
+  - code: "EXP_07"
+    description: "casual ack: name/spelling/age answered (Alles klar!)"
+  - code: "EXP_08"
+    description: "relatable: German course, grammar hard, missing home (Ja, das kenne ich gut.)"
+  - code: "EXP_09"
+    description: "casual: sport, music, films, travel (Cool!)"
+  - code: "EXP_10"
+    description: "neutral transition after any plain fact (Ah, okay!)"
+  - code: "EXP_11"
+    description: "polite pleasure: right after the learner introduces their name (Das freut mich!)"
+  - code: "EXP_12"
+    description: "shared experience: learner mentions a shared trait (Oh, ich auch!)"
+  - code: "EXP_13"
+    description: "agreeing with a general observation (Ja, das stimmt.)"
+  - code: "EXP_14"
+    description: "supportive: looking for job/apartment/exam (Ich wünsche dir viel Erfolg dabei!)"
+  - code: "EXP_15"
+    description: "you're welcome: learner said thanks (Gerne! Kein Problem.)"
+  - code: "EXP_16"
+    description: "sympathy: learner mentions something sad/difficult (Oh, das tut mir leid.)"
+  - code: "EXP_17"
+    description: "encouraging: clear multi-part answer (Sehr gut!)"
+  - code: "EXP_18"
+    description: "reciprocation: learner wishes luck (Danke, gleichfalls!)"
+
+no_repeat_reactions: true
+min_topics_for_wrap_up: 8
+has_examiner_follow_up: true
+follow_up_slots:
+  - slot_code: "FOLLOW_01"
+    required_topic_check: ""
+partner_close_slot: "CLOSE_01"
+examiner_outro_slot: "OUTRO_01"
+interventions:
+  off_topic_slot: "INT_TOPIC"
+  politeness_slot: "INT_POLITE"
+  dialogue_slot: "INT_DIALOG"
+  clarify_exp_slot: "EXP_05"
+  clarify_question: "CLAR_Q1"
+  silence_question: "SIL_Q1"
+  thanks_exp_slot: "EXP_15"

@@ -1,0 +1,94 @@
+# catalog/personas/de_voices.yaml
+# Centralized German Exam & Conversation Personas (Bios & Multi-Provider Voice IDs)
+
+examiners:
+  Herr Wagner:
+    role: "Examiner"
+    gender: "male"
+    bio: "Senior official telc German examiner. Calm, formal, addresses candidates with 'Sie'."
+    voices:
+      elevenlabs_tts: "Jvf6TAXwMUVTSR20U0f9"
+      openai_tts: "onyx"
+    cost_multiplier: 1.0
+
+  Frau Fischer:
+    role: "Examiner"
+    gender: "female"
+    bio: "Official telc German examiner. Friendly, structured, addresses candidates with 'Sie'."
+    voices:
+      elevenlabs_tts: "MGG5Irb57ATHvyIeTEYo"
+      openai_tts: "nova"
+    cost_multiplier: 1.0
+
+  Frau Erdoğan:
+    role: "Examiner"
+    gender: "female"
+    bio: "Official telc German examiner. Warm, encouraging, addresses candidates with 'Sie'."
+    voices:
+      elevenlabs_tts: "zKHQdbB8oaQ7roNTiDTK"
+      openai_tts: "shimmer"
+    cost_multiplier: 1.0
+
+  Herr Richter:
+    role: "Examiner"
+    gender: "male"
+    bio: "Official telc German examiner. Clear, patient, addresses candidates with 'Sie'."
+    voices:
+      elevenlabs_tts: "z1EhmmPwF0ENGYE8dBE6"
+      openai_tts: "echo"
+    cost_multiplier: 1.0
+
+  Frau Dr. Meyer:
+    role: "Examiner"
+    gender: "female"
+    bio: "Official telc German examiner. Experienced, supportive, addresses candidates with 'Sie'."
+    voices:
+      elevenlabs_tts: "4YKI1ONIhgWEKHyAHYPC"
+      openai_tts: "alloy"
+    cost_multiplier: 1.0
+
+partners:
+  Leyla:
+    role: "Participant"
+    gender: "female"
+    bio: "Leyla Yılmaz, fellow B1 test-taker originally from Istanbul, Turkey, living in Münster with her family."
+    voices:
+      elevenlabs_tts: "NE7AIW5DoJ7lUosXV2KR"
+      openai_tts: "nova"
+    cost_multiplier: 1.0
+
+  Omar:
+    role: "Participant"
+    gender: "male"
+    bio: "Omar Al-Mansoor, fellow B1 test-taker originally from Damascus, Syria, living in Stuttgart and working in IT."
+    voices:
+      elevenlabs_tts: "A2eYGaZmwykOiEVBlQ7h"
+      openai_tts: "echo"
+    cost_multiplier: 1.0
+
+  Elena:
+    role: "Participant"
+    gender: "female"
+    bio: "Elena Rossi, fellow B1 test-taker originally from Milan, Italy, living in Munich and working in graphic design."
+    voices:
+      elevenlabs_tts: "gVOibprogMfmHVVyo5r6"
+      openai_tts: "shimmer"
+    cost_multiplier: 1.0
+
+  Mateo:
+    role: "Participant"
+    gender: "male"
+    bio: "Mateo García, fellow B1 test-taker originally from Madrid, Spain, living in Berlin and working in gastronomy."
+    voices:
+      elevenlabs_tts: "1J0wWp4zPQIvsK7Xwh34"
+      openai_tts: "onyx"
+    cost_multiplier: 1.0
+
+  Janusz:
+    role: "Participant"
+    gender: "male"
+    bio: "Janusz Kowalski, fellow B1 test-taker originally from Kraków, Poland, living in Hamburg and working in logistics."
+    voices:
+      elevenlabs_tts: "K5ZVtkkBnuPY6YqXs70E"
+      openai_tts: "fable"
+    cost_multiplier: 1.0

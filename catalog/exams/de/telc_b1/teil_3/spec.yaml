@@ -1,0 +1,93 @@
+level: "B1"
+teil_number: 3
+teil_name: "Teil 3: Gemeinsam etwas planen"
+max_score: 30
+default_exam_hint: |
+  1. Wann? (Tag, Uhrzeit & Ausweichtermin vereinbaren)
+  2. Wo? (Ort vorschlagen & Alternative bei schlechtem Wetter)
+  3. Was mitbringen / besorgen? (Essen, Getränke, Material oder Geschenk)
+  4. Aufgabenverteilung & Transport (Wer kümmert sich um was? Wie fahren wir?)
+  5. Zusammenfassung (Am Ende kurz prüfen: Haben wir alles besprochen?)
+context_summary: "Telc B1 German speaking exam, Teil 3 (collaborative planning task: agreeing on time, location/materials, food/items, task division/transport, and final plan summary)."
+fallback_instruction: "Did the learner ask a specific, unusual question to the partner that CANNOT be answered by the partner's standard planning clips (date/time compromise, venue/materials/rain backup, food/drinks/gifts, task division/transport, or final summary)? Answer true ONLY if pre-recorded planning clips cannot reasonably answer what the learner asked."
+fallback_threshold: 0.70
+
+topics:
+  - key: "time"
+    slot_code: "TIME"
+    description: "when to meet or hold the event (day, date, time, weekend vs. weekday)"
+    required: true
+  - key: "location"
+    slot_code: "LOC"
+    description: "where to meet/celebrate, weather rain backup, or where to get tools/materials"
+    required: true
+  - key: "food_items"
+    slot_code: "FOOD"
+    description: "what food, drinks, gifts, or equipment to bring or buy"
+    required: true
+  - key: "tasks_transport"
+    slot_code: "TASK"
+    description: "how to divide tasks (who does what) and how to travel/transport things"
+    required: true
+  - key: "summary"
+    slot_code: "SUM"
+    description: "final summary of the agreed plan and checking if anything is missing"
+    required: true
+
+initial_covered_topics:
+  - "time"
+no_self_answer_on_turn1:
+  - "T3OPEN"
+
+reactions:
+  - code: "EXP_41"
+    description: "enthusiastic agreement with a great idea (Das ist eine super Idee!)"
+  - code: "EXP_42"
+    description: "upbeat agreement on how to proceed (Klasse, so machen wir das!)"
+  - code: "EXP_43"
+    description: "confirming a proposed time or date (Perfekt, das passt mir sehr gut.)"
+  - code: "EXP_44"
+    description: "polite B1 agreement with a multi-step suggestion (Einverstanden, das klingt nach einem sehr guten Plan.)"
+  - code: "EXP_45"
+    description: "energetic agreement with an activity or food proposal (Super Vorschlag, da bin ich sofort dabei!)"
+  - code: "EXP_46"
+    description: "crisp confirmation sealing an agreement (Alles klar, abgemacht!)"
+  - code: "EXP_47"
+    description: "polite doubt or hesitation (Hmm, da bin ich mir noch nicht ganz sicher.)"
+  - code: "EXP_48"
+    description: "polite scheduling concern when time is tight (Das wird zeitlich vielleicht ein bisschen knapp.)"
+  - code: "EXP_49"
+    description: "polite rejection of an inconvenient time (Ehrlich gesagt passt mir dieser Termin nicht so gut.)"
+  - code: "EXP_50"
+    description: "practical weather caveat for outdoor plans (Die Idee ist gut, aber was machen wir, wenn das Wetter schlecht ist?)"
+  - code: "EXP_51"
+    description: "constructive counter-proposal lead-in (Ich hätte da noch einen anderen Vorschlag.)"
+  - code: "EXP_52"
+    description: "collaborative counter-suggestion to do something together (Wäre es nicht praktischer, wenn wir das zusammen erledigen?)"
+  - code: "EXP_53"
+    description: "validating the learner's counter-proposal or objection (Ja, du hast recht, das ist wirklich viel praktischer so.)"
+  - code: "EXP_54"
+    description: "gladly accepting a task assigned by the learner (Sehr gerne, darum kümmere ich mich!)"
+  - code: "EXP_55"
+    description: "reciprocal task division between learner and partner (Abgemacht! Wenn du das übernimmst, kümmere ich mich um den Rest.)"
+  - code: "EXP_56"
+    description: "upbeat transition to final plan summary (Super, wir haben jetzt fast alle Punkte geklärt!)"
+  - code: "EXP_57"
+    description: "neutral clarification acknowledgement (Ach so, alles klar, jetzt habe ich dich verstanden.)"
+  - code: "EXP_58"
+    description: "warm response to 'Danke' during planning (Gerne! Es macht richtig Spaß, das mit dir zusammen zu planen.)"
+
+no_repeat_reactions: true
+min_topics_for_wrap_up: 5
+has_examiner_follow_up: false
+follow_up_slots: []
+partner_close_slot: "T3CLOSE_01"
+examiner_outro_slot: "T3_OUTRO_01"
+interventions:
+  off_topic_slot: "T3_INT_TOPIC"
+  politeness_slot: "T3_INT_POLITE"
+  dialogue_slot: "T3_INT_DIALOG"
+  clarify_exp_slot: "EXP_57"
+  clarify_question: "T3CLAR_Q1"
+  silence_question: "T3SIL_Q1"
+  thanks_exp_slot: "EXP_58"

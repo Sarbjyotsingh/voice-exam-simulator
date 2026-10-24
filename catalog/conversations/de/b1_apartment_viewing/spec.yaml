@@ -1,0 +1,7 @@
+scenario_id: "b1_apartment_viewing"
+language: "de"
+level: "B1"
+title: "Wohnungsbesichtigung (Apartment Viewing)"
+primary_speaker: "Herrichter"
+secondary_speaker: ""
+max_turns: 8

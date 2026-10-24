@@ -1,0 +1,20 @@
+# catalog/exams/de/telc_b1/exam.yaml
+language: "de"
+provider: "telc"
+level: "B1"
+title: "telc Deutsch B1 (Zertifikat Deutsch)"
+total_max_score: 75
+s3_base_url: "https://lingua-stories-exams.s3.eu-central-1.amazonaws.com"
+prompt_layers:
+  decisions:
+    - "prompts/base/exam_decisions_base.md"
+    - "prompts/providers/telc/decisions_provider.md"
+    - "prompts/levels/de/b1/level_rules.md"
+  fallback_system:
+    - "prompts/base/exam_fallback_base.md"
+    - "prompts/providers/telc/fallback_provider.md"
+    - "prompts/levels/de/b1/level_rules.md"
+  evaluate:
+    - "prompts/base/exam_evaluate_base.md"
+    - "prompts/providers/telc/evaluate_provider.md"
+    - "prompts/levels/de/b1/level_rules.md"

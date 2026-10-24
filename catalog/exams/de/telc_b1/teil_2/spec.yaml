@@ -1,0 +1,96 @@
+level: "B1"
+teil_number: 2
+teil_name: "Teil 2: Gespräch über ein Thema"
+max_score: 30
+default_exam_hint: |
+  1. Meinung im Text wiedergeben (Name, Alter, Beruf, Meinung & Grund)
+  2. Eigene Meinung zum Thema sagen (Zustimmen / Widersprechen)
+  3. Eigene Erfahrungen & Gewohnheiten hier in Deutschland
+  4. Vergleich: Wie ist die Situation in Ihrem Heimatland?
+  5. Fragen an den Partner stellen & auf Argumente reagieren
+context_summary: "Telc B1 German speaking exam, Teil 2 (presenting a stimulus text opinion and discussing the topic with a partner)."
+fallback_instruction: "Did the learner ask a specific, unusual question to the partner that CANNOT be answered by the partner's standard topic clips (stimulus text presentation, personal opinion on the topic, daily habits/experiences in Germany, comparison with home country, or pros/cons/compromises)? Answer true ONLY if pre-recorded topic clips cannot reasonably answer what the learner asked."
+fallback_threshold: 0.70
+
+topics:
+  - key: "presentation"
+    slot_code: "PRES"
+    description: "summarizing the stimulus text / person's quote (name, age, profession, opinion, reason)"
+    required: true
+  - key: "opinion"
+    slot_code: "OPIN"
+    description: "personal opinion and stance on the topic"
+    required: true
+  - key: "habits_germany"
+    slot_code: "HAB"
+    description: "personal habits and everyday experiences here in Germany"
+    required: true
+  - key: "home_country"
+    slot_code: "HOME"
+    description: "comparison with how the topic is in their home country (Heimatland)"
+    required: true
+  - key: "pros_cons"
+    slot_code: "PRO"
+    description: "advantages, disadvantages, prices, environment, or practical solutions/compromises"
+    required: true
+
+initial_covered_topics:
+  - "presentation"
+no_self_answer_on_turn1:
+  - "PRES"
+  - "T2OPEN"
+
+reactions:
+  - code: "EXP_21"
+    description: "strong agreement: clear argument or sensible opinion (Da hast du absolut recht.)"
+  - code: "EXP_22"
+    description: "enthusiastic agreement: shared viewpoint (Ganz genau, das sehe ich genauso.)"
+  - code: "EXP_23"
+    description: "polite formal agreement with opinion (Ich stimme dir vollkommen zu.)"
+  - code: "EXP_24"
+    description: "natural agreement with everyday fact (Ja, das stimmt auf jeden Fall.)"
+  - code: "EXP_25"
+    description: "validating an important argument like health/money/time/children (Das ist ein sehr wichtiges Argument.)"
+  - code: "EXP_26"
+    description: "shared habit or similar experience in Germany/home country (Ja, das ist bei mir ganz ähnlich.)"
+  - code: "EXP_27"
+    description: "polite disagreement: opposite preference (Da bin ich etwas anderer Meinung.)"
+  - code: "EXP_28"
+    description: "gentle disagreement or nuance (Das sehe ich nicht ganz so.)"
+  - code: "EXP_29"
+    description: "personal contrast in habits (Ehrlich gesagt ist das bei mir ein bisschen anders.)"
+  - code: "EXP_30"
+    description: "balanced counter-perspective (Das stimmt zwar, aber es gibt auch eine andere Seite.)"
+  - code: "EXP_31"
+    description: "weighing pros and cons (Einerseits hast du recht, aber andererseits kommt es auf die Situation an.)"
+  - code: "EXP_32"
+    description: "curious engagement: home country comparison or interesting anecdote (Ach wirklich? Das ist ja interessant!)"
+  - code: "EXP_33"
+    description: "appreciative engagement: good point raised (Guter Punkt! Darüber habe ich auch schon nachgedacht.)"
+  - code: "EXP_34"
+    description: "empathetic validation: stressful/expensive/convenient experience (Das kann ich mir sehr gut vorstellen.)"
+  - code: "EXP_35"
+    description: "understanding why someone prefers an option (Ja, das kann ich gut nachvollziehen.)"
+  - code: "EXP_36"
+    description: "acknowledging stimulus text summary on Turn 1 (Danke für die Zusammenfassung! Das ist eine interessante Meinung.)"
+  - code: "EXP_37"
+    description: "neutral clarification acknowledgment (Ach so, alles klar, ich verstehe.)"
+  - code: "EXP_38"
+    description: "warm response to 'Danke' mid-discussion (Gerne! Das macht wirklich Spaß, mit dir darüber zu diskutieren.)"
+
+no_repeat_reactions: true
+min_topics_for_wrap_up: 5
+has_examiner_follow_up: true
+follow_up_slots:
+  - slot_code: "T2_FOLLOW_01"
+    required_topic_check: ""
+partner_close_slot: "T2CLOSE_01"
+examiner_outro_slot: "T2_OUTRO_01"
+interventions:
+  off_topic_slot: "T2_INT_TOPIC"
+  politeness_slot: "T2_INT_POLITE"
+  dialogue_slot: "T2_INT_DIALOG"
+  clarify_exp_slot: "EXP_37"
+  clarify_question: "T2CLAR_Q1"
+  silence_question: "T2SIL_Q1"
+  thanks_exp_slot: "EXP_38"
